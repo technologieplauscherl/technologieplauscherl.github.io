@@ -1,0 +1,39 @@
+@import 'base/mixins';
+@import 'base/variables';
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: "Helvetica Neue", "Arial", sans;
+	margin: 0;
+}
+
+/**
+ * HEAD
+ */
+
+.head {
+	background-color: $bgcolor;
+	@include x-rem(padding, 1.25);
+}
+
+.hl {
+	font-family: "bebas-neue", sans;
+	font-weight: normal;
+}
+
+.hl-1 {
+	@include x-rem(font-size, 2.1);
+	line-height: 1em;
+	margin: 0;
+}
+
+.sub {
+	font-family: "lobster", serif;
+}
+
+.inverse {
+	color: #fff;
+}
