@@ -1,0 +1,40 @@
+$facebookColor: #3B5998;
+$faceforeColor: #374F8A;
+
+.btn {
+	position: relative;
+
+	display: inline-block;
+	@include x-rem(padding, 1.25 1.1 1.25 5.5);
+	overflow: hidden;
+
+	@include x-rem(font-size, 0.875);
+	text-decoration: none;
+
+	background-color: #000;
+	color: #fff;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn-icon {
+	position: absolute;
+	left: 0; top: 0;
+
+	display: block;
+	@include x-rem(padding, 1.4);
+
+	@include x-rem(font-size, 1.75);
+
+	background-color: #333;
+}
+
+.facebook {
+	background-color: $facebookColor;
+
+	.btn-icon {
+		background-color: $faceforeColor;
+	}
+}
