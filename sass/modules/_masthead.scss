@@ -1,0 +1,29 @@
+.masthead {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(/img/bg.jpg);
+	background-size: cover;
+	box-shadow: inset 0 0 200px 200px rgba(0,0,0,0.7);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	color: #fff;
+
+
+	&:after {
+		position: absolute;
+		width: 0;
+		height: 0;
+		content: '';
+		border: 3.2rem solid transparent;
+		border-top-color: rgba(255,255,255,0.4);
+		border-top-width: 1.6rem;
+		border-bottom-width: 1.6rem;
+		bottom: 0.5rem;
+		margin-left: -3.2rem;
+		left: 50%;
+	}
+}

@@ -1,0 +1,42 @@
+$btnTextColor: #fff;
+$btnBgColor: #3B5998;
+$btnIconColor: #29447E;
+
+$facebookBtnColor: #3B5998;
+$facebookIconColor: #29447E;
+
+$googlePlusBtnColor: #DB4A37;
+
+.btn {
+	text-decoration: none;
+	color: $btnTextColor;
+	background-color: $btnBgColor;
+	font-size: 1.25rem;
+	line-height: 1em;
+	padding: 1rem 4.25rem 1rem 1rem;
+	display: inline-block;
+	position: relative;
+	margin: 1rem;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn__icon {
+	background-color: $btnIconColor;
+	height: 3.25rem;
+	width: 3.25rem;
+	line-height: 3.25rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.btn--googleplus {
+	background-color: $googlePlusBtnColor;
+
+	.btn__icon {
+		background-color: darken($googlePlusBtnColor, 10);
+	}
+}

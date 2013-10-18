@@ -1,0 +1,13 @@
+.speaker {
+	text-align: center;
+}
+
+.speaker__img {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	border-radius: 50%;
+}
+
+.speaker__name {
+	display: block;
+}

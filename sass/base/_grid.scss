@@ -1,0 +1,21 @@
+.grid {
+	width: 100%;
+	overflow: hidden;
+}
+
+.cell {
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin createGridCells($cellWidths: (10, 15, 20, 25, 33.3333, 50, 66.6666, 75, 100)) {
+	@each $w in $cellWidths {
+		.cell--w#{floor($w)} {
+			width: $w * 1%;
+		}
+	}
+}
+
+@include createGridCells();
