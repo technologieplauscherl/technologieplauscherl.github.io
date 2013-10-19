@@ -1,6 +1,5 @@
 .speaker {
 	text-align: center;
-	margin-bottom: 2.5rem;
 	display: table;
 	width: 100%;
 }
@@ -46,6 +45,7 @@
 
 	.speaker {
 		display: block;
+		margin-bottom: 2.5rem;
 	}
 
 	.speaker__img {
