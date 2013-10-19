@@ -188,6 +188,12 @@ you can use the generic selector below, but it's slower:
     background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
     padding-top: 1.5rem;
     background-repeat: repeat-x, repeat-x; }
+  @media (max-width: 850px) {
+    .masthead h1 {
+      font-size: 4rem; } }
+  @media (max-width: 550px) {
+    .masthead h1 {
+      font-size: 3rem; } }
 
 .centered {
   position: absolute;
@@ -233,7 +239,7 @@ body {
 .info {
   font-size: 2rem; }
 
-.btn {
+.link {
   text-decoration: none;
   color: white;
   background-color: #3b5998;
@@ -243,11 +249,11 @@ body {
   display: inline-block;
   position: relative;
   margin: 1rem; }
-  .btn:hover {
+  .link:hover {
     text-decoration: none;
     color: #e6e6e6; }
 
-.btn__icon {
+.link__icon {
   background-color: #29447e;
   height: 3.25rem;
   width: 3.25rem;
@@ -256,9 +262,9 @@ body {
   right: 0;
   top: 0; }
 
-.btn--googleplus {
+.link--googleplus {
   background-color: #db4a37; }
-  .btn--googleplus .btn__icon {
+  .link--googleplus .link__icon {
     background-color: #bd3422; }
 
 .speaker {

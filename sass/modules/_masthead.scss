@@ -45,4 +45,16 @@
 		padding-top: 1.5rem;
 		background-repeat: repeat-x, repeat-x;
 	}
+
+	@media(max-width: 850px) {
+		h1 {
+			font-size: 4rem;
+		}
+	}
+
+	@media(max-width: 550px) {
+		h1 {
+			font-size: 3rem;
+		}
+	}
 }

@@ -7,7 +7,7 @@ $facebookIconColor: #29447E;
 
 $googlePlusBtnColor: #DB4A37;
 
-.btn {
+.link {
 	text-decoration: none;
 	color: $btnTextColor;
 	background-color: $btnBgColor;
@@ -24,7 +24,7 @@ $googlePlusBtnColor: #DB4A37;
 	}
 }
 
-.btn__icon {
+.link__icon {
 	background-color: $btnIconColor;
 	height: 3.25rem;
 	width: 3.25rem;
@@ -34,10 +34,10 @@ $googlePlusBtnColor: #DB4A37;
 	top: 0;
 }
 
-.btn--googleplus {
+.link--googleplus {
 	background-color: $googlePlusBtnColor;
 
-	.btn__icon {
+	.link__icon {
 		background-color: darken($googlePlusBtnColor, 10);
 	}
 }
