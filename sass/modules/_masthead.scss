@@ -34,43 +34,22 @@
 		}
 	}
 
-
-	/*&:after {
-		position: absolute;
-		width: 0;
-		height: 0;
-		content: '';
-		border: 3.2rem solid transparent;
-		border-top-color: rgba(255,255,255,0.4);
-		border-top-width: 1.6rem;
-		border-bottom-width: 1.6rem;
-		bottom: 0.5rem;
-		margin-left: -3.2rem;
-		left: 50%;
-	}*/
-
 	&:before {
 		content: '';
 		position: absolute;
 		width: 100%;
 		bottom: 0;
 		left: 0;
+		background-image: -webkit-linear-gradient(135deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
+						  -webkit-linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
+		background-image: -ms-linear-gradient(135deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
+						  -ms-linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
+		background-image: -o-linear-gradient(135deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
+						  -o-linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
 		background-image: linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
 						  linear-gradient(-45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
 		background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
 		padding-top: 1.5rem;
 		background-repeat: repeat-x, repeat-x;
 	}
-
-	/*@media(max-width: 850px) {
-		h1 {
-			font-size: 4rem;
-		}
-	}
-
-	@media(max-width: 550px) {
-		h1 {
-			font-size: 3rem;
-		}
-	}*/
 }
