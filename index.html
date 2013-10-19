@@ -83,6 +83,11 @@
 		<h2 class="map-hl">Location</h2>
 		<div class="map" id="map-canvas">
 		</div>
+		<address class="adr">
+			<span class="n">Hackerspace Linz - <span class="nickname">DevLoL</span></span>
+			<span class="street-address">Hofgasse 19</span>
+			<span class="postal-code">4020</span> <span class="locality">Linz</span>
+		</address>
 	</div>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript">
@@ -95,11 +100,25 @@
 				zoom: 18,
 				scrollwheel: false,
 				draggable: false,
+				zoomable: false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			var map = new google.maps.Map(document.getElementById("map-canvas"),
 				mapOptions);
-			map.panBy(0,-90);
+
+			var mql1 = window.matchMedia('(min-width: 40em');
+			mql1.addListener(function(m) {
+				if(m.matches) {
+					map.panBy(200,0);					
+				}
+			});
+
+			var mql3 = window.matchMedia('(max-width: 40em');
+			mql3.addListener(function(m) {
+				if(m.matches) {
+					map.panBy(0,0);					
+				}
+			});
 
 			var marker = new google.maps.Marker({
 				position: locations.hackerSpace,

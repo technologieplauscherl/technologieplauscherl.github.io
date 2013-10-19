@@ -277,7 +277,6 @@ body {
 
 .speaker {
   text-align: center;
-  margin-bottom: 2.5rem;
   display: table;
   width: 100%; }
 
@@ -310,7 +309,8 @@ body {
 
 @media (min-width: 500px) {
   .speaker {
-    display: block; }
+    display: block;
+    margin-bottom: 2.5rem; }
 
   .speaker__img {
     width: auto;
@@ -340,8 +340,34 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
+.location,
 .map-hl {
   color: #fff;
   background-color: #379f7a; }
+
+.adr {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.25rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-style: normal;
+  color: #fff; }
+
+.n, .street-address {
+  display: block; }
+
+@media (min-width: 40em) {
+  .adr {
+    width: 20rem;
+    height: 28.125rem; } }
+@media (min-width: 60em) {
+  .adr {
+    width: 30rem; } }
