@@ -8,9 +8,18 @@ h1 {
 
 body {
 	font-family: 'open-sans', 'Helvetica', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
+
+
+	@media(min-width: 700px) {
+		font-size: 16px;
+	}
 }
 
-.info {
-	font-size: 2rem;
+.bottom {
+	font-size: 1rem;
+
+	@media(min-width: 700px) {
+		font-size: 2rem;
+	}
 }

@@ -11,12 +11,18 @@ $googlePlusBtnColor: #DB4A37;
 	text-decoration: none;
 	color: $btnTextColor;
 	background-color: $btnBgColor;
-	font-size: 1.25rem;
 	line-height: 1em;
 	padding: 1rem 4.25rem 1rem 1rem;
 	display: inline-block;
 	position: relative;
-	margin: 1rem;
+	margin: 0.5rem;
+
+	font-size: 0.7rem;
+
+	@media(min-width: 700px) {
+		font-size: 1.25rem;
+		margin: 1rem;
+	}
 
 	&:hover {
 		text-decoration: none;
@@ -26,9 +32,17 @@ $googlePlusBtnColor: #DB4A37;
 
 .link__icon {
 	background-color: $btnIconColor;
-	height: 3.25rem;
-	width: 3.25rem;
-	line-height: 3.25rem;
+	
+	height: 2.7rem;
+	width: 2.7rem;
+	line-height: 2.7rem;
+
+	@media(min-width: 700px) {
+		height: 3.25rem;
+		width: 3.25rem;
+		line-height: 3.25rem;	
+	}
+
 	position: absolute;
 	right: 0;
 	top: 0;
