@@ -162,6 +162,7 @@ you can use the generic selector below, but it's slower:
   position: relative;
   width: 100%;
   height: 100%;
+  min-height: 23rem;
   background-image: url(/img/bg.jpg);
   background-size: cover;
   box-shadow: inset 0 0 200px 200px rgba(0, 0, 0, 0.7);

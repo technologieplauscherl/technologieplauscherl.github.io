@@ -109,16 +109,30 @@
 			var mql1 = window.matchMedia('(min-width: 40em');
 			mql1.addListener(function(m) {
 				if(m.matches) {
-					map.panBy(200,0);					
+					map.panBy(200,0);
+					map.setCenter(locations.hackerSpace);
+				}
+			});
+
+			var mql1 = window.matchMedia('(min-width: 60em');
+			mql1.addListener(function(m) {
+				if(m.matches) {
+					map.panBy(200,0);
+					map.setCenter(locations.hackerSpace);
 				}
 			});
 
 			var mql3 = window.matchMedia('(max-width: 40em');
 			mql3.addListener(function(m) {
 				if(m.matches) {
-					map.panBy(0,0);					
+					map.panBy(0,0);
+					map.setCenter(locations.hackerSpace);
 				}
 			});
+
+			if(window.innerWidth >= 40*16) {
+				map.panBy(200,0);
+			}
 
 			var marker = new google.maps.Marker({
 				position: locations.hackerSpace,
