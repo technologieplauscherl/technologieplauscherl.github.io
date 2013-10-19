@@ -5,7 +5,7 @@
 	background-image: url(/img/bg.jpg);
 	background-size: cover;
 	box-shadow: inset 0 0 200px 200px rgba(0,0,0,0.7);
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -13,7 +13,7 @@
 	color: #fff;
 
 
-	&:after {
+	/*&:after {
 		position: absolute;
 		width: 0;
 		height: 0;
@@ -25,5 +25,24 @@
 		bottom: 0.5rem;
 		margin-left: -3.2rem;
 		left: 50%;
+	}*/
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background-image: -webkit-linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
+					  -webkit-linear-gradient(-45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
+		background-image: -moz-linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
+						  -moz-linear-gradient(-45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
+		background-image: -o-linear-gradient(45deg, $bg  0%, $bg  25%, transparent  25%, transparent  100%),
+						  -o-linear-gradient(-45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
+		background-image: linear-gradient(45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%),
+						  linear-gradient(-45deg,  $bg 0%,  $bg 25%,  transparent 25%,  transparent 100%);
+		background-size: 1.25rem 1.25rem, 1.25rem 1.25rem;
+		padding-top: 1.25rem;
+		background-repeat: repeat-x, repeat-x;
 	}
 }

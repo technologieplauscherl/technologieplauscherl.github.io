@@ -20,6 +20,7 @@ $googlePlusBtnColor: #DB4A37;
 
 	&:hover {
 		text-decoration: none;
+		color: darken($btnTextColor, 10);
 	}
 }
 

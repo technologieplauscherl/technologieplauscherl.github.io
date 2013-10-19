@@ -3,7 +3,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ecf0f1; }
+  background-color: #f2f2f2; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, img {
   margin: 0;
@@ -17,7 +17,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-size: 3rem;
-  color: #e67e22; }
+  color: #379f7a;
+  margin: 0;
+  padding: 1.25rem; }
 
 h3 {
   font-size: 2.5rem; }
@@ -28,8 +30,11 @@ h4 {
 h5 {
   font-size: 1.5rem; }
 
+p, li {
+  line-height: 1.5em; }
+
 a {
-  color: #e67e22;
+  color: #379f7a;
   font-weight: 600;
   text-decoration: none;
   -webkit-transition: color 0.3s;
@@ -38,7 +43,7 @@ a {
   -o-transition: color 0.3s;
   transition: color 0.3s; }
   a:hover {
-    color: #eb9950; }
+    color: #49c096; }
 
 /**
  * @description
@@ -117,7 +122,8 @@ you can use the generic selector below, but it's slower:
 
 .grid {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 1.25rem; }
 
 .cell {
   float: left;
@@ -125,29 +131,11 @@ you can use the generic selector below, but it's slower:
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.cell--w10 {
-  width: 10%; }
-
-.cell--w15 {
-  width: 15%; }
-
-.cell--w20 {
-  width: 20%; }
-
 .cell--w25 {
   width: 25%; }
 
-.cell--w33 {
-  width: 33.3333%; }
-
 .cell--w50 {
   width: 50%; }
-
-.cell--w66 {
-  width: 66.6666%; }
-
-.cell--w75 {
-  width: 75%; }
 
 .cell--w100 {
   width: 100%; }
@@ -155,7 +143,7 @@ you can use the generic selector below, but it's slower:
 .wrapper {
   margin: 0 auto;
   position: relative;
-  max-width: 60rem;
+  max-width: 70rem;
   padding: 1.25rem; }
 
 .masthead {
@@ -165,24 +153,38 @@ you can use the generic selector below, but it's slower:
   background-image: url(/img/bg.jpg);
   background-size: cover;
   box-shadow: inset 0 0 200px 200px rgba(0, 0, 0, 0.7);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
-  color: #fff; }
-  .masthead:after {
-    position: absolute;
-    width: 0;
-    height: 0;
+  color: #fff;
+  /*&:after {
+  	position: absolute;
+  	width: 0;
+  	height: 0;
+  	content: '';
+  	border: 3.2rem solid transparent;
+  	border-top-color: rgba(255,255,255,0.4);
+  	border-top-width: 1.6rem;
+  	border-bottom-width: 1.6rem;
+  	bottom: 0.5rem;
+  	margin-left: -3.2rem;
+  	left: 50%;
+  }*/ }
+  .masthead:before {
     content: '';
-    border: 3.2rem solid transparent;
-    border-top-color: rgba(255, 255, 255, 0.4);
-    border-top-width: 1.6rem;
-    border-bottom-width: 1.6rem;
-    bottom: 0.5rem;
-    margin-left: -3.2rem;
-    left: 50%; }
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), -webkit-linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
+    background-image: -moz-linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), -moz-linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
+    background-image: -o-linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), -o-linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
+    background-image: linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
+    background-size: 1.25rem 1.25rem, 1.25rem 1.25rem;
+    padding-top: 1.25rem;
+    background-repeat: repeat-x, repeat-x; }
 
 .centered {
   position: absolute;
@@ -239,7 +241,8 @@ body {
   position: relative;
   margin: 1rem; }
   .btn:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #e6e6e6; }
 
 .btn__icon {
   background-color: #29447e;
@@ -274,3 +277,29 @@ body {
 .speaker__name {
   display: block;
   font-weight: 600; }
+
+.map {
+  width: 100%;
+  height: 28.125rem; }
+
+.map-area {
+  position: relative;
+  background-image: -webkit-linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), -webkit-linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
+  background-image: -moz-linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), -moz-linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
+  background-image: -o-linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), -o-linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
+  background-image: linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
+  background-size: 1.25rem 1.25rem, 1.25rem 1.25rem;
+  padding-top: 1.25rem;
+  background-repeat: repeat-x, repeat-x; }
+
+.map-overlay {
+  height: 28.125rem;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.map-hl {
+  color: #fff;
+  background-color: #379f7a; }

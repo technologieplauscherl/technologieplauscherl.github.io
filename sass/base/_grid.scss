@@ -1,6 +1,7 @@
 .grid {
 	width: 100%;
 	overflow: hidden;
+	margin-bottom: 1.25rem;
 }
 
 .cell {
@@ -18,4 +19,4 @@
 	}
 }
 
-@include createGridCells();
+@include createGridCells((25, 50, 100));
