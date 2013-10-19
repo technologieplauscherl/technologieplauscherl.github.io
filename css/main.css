@@ -140,6 +140,9 @@ you can use the generic selector below, but it's slower:
 .cell--w100 {
   width: 100%; }
 
+@media (max-width: 880px) {
+  .cell--w25 {
+    width: 50%; } }
 .wrapper {
   margin: 0 auto;
   position: relative;
@@ -182,8 +185,8 @@ you can use the generic selector below, but it's slower:
     background-image: -moz-linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), -moz-linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
     background-image: -o-linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), -o-linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
     background-image: linear-gradient(45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%), linear-gradient(-45deg, #f2f2f2 0%, #f2f2f2 25%, transparent 25%, transparent 100%);
-    background-size: 1.25rem 1.25rem, 1.25rem 1.25rem;
-    padding-top: 1.25rem;
+    background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
+    padding-top: 1.5rem;
     background-repeat: repeat-x, repeat-x; }
 
 .centered {
@@ -259,7 +262,8 @@ body {
     background-color: #bd3422; }
 
 .speaker {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2.5rem; }
 
 .speaker__img {
   -webkit-filter: grayscale(1);
@@ -288,8 +292,8 @@ body {
   background-image: -moz-linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), -moz-linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
   background-image: -o-linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), -o-linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
   background-image: linear-gradient(45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%), linear-gradient(-45deg, #379f7a 0%, #379f7a 25%, transparent 25%, transparent 100%);
-  background-size: 1.25rem 1.25rem, 1.25rem 1.25rem;
-  padding-top: 1.25rem;
+  background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
+  padding-top: 1.5rem;
   background-repeat: repeat-x, repeat-x; }
 
 .map-overlay {
