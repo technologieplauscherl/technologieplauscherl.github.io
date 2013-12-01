@@ -1,11 +1,3 @@
-h1 {
-	font-family: 'bebas-neue', sans-serif;
-	font-weight: normal;
-	text-transform: uppercase;
-	margin: 0;
-	font-size: 6rem;
-}
-
 body {
 	font-family: 'open-sans', 'Helvetica', sans-serif;
 	font-size: 14px;
@@ -13,13 +5,5 @@ body {
 
 	@media(min-width: 700px) {
 		font-size: 16px;
-	}
-}
-
-.bottom {
-	font-size: 1rem;
-
-	@media(min-width: 700px) {
-		font-size: 2rem;
 	}
 }

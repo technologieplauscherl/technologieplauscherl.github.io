@@ -16,9 +16,14 @@
 		</div>
 
 		<div class="bottom">
-			<p class="info">Nächstes Treffen:<br/>
-                <span itemprop="startDate" content="2013-10-22T19:00"><i class="icon-calendar"></i> 22. Oktober 2013 <i class="icon-clock"></i> 19:00 Uhr</span>
+			<p class="info">
+				Nächstes Treffen in Planung!
             </p>
+
+            <a href="http://www.doodle.com/hhu8st3e3z5ecrx8#table" class="link link--big link--googleplus">
+				Terminsuche auf Doodle
+				<i class="icon-calendar link__icon"></i>
+			</a>
 
 			<a href="https://www.facebook.com/groups/technologie.plauscherl/" class="link link--big link--facebook">
 				Unsere Facebookgruppe
@@ -27,45 +32,7 @@
 		</div>
 	</div>
 	<div class="wrapper">
-		<h2>Sessions</h2>
-		<section class="grid">
-			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-				<div class="speaker">
-					<img src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/c49.0.602.602/s160x160/545731_3969185987727_2021666423_n.jpg" alt="" class="speaker__img">
-					<div class="speaker__info">
-						<span class="speaker__name" itemprop="performer">Manuel Berger</span>
-						<div class="speaker__session" itemprop="name">Telefonbot mit twilio</div>
-					</div>
-				</div>
-			</article>
-			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-				<div class="speaker">
-					<img src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c0.30.180.180/s160x160/7728_131170337117_2334043_a.jpg" alt="" class="speaker__img">
-					<div class="speaker__info">
-						<span class="speaker__name" itemprop="performer">Thomas Einwaller</span>
-						<div class="speaker__session" itemprop="name">vagrant und docker</div>
-					</div>
-				</div>
-			</article>
-			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-				<div class="speaker">
-					<img src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/c44.72.449.449/s160x160/399624_487251704628114_991645005_n.jpg" alt="" class="speaker__img">
-					<div class="speaker__info">
-						<span class="speaker__name" itemprop="performer">Stefan Baumgartner</span>
-						<div class="speaker__session" itemprop="name">Frontend-Tooling: Emmet, Sass</div>
-					</div>
-				</div>
-			</article>
-			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-				<div class="speaker">
-					<img src="http://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.0.180.180/s160x160/1385624_174423526082097_28285060_a.jpg" alt="" class="speaker__img">
-					<div class="speaker__info">
-						<span class="speaker__name" itemprop="performer">Thomas Koll</span>
-						<div class="speaker__session" itemprop="name">DNA Game</div>
-					</div>
-				</div>
-			</article>
-		</section>
+		<h2>Sessions &amp; Location</h2>
 		<aside itemprop="description">
 			<p>Technologie-Plauscherl Linz: Mit Freunden zamkommen und über Technologie, Coding und Projekte reden.</p>
 			<ol>
@@ -76,71 +43,21 @@
 			</ol>
 			<p>Deinen Vortrag am besten auf unserer <a href="https://www.facebook.com/groups/technologie.plauscherl/">Facebook Pinnwand</a> vorab bekanntgeben. Bei den "trial-runs" hat sich gezeigt, dass die Zeit an einem Abend für ca. vier bis fünf Vorträge reicht.</p>
 		</aside>
+
+		<p>
+			<strong>Wir suchen aktuell nach Vorträgen und einem Veranstaltungsort!</strong> 
+		</p>
+
+		<h2>Vorherige Plauscherl</h2>
+
+		<ul>
+			<li><a href="tp14.html">Technologieplauscherl XIV - 22. Oktober 2013</a></li>
+		</ul>
 	</div>
-	<div class="map-area" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-		<h2 class="map-hl">Location</h2>
-		<div class="map" id="map-canvas">
-		</div>
-		<address class="adr">
-			<span class="n" itemprop="name"><a href="http://devlol.org/wiki/HTTP" itemprop="url">Hackerspace Linz - <span class="nickname">DevLoL</span></a></span>
-			<span class="street-address" itemprop="streetAddress">Hofgasse 19</span>
-			<span class="postal-code" itemprop="postalCode">4020</span> <span class="locality" itemprop="addressLocality">Linz</span>
-		</address>
-	</div>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-	<script type="text/javascript">
-		var locations = {
-			hackerSpace: new google.maps.LatLng(48.30583, 14.28385)
-		}
-		function initialize() {
-			var mapOptions = {
-				center: locations.hackerSpace,
-				zoom: 18,
-				scrollwheel: false,
-				draggable: false,
-				zoomable: false,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-			var map = new google.maps.Map(document.getElementById("map-canvas"),
-				mapOptions);
-
-			var mql1 = window.matchMedia('(min-width: 40em');
-			mql1.addListener(function(m) {
-				if(m.matches) {
-					map.panBy(200,0);
-					map.setCenter(locations.hackerSpace);
-				}
-			});
-
-			var mql1 = window.matchMedia('(min-width: 60em');
-			mql1.addListener(function(m) {
-				if(m.matches) {
-					map.panBy(200,0);
-					map.setCenter(locations.hackerSpace);
-				}
-			});
-
-			var mql3 = window.matchMedia('(max-width: 40em');
-			mql3.addListener(function(m) {
-				if(m.matches) {
-					map.panBy(0,0);
-					map.setCenter(locations.hackerSpace);
-				}
-			});
-
-			if(window.innerWidth >= 40*16) {
-				map.panBy(200,0);
-			}
-
-			var marker = new google.maps.Marker({
-				position: locations.hackerSpace,
-				title: "DevLOL - Hackerspace Linz"
-			});
-
-			// To add the marker to the map, call setMap();
-			marker.setMap(map);
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	<footer>
+		<p class="wrapper">
+			2013 - Technologieplauscherl Linz
+		</p>
+	</footer>
 </body>
 </html>

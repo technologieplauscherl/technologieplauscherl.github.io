@@ -13,27 +13,6 @@
 	text-align: center;
 	color: #fff;
 
-	h1 {
-		font-size: 2.4rem;
-	}
-
-	@media(min-width: 500px) {
-		h1 {
-			font-size: 3rem;
-		}
-	}
-
-	@media(min-width: 700px) {
-		h1 {
-			font-size: 4rem;
-		}
-	}
-
-	@media(min-width: 800px) {
-		h1 {
-			font-size: 5rem;
-		}
-	}
 
 	&:before {
 		content: '';

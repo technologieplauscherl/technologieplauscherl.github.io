@@ -18,6 +18,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'bebas-neue';
   text-align: center; }
 
+h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 3rem; } }
+@media (min-width: 700px) {
+  h1 {
+    font-size: 4rem; } }
+@media (min-width: 800px) {
+  h1 {
+    font-size: 5rem; } }
 h2 {
   font-size: 3rem;
   color: #379f7a;
@@ -175,17 +189,6 @@ you can use the generic selector below, but it's slower:
   background-position: center center;
   text-align: center;
   color: #fff; }
-  .masthead h1 {
-    font-size: 2.4rem; }
-  @media (min-width: 500px) {
-    .masthead h1 {
-      font-size: 3rem; } }
-  @media (min-width: 700px) {
-    .masthead h1 {
-      font-size: 4rem; } }
-  @media (min-width: 800px) {
-    .masthead h1 {
-      font-size: 5rem; } }
   .masthead:before {
     content: '';
     position: absolute;
@@ -222,25 +225,12 @@ you can use the generic selector below, but it's slower:
     .bottom {
       bottom: 5rem; } }
 
-h1 {
-  font-family: 'bebas-neue', sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: 0;
-  font-size: 6rem; }
-
 body {
   font-family: 'open-sans', 'Helvetica', sans-serif;
   font-size: 14px; }
   @media (min-width: 700px) {
     body {
       font-size: 16px; } }
-
-.bottom {
-  font-size: 1rem; }
-  @media (min-width: 700px) {
-    .bottom {
-      font-size: 2rem; } }
 
 .link {
   text-decoration: none;
@@ -375,3 +365,14 @@ body {
 @media (min-width: 60em) {
   .adr {
     width: 30rem; } }
+.info {
+  text-align: center;
+  font-size: 1rem; }
+  @media (min-width: 700px) {
+    .info {
+      font-size: 2rem; } }
+
+footer {
+  font-size: 0.75rem;
+  background-color: #333;
+  color: #fff; }

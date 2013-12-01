@@ -1,0 +1,8 @@
+.info {
+	text-align: center;
+	font-size: 1rem;
+
+	@media(min-width: 700px) {
+		font-size: 2rem;
+	}
+}
