@@ -365,6 +365,10 @@ body {
 @media (min-width: 60em) {
   .adr {
     width: 30rem; } }
+address {
+  font-style: normal;
+  margin-bottom: 0.5rem; }
+
 .info {
   text-align: center;
   font-size: 1rem; }
