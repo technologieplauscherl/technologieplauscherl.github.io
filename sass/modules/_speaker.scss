@@ -11,6 +11,8 @@
 
 	width: 100px;
 	height: 100px;
+	min-width: 160px;
+	max-width: 160px;
 	display: table-cell;
 	vertical-align: middle;
 	margin-right: 1.5rem;
@@ -52,7 +54,7 @@
 		width: auto;
 		height: auto;
 		display: inline-block;
-		margin-right: 0;	
+		margin-right: 0;
 	}
 
 	.speaker__info {
