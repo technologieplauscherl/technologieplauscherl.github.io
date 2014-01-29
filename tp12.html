@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Technologieplauscherl - Mit Freunden zamkommen und über Technologie, Coding und Projekte reden</title>
+
+	<meta name="viewport" content="width=device-width">
+	<script src="//use.edgefonts.net/bebas-neue;open-sans:n4,n6.js"></script>
+	<!-- lobster -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body itemscope itemtype="http://schema.org/Event">
+	<div class="wrapper">
+		<h1 itemprop="name">Technologieplauscherl XII</h1>
+		<p class="info">
+			 <span itemprop="startDate" content="2013-06-19T18:30"><i class="icon-calendar"></i>19. Juni 2013 <i class="icon-clock"></i> 18:30 Uhr</span>
+		</p>
+
+		<h2>Sessions</h2>
+		<section class="grid">
+			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+				<div class="speaker">
+					<img src="//lh5.googleusercontent.com/-lTDEEVEx_Og/AAAAAAAAAAI/AAAAAAAAjbw/rEagVv8yZOo/s120-c/photo.jpg" alt="" class="speaker__img">
+					<div class="speaker__info">
+						<span class="speaker__name" itemprop="performer">Joachim Sauer</span>
+						<div class="speaker__session" itemprop="name">There's not just Spring?</div>
+					</div>
+				</div>
+			</article>
+			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+				<div class="speaker">
+					<img src="//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c0.1.639.639/s200x200/946736_10151909979469309_28602254_n.jpg" alt="" class="speaker__img">
+					<div class="speaker__info">
+						<span class="speaker__name" itemprop="performer">Dominik Hurnaus</span>
+						<div class="speaker__session" itemprop="name">Introduction to Google AppEngine</div>
+					</div>
+				</div>
+			</article>
+			<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+				<div class="speaker">
+					<img src="//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/t1/c203.44.554.554/s200x200/246894_676284842387342_1783817547_n.jpg" alt="" class="speaker__img">
+					<div class="speaker__info">
+						<span class="speaker__name" itemprop="performer">Hannes Sachsenhofer</span>
+						<div class="speaker__session" itemprop="name">Getting started with SignalR</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<aside itemprop="description">
+			<p>Technologie-Plauscherl Linz: Mit Freunden zamkommen und über Technologie, Coding und Projekte reden.</p>
+			<ol>
+				<li>Jeder Vortrag dauert 15-30 Minuten</li>
+				<li>Jeder darf einen Vortrag halten</li>
+				<li>Das Thema ist grob "Technology &amp; Coding &amp; Projekte"</li>
+				<li>Das Klima ist relaxt, es gibt genügend Pausen zum Plaudern</li>
+			</ol>
+			<p>Deinen Vortrag am besten auf unserer <a href="https://www.facebook.com/groups/technologie.plauscherl/">Facebook Pinnwand</a> vorab bekanntgeben. Bei den "trial-runs" hat sich gezeigt, dass die Zeit an einem Abend für ca. vier bis fünf Vorträge reicht.</p>
+		</aside>
+	</div>
+	<div class="map-area" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+		<h2 class="map-hl">Location</h2>
+		<div class="map" id="map-canvas">
+		</div>
+		<address class="adr">
+			<span class="n" itemprop="name">Akostart</a></span>
+			<span class="street-address" itemprop="streetAddress">Humboldtstraße 40</span>
+			<span class="postal-code" itemprop="postalCode">4020</span> <span class="locality" itemprop="addressLocality">Linz</span>
+		</address>
+	</div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript">
+		var locations = {
+			akostart: new google.maps.LatLng(48.29661, 14.29581)
+		}
+		function initialize() {
+			var mapOptions = {
+				center: locations.akostart,
+				zoom: 18,
+				scrollwheel: false,
+				draggable: false,
+				zoomable: false,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map-canvas"),
+				mapOptions);
+
+			var mql1 = window.matchMedia('(min-width: 40em');
+			mql1.addListener(function(m) {
+				if(m.matches) {
+					map.panBy(200,0);
+					map.setCenter(locations.akostart);
+				}
+			});
+
+			var mql1 = window.matchMedia('(min-width: 60em');
+			mql1.addListener(function(m) {
+				if(m.matches) {
+					map.panBy(200,0);
+					map.setCenter(locations.akostart);
+				}
+			});
+
+			var mql3 = window.matchMedia('(max-width: 40em');
+			mql3.addListener(function(m) {
+				if(m.matches) {
+					map.panBy(0,0);
+					map.setCenter(locations.akostart);
+				}
+			});
+
+			if(window.innerWidth >= 40*16) {
+				map.panBy(200,0);
+			}
+
+			var marker = new google.maps.Marker({
+				position: locations.akostart,
+				title: "Akostart Linz"
+			});
+
+			// To add the marker to the map, call setMap();
+			marker.setMap(map);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+	<footer>
+		<p class="wrapper">
+			2013 - Technologieplauscherl Linz - <a href="/index.html">Home</a>
+		</p>
+	</footer>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-30512766-3', 'technologieplauscherl.github.io');
+		ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
