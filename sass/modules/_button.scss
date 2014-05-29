@@ -7,6 +7,8 @@ $facebookIconColor: #29447E;
 
 $googlePlusBtnColor: #DB4A37;
 
+$meetupBtnColor: #d62f30;
+
 .link {
 	text-decoration: none;
 	color: $btnTextColor;
@@ -46,6 +48,14 @@ $googlePlusBtnColor: #DB4A37;
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+.link--meetup {
+	background-color: $meetupBtnColor;
+
+	.link__icon {
+		background-color: darken($meetupBtnColor, 10);
+	}
 }
 
 .link--googleplus {
