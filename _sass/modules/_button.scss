@@ -1,0 +1,67 @@
+$btnTextColor: #fff;
+$btnBgColor: #3B5998;
+$btnIconColor: #29447E;
+
+$facebookBtnColor: #3B5998;
+$facebookIconColor: #29447E;
+
+$googlePlusBtnColor: #DB4A37;
+
+$meetupBtnColor: #d62f30;
+
+.link {
+	text-decoration: none;
+	color: $btnTextColor;
+	background-color: $btnBgColor;
+	line-height: 1em;
+	padding: 1rem 4.25rem 1rem 1rem;
+	display: inline-block;
+	position: relative;
+	margin: 0.5rem;
+
+	font-size: 0.7rem;
+
+	@media(min-width: 700px) {
+		font-size: 1.25rem;
+		margin: 1rem;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: darken($btnTextColor, 10);
+	}
+}
+
+.link__icon {
+	background-color: $btnIconColor;
+	
+	height: 2.7rem;
+	width: 2.7rem;
+	line-height: 2.7rem;
+
+	@media(min-width: 700px) {
+		height: 3.25rem;
+		width: 3.25rem;
+		line-height: 3.25rem;	
+	}
+
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.link--meetup {
+	background-color: $meetupBtnColor;
+
+	.link__icon {
+		background-color: darken($meetupBtnColor, 10);
+	}
+}
+
+.link--googleplus {
+	background-color: $googlePlusBtnColor;
+
+	.link__icon {
+		background-color: darken($googlePlusBtnColor, 10);
+	}
+}

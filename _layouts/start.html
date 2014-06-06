@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% include masthead.html %}
+<div class="wrapper">
+	<h2>Sessions</h2>
+
+	<section class="grid">
+		{% unless page.end %}
+		
+		{% endunless %}
+		{% unless page.full %}
+		<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
+			<div class="speaker">
+				<img src="img/speaker_male_no_img.jpg" alt="" class="speaker__img">
+				<div class="speaker__info">
+					<span class="speaker__name" itemprop="performer">Du?</span>
+					<div class="speaker__session" itemprop="name">
+						Dein Vortragsthema?<br/>
+						Melde dich auf unserer <a href="https://www.facebook.com/groups/technologie.plauscherl/">Facebook-Page</a>, <a href="mailto:organizers@technologieplauscherl.at">per E-Mail</a><br>
+						oder via <a href="https://github.com/technologieplauscherl/technologieplauscherl.github.io/edit/master/index.html">GitHub Pull Request</a>
+					</div>
+				</div>
+			</div>
+		</article>
+		{% endunless %}
+	</section>
+
+	{% include description.html %}
+
+	<h2>Vorherige Plauscherl</h2>
+
+	<ul>
+	{% for post in site.posts %}
+		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location}}</li>
+	{% endfor %}
+	</ul>
+</div>

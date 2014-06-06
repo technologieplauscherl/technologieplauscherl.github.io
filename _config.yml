@@ -1,0 +1,10 @@
+# Site settings
+title: "Technologieplauscherl - Mit Freunden zamkommen und über Technologie, Coding und Projekte reden"
+email: organizers@technologieplauscherl.at
+description: "Linzer Technologie Meetup"
+baseurl: ""
+url: "http://technologieplauscherl.at"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
