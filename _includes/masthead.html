@@ -1,0 +1,86 @@
+<div class="masthead">
+	<div class="top">
+		<h1 itemprop="name">Technologieplauscherl</h1>
+	</div>
+
+	<div class="bottom">
+		{% if page.end %}
+		<p class="info">
+			Danke für die Vorträge an 
+		</p>
+		{% for post in site.posts %}
+			{% if post.name == page.current %}
+			<ul class="no-bullets">		
+			{% if post.speakerOne %}
+			<li>{{post.speakerOne.name}}</li>
+			{% endif %}
+			{% if post.speakerTwo %}
+			<li>{{post.speakerTwo.name}}</li>
+			{% endif %}
+			{% if post.speakerThree %}
+			<li>{{post.speakerThree.name}}</li>
+			{% endif %}
+			{% if post.speakerFour %}
+			<li>{{post.speakerFour.name}}</li>
+			{% endif %}
+			</ul>
+			{% endif %}
+		{% endfor %}
+		{% endif %}
+		<p class="info">
+			{% unless page.dateset %}
+			Nächstes Treffen:<br/>
+			Ist in Planung
+			{% endunless %}
+
+			{% if page.doodle %}
+			<a href="{{page.doodle}}">Terminfindung über Doodle</a>
+			{% endif %}
+
+			{% unless page.end %}
+			{% for post in site.posts %}
+				{% if post.name == page.current %}
+					<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}"><i class="icon-calendar"></i> {{post.datestring}} <i class="icon-clock"></i> {{post.timestring}} Uhr</span>
+				{% endif %}
+			{% endfor %}
+			{% endunless %}
+		</p>
+		
+		{% if page.end %}
+		<a href="https://www.facebook.com/groups/technologie.plauscherl/" class="link link--big link--facebook">
+			Planung auf Facebook
+			<i class="icon-facebook link__icon"></i>
+		</a>
+
+		<a href="http://www.meetup.com/Technologieplauscherl-Linz/" class="link link--big link--meetup">
+			Wir sind auf Meetup!
+			<i class="icon-meetup link__icon"></i>
+		</a>
+		{% endif %}
+
+		{% unless page.end %}
+		{% if page.event %}
+		{% if page.event.facebook %}
+		<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
+			Termin auf Facebook
+			<i class="icon-facebook link__icon"></i>
+		</a>
+		{% endif %}
+
+		{% if page.event.google %}
+		<a href="{{page.event.google}}" class="link link--big link--googleplus" target="_blank">
+			Google Calender
+			<i class="icon-google link__icon"></i>
+		</a>
+		{% endif %}
+
+		{% if page.event.meetup %}
+		<a href="http://www.meetup.com/Technologieplauscherl-Linz/events/{{page.event.meetu}}" class="link link--big link--meetup">
+			Termin aufMeetup!
+			<i class="icon-meetup link__icon"></i>
+		</a>
+		{% endif %}
+		{% endif %}
+		{% endunless %}
+	</div>
+</div>

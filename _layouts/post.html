@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="wrapper">
+	<h1 itemprop="name">{{page.title}}</h1>
+	<p class="info">
+		<span itemprop="startDate" content="{{page.date}}T{{page.timestring}}"><i class="icon-calendar"></i> {{page.datestring}} <i class="icon-clock"></i> {{page.timestring}} Uhr</span>
+	</p>
+
+	<section class="grid">
+		<h2>Sessions</h2>
+
+		{% if page.speakerOne %}
+			{% include speaker.html speaker=page.speakerOne %}
+		{% endif %}
+		{% if page.speakerTwo %}
+			{% include speaker.html speaker=page.speakerTwo %}
+		{% endif %}
+		{% if page.speakerThree %}
+			{% include speaker.html speaker=page.speakerThree %}
+		{% endif %}
+		{% if page.speakerFour %}
+			{% include speaker.html speaker=page.speakerFour %}
+		{% endif %}
+	</section>
+
+	{{content}}
+	{% include description.html %}
+
+	{% if page.location %}
+	{% include location.html location=page.location %}
+	{% endif %}
+</div>
