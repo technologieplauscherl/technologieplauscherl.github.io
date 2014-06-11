@@ -1,0 +1,11 @@
+<h2>Location</h2>
+
+<address>
+	<!--<span class="n" itemprop="name">TBD</span>-->
+	<span class="n" itemprop="name">{{include.location.name}}</span>
+	<span class="street-address" itemprop="streetAddress">{{include.location.address}}</span>
+	<span class="postal-code" itemprop="postalCode">{{include.location.zip}}</span> <span class="locality" itemprop="addressLocality">{{include.location.city}}</span>
+</address>
+
+<iframe height='500' src='{{include.location.map}}'></iframe>
+Map &copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors

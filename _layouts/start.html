@@ -9,7 +9,25 @@ layout: default
 	<section class="grid">
 		{% unless page.end %}
 		
+		{% for post in site.posts %}
+			{% if post.name == page.current %}
+			{% if post.speakerOne %}
+				{% include speaker.html speaker=post.speakerOne %}
+			{% endif %}
+			{% if post.speakerTwo %}
+				{% include speaker.html speaker=post.speakerTwo %}
+			{% endif %}
+			{% if post.speakerThree %}
+				{% include speaker.html speaker=post.speakerThree %}
+			{% endif %}
+			{% if post.speakerFour %}
+				{% include speaker.html speaker=post.speakerFour %}
+			{% endif %}
+			{% endif %}
+		{% endfor %}
+
 		{% endunless %}
+		
 		{% unless page.full %}
 		<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 			<div class="speaker">
@@ -29,11 +47,23 @@ layout: default
 
 	{% include description.html %}
 
+	{% unless page.end %}
+		
+	{% for post in site.posts %}
+		{% if post.name == page.current %}
+			{% if post.location %}
+			{% include location.html location=post.location %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+
+	{% endunless %}
+
 	<h2>Vorherige Plauscherl</h2>
 
 	<ul>
 	{% for post in site.posts %}
-		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location}}</li>
+		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location.name}}</li>
 	{% endfor %}
 	</ul>
 </div>

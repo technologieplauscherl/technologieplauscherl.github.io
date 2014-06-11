@@ -8,14 +8,27 @@
 		<p class="info">
 			Danke für die Vorträge an 
 		</p>
-		<ul class="no-bullets">
-			<li>Thomas Scheinecker</li>
-			<li>Helmut Juskewycz</li>
-			<li>Klaus Lehner</li>
-		</ul>
+		{% for post in site.posts %}
+			{% if post.name == page.current %}
+			<ul class="no-bullets">		
+			{% if post.speakerOne %}
+			<li>{{post.speakerOne.name}}</li>
+			{% endif %}
+			{% if post.speakerTwo %}
+			<li>{{post.speakerTwo.name}}</li>
+			{% endif %}
+			{% if post.speakerThree %}
+			<li>{{post.speakerThree.name}}</li>
+			{% endif %}
+			{% if post.speakerFour %}
+			<li>{{post.speakerFour.name}}</li>
+			{% endif %}
+			</ul>
+			{% endif %}
+		{% endfor %}
 		{% endif %}
 		<p class="info">
-			{% unless page.date %}
+			{% unless page.dateset %}
 			Nächstes Treffen:<br/>
 			Ist in Planung
 			{% endunless %}
@@ -26,9 +39,8 @@
 
 			{% unless page.end %}
 			{% for post in site.posts %}
-				{{post.name}}
 				{% if post.name == page.current %}
-					<span itemprop="startDate" content="{{post.datetime}}T{{post.timestring}}"><i class="icon-calendar"></i> {{post.datestring}} <i class="icon-clock"></i> {{post.timestring}} Uhr</span>
+					<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}"><i class="icon-calendar"></i> {{post.datestring}} <i class="icon-clock"></i> {{post.timestring}} Uhr</span>
 				{% endif %}
 			{% endfor %}
 			{% endunless %}
