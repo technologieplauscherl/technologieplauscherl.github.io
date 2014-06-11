@@ -25,6 +25,10 @@ layout: default
 		{% if page.speakerFive %}
 			{% include speaker.html speaker=page.speakerFive %}
 		{% endif %}
+
+		{% for speaker in page.speakers %}
+			{% include speaker.html speaker=speaker %}
+		{% endfor %}
 	</section>
 
 	{{content}}

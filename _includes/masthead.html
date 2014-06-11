@@ -11,18 +11,9 @@
 		{% for post in site.posts %}
 			{% if post.name == page.current %}
 			<ul class="no-bullets">		
-			{% if post.speakerOne %}
-			<li>{{post.speakerOne.name}}</li>
-			{% endif %}
-			{% if post.speakerTwo %}
-			<li>{{post.speakerTwo.name}}</li>
-			{% endif %}
-			{% if post.speakerThree %}
-			<li>{{post.speakerThree.name}}</li>
-			{% endif %}
-			{% if post.speakerFour %}
-			<li>{{post.speakerFour.name}}</li>
-			{% endif %}
+			{% for speaker in post.speakers %}
+			<li>{{speaker.name}}</li>
+			{% endfor %}
 			</ul>
 			{% endif %}
 		{% endfor %}
