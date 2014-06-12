@@ -12,7 +12,7 @@
 .top {
 	top: 3rem;
 	
-	@media(min-width: 700px) {
+	@media(min-width: 800px) {
 		top: 5rem;
 	}
 }
@@ -20,7 +20,7 @@
 .bottom {
 	bottom: 3rem;
 
-	@media(min-width: 700px) {
+	@media(min-width: 800px) {
 		bottom: 5rem;
 	}
 }
