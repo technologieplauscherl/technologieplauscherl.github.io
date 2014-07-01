@@ -5,6 +5,7 @@
 
 	<div class="bottom">
 		{% if page.end %}
+		{% unless page.doodle %}
 		<p class="info">
 			Danke für die Vorträge an 
 		</p>
@@ -17,6 +18,7 @@
 			</ul>
 			{% endif %}
 		{% endfor %}
+		{% endunless %}
 		{% endif %}
 		<p class="info">
 			{% unless page.dateset %}
