@@ -24,6 +24,11 @@ layout: default
 				{% include speaker.html speaker=post.speakerFour %}
 			{% endif %}
 			{% endif %}
+
+		{% for speaker in page.speakers %}
+			{% include speaker.html speaker=speaker %}
+                {% endfor %}
+
 		{% endfor %}
 
 		{% endunless %}
