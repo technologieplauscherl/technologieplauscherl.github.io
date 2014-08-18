@@ -5,20 +5,20 @@
 
 	<div class="bottom">
 		{% if page.end %}
-		{% unless page.doodle %}
-		<p class="info">
-			Danke für die Vorträge an 
-		</p>
-		{% for post in site.posts %}
-			{% if post.name == page.current %}
-			<ul class="no-bullets">		
-			{% for speaker in post.speakers %}
-			<li>{{speaker.name}}</li>
+			{% unless page.doodle %}
+			<p class="info">
+				Danke für die Vorträge an 
+			</p>
+			{% for post in site.posts %}
+				{% if post.name == page.current %}
+				<ul class="no-bullets">		
+					{% for speaker in post.speakers %}
+					<li>{{speaker.name}}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
 			{% endfor %}
-			</ul>
-			{% endif %}
-		{% endfor %}
-		{% endunless %}
+			{% endunless %}
 		{% endif %}
 		<p class="info">
 			{% unless page.dateset %}

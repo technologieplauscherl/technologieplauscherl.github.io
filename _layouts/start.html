@@ -23,19 +23,12 @@ layout: default
 			{% if post.speakerFour %}
 				{% include speaker.html speaker=post.speakerFour %}
 			{% endif %}
-
-
-{% for speaker in post.speakers %}
-			{% include speaker.html speaker=speaker %}
-                {% endfor %}
+				{% for speaker in post.speakers %}
+					{% include speaker.html speaker=speaker %}
+				{% endfor %}
 			{% endif %}
-
-		
-
 		{% endfor %}
-
 		{% endunless %}
-		
 		{% unless page.full %}
 		<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
 			<div class="speaker">
