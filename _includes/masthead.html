@@ -33,6 +33,7 @@
 			{% unless page.end %}
 			{% for post in site.posts %}
 				{% if post.name == page.current %}
+					Nächstes Treffen:<br>
 					<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}"><i class="icon-calendar"></i> {{post.datestring}} <i class="icon-clock"></i> {{post.timestring}} Uhr</span>
 				{% endif %}
 			{% endfor %}
