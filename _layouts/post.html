@@ -10,22 +10,6 @@ layout: default
 	<section class="grid">
 		<h2>Sessions</h2>
 
-		{% if page.speakerOne %}
-			{% include speaker.html speaker=page.speakerOne %}
-		{% endif %}
-		{% if page.speakerTwo %}
-			{% include speaker.html speaker=page.speakerTwo %}
-		{% endif %}
-		{% if page.speakerThree %}
-			{% include speaker.html speaker=page.speakerThree %}
-		{% endif %}
-		{% if page.speakerFour %}
-			{% include speaker.html speaker=page.speakerFour %}
-		{% endif %}
-		{% if page.speakerFive %}
-			{% include speaker.html speaker=page.speakerFive %}
-		{% endif %}
-
 		{% for speaker in page.speakers %}
 			{% include speaker.html speaker=speaker %}
 		{% endfor %}
@@ -36,5 +20,12 @@ layout: default
 
 	{% if page.location %}
 	{% include location.html location=page.location %}
+	{% endif %}
+
+	{% if page.sponsor %}
+	<h2>Sponsoring</h2>
+	<p>
+		Vielen Dank an {{ page.sponsor }} für die Verpflegung!
+	</p>
 	{% endif %}
 </div>

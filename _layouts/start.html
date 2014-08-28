@@ -11,18 +11,6 @@ layout: default
 		
 		{% for post in site.posts %}
 			{% if post.name == page.current %}
-			{% if post.speakerOne %}
-				{% include speaker.html speaker=post.speakerOne %}
-			{% endif %}
-			{% if post.speakerTwo %}
-				{% include speaker.html speaker=post.speakerTwo %}
-			{% endif %}
-			{% if post.speakerThree %}
-				{% include speaker.html speaker=post.speakerThree %}
-			{% endif %}
-			{% if post.speakerFour %}
-				{% include speaker.html speaker=post.speakerFour %}
-			{% endif %}
 				{% for speaker in post.speakers %}
 					{% include speaker.html speaker=speaker %}
 				{% endfor %}
@@ -48,12 +36,24 @@ layout: default
 
 	{% include description.html %}
 
+
 	{% unless page.end %}
 		
 	{% for post in site.posts %}
 		{% if post.name == page.current %}
 			{% if post.location %}
 			{% include location.html location=post.location %}
+			{% endif %}
+		{% endif %}
+	{% endfor %}
+
+	{% for post in site.posts %}
+		{% if post.name == page.current %}
+			{% if post.sponsor %}
+			<h2>Sponsoring</h2>
+			<p>
+				Vielen Dank an {{ post.sponsor }} für die Verpflegung!
+			</p>
 			{% endif %}
 		{% endif %}
 	{% endfor %}

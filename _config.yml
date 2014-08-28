@@ -9,3 +9,5 @@ url: "http://technologieplauscherl.at"
 # Build settings
 markdown: kramdown
 permalink: pretty
+gems:
+- jekyll-sitemap
