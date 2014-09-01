@@ -17,6 +17,13 @@ layout: default
 
 	{{content}}
 	{% include description.html %}
+  
+  {% if page.pictures %}
+	<h2>Fotos</h2>
+	<p>
+		Fotos zur Veranstaltung findest du <a href="https://drive.google.com/folderview?id={{page.pictures}}">hier</a>.
+	</p>
+	{% endif %}
 
 	{% if page.location %}
 	{% include location.html location=page.location %}
