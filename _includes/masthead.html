@@ -53,28 +53,31 @@
 		{% endif %}
 
 		{% unless page.end %}
-		{% if page.event %}
-		{% if page.event.facebook %}
-		<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
-			Termin auf Facebook
-			<i class="icon-facebook link__icon"></i>
-		</a>
-		{% endif %}
+		{% for post in site.posts %}
+			{% if post.name == page.current %}
+			{% if post.event %}
+				{% if post.event.facebook %}
+				<a href="https://www.facebook.com/events/{{post.event.facebook}}" class="link link--big link--facebook">
+					Termin auf Facebook
+					<i class="icon-facebook link__icon"></i>
+				</a>
+				{% endif %}
+				{% if post.event.google %}
+				<a href="{{post.event.google}}" class="link link--big link--googleplus" target="_blank">
+					Google Calender
+					<i class="icon-google link__icon"></i>
+				</a>
+				{% endif %}
 
-		{% if page.event.google %}
-		<a href="{{page.event.google}}" class="link link--big link--googleplus" target="_blank">
-			Google Calender
-			<i class="icon-google link__icon"></i>
-		</a>
-		{% endif %}
-
-		{% if page.event.meetup %}
-		<a href="http://www.meetup.com/Technologieplauscherl-Linz/events/{{page.event.meetup}}" class="link link--big link--meetup">
-			Termin auf Meetup!
-			<i class="icon-meetup link__icon"></i>
-		</a>
-		{% endif %}
-		{% endif %}
+				{% if post.event.meetup %}
+				<a href="http://www.meetup.com/Technologieplauscherl-Linz/events/{{post.event.meetup}}" class="link link--big link--meetup">
+					Termin auf Meetup!
+					<i class="icon-meetup link__icon"></i>
+				</a>
+				{% endif %}
+			{% endif %}
+			{% endif %}
+		{% endfor %}
 		{% endunless %}
 	</div>
 </div>
