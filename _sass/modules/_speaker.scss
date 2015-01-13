@@ -5,26 +5,32 @@
 }
 
 .speaker__img {
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
 	border-radius: 50%;
 
-	width: 100px;
-	min-width: 160px;
-	max-width: 160px;
+	width: 160px;
+	width: 160px;
 	display: table-cell;
 	vertical-align: middle;
 	margin-right: 1.5rem;
 
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	overflow: hidden;
 
-	&:hover {
-		-webkit-filter: grayscale(0);
-		filter: grayscale(0);
+	> img {
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		border-radius: 50%;
+
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		width: 100%;
+
+		&:hover {
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0);
+		}
 	}
 }
 
