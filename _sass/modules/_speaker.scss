@@ -4,24 +4,17 @@
 	width: 100%;
 }
 
-.speaker__imgcontainer {
-	border-radius: 50%;
-
-	width: 160px;
-	width: 160px;
-	display: table-cell;
-	vertical-align: middle;
-	margin-right: 1.5rem;
-
-	overflow: hidden;
-
-}
-
-
 .speaker__img {
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 	border-radius: 50%;
+
+	width: 160px;
+	height: 160px;
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 1.5rem;
+
 
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -58,8 +51,6 @@
 	}
 
 	.speaker__img {
-		width: auto;
-		height: auto;
 		display: inline-block;
 		margin-right: 0;
 	}
