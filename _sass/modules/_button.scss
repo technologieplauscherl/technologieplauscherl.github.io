@@ -34,7 +34,7 @@ $meetupBtnColor: #d62f30;
 
 .link__icon {
 	background-color: $btnIconColor;
-	
+
 	height: 2.7rem;
 	width: 2.7rem;
 	line-height: 2.7rem;
@@ -42,7 +42,7 @@ $meetupBtnColor: #d62f30;
 	@media(min-width: 700px) {
 		height: 3.25rem;
 		width: 3.25rem;
-		line-height: 3.25rem;	
+		line-height: 3.25rem;
 	}
 
 	position: absolute;
@@ -55,13 +55,5 @@ $meetupBtnColor: #d62f30;
 
 	.link__icon {
 		background-color: darken($meetupBtnColor, 10);
-	}
-}
-
-.link--googleplus {
-	background-color: $googlePlusBtnColor;
-
-	.link__icon {
-		background-color: darken($googlePlusBtnColor, 10);
 	}
 }

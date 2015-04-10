@@ -29,8 +29,8 @@
 			.cell--w#{floor($w)} {
 				width: $w * 1%;
 			}
-		}		
+		}
 	}
 }
 
-@include createGridCells((25, 50, 100));
+@include createGridCells((25));

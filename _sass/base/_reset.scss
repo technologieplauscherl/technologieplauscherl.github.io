@@ -7,7 +7,7 @@ body {
   background-color: $bg;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, img {
+h1, h2, p, ul, ol, blockquote, img {
   margin: 0;
   padding: 0;
   line-height: 1.2em;
@@ -18,7 +18,7 @@ ol, ul {
 	padding-left: 1.25rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
 	font-family: 'bebas-neue';
 	text-align: center;
 }
@@ -56,18 +56,6 @@ h2 {
 	padding: 1.25rem;
 }
 
-h3 {
-	font-size: 2.5rem;
-}
-
-h4 {
-	font-size: 2rem;
-}
-
-h5 {
-	font-size: 1.5rem;
-}
-
 p, li {
 	line-height: 1.5em;
 }
@@ -85,9 +73,4 @@ a {
 	&:hover {
 		color: lighten($pumpkin, 10);
 	}
-}
-
-iframe {
-	width: 100%;
-	border: 0;
 }
