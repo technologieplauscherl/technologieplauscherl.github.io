@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]/*, [class*=" icon-"]*/ {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -39,6 +39,10 @@
 .icon-google-plus:before {
 	content: "\e002";
 }*/
+
+.icon-facebook:before {
+	content: "\e001";
+}
 .icon-clock:before {
 	content: "\e003";
 }
