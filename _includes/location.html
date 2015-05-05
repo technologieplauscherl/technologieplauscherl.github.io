@@ -1,11 +1,10 @@
 <h2>Location</h2>
 
 <address itemprop="location" itemscope itemtype="http://schema.org/Place">
-	<!--<span class="n" itemprop="name">TBD</span>-->
 	<span class="n" itemprop="name">{{include.location.name}}</span>
 	<div itemprop="address">
 		<span class="street-address">{{include.location.address}}</span>
-		<span class="postal-code" itemprop="postalCode">{{include.location.zip}}</span> <span class="locality" itemprop="addressLocality">{{include.location.city}}</span>
+		<span class="postal-code">{{include.location.zip}}</span> <span class="locality">{{include.location.city}}</span>
 	</div>
 </address>
 {%if include.location.map %}
