@@ -3,9 +3,14 @@
 		<img src="{{include.speaker.img}}" alt="{{include.speaker.name}}" class="speaker__img">
 		<div class="speaker__info">
 			<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
+			{% if include.speaker.talk %}
 			<div class="speaker__session">
 				{{include.speaker.talk}}
 			</div>
+			{% endif %}
+			{% if include.speaker.count %}
+			<span class="speaker__count">{{include.speaker.count}}</span>
+			{% endif %}
 		</div>
 	</div>
 </article>
