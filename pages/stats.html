@@ -1,0 +1,66 @@
+---
+layout: page
+title: Plauscherl - Statistik
+permalink: /stats/
+---
+<div class="grid">
+	<h2>Top Plauscher</h2>
+	{% for speaker in site.data.metadata.speakers limit:8 %}
+		{% include speaker.html speaker=speaker %}
+	{% endfor %}
+	<h2>Top Veranstalter</h2>
+	<div class="map" id="map-canvas"></div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript">
+		var locations = [];
+		{% for location in site.data.metadata.locations %}
+		locations.push({
+			pos: new google.maps.LatLng({{location.pos.lat}}, {{location.pos.lng}}),
+			name: '{{location.name}}',
+			count: {{location.count}}
+		});
+		{% endfor %}
+		var bounds = new google.maps.LatLngBounds ();
+		for(var i = 0, len = locations.length; i < len; i++) {
+			bounds.extend(locations[i].pos);
+		};
+
+		function createMarker(loc, map) {
+			var marker = new google.maps.Marker({
+				position: loc.pos,
+				title: loc.name,
+				map: map
+			});
+
+			var infowindow = new google.maps.InfoWindow({
+				content: loc.name + ': ' + loc.count + 'x'
+			});
+
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+
+		function initialize() {
+			var mapOptions = {
+				zoom: 18,
+				scrollwheel: false,
+				draggable: true,
+				zoomable: true,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map-canvas"),
+				mapOptions);
+
+			var elems = [];
+
+			for(var i = 0; i < locations.length; i++) {
+				createMarker(locations[i], map);
+			}
+
+			map.fitBounds(bounds);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</div>
