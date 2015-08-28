@@ -1,0 +1,4 @@
+---
+permalink: data/meta.json
+---
+{% include_relative _data/metadata.json %}
