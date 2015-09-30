@@ -1,7 +1,7 @@
-technologieplauscherl.github.io
-===============================
+technologieplauscherl.at
+========================
 
-[technologieplauscherl.at](http://technologieplauscherl.at)
+Die Website für das Tech-Meetup in Linz > [technologieplauscherl.at](http://technologieplauscherl.at)
 
 ## Talk via Pull Request
 
