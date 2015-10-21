@@ -64,7 +64,7 @@ layout: default
 
 	<ul>
 	{% for post in site.posts %}
-		{% unless post.name == page.current %}
+		{% unless post.name >= page.current %}
 		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location.name}}</li>
 		{% else %}
 		{% if page.end %}
