@@ -5,7 +5,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:{{ site.url }}
 METHOD:PUBLISH
-{% for post in site.posts limit:1 %}
+{% for post in site.posts %}
 {% assign starttime = post.timestring | replace: ":","" %}
 {% assign endtime = starttime | plus:400 %}
 {% assign location_fmt = post.location.address | append: ', ' | append: post.location.zip | append: ' ' | append: post.location.city %}
