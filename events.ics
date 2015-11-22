@@ -1,0 +1,27 @@
+---
+layout: none
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:{{ site.url }}
+METHOD:PUBLISH
+{% for post in site.posts %}
+{% assign starttime = post.timestring | replace: ":","" %}
+{% assign endtime = starttime | plus:400 %}
+{% assign location_fmt = post.location.address | append: ', ' | append: post.location.zip | append: ' ' | append: post.location.city %}
+BEGIN:VEVENT
+SEQUENCE:{{site.time | date: "%Y%m%d%H%M%S"}}
+UID:{{ post.date | date: "%Y%m%d" }}-{{post.name}}@{{ site.url | replace: "http://","" }}
+ORGANIZER;CN="{{ site.title }}":MAILTO:{{ site.email }}
+LOCATION:{{location_fmt | replace: ',':" "}} Austria
+{% if post.location.oldmap %}GEO:{{post.location.oldmap.lat}},{{post.location.oldmap.lng}}{% endif %}
+SUMMARY:{{ post.title }}
+CLASS:PUBLIC
+DTSTART;TZID="Europe/Vienna":{{ post.date | date: "%Y%m%d" }}T{{starttime}}00
+DTEND;TZID="Europe/Vienna":{{ post.date | date: "%Y%m%d" }}T{{endtime}}00
+DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S" }}Z
+URL:{{ post.url | prepend: site.baseurl | prepend: site.url }}
+DESCRIPTION:URL: {{ post.url | prepend: site.baseurl | prepend: site.url }}\n\nLocation: {{post.location.name}} {{location_fmt}}\n\nSpeakers:\n{% for speaker in post.speakers %}{{speaker.name}}\n{{speaker.talk}}{% unless forloop.last %}\n\n{% endunless %}{% endfor %}
+END:VEVENT
+{% endfor %}
+END:VCALENDAR
