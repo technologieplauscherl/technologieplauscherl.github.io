@@ -4,6 +4,7 @@ layout: none
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:{{ site.url }}
+X-WR-CALNAME:{{site.title}}
 METHOD:PUBLISH
 {% for post in site.posts %}
 {% assign starttime = post.timestring | replace: ":","" %}
