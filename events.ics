@@ -13,7 +13,7 @@ UID:{{ post.date | date: "%Y%m%d" }}-{{post.name}}@{{ site.url | replace: "http:
 ORGANIZER;CN="{{ site.title }}":
  MAILTO:{{ site.email }}
 LOCATION:{{location_fmt | replace: ',':" "}} Austria{% if post.location.oldmap %}
-GEO:{{post.location.oldmap.lat}},{{post.location.oldmap.lng}}{% endif %}
+GEO:{{post.location.oldmap.lat}};{{post.location.oldmap.lng}}{% endif %}
 SUMMARY:{{ post.title }}
 CLASS:PUBLIC
 DTSTART;TZID="{{timezone}}":{{ post.date | date: "%Y%m%d" }}T{{starttime}}00
