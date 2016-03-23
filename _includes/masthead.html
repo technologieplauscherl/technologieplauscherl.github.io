@@ -38,6 +38,20 @@
                         <i class="icon-calendar"></i> {{post.datestring}} 
                         <i class="icon-clock"></i> {{post.timestring}} Uhr
                     </span>
+					<script type="application/ld+json">
+					{
+					  "@context": "http://schema.org",
+					  "@type": "Event",
+					  "name": "{{post.title}}",
+					  "startDate" : "{{post.startDateIso8601}}",
+					  "url" : "http://technologieplauscherl.at",
+					  "location" : {
+					    "@type" : "Place",
+					    "name" : "{{post.location.name}}",
+					    "address" : "{{post.location.address}}, {{post.location.zip}} {{post.location.city}}"
+					  }
+					}
+					</script>
 				{% endif %}
 			{% endfor %}
 			{% endunless %}
