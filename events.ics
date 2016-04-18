@@ -6,7 +6,7 @@ VERSION:2.0
 PRODID:{{ site.url }}
 X-WR-CALNAME:{{site.title}}
 X-WR-TIMEZONE:{{timezone}}
-METHOD:PUBLISH{% for post in site.posts %}{% assign starttime = post.timestring | replace: ":","" %}{% assign endtime = starttime | plus:400 %}{% assign location_fmt = post.location.address | append: ', ' | append: post.location.zip | append: ' ' | append: post.location.city %}
+METHOD:PUBLISH{% for post in site.plauscherl %}{% assign starttime = post.timestring | replace: ":","" %}{% assign endtime = starttime | plus:400 %}{% assign location_fmt = post.location.address | append: ', ' | append: post.location.zip | append: ' ' | append: post.location.city %}
 BEGIN:VEVENT
 SEQUENCE:{{site.time | date: "%m%d%H%M%S"}}
 UID:{{ post.date | date: "%Y%m%d" }}-{{post.name}}@{{ site.url | replace: "http://","" }}

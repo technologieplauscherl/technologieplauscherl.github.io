@@ -9,7 +9,7 @@
 			<p class="info">
 				Danke für die Vorträge an 
 			</p>
-			{% for post in site.posts %}
+			{% for post in site.plauscherl %}
 				{% if post.name == page.current %}
 				<ul class="no-bullets">		
 					{% for speaker in post.speakers %}
@@ -31,7 +31,7 @@
 			{% endif %}
 
 			{% unless page.end %}
-			{% for post in site.posts %}
+			{% for post in site.plauscherl %}
 				{% if post.name == page.current %}
 					Nächstes Treffen:<br>
 					<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}">
@@ -70,7 +70,7 @@
 		{% endif %}
 
 		{% unless page.end %}
-		{% for post in site.posts %}
+		{% for post in site.plauscherl %}
 			{% if post.name == page.current %}
 			{% if post.event %}
 				{% if post.event.facebook %}

@@ -8,8 +8,8 @@ layout: default
 	<section class="grid">
 		<h2>Sessions</h2>
 		{% unless page.end %}
-		
-		{% for post in site.posts %}
+
+		{% for post in site.plauscherl %}
 			{% if post.name == page.current %}
 				{% for speaker in post.speakers %}
 					{% include speaker.html speaker=speaker %}
@@ -38,8 +38,8 @@ layout: default
 
 
 	{% unless page.end %}
-		
-	{% for post in site.posts %}
+
+	{% for post in site.plauscherl %}
 		{% if post.name == page.current %}
 			{% if post.location %}
 			{% include location.html location=post.location %}
@@ -47,7 +47,7 @@ layout: default
 		{% endif %}
 	{% endfor %}
 
-	{% for post in site.posts %}
+	{% for post in site.plauscherl %}
 		{% if post.name == page.current %}
 			{% if post.sponsor %}
 			<h2>Sponsoring</h2>
@@ -63,7 +63,7 @@ layout: default
 	<h2>Vorherige Plauscherl</h2>
 
 	<ul>
-	{% for post in site.posts %}
+	{% for post in site.plauscherl reversed %}
 		{% unless post.name >= page.current %}
 		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location.name}}</li>
 		{% else %}
