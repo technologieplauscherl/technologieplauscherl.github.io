@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: news
 title: Community News
 permalink: /community-news/
 ---
