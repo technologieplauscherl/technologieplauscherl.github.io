@@ -16,10 +16,10 @@
 {% endcase %}
 {% endcapture %}
 <div class="event-wrapper">
+  <h2 class="event-title{% if include.news.cost %} event-cost{% endif %}" itemprop="name">{{include.news.name}}</h2>
   <div class="event-date" itemprop="startDate" content="{{include.news.date}}">{{ include.news.date | date: "%-d" }}. {{mon}} {{ include.news.date | date: "%Y" }}</div>
-  <div class="event-title{% if include.news.cost %} event-cost{% endif %}" itemprop="name">{{include.news.name}}</div>
   <div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
-    <span itemprop="name">{{include.news.location}}</span>
+    @ <span itemprop="name">{{include.news.location}}</span>
   </div>
   <a itemprop="url" href="{{include.news.link}}">Information</a>
 </div>
