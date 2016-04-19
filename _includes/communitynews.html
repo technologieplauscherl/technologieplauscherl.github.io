@@ -1,8 +1,25 @@
+{% assign m = include.news.date | date: "%-m" %}
+{% capture mon %}
+{% case m %}
+  {% when '1' %}Januar
+  {% when '2' %}Februar
+  {% when '3' %}März
+  {% when '4' %}April
+  {% when '5' %}Mai
+  {% when '6' %}Juni
+  {% when '7' %}Juli
+  {% when '8' %}August
+  {% when '9' %}September
+  {% when '10' %}Oktober
+  {% when '11' %}November
+  {% when '12' %}Dezember
+{% endcase %}
+{% endcapture %}
 <div class="event-wrapper">
-  <div class="event-date" itemprop="startDate" content="{{include.news.date}}">{{include.news.date | | date_to_long_string}}</div>
-  <div class="event-title" itemprop="name">{{include.news.name}}</div>
+  <div class="event-date" itemprop="startDate" content="{{include.news.date}}">{{ include.news.date | date: "%-d" }}. {{mon}} {{ include.news.date | date: "%Y" }}</div>
+  <div class="event-title{% if include.news.cost %} event-cost{% endif %}" itemprop="name">{{include.news.name}}</div>
   <div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
     <span itemprop="name">{{include.news.location}}</span>
   </div>
-  <a itemprop="url" href="{{include.news.url}}">Information</a>
+  <a itemprop="url" href="{{include.news.link}}">Information</a>
 </div>
