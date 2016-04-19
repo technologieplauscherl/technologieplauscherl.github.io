@@ -16,6 +16,8 @@ gems:
 - jekyll-sitemap
 
 collections:
+  community:
+    permalink: :path/
   plauscherl:
     output: true
     permalink: /:name/

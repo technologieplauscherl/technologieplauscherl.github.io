@@ -1,0 +1,8 @@
+<div class="event-wrapper">
+  <div class="event-date" itemprop="startDate" content="{{include.news.date}}">{{include.news.date | | date_to_long_string}}</div>
+  <div class="event-title" itemprop="name">{{include.news.name}}</div>
+  <div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
+    <span itemprop="name">{{include.news.location}}</span>
+  </div>
+  <a itemprop="url" href="{{include.news.url}}">Information</a>
+</div>
