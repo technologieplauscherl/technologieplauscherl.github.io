@@ -4,4 +4,16 @@
 
 .event-wrapper {
   border: 1px solid lightgray;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: lighten($bg, 10%);
+  flex: 1;
+}
+
+.event-title {
+  font-family: 'open-sans', 'Helvetica', sans-serif;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 0;
+  line-height: 1.5em;
 }
