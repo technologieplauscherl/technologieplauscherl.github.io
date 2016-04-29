@@ -9,7 +9,7 @@ permalink: /stats/
 	{% for speaker in site.data.metadata.speakers limit:12 %}
 		{% include speaker.html speaker=speaker %}
 	{% endfor %}
-</div>
+	</div>
 	<h2>Top Veranstalter</h2>
 	<div class="map" id="map-canvas"></div>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>

@@ -5,6 +5,7 @@
 
 	@media(min-width: 500px) {
 		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
@@ -60,6 +61,8 @@
 
 	.speaker {
 		display: block;
+		flex: 1;
+		padding: 0 1rem;
 	}
 
 	.speaker__img {
