@@ -1,7 +1,11 @@
 .speakers {
-	display: flex;
 	max-width: 75rem;
 	margin: 0 auto;
+	padding: 2rem;
+
+	@media(min-width: 500px) {
+		display: flex;
+	}
 }
 
 .speaker {
@@ -51,7 +55,6 @@
 
 	.speaker {
 		display: block;
-		margin-bottom: 2.5rem;
 	}
 
 	.speaker__img {
