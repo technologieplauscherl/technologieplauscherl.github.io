@@ -22,7 +22,10 @@
       <span class="event__month">{{mon}}</span>
     </div>
     <div class="event__information">
-      <h2 class="event__title{% if include.news.cost %} event-cost{% endif %}" itemprop="name">{{include.news.name}}</h2>
+      <h2 class="event__title" itemprop="name">{{include.news.name}}</h2>
+      {% if include.news.cost %}
+      <svg class="event__icon event__icon--cost"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-coin-euro"></use></svg>
+      {% endif %}
       <div class="event__venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
         <svg class="event__icon icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-compass2"></use></svg>
         <span itemprop="name">{{include.news.location}}</span>

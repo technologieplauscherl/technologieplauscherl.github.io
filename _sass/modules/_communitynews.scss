@@ -51,6 +51,12 @@
   height: 1rem;
 }
 
+.event__icon--cost {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
 .event__title {
   color: $text-color;
   font-family: 'open-sans', Helvetica;
