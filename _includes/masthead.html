@@ -26,9 +26,9 @@
 			{% unless page.end %}
 				Nächstes Treffen:<br>
 				<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}">
-                      <i class="icon-calendar"></i> {{post.datestring}}
-                      <i class="icon-clock"></i> {{post.timestring}} Uhr
-                  </span>
+          <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
+          <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use></svg> {{post.timestring}} Uhr
+        </span>
 				<script type="application/ld+json">
 				{
 				  "@context": "http://schema.org",
