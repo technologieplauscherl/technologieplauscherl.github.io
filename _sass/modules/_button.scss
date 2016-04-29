@@ -1,5 +1,5 @@
 $btnTextColor: #fff;
-$btnBgColor: #3B5998;
+$btnBgColor: $brand;
 $btnIconColor: #29447E;
 
 $facebookBtnColor: #3B5998;
@@ -33,7 +33,7 @@ $meetupBtnColor: #d62f30;
 }
 
 .link__icon {
-	background-color: $btnIconColor;
+	background-color: lighten($btnBgColor, 10);
 
 	height: 2.7rem;
 	width: 2.7rem;
@@ -49,6 +49,16 @@ $meetupBtnColor: #d62f30;
 	right: 0;
 	top: 0;
 }
+
+
+.link--facebook {
+	background-color: $facebookBtnColor;
+
+	.link__icon {
+		background-color: darken($facebookBtnColor, 10);
+	}
+}
+
 
 .link--meetup {
 	background-color: $meetupBtnColor;
