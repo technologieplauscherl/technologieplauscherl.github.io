@@ -4,18 +4,11 @@ layout: default
 
 {% include masthead.html %}
 <div class="wrapper">
-
+	{% assign post = site.plauscherl | last %}
 	<section class="grid">
 		<h2>Sessions</h2>
 		{% unless page.end %}
-
-		{% for post in site.plauscherl %}
-			{% if post.name == page.current %}
-				{% for speaker in post.speakers %}
-					{% include speaker.html speaker=speaker %}
-				{% endfor %}
-			{% endif %}
-		{% endfor %}
+		{% include speakers.html %}
 		{% endunless %}
 		{% unless page.full %}
 		<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
@@ -38,25 +31,16 @@ layout: default
 
 
 	{% unless page.end %}
+	{% if post.location %}
+	{% include location.html location=post.location %}
+	{% endif %}
 
-	{% for post in site.plauscherl %}
-		{% if post.name == page.current %}
-			{% if post.location %}
-			{% include location.html location=post.location %}
-			{% endif %}
-		{% endif %}
-	{% endfor %}
-
-	{% for post in site.plauscherl %}
-		{% if post.name == page.current %}
-			{% if post.sponsor %}
-			<h2>Sponsoring</h2>
-			<p>
-				Vielen Dank an {{ post.sponsor }} für die Verpflegung!
-			</p>
-			{% endif %}
-		{% endif %}
-	{% endfor %}
+	{% if post.sponsor %}
+	<h2>Sponsoring</h2>
+	<p>
+		Vielen Dank an {{ post.sponsor }} für die Verpflegung!
+	</p>
+	{% endif %}
 
 	{% endunless %}
 
@@ -64,7 +48,7 @@ layout: default
 
 	<ul>
 	{% for post in site.plauscherl reversed %}
-		{% unless post.name >= page.current %}
+		{% unless forloop.first %}
 		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location.name}}</li>
 		{% else %}
 		{% if page.end %}

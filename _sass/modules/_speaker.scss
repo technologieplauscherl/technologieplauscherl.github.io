@@ -1,3 +1,7 @@
+.speakers {
+	display: flex;
+}
+
 .speaker {
 	text-align: center;
 	display: table;
@@ -6,8 +10,6 @@
 }
 
 .speaker__img {
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
 	border-radius: 50%;
 
 	width: 160px;
@@ -15,16 +17,6 @@
 	display: table-cell;
 	vertical-align: middle;
 	margin-right: 1.5rem;
-
-
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-
-	&:hover,
-	&:hover ~ .speaker__info > .speaker__count {
-		-webkit-filter: grayscale(0);
-		filter: grayscale(0);
-	}
 }
 
 .speaker__count {
@@ -37,18 +29,14 @@
 	top: 132px;
 	margin-left: 44px;
 	line-height: 25px;
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
 }
 
 .speaker__info {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
-  	padding: 10px;
-  	box-sizing: border-box;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 .speaker__name {

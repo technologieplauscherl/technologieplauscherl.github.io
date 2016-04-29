@@ -3,60 +3,49 @@
 		<h1 itemprop="name">Technologieplauscherl</h1>
 	</div>
 
+	{% assign post = site.plauscherl | last %}
+
 	<div class="bottom">
 		{% if page.end %}
-			{% unless page.doodle %}
-			<p class="info">
-				Danke für die Vorträge an 
-			</p>
-			{% for post in site.plauscherl %}
-				{% if post.name == page.current %}
-				<ul class="no-bullets">		
-					{% for speaker in post.speakers %}
-					<li>{{speaker.name}}</li>
-					{% endfor %}
-				</ul>
-				{% endif %}
+		<p class="info">
+			Danke für die Vorträge an
+		</p>
+		<ul class="no-bullets">
+			{% for speaker in post.speakers %}
+			<li>{{speaker.name}}</li>
 			{% endfor %}
-			{% endunless %}
+		</ul>
+		{% else %}
+		{% include speakers.html %}
 		{% endif %}
 		<p class="info">
 			{% unless page.dateset %}
 			Nächstes Treffen:<br/>
 			Ist in Planung
 			{% endunless %}
-
-			{% if page.doodle %}
-			<a href="{{page.doodle}}">Terminfindung über Doodle</a>
-			{% endif %}
-
 			{% unless page.end %}
-			{% for post in site.plauscherl %}
-				{% if post.name == page.current %}
-					Nächstes Treffen:<br>
-					<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}">
-                        <i class="icon-calendar"></i> {{post.datestring}} 
-                        <i class="icon-clock"></i> {{post.timestring}} Uhr
-                    </span>
-					<script type="application/ld+json">
-					{
-					  "@context": "http://schema.org",
-					  "@type": "Event",
-					  "name": "{{post.title}}",
-					  "startDate" : "{{post.startDateIso8601}}",
-					  "url" : "http://technologieplauscherl.at",
-					  "location" : {
-					    "@type" : "Place",
-					    "name" : "{{post.location.name}}",
-					    "address" : "{{post.location.address}}, {{post.location.zip}} {{post.location.city}}"
-					  }
-					}
-					</script>
-				{% endif %}
-			{% endfor %}
+				Nächstes Treffen:<br>
+				<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}">
+                      <i class="icon-calendar"></i> {{post.datestring}}
+                      <i class="icon-clock"></i> {{post.timestring}} Uhr
+                  </span>
+				<script type="application/ld+json">
+				{
+				  "@context": "http://schema.org",
+				  "@type": "Event",
+				  "name": "{{post.title}}",
+				  "startDate" : "{{post.startDateIso8601}}",
+				  "url" : "http://technologieplauscherl.at",
+				  "location" : {
+				    "@type" : "Place",
+				    "name" : "{{post.location.name}}",
+				    "address" : "{{post.location.address}}, {{post.location.zip}} {{post.location.city}}"
+				  }
+				}
+				</script>
 			{% endunless %}
 		</p>
-		
+
 		{% if page.end %}
 		<a href="https://www.facebook.com/groups/technologie.plauscherl/" class="link link--big link--facebook">
 			Planung auf Facebook
@@ -70,8 +59,6 @@
 		{% endif %}
 
 		{% unless page.end %}
-		{% for post in site.plauscherl %}
-			{% if post.name == page.current %}
 			{% if post.event %}
 				{% if post.event.facebook %}
 				<a href="https://www.facebook.com/events/{{post.event.facebook}}" class="link link--big link--facebook">
@@ -79,13 +66,6 @@
 					<i class="icon-facebook link__icon"></i>
 				</a>
 				{% endif %}
-				{% if post.event.google %}
-				<a href="{{post.event.google}}" class="link link--big link--googleplus" target="_blank">
-					Google Calender
-					<i class="icon-google link__icon"></i>
-				</a>
-				{% endif %}
-
 				{% if post.event.meetup %}
 				<a href="http://www.meetup.com/Technologieplauscherl-Linz/events/{{post.event.meetup}}" class="link link--big link--meetup">
 					Termin auf Meetup!
@@ -93,8 +73,6 @@
 				</a>
 				{% endif %}
 			{% endif %}
-			{% endif %}
-		{% endfor %}
 		{% endunless %}
 	</div>
 </div>
