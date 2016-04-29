@@ -1,0 +1,13 @@
+---
+layout: page
+title: Archiv
+permalink: /archiv/
+---
+
+<div class="cards">
+{% for card in site.plauscherl reversed %}
+{% unless forloop.first %}
+{% include plauscherl-card.html %}
+{% endunless %}
+{% endfor %}
+</div>

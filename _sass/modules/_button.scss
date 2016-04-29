@@ -1,5 +1,5 @@
 $btnTextColor: #fff;
-$btnBgColor: #3B5998;
+$btnBgColor: $brand;
 $btnIconColor: #29447E;
 
 $facebookBtnColor: #3B5998;
@@ -32,23 +32,38 @@ $meetupBtnColor: #d62f30;
 	}
 }
 
+.wrapper .link {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .link__icon {
-	background-color: $btnIconColor;
+	background-color: lighten($btnBgColor, 10);
 
 	height: 2.7rem;
 	width: 2.7rem;
-	line-height: 2.7rem;
+	padding: 0.75rem;
+	fill: #fff;
 
 	@media(min-width: 700px) {
 		height: 3.25rem;
 		width: 3.25rem;
-		line-height: 3.25rem;
 	}
 
 	position: absolute;
 	right: 0;
 	top: 0;
 }
+
+
+.link--facebook {
+	background-color: $facebookBtnColor;
+
+	.link__icon {
+		background-color: darken($facebookBtnColor, 10);
+	}
+}
+
 
 .link--meetup {
 	background-color: $meetupBtnColor;

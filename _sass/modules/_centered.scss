@@ -1,26 +1,23 @@
 .top, .bottom {
-	position: absolute;
-	left: 50%;
-	-webkit-transform: translate(-50%, 0);
-	-moz-transform: translate(-50%, 0);
-	-ms-transform: translate(-50%, 0);
-	-o-transform: translate(-50%, 0);
-	transform: translate(-50%, 0);
 	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
 }
 
 .top {
-	top: 3rem;
-	
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+
 	@media(min-width: 800px) {
-		top: 5rem;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
 	}
 }
 
 .bottom {
-	bottom: 3rem;
+	padding-bottom: 3rem;
 
 	@media(min-width: 800px) {
-		bottom: 5rem;
+		padding-bottom: 5rem;
 	}
 }

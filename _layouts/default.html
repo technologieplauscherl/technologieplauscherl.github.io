@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
-
   {% include head.html %}
 
     <body itemscope itemtype="http://schema.org/Event">
+    {% include menu.html %}
     {{ content }}
-
+    {% include svg-defs.html %}
     {% include footer.html %}
     </body>
 </html>
-<link rel="stylesheet" href="/css/main.css">

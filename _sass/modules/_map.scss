@@ -2,5 +2,11 @@ $mapHeight: 28.125rem;
 
 .map {
 	width: 100%;
-	height: $mapHeight;
+	height: 10rem;
+}
+
+@media(min-height: 40em) {
+	.map {
+		height: $mapHeight;
+	}
 }

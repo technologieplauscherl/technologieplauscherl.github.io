@@ -6,9 +6,9 @@ layout: default
 	<p class="info">
 		<span itemprop="startDate" content="{{ page.date | date: "%Y-%m-%d" }}T{{page.timestring}}"><i class="icon-calendar"></i> {{page.datestring}} <i class="icon-clock"></i> {{page.timestring}} Uhr</span>
 	</p>
+	<h2>Sessions</h2>
 
-	<section class="grid">
-		<h2>Sessions</h2>
+	<section class="speakers">
 
 		{% for speaker in page.speakers %}
 			{% include speaker.html speaker=speaker %}
@@ -17,7 +17,7 @@ layout: default
 
 	{{content}}
 	{% include description.html %}
-  
+
   {% if page.pictures %}
 	<h2>Fotos</h2>
 	<p>
