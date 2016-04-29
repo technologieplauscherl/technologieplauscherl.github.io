@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="/css/main.css?2">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="alternate" type="application/rss+xml" title="Technologieplauscherl.at » Updates" href="http://www.technologieplauscherl.at/feed.xml">
-	<script async src="//use.edgefonts.net/bebas-neue;open-sans:n4,n6.js"></script>
 	<link rel="apple-touch-icon" sizes="57x57" href="/img/icons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="/img/icons/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/img/icons/apple-touch-icon-72x72.png">
@@ -18,4 +17,21 @@
 	<link rel="icon" type="image/png" href="/img/icons/favicon-96x96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="/img/icons/favicon-16x16.png" sizes="16x16">
 	<link rel="icon" type="image/png" href="/img/icons/favicon-32x32.png" sizes="32x32">
+	<script type="text/javascript">
+    var as = function (f) {
+      if(document.getElementById('font-css') !== null) {
+        return;
+      }
+      var sc = document.getElementsByTagName('script')[0];
+      var st = document.createElement('style');
+      st.id = 'font-css';
+      st.setAttribute('type', 'text/css');
+      st.innerHTML = f;
+      sc.parentNode.insertBefore(st, sc);
+    }
+
+    if (localStorage.getItem('fcache') !== null) {
+      as(localStorage.getItem('fcache'));
+    }
+  </script>
 </head>

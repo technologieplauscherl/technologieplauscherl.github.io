@@ -14,3 +14,22 @@
     ga('send', 'pageview');
 
   </script>
+  <script>
+  (function(s, xhr) {
+
+    var cssPath = '/css/fonts.css';
+
+    if (s.getItem('fcache') === null) {
+      var http = new xhr();
+      http.open('GET', '//' + location.host + cssPath);
+      http.send();
+      http.onload = function() {
+        as(this.responseText);
+        s.setItem('fcache', this.responseText);
+      }
+    } else {
+      as(s.getItem('fcache'));
+    }
+
+  })(window.localStorage, XMLHttpRequest);
+</script>
