@@ -1,9 +1,9 @@
 ---
-layout: news
+layout: page
 title: Community News
 permalink: /community-news/
 ---
-
+<div class="events">
 {% assign timr=site.time | date: '%Y%m%d' %}
 {% for entry in site.community %}
 {% assign dayr=entry.date | date: '%Y%m%d'%}
@@ -11,3 +11,18 @@ permalink: /community-news/
 {% include communitynews.html news=entry %}
 {% endif %}
 {% endfor %}
+</div>
+
+<h2>Community News einreichen</h2>
+
+<p>
+  Hast du interssante Events für die Linzer Tech Community? Dann immer her damit.
+  Eine Nachricht auf organizers@technologieplauscherl.at oder ein Pull Request auf
+ <a href="https://github.com/technologieplauscherl/technologieplauscherl.github.io">GitHub</a>
+ reichen um diese Veranstaltungen bei uns und den nächsten Plauscherln bekanntzugeben.
+</p>
+<p>
+  Bitte bedenke, dass die Events zum Thema des Technologieplauscherl passen sollen und
+  auch unentgeltlich sein sollen. Bei kostenpflichtigen Events bietet es sich an,
+  Freikarten zum Verlosen für die Community  anzubieten.
+</p>

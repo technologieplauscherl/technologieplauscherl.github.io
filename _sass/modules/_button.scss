@@ -32,6 +32,11 @@ $meetupBtnColor: #d62f30;
 	}
 }
 
+.wrapper .link {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .link__icon {
 	background-color: lighten($btnBgColor, 10);
 

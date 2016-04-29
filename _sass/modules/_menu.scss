@@ -6,8 +6,11 @@
 }
 
 .menu__item {
-  display: block;
   max-height: 3.25rem;
+
+  @media(min-width: 500px) {
+    display: block;
+  }
 }
 
 .menu .link__icon {

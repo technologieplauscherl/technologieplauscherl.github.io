@@ -8,6 +8,11 @@
 	}
 }
 
+.wrapper .speakers {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .speaker {
 	text-align: center;
 	display: table;
@@ -18,8 +23,8 @@
 .speaker__img {
 	border-radius: 50%;
 
-	width: 160px;
-	height: 160px;
+	width: 100px;
+	height: 100px;
 	display: table-cell;
 	vertical-align: middle;
 	margin-right: 1.5rem;
@@ -60,7 +65,8 @@
 	.speaker__img {
 		display: inline-block;
 		margin-right: 0;
-		width: auto;
+		width: 160px;
+		height: 160px;
 	}
 
 	.speaker__info {
