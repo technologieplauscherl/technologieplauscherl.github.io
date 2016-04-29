@@ -19,16 +19,16 @@
 
     var cssPath = '/css/fonts.css';
 
-    if (s.getItem('fcache') === null) {
+    if (s.getItem('fcache2') === null) {
       var http = new xhr();
       http.open('GET', '//' + location.host + cssPath);
       http.send();
       http.onload = function() {
         as(this.responseText);
-        s.setItem('fcache', this.responseText);
+        s.setItem('fcache2', this.responseText);
       }
     } else {
-      as(s.getItem('fcache'));
+      as(s.getItem('fcache2'));
     }
 
   })(window.localStorage, XMLHttpRequest);
