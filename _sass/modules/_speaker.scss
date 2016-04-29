@@ -65,6 +65,10 @@
 		padding: 0 1rem;
 	}
 
+	.speakers--stats .speaker {
+		flex-basis: 180px;
+	}
+
 	.speaker__count {
 		top: 60%;
 		left: 80%;
