@@ -37,12 +37,12 @@ $meetupBtnColor: #d62f30;
 
 	height: 2.7rem;
 	width: 2.7rem;
-	line-height: 2.7rem;
+	padding: 0.75rem;
+	fill: #fff;
 
 	@media(min-width: 700px) {
 		height: 3.25rem;
 		width: 3.25rem;
-		line-height: 3.25rem;
 	}
 
 	position: absolute;

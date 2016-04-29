@@ -3,3 +3,9 @@ layout: news
 title: Archiv
 permalink: /archiv/
 ---
+
+<div class="cards">
+{% for card in site.plauscherl reversed %}
+{% include plauscherl-card.html %}
+{% endfor %}
+</div>

@@ -46,15 +46,17 @@ layout: default
 
 	<h2>Vorherige Plauscherl</h2>
 
-	<ul>
-	{% for post in site.plauscherl reversed %}
-		{% unless forloop.first %}
-		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location.name}}</li>
-		{% else %}
-		{% if page.end %}
-		<li><a href="{{post.url}}">{{post.title}} - {{post.datestring}}</a> - {{post.location.name}}</li>
-		{% endif %}
+	<div class="cards">
+	{% for card in site.plauscherl reversed %}
+		{% unless forloop.first or forloop.index > 7 %}
+		{% include plauscherl-card.html %}
 		{% endunless %}
 	{% endfor %}
-	</ul>
+	</div>
+	<a href="/archiv/" class="link link--big">
+		Zum Archiv
+		<svg class="link__icon">
+			<use xlink:href="#icon-books"></use>
+		</svg>
+	</a>
 </div>

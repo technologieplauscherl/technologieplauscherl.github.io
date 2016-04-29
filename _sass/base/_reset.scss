@@ -7,6 +7,15 @@ body {
   background-color: $bg;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
 h1, h2, p, ul, ol, blockquote, img {
   margin: 0;
   padding: 0;
@@ -64,10 +73,6 @@ a {
 	color: $pumpkin;
 	font-weight: 600;
 	text-decoration: none;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	-ms-transition: color 0.3s;
-	-o-transition: color 0.3s;
 	transition: color 0.3s;
 
 	&:hover {
