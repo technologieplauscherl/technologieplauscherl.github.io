@@ -19,13 +19,32 @@ layout: default
 	</section>
 
 	{{content}}
-
-  {% if page.pictures %}
-	<h2>Fotos</h2>
-	<p>
-		Fotos zur Veranstaltung findest du <a href="https://drive.google.com/folderview?id={{page.pictures}}">hier</a>.
-	</p>
+	<div class="buttons">
+	{% if page.event.facebook %}
+	<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
+		Event auf Facebook
+		<svg class="link__icon">
+			<use xlink:href="#icon-facebook"></use>
+		</svg>
+	</a>
 	{% endif %}
+	{% if page.event.meetup %}
+	<a href="http://www.meetup.com/Technologieplauscherl-Linz/events/{{page.event.meetup}}" class="link link--big link--meetup">
+		Termin auf Meetup!
+		<svg class="link__icon">
+			<use xlink:href="#icon-meetup"></use>
+		</svg>
+	</a>
+	{% endif %}
+	{% if page.pictures %}
+	<a href="https://drive.google.com/folderview?id={{page.pictures}}" class="link link--big link--pictures">
+		Fotos zum Event
+		<svg class="link__icon">
+			<use xlink:href="#icon-camera"></use>
+		</svg>
+	</a>
+	{% endif %}
+	</div>
 
 	{% if page.location %}
 	{% include location.html location=page.location %}
