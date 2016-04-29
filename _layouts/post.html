@@ -4,7 +4,10 @@ layout: default
 <div class="wrapper">
 	<h1 itemprop="name">{{page.title}}</h1>
 	<p class="info">
-		<span itemprop="startDate" content="{{ page.date | date: "%Y-%m-%d" }}T{{page.timestring}}"><i class="icon-calendar"></i> {{page.datestring}} <i class="icon-clock"></i> {{page.timestring}} Uhr</span>
+		<span itemprop="startDate" content="{{ page.date | date: "%Y-%m-%d" }}T{{page.timestring}}">
+			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{page.datestring}}
+			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use></svg> {{page.timestring}} Uhr
+		</span>
 	</p>
 	<h2>Sessions</h2>
 
