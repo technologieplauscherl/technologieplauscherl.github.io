@@ -5,9 +5,11 @@ permalink: /stats/
 ---
 <div class="grid">
 	<h2>Top Plauscher</h2>
-	{% for speaker in site.data.metadata.speakers limit:8 %}
+	<div class="speakers">
+	{% for speaker in site.data.metadata.speakers limit:12 %}
 		{% include speaker.html speaker=speaker %}
 	{% endfor %}
+</div>
 	<h2>Top Veranstalter</h2>
 	<div class="map" id="map-canvas"></div>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
