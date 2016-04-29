@@ -38,9 +38,9 @@
 	height: 25px;
 	border-radius: 50%;
 	color: white;
-	top: 132px;
-	margin-left: 44px;
+	left: 86px;
 	line-height: 25px;
+	display: block;
 }
 
 .speaker__info {
@@ -63,6 +63,12 @@
 		display: block;
 		flex: 1;
 		padding: 0 1rem;
+	}
+
+	.speaker__count {
+		top: 60%;
+		left: 80%;
+		transform: translate(-50%, -50%);
 	}
 
 	.speaker__img {
