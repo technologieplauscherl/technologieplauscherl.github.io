@@ -7,15 +7,18 @@
   justify-content: center;
 }
 
-.wrapper .cards {
-  margin: -1rem;
+@media(min-width: 800px) {
+  .wrapper .cards {
+    margin: -1rem;
+  }
 }
 
 .card {
   min-width: 18rem;
+  max-width: 22rem;
   height: 13rem;
   margin: 1rem;
-  flex: 1 1 30%;
+  flex: 1 0 auto;
   width: 100%;
   color: white;
   position: relative;
