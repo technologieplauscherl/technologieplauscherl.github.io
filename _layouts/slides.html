@@ -20,7 +20,9 @@ const nextSlide = () => {
   }
   current.classList.toggle('is-active');
   next.classList.toggle('is-active');
-  timeout = setTimeout(nextSlide, intv);
+  if (running) {
+    timeout = setTimeout(nextSlide, intv);
+  }
 }
 
 const run = () => {
