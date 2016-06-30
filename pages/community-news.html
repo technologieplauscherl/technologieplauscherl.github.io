@@ -3,13 +3,25 @@ layout: page
 title: Community News
 permalink: /community-news/
 ---
-<div class="events">
+
 {% assign timr=site.time | date: '%Y%m%d' %}
-{% for entry in site.community %}
-{% assign dayr=entry.date | date: '%Y%m%d'%}
-{% if timr <= dayr %}
+
+{% assign events = "" | split: "" %}
+
+{% for entry in site.data.community %}
+  {% for event in entry.events %}
+    {% assign dayr=event.date | date: '%Y%m%d'%}
+    {% if timr <= dayr %}
+    {% assign events = events | push: event %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% assign events = events | sort: 'date' %}
+
+<div class="events">
+{% for entry in events %}
 {% include communitynews.html news=entry %}
-{% endif %}
 {% endfor %}
 </div>
 

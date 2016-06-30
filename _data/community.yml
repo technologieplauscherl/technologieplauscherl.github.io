@@ -1,0 +1,60 @@
+-
+  id: ux-stammtisch
+  name: "UX Stammtisch Linz"
+  events:
+    -
+      location: Akostart
+      date: 2016-06-09
+      link: http://www.meetup.com/de-DE/UX-Linz/events/231626126/
+    -
+      name: "UX Stammtisch Linz"
+      location: Akostart
+      date: 2016-07-14
+      link: http://www.meetup.com/de-DE/UX-Linz/events/231637891/
+-
+  id: stahlstadt-js
+  name: "Stahlstadt.js"
+  events:
+    -
+      name: "Stahlstadt.js #10 - bbq.js"
+      location: Fredmansky
+      date: 2016-08-04
+    -
+      name: "Stahlstadt.js #11 - React Vienna Crossover"
+      location: Runtastic
+      date: 2016-09-14
+-
+  id: topconf
+  name: "Topconf Events"
+  events:
+    -
+      name: "DevOps Linz"
+      location: "Marriott"
+      date: 2016-09-22
+      link: http://topconf.com/devops-linz-2016/
+      cost: EUR 360
+    -
+      name: "Topconf Linz 2017"
+      location: "Ursulinenhof"
+      date: 2017-03-02
+      link: http://topconf.com/linz-2017/
+      cost: EUR 550
+-
+  id: script
+  name: "Script"
+  events:
+    -
+      name: "Script'17"
+      location: "Ursulinenhof"
+      date: 2017-01-27
+      link: http://www.scriptconf.org
+      cost: EUR 150
+-
+  id: socrates
+  name: "SoCraTes"
+  events:
+    -
+      name: "SoCraTes Day Linz"
+      location: "tba"
+      date: 2016-10-29
+      cost: EUR 60
