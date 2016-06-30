@@ -4,26 +4,7 @@ title: Community News
 permalink: /community-news/
 ---
 
-{% assign timr=site.time | date: '%Y%m%d' %}
-
-{% assign events = "" | split: "" %}
-
-{% for entry in site.data.community %}
-  {% for event in entry.events %}
-    {% assign dayr=event.date | date: '%Y%m%d'%}
-    {% if timr <= dayr %}
-    {% assign events = events | push: event %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% assign events = events | sort: 'date' %}
-
-<div class="events">
-{% for entry in events %}
-{% include communitynews.html news=entry %}
-{% endfor %}
-</div>
+{% include communitynews--loop.html %}
 
 <h2>Community News einreichen</h2>
 
