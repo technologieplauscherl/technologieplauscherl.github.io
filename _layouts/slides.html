@@ -23,12 +23,18 @@ const nextSlide = () => {
   timeout = setTimeout(nextSlide, intv);
 }
 
-timeout = setTimeout(nextSlide, intv);
+const run = () => {
+  timeout = setTimeout(nextSlide, intv);
+};
+
+const pause = () => {
+  clearTimeout(timeout);
+}
 
 const scale = () => {
   const rate = window.innerWidth / 1440;
   document.querySelector('.slides').style.transform = `scale(${rate})`;
-}
+};
 
 const showSlide = (n) => {
   running = false;
@@ -36,8 +42,11 @@ const showSlide = (n) => {
     .classList.remove('is-active');
   document.querySelector(`.slide:nth-of-type(${n})`)
     .classList.add('is-active');
-  clearTimeout(timeout);
-}
+  pause();
+};
+
+run();
+scale();
 
 document.addEventListener('keyup', (e) => {
   switch(e.keyCode) {
@@ -48,11 +57,11 @@ document.addEventListener('keyup', (e) => {
       showSlide(2);
       break;
     case 80:
-      clearTimeout(timeout);
+      pause();
       console.log('Pause');
       break;
     case 83:
-      timeout = setTimeout(nextSlide, intv);
+      run();
       break;
     default:
       console.log('Do not know what to do');
