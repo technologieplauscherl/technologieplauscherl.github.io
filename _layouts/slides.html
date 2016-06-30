@@ -26,10 +26,12 @@ const nextSlide = () => {
 }
 
 const run = () => {
+  running = true;
   timeout = setTimeout(nextSlide, intv);
 };
 
 const pause = () => {
+  running = false;
   clearTimeout(timeout);
 }
 
@@ -39,7 +41,6 @@ const scale = () => {
 };
 
 const showSlide = (n) => {
-  running = false;
   document.querySelector('.slide.is-active')
     .classList.remove('is-active');
   document.querySelector(`.slide:nth-of-type(${n})`)
