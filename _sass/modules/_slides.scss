@@ -25,6 +25,10 @@
   background-color: $bg;
 }
 
+.backdrop {
+  overflow: hidden;
+}
+
 .slide__info,
 .slide .speakers {
   flex-direction: column;
