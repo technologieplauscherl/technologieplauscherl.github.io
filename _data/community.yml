@@ -58,3 +58,27 @@
       location: "tba"
       date: 2016-10-29
       cost: EUR 60
+-
+  id: coder-dojo
+  name: "Coder Dojo Linz"
+  events:
+    -
+      name: "Coder Dojo Linz"
+      location: "Wissensturm"
+      date: 2016-07-15
+      link: https://coderdojo-linz.github.io
+    -
+      name: "Coder Dojo Linz"
+      location: "AEC Skyloft"
+      date: 2016-08-05
+      link: https://coderdojo-linz.github.io
+    -
+      name: "Coder Dojo Linz"
+      location: "Wissensturm"
+      date: 2016-08-19
+      link: https://coderdojo-linz.github.io
+    -
+      name: "Coder Dojo Linz"
+      location: "Wissensturm"
+      date: 2016-09-09
+      link: https://coderdojo-linz.github.io
