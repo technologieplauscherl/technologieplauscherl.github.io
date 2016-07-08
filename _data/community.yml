@@ -55,8 +55,9 @@
   events:
     -
       name: "SoCraTes Day Linz"
-      location: "tba"
+      location: "Wissensturm Linz"
       date: 2016-10-29
+      link: http://socrates-conference.at/en/
       cost: EUR 60
 -
   id: coder-dojo
