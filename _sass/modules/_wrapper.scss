@@ -4,3 +4,10 @@
 	max-width: 75rem;
 	padding: 1.25rem;
 }
+
+@media(min-width: 700px) {
+	.grid {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
