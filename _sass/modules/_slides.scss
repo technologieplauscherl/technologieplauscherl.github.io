@@ -64,6 +64,12 @@
   padding-right: 0;
 }
 
+.slide__info figure:nth-of-type(2),
+.slide__info figure:nth-last-of-type(2) {
+  display: inline;
+  max-width: 50%;
+}
+
 .slide__info img {
   max-width: 75%;
 }
