@@ -84,3 +84,14 @@
       location: "Wissensturm"
       date: 2016-09-09
       link: https://coderdojo-linz.github.io
+-
+  id: twf
+  name: "TWF Conference"
+  events:
+    -
+      name: "TWF Conference 2016"
+      location: "Krakau"
+      date: 2016-09-22
+      link: http://conference2016.twf.community/
+      cost: EUR 55
+      
