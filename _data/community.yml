@@ -95,3 +95,12 @@
       link: http://conference2016.twf.community/
       cost: EUR 55
       
+-
+  id: cocoaheads-linz
+  name: "Cocoaheads Linz"
+  events:
+    -
+      name: "Cocoaheads Linz"
+      location: "Egger Apps"
+      date: 2016-09-15
+      link: https://www.meetup.com/Cocoaheads-Linz/events/233531570/
