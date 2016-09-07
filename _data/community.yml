@@ -114,4 +114,12 @@
       # every thursday!
       date: 2016-08-25
       link: mailto:franz@wieser.at
-      
+-
+  id: js-craft-camp
+  name: "JS Craft Camp"
+  events:
+    -
+      name: "JS Craft Camp"
+      location: "Virtual Idenity AG Munich"
+      date: 2016-10-08
+      link: http://jscraftcamp.org/
