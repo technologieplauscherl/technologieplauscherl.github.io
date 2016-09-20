@@ -123,3 +123,13 @@
       location: "Virtual Idenity AG Munich"
       date: 2016-10-08
       link: http://jscraftcamp.org/
+-
+  id: paas-austria
+  name: "PASS Austria SQL Server Meetup"
+  events:
+    -
+      name: "PASS Austria SQL Server Meetup"
+      location: "Dynatrace"
+      date: 2016-10-13
+      link: https://www.eventbrite.de/e/pass-austria-sql-server-community-meeting-oktober-registrierung-27610303160
+  
