@@ -132,4 +132,14 @@
       location: "Dynatrace"
       date: 2016-10-13
       link: https://www.eventbrite.de/e/pass-austria-sql-server-community-meeting-oktober-registrierung-27610303160
+-
+  id: ejug
+  name: "EJUG"
+  events:
+    -
+      name: "EJUG Linz - Reactive Web Applications"
+      location: "smec"
+      date: 2016-09-22
+      link: http://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/233770415/
+
   
