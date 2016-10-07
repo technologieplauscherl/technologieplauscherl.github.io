@@ -11,6 +11,16 @@
       location: Akostart
       date: 2016-07-14
       link: http://www.meetup.com/de-DE/UX-Linz/events/231637891/
+    -
+      name: "UX Stammtisch Linz"
+      location: Akostart
+      date: 2016-10-13
+      link: https://www.meetup.com/de-DE/UX-Linz/events/234344466/
+    -
+      name: "UX Stammtisch Linz"
+      location: Akostart
+      date: 2016-11-10
+      link: https://www.meetup.com/de-DE/UX-Linz/events/dnfsmhyvpbnb/
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
@@ -84,6 +94,21 @@
       location: "Wissensturm"
       date: 2016-09-09
       link: https://coderdojo-linz.github.io
+    -
+      name: "Coder Dojo Linz"
+      location: "Wissensturm"
+      date: 2016-10-07
+      link: https://coderdojo-linz.github.io
+    -
+      name: "Coder Dojo Linz"
+      location: "WKOÖ Linz"
+      date: 2016-10-21
+      link: https://coderdojo-linz.github.io	  
+    -
+      name: "Coder Dojo Linz"
+      location: "Wissensturm"
+      date: 2016-11-04
+      link: https://coderdojo-linz.github.io
 -
   id: twf
   name: "TWF Conference"
@@ -141,5 +166,13 @@
       location: "smec"
       date: 2016-09-22
       link: http://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/233770415/
-
+-
+  id: responsive
+  name: "Responsive Org Linz"
+  events:
+    -
+	  name: "Responsive Org Linz"
+	  location: "Axis"
+	  date: 2016-10-20
+	  link: https://www.meetup.com/de-DE/Responsive-Org-Linz/events/234201189/
   
