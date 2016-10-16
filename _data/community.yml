@@ -175,4 +175,12 @@
       location: "Axis"
       date: 2016-10-20
       link: https://www.meetup.com/de-DE/Responsive-Org-Linz/events/234201189/
-  
+-
+  id: cocoaheads
+  name: "Cocoaheads Linz"
+  events:
+    -
+	  name: "Cocoaheads Linz"
+	  location: "Runtastic"
+	  date: 2016-10-20
+	  link: https://www.meetup.com/de-DE/Cocoaheads-Linz/events/234196715/
