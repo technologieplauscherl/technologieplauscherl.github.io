@@ -70,8 +70,12 @@
   max-width: 37%;
 }
 
+.slide__info figure {
+  display: inline-block;
+}
+
 .slide__info img {
-  max-width: 75%;
+  max-width: 100%;
 }
 
 .slide__info figure:nth-of-type(2) img,
