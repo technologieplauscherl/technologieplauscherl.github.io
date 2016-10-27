@@ -189,7 +189,7 @@
   name: "Wordpress Meetup Linz"
   events:
     -
-	  name: "Wordpress Meetup Linz"
-	  location: "Gemeinschaftszentrum Auwiesen"
-	  date: 2016-11-03
-	  link: https://www.facebook.com/events/1808299726109672/
+      name: "Wordpress Meetup Linz"
+      location: "Gemeinschaftszentrum Auwiesen"
+      date: 2016-11-03
+      link: https://www.facebook.com/events/1808299726109672/
