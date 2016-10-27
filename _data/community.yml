@@ -184,3 +184,12 @@
       location: "Runtastic"
       date: 2016-10-20
       link: https://www.meetup.com/de-DE/Cocoaheads-Linz/events/234196715/
+-
+  id: wordpress-meetup
+  name: "Wordpress Meetup Linz"
+  events:
+    -
+	  name: "Wordpress Meetup Linz"
+	  location: "Gemeinschaftszentrum Auwiesen"
+	  date: 2016-11-03
+	  link: https://www.facebook.com/events/1808299726109672/
