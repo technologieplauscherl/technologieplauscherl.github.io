@@ -3,20 +3,6 @@
   name: "UX Stammtisch Linz"
   events:
     -
-      location: Akostart
-      date: 2016-06-09
-      link: http://www.meetup.com/de-DE/UX-Linz/events/231626126/
-    -
-      name: "UX Stammtisch Linz"
-      location: Akostart
-      date: 2016-07-14
-      link: http://www.meetup.com/de-DE/UX-Linz/events/231637891/
-    -
-      name: "UX Stammtisch Linz"
-      location: Akostart
-      date: 2016-10-13
-      link: https://www.meetup.com/de-DE/UX-Linz/events/234344466/
-    -
       name: "UX Stammtisch Linz"
       location: Akostart
       date: 2016-11-10
@@ -24,26 +10,10 @@
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
-  events:
-    -
-      name: "Stahlstadt.js #10 - bbq.js"
-      location: Fredmansky
-      date: 2016-08-11
-      link: http://www.meetup.com/de-DE/stahlstadt-js/events/232729094/
-    -
-      name: "Stahlstadt.js #11 - React Vienna Crossover"
-      location: Runtastic
-      date: 2016-09-19
--
+ -
   id: topconf
   name: "Topconf Events"
   events:
-    -
-      name: "DevOps Linz"
-      location: "Marriott"
-      date: 2016-09-22
-      link: http://topconf.com/devops-linz-2016/
-      cost: EUR 360
     -
       name: "Topconf Linz 2017"
       location: "Ursulinenhof"
@@ -77,118 +47,30 @@
     -
       name: "Coder Dojo Linz"
       location: "Wissensturm"
-      date: 2016-07-15
-      link: https://coderdojo-linz.github.io
-    -
-      name: "Coder Dojo Linz"
-      location: "AEC Skyloft"
-      date: 2016-08-05
-      link: https://coderdojo-linz.github.io
-    -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
-      date: 2016-08-19
-      link: https://coderdojo-linz.github.io
-    -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
-      date: 2016-09-09
-      link: https://coderdojo-linz.github.io
-    -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
-      date: 2016-10-07
-      link: https://coderdojo-linz.github.io
-    -
-      name: "Coder Dojo Linz"
-      location: "WKOÖ Linz"
-      date: 2016-10-21
-      link: https://coderdojo-linz.github.io	  
-    -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
       date: 2016-11-04
       link: https://coderdojo-linz.github.io
 -
-  id: twf
-  name: "TWF Conference"
-  events:
-    -
-      name: "TWF Conference 2016"
-      location: "Krakau"
-      date: 2016-09-22
-      link: http://conference2016.twf.community/
-      cost: EUR 55
-      
--
   id: cocoaheads-linz
   name: "Cocoaheads Linz"
-  events:
-    -
-      name: "Cocoaheads Linz"
-      location: "Egger Apps"
-      date: 2016-09-15
-      link: https://www.meetup.com/Cocoaheads-Linz/events/233531570/
 -
   id: otelo-computer-basteling
   name: "Otelo Computer Basteling"
   # every thursday!
   events:
     -
-      name: "Otelo Computer Basteling"
-      location: Gemeinschaftszentrum Auwiesen
-      date: 2016-08-25
-      link: mailto:franz@wieser.at
-    -
       name: "Repair Cafe (18-20 Uhr)"
       location: Gemeinschaftszentrum Auwiesen
       date: 2016-11-02
       link: mailto:franz@wieser.at
 -
-  id: js-craft-camp
-  name: "JS Craft Camp"
-  events:
-    -
-      name: "JS Craft Camp"
-      location: "Virtual Idenity AG Munich"
-      date: 2016-10-08
-      link: http://jscraftcamp.org/
--
-  id: paas-austria
-  name: "PASS Austria SQL Server Meetup"
-  events:
-    -
-      name: "PASS Austria SQL Server Meetup"
-      location: "Dynatrace"
-      date: 2016-10-13
-      link: https://www.eventbrite.de/e/pass-austria-sql-server-community-meeting-oktober-registrierung-27610303160
--
   id: ejug
   name: "EJUG"
-  events:
-    -
-      name: "EJUG Linz - Reactive Web Applications"
-      location: "smec"
-      date: 2016-09-22
-      link: http://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/233770415/
 -
   id: responsive
   name: "Responsive Org Linz"
-  events:
-    -
-      name: "Responsive Org Linz"
-      location: "Axis"
-      date: 2016-10-20
-      link: https://www.meetup.com/de-DE/Responsive-Org-Linz/events/234201189/
 -
   id: cocoaheads
   name: "Cocoaheads Linz"
-  events:
-    -
-      name: "Cocoaheads Linz"
-      location: "Runtastic"
-      date: 2016-10-20
-      link: https://www.meetup.com/de-DE/Cocoaheads-Linz/events/234196715/
 -
   id: wordpress-meetup
   name: "Wordpress Meetup Linz"
