@@ -48,7 +48,7 @@
   # every thursday!
   events:
     -
-      name: "Repair Cafe (18-20 Uhr)"
+      name: "Repair Cafe (18 - 20 Uhr)"
       location: Gemeinschaftszentrum Auwiesen
       date: 2016-11-02
       link: mailto:franz@wieser.at
@@ -66,7 +66,7 @@
   name: "Wordpress Meetup Linz"
   events:
     -
-      name: "Wordpress Meetup Linz (18-20 Uhr)"
+      name: "Wordpress Meetup Linz (18 - 20 Uhr)"
       location: "Gemeinschaftszentrum Auwiesen"
       date: 2016-11-03
       link: https://www.facebook.com/events/1808299726109672/
