@@ -31,16 +31,6 @@
       link: http://www.scriptconf.org
       cost: EUR 150
 -
-  id: socrates
-  name: "SoCraTes"
-  events:
-    -
-      name: "SoCraTes Day Linz"
-      location: "Wissensturm Linz"
-      date: 2016-10-29
-      link: http://socrates-conference.at/en/
-      cost: EUR 30
--
   id: coder-dojo
   name: "Coder Dojo Linz"
   events:
