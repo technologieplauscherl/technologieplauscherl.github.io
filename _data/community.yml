@@ -10,6 +10,12 @@
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
+  events:
+    -
+      name: "Stahlstadt.js 12"
+      location: Karriere
+      date: 2016-11-23
+      link: https://www.meetup.com/de-DE/stahlstadt-js/events/235239255/
 -
   id: topconf
   name: "Topconf Events"
