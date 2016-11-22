@@ -3,6 +3,7 @@ layout: none
 ---
 BEGIN:VCALENDAR{% assign	 timezone = "Europe/Vienna" %}
 VERSION:2.0
+X-PUBLISHED-TTL:PT1H
 PRODID:{{ site.url }}
 X-WR-CALNAME:{{site.title}}
 X-WR-TIMEZONE:{{timezone}}
