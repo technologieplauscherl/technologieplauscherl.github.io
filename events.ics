@@ -3,8 +3,8 @@ layout: none
 ---
 BEGIN:VCALENDAR{% assign	 timezone = "Europe/Vienna" %}
 VERSION:2.0
-X-PUBLISHED-TTL:PT1H
 PRODID:{{ site.url }}
+X-PUBLISHED-TTL:PT1H
 X-WR-CALNAME:{{site.title}}
 X-WR-TIMEZONE:{{timezone}}
 METHOD:PUBLISH{% for post in site.plauscherl %}{% if post.startDateIso8601 %}{% assign starttime = post.timestring | replace: ":","" %}{% assign endtime = starttime | plus:400 %}{% assign location_fmt = post.location.address | append: ', ' | append: post.location.zip | append: ' ' | append: post.location.city %}
