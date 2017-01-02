@@ -1,0 +1,40 @@
+---
+layout: slides
+title: Slides
+permalink: /slides/
+---
+
+{% assign post = site.plauscherl | last %}
+
+<div class="slide flex is-active">
+  <h1 class="full">{{post.title}}</h1>
+  {% include speakers.html %}
+  <div class="slide__info">
+    <div class="slide__item">
+      <h2>Vielen Dank an unseren Host:</h2>
+	  <div class="slide__logos">
+      {% unless post.location.image == null %}
+      {% for img in post.location.image %}
+      <figure>
+        <img src="{{img}}" alt="{{post.location.name}}" />
+      </figure>
+      {% endfor %}
+	  </div>
+	  {% else %}
+      <p>
+        {{post.location.name}}
+      </p>
+    {% endunless %}
+    </div>
+    <div class="slide__item">
+      <h2>Mehr Info zum Plauscherl unter:</h2>
+      <p>technologieplauscherl.at</p>
+      <p>organizers@technologieplauscherl.at</p>
+      <p>@plauscherl</p>
+    </div>
+  </div>
+</div>
+<div class="slide">
+  <h1>Community News</h1>
+  {% include communitynews--loop.html %}
+</div>

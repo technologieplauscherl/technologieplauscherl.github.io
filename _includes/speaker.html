@@ -4,7 +4,11 @@
 		<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
 		{% if include.speaker.talk %}
 		<div class="speaker__session">
-			{{include.speaker.talk}}
+			{% if include.speaker.talklink %}
+				<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
+			{% else %}
+				{{include.speaker.talk}}
+			{% endif %}
 		</div>
 		{% endif %}
 		{% if include.speaker.count %}

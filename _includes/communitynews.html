@@ -15,7 +15,11 @@
   {% when '12' %}Dez
 {% endcase %}
 {% endcapture %}
+{% unless include.news.link == null %}
 <a href="{{include.news.link}}" class="event">
+{% else %}
+<span class="event">
+{% endunless %}
   <div class="event__details">
     <div class="event__date" itemprop="startDate" content="{{include.news.date}}">
       {{ include.news.date | date: "%-d" }}
@@ -32,4 +36,8 @@
       </div>
     </div>
   </div>
+{% unless include.news.link == null %}
 </a>
+{% else %}
+</span>
+{% endunless %}

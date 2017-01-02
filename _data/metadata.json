@@ -17,11 +17,11 @@
       }
     },
     {
-      "name": "karriere.at",
+      "name": "smec",
       "count": 3,
       "pos": {
-        "lat": 48.318946,
-        "lng": 14.304752
+        "lat": 48.301913,
+        "lng": 14.286987
       }
     },
     {
@@ -33,11 +33,11 @@
       }
     },
     {
-      "name": "smec",
-      "count": 2,
+      "name": "karriere.at",
+      "count": 3,
       "pos": {
-        "lat": 48.301913,
-        "lng": 14.286987
+        "lat": 48.318946,
+        "lng": 14.304752
       }
     },
     {
@@ -129,6 +129,14 @@
       }
     },
     {
+      "name": "Tabakfabrik Linz",
+      "count": 1,
+      "pos": {
+        "lat": 48.312835,
+        "lng": 14.298349
+      }
+    },
+    {
       "name": "Hackerspace Linz DevLoL",
       "count": 1,
       "pos": {
@@ -197,14 +205,14 @@
       "img": "/img/speaker_male_no_img.jpg"
     },
     {
+      "name": "Norbert Kehrer",
+      "count": 2,
+      "img": "/img/speaker_male_no_img.jpg"
+    },
+    {
       "name": "Helmut Juskewycz",
       "count": 2,
       "img": "//avatars1.githubusercontent.com/u/306573?v=3&s=200"
-    },
-    {
-      "name": "Thomas Fischl",
-      "count": 2,
-      "img": "//x1.xingassets.com/image/2_8_1_abb002224_8447542_3/thomas-fischl-foto.256x256.jpg"
     },
     {
       "name": "Joachim Sauer",
@@ -222,9 +230,24 @@
       "img": "//pbs.twimg.com/profile_images/967152604/RainerStropek_Ausschnitt_400x400.JPG"
     },
     {
+      "name": "Robert Schmelzer",
+      "count": 2,
+      "img": "//x1.xingassets.com/image/7_3_0_b57234808_3452160_1/robert-schmelzer-foto.256x256.jpg"
+    },
+    {
       "name": "Paul Klingelhuber",
       "count": 2,
       "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/484050_10151326811119746_578315574_a.jpg"
+    },
+    {
+      "name": "David Tanzer",
+      "count": 2,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c50.151.621.621/s160x160/312215_174607659291187_222943803_n.jpg?oh=0f990aa1d38775c905313447641aa3ea&oe=56A9857C&__gda__=1449011900_a2a468b9c8e213241cd37081050a515a"
+    },
+    {
+      "name": "Günther Grill",
+      "count": 2,
+      "img": "//lh3.googleusercontent.com/-fPA7PzLw7f8/Vo40lpJoHvI/AAAAAAAACDU/JIRPqZPC81Y/w140-h139-p/Guenther_comic.png"
     },
     {
       "name": "Alexander Rosemann",
@@ -242,24 +265,9 @@
       "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c0.16.200.200/p200x200/1461657_330941753714601_72797686_n.png"
     },
     {
-      "name": "Norbert Kehrer",
+      "name": "Thomas Fischl",
       "count": 2,
-      "img": "/img/speaker_male_no_img.jpg"
-    },
-    {
-      "name": "Christoph Stichlberger",
-      "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1/c22.0.157.157/6248_1090874964647_7294244_n.jpg"
-    },
-    {
-      "name": "Alexander Floh",
-      "count": 1,
-      "img": "//avatars3.githubusercontent.com/u/3514359?v=3&s=200"
-    },
-    {
-      "name": "Attila Jakabfi",
-      "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/t1/c34.34.419.419/s200x200/943271_10151514821892983_561540714_n.jpg"
+      "img": "//x1.xingassets.com/image/2_8_1_abb002224_8447542_3/thomas-fischl-foto.256x256.jpg"
     },
     {
       "name": "Thomas Knoll",
@@ -357,9 +365,9 @@
       "img": "/img/speaker_male_no_img.jpg"
     },
     {
-      "name": "Andrzej Kozlowski",
+      "name": "Lukas Eder",
       "count": 1,
-      "img": "/img/speaker_male_no_img.jpg"
+      "img": "//pbs.twimg.com/profile_images/443848404058124288/ebesRyrK_400x400.jpeg"
     },
     {
       "name": "Mike Penz",
@@ -367,9 +375,9 @@
       "img": "//avatars3.githubusercontent.com/u/1476232?v=3&s=400"
     },
     {
-      "name": "Alexander Feiglstorfer",
+      "name": "Andrzej Kozlowski",
       "count": 1,
-      "img": "//avatars0.githubusercontent.com/u/160495"
+      "img": "/img/speaker_male_no_img.jpg"
     },
     {
       "name": "Peter Rietzler",
@@ -437,14 +445,14 @@
       "img": "//avatars3.githubusercontent.com/u/499094?v=3&s=200"
     },
     {
-      "name": "Robert Schmelzer",
-      "count": 1,
-      "img": "//x1.xingassets.com/image/7_3_0_b57234808_3452160_1/robert-schmelzer-foto.256x256.jpg"
-    },
-    {
       "name": "Michael Aspetsberger",
       "count": 1,
       "img": "//www.catalysts.cc/wp-content/uploads/userphoto/29.thumbnail.jpg"
+    },
+    {
+      "name": "Bernhard Wurm",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c16.16.203.203/s160x160/1005885_4439820572829_1200736474_n.jpg"
     },
     {
       "name": "Harald Zeitlhofer",
@@ -452,9 +460,9 @@
       "img": "//pbs.twimg.com/profile_images/453850359014764544/SQInVT-p.jpeg"
     },
     {
-      "name": "David Tanzer",
+      "name": "Christina Feilmayr",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c50.151.621.621/s160x160/312215_174607659291187_222943803_n.jpg?oh=0f990aa1d38775c905313447641aa3ea&oe=56A9857C&__gda__=1449011900_a2a468b9c8e213241cd37081050a515a"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p160x160/10325623_10201949509241781_2127667093409437054_n.jpg"
     },
     {
       "name": "Hubert Ströbitzer",
@@ -487,9 +495,8 @@
       "img": "//scontent-frt3-1.xx.fbcdn.net/hprofile-xfa1/v/t1.0-1/c2.0.160.160/p160x160/10440963_10203268907794892_4196136761228292623_n.jpg?oh=1e780579a2ba533b3036b887d10751c9&oe=5703EE57"
     },
     {
-      "name": "Günther Grill",
-      "count": 1,
-      "img": "//lh3.googleusercontent.com/-fPA7PzLw7f8/Vo40lpJoHvI/AAAAAAAACDU/JIRPqZPC81Y/w140-h139-p/Guenther_comic.png"
+      "name": "Emmanuel Helm",
+      "count": 1
     },
     {
       "name": "Andreas Gruber",
@@ -527,22 +534,38 @@
       "img": "//pbs.twimg.com/profile_images/443764401510694912/udyDMcNb.png"
     },
     {
-      "name": "Bernhard Wurm",
+      "name": "Christian Danner",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c16.16.203.203/s160x160/1005885_4439820572829_1200736474_n.jpg"
+      "img": "//www.xing.com/image/1_2_d_3cffc114e_8759227_7/christian-danner-foto.1024x1024.jpg"
     },
     {
-      "name": "Christina Feilmayr",
+      "name": "Dirk Wallerstorfer",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p160x160/10325623_10201949509241781_2127667093409437054_n.jpg"
+      "img": "//d3fzhvprqmsab7.cloudfront.net/wp-content/uploads/2016/05/dirk_800-150x150.png"
+    },
+    {
+      "name": "Michael Lanzinger",
+      "count": 1,
+      "img": "//scontent.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/11200639_1764156163854831_4829798571866319096_n.jpg?oh=84733b766fe67381f3889277290d3b8c&oe=57F4AC0A"
+    },
+    {
+      "name": "Harald Vogl",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c51.134.640.640/s200x200/384885_332202696797337_781807793_n.jpg"
+    },
+    {
+      "name": "Christoph Stichlberger",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1/c22.0.157.157/6248_1090874964647_7294244_n.jpg"
     },
     {
       "name": "Thomas Pink",
       "count": 1
     },
     {
-      "name": "Emmanuel Helm",
-      "count": 1
+      "name": "Alexander Floh",
+      "count": 1,
+      "img": "//avatars3.githubusercontent.com/u/3514359?v=3&s=200"
     },
     {
       "name": "Jürgen Grieshofer",
@@ -553,18 +576,18 @@
       "count": 1
     },
     {
-      "name": "Harald Vogl",
+      "name": "Attila Jakabfi",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c51.134.640.640/s200x200/384885_332202696797337_781807793_n.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/t1/c34.34.419.419/s200x200/943271_10151514821892983_561540714_n.jpg"
     },
     {
       "name": "Jason Tevnan",
       "count": 1
     },
     {
-      "name": "Lukas Eder",
+      "name": "Alexander Feiglstorfer",
       "count": 1,
-      "img": "//pbs.twimg.com/profile_images/443848404058124288/ebesRyrK_400x400.jpeg"
+      "img": "//avatars0.githubusercontent.com/u/160495"
     }
   ]
 }

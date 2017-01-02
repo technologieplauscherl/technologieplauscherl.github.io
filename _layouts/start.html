@@ -29,9 +29,16 @@ layout: default
 
 	<div class="cards">
 	{% for card in site.plauscherl reversed %}
-		{% unless forloop.first or forloop.index > 7 %}
-		{% include plauscherl-card.html %}
-		{% endunless %}
+		{% if page.end %}
+			{% if forloop.index < 7 %}
+				{% include plauscherl-card.html %}
+			{% endif %}
+		{% else %}
+			{% if forloop.index > 1 and forloop.index < 8 %}
+				{% include plauscherl-card.html %}
+			{% endif %}
+		{% endif %}
+		
 	{% endfor %}
 	</div>
 	<a href="/archiv/" class="link link--big">

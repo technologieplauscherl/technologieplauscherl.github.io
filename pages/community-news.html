@@ -3,15 +3,8 @@ layout: page
 title: Community News
 permalink: /community-news/
 ---
-<div class="events">
-{% assign timr=site.time | date: '%Y%m%d' %}
-{% for entry in site.community %}
-{% assign dayr=entry.date | date: '%Y%m%d'%}
-{% if timr <= dayr %}
-{% include communitynews.html news=entry %}
-{% endif %}
-{% endfor %}
-</div>
+
+{% include communitynews--loop.html %}
 
 <h2>Community News einreichen</h2>
 
