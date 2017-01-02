@@ -7,3 +7,5 @@ app
 npm-debug.log
 old_site
 _site
+*.iml
+.idea
