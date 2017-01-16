@@ -41,8 +41,8 @@
   name: "WAD"
   events:
     -
-      name: "Script'17"
-      location: "We are developers"
+      name: "We are developers"
+      location: "Marx Halle Wien"
       date: 2017-05-11
       link: http://www.wearedevelopers.org
       cost: EUR 199
