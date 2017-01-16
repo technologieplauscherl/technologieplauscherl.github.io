@@ -37,6 +37,16 @@
       link: http://www.scriptconf.org
       cost: EUR 150
 -
+  id: wad
+  name: "WAD"
+  events:
+    -
+      name: "Script'17"
+      location: "We are developers"
+      date: 2017-05-11
+      link: http://www.wearedevelopers.org
+      cost: EUR 199
+-
   id: coder-dojo
   name: "Coder Dojo Linz"
   events:
