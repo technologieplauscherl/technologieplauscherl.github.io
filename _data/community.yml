@@ -32,7 +32,7 @@
   events:
     -
       name: "Script'17"
-      location: "Ursulinenhof"
+      location:"Central"
       date: 2017-01-27
       link: http://www.scriptconf.org
       cost: EUR 150
