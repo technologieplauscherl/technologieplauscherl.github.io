@@ -1,21 +1,9 @@
 -
   id: ux-stammtisch
   name: "UX Stammtisch Linz"
-  events:
-    -
-      name: "UX Stammtisch Linz"
-      location: Akostart
-      date: 2016-11-10
-      link: https://www.meetup.com/de-DE/UX-Linz/events/dnfsmhyvpbnb/
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
-  events:
-    -
-      name: "Stahlstadt.js 12"
-      location: Karriere
-      date: 2016-11-23
-      link: https://www.meetup.com/de-DE/stahlstadt-js/events/235239255/
 -
   id: topconf
   name: "Topconf Events"
@@ -38,10 +26,10 @@
       cost: EUR 150
 -
   id: wad
-  name: "WAD"
+  name: "We Are Developers"
   events:
     -
-      name: "We are developers"
+      name: "We Are Developers"
       location: "Marx Halle Wien"
       date: 2017-05-11
       link: http://www.wearedevelopers.org
@@ -49,25 +37,38 @@
 -
   id: coder-dojo
   name: "Coder Dojo Linz"
-  events:
-    -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
-      date: 2016-11-04
-      link: https://coderdojo-linz.github.io
 -
   id: cocoaheads-linz
   name: "Cocoaheads Linz"
 -
-  id: otelo-computer-basteling
-  name: "Otelo Computer Basteling"
-  # every thursday!
+  id: otelo-linz
+  name: "Otelo Linz"
   events:
     -
-      name: "Repair Cafe (18 - 20 Uhr)"
+      name: "Computer Basteling"
       location: Gemeinschaftszentrum Auwiesen
-      date: 2016-11-02
-      link: mailto:franz@wieser.at
+      date: 2017-01-26
+      link: http://otelolinz.at
+    -
+      name: "Arduino Hack"
+      location: Gemeinschaftszentrum Auwiesen
+      date: 2017-01-26
+      link: http://otelolinz.at
+    -
+      name: "Repair Café"
+      location: Gemeinschaftszentrum Auwiesen
+      date: 2017-02-01
+      link: http://otelolinz.at
+	 -
+      name: "Computer Basteling"
+      location: Gemeinschaftszentrum Auwiesen
+      date: 2017-02-02
+      link: http://otelolinz.at
+	 -
+      name: "Computer Basteling"
+      location: Gemeinschaftszentrum Auwiesen
+      date: 2017-02-09
+      link: http://otelolinz.at
 -
   id: ejug
   name: "EJUG"
@@ -80,9 +81,3 @@
 -
   id: wordpress-meetup
   name: "Wordpress Meetup Linz"
-  events:
-    -
-      name: "Wordpress Meetup Linz (18 - 20 Uhr)"
-      location: "Gemeinschaftszentrum Auwiesen"
-      date: 2016-11-03
-      link: https://www.facebook.com/events/1808299726109672/
