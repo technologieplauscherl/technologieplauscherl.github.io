@@ -3,6 +3,9 @@
 <address itemprop="location" itemscope itemtype="http://schema.org/Place">
 	<span class="n" itemprop="name">{{include.location.name}}</span>
 	<div itemprop="address">
+		{%if include.location.addition %}
+		<span class="street-address">{{include.location.addition}}</span>
+		{% endif %}
 		<span class="street-address">{{include.location.address}}</span>
 		<span class="postal-code">{{include.location.zip}}</span> <span class="locality">{{include.location.city}}</span>
 	</div>

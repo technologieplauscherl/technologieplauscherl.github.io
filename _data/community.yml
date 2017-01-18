@@ -3,37 +3,23 @@
   name: "UX Stammtisch Linz"
   events:
     -
-      location: Akostart
-      date: 2016-06-09
-      link: http://www.meetup.com/de-DE/UX-Linz/events/231626126/
-    -
       name: "UX Stammtisch Linz"
       location: Akostart
-      date: 2016-07-14
-      link: http://www.meetup.com/de-DE/UX-Linz/events/231637891/
+      date: 2016-11-10
+      link: https://www.meetup.com/de-DE/UX-Linz/events/dnfsmhyvpbnb/
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
   events:
     -
-      name: "Stahlstadt.js #10 - bbq.js"
-      location: Fredmansky
-      date: 2016-08-11
-      link: http://www.meetup.com/de-DE/stahlstadt-js/events/232729094/
-    -
-      name: "Stahlstadt.js #11 - React Vienna Crossover"
-      location: Runtastic
-      date: 2016-09-19
+      name: "Stahlstadt.js 12"
+      location: Karriere
+      date: 2016-11-23
+      link: https://www.meetup.com/de-DE/stahlstadt-js/events/235239255/
 -
   id: topconf
   name: "Topconf Events"
   events:
-    -
-      name: "DevOps Linz"
-      location: "Marriott"
-      date: 2016-09-22
-      link: http://topconf.com/devops-linz-2016/
-      cost: EUR 360
     -
       name: "Topconf Linz 2017"
       location: "Ursulinenhof"
@@ -46,20 +32,20 @@
   events:
     -
       name: "Script'17"
-      location: "Ursulinenhof"
+      location: "Central"
       date: 2017-01-27
       link: http://www.scriptconf.org
       cost: EUR 150
 -
-  id: socrates
-  name: "SoCraTes"
+  id: wad
+  name: "WAD"
   events:
     -
-      name: "SoCraTes Day Linz"
-      location: "Wissensturm Linz"
-      date: 2016-10-29
-      link: http://socrates-conference.at/en/
-      cost: EUR 60
+      name: "We are developers"
+      location: "Marx Halle Wien"
+      date: 2017-05-11
+      link: http://www.wearedevelopers.org
+      cost: EUR 199
 -
   id: coder-dojo
   name: "Coder Dojo Linz"
@@ -67,20 +53,36 @@
     -
       name: "Coder Dojo Linz"
       location: "Wissensturm"
-      date: 2016-07-15
+      date: 2016-11-04
       link: https://coderdojo-linz.github.io
+-
+  id: cocoaheads-linz
+  name: "Cocoaheads Linz"
+-
+  id: otelo-computer-basteling
+  name: "Otelo Computer Basteling"
+  # every thursday!
+  events:
     -
-      name: "Coder Dojo Linz"
-      location: "AEC Skyloft"
-      date: 2016-08-05
-      link: https://coderdojo-linz.github.io
+      name: "Repair Cafe (18 - 20 Uhr)"
+      location: Gemeinschaftszentrum Auwiesen
+      date: 2016-11-02
+      link: mailto:franz@wieser.at
+-
+  id: ejug
+  name: "EJUG"
+-
+  id: responsive
+  name: "Responsive Org Linz"
+-
+  id: cocoaheads
+  name: "Cocoaheads Linz"
+-
+  id: wordpress-meetup
+  name: "Wordpress Meetup Linz"
+  events:
     -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
-      date: 2016-08-19
-      link: https://coderdojo-linz.github.io
-    -
-      name: "Coder Dojo Linz"
-      location: "Wissensturm"
-      date: 2016-09-09
-      link: https://coderdojo-linz.github.io
+      name: "Wordpress Meetup Linz (18 - 20 Uhr)"
+      location: "Gemeinschaftszentrum Auwiesen"
+      date: 2016-11-03
+      link: https://www.facebook.com/events/1808299726109672/

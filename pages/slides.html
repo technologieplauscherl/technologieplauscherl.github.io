@@ -12,13 +12,15 @@ permalink: /slides/
   <div class="slide__info">
     <div class="slide__item">
       <h2>Vielen Dank an unseren Host:</h2>
+	  <div class="slide__logos">
       {% unless post.location.image == null %}
       {% for img in post.location.image %}
       <figure>
         <img src="{{img}}" alt="{{post.location.name}}" />
       </figure>
       {% endfor %}
-      {% else %}
+	  </div>
+	  {% else %}
       <p>
         {{post.location.name}}
       </p>

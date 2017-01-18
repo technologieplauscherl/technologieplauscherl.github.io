@@ -70,15 +70,20 @@
   max-width: 37%;
 }
 
-.slide__info img {
-  max-width: 75%;
+.slide__info figure {
+  flex: 1 1 100%;
 }
 
-.slide__info figure:nth-of-type(2) img,
-.slide__info figure:nth-last-of-type(2) img {
-  max-width: 100%;
+.slide__info img {
+  width: 100%;
 }
 
 .slide__item {
   margin: 2rem;
+}
+
+.slide__logos {
+  display: flex;
+  align-items: center;
+  text-align: right;
 }
