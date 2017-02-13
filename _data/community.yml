@@ -86,7 +86,7 @@
   name: "Global Azure Bootcamp"
   events:
     -
-	  name: "Global Azure Bootcamp"
-	  location: Wissensturm Linz
-	  date: 2017-04-22
-	  link: https://coding-club-linz.github.io/global-azure-bootcamp-2017/
+      name: "Global Azure Bootcamp"
+      location: Wissensturm Linz
+      date: 2017-04-22
+      link: https://coding-club-linz.github.io/global-azure-bootcamp-2017/
