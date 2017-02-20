@@ -35,6 +35,16 @@
       link: http://socrates-conference.at/en/
       cost: EUR
 -
+  id: socrates
+  name: "#devone"
+  events:
+    -
+      name: "#devone"
+      location: ""
+      date: 2017-06-01
+      link: http://devone.at
+      cost: EUR
+-
   id: wad
   name: "We Are Developers"
   events:
