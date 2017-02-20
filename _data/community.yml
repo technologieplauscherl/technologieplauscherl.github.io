@@ -25,6 +25,16 @@
       link: http://www.scriptconf.org
       cost: EUR 150
 -
+  id: socrates
+  name: "SoCraTes Linz"
+  events:
+    -
+      name: "SoCraTes Linz"
+      location: ""
+      date: 2017-10-20
+      link: http://socrates-conference.at/en/
+      cost: EUR
+-
   id: wad
   name: "We Are Developers"
   events:
