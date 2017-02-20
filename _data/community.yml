@@ -110,3 +110,12 @@
       location: Wissensturm Linz
       date: 2017-04-22
       link: https://coding-club-linz.github.io/global-azure-bootcamp-2017/
+-
+  id: powershell-ug
+  name: "PowerShell Usergroup"
+  events:
+    -
+      name: "PowerShell Usergroup"
+      location: BBRZ Linz
+      date: 2017-03-02
+      link: https://www.meetup.com/de-DE/PowerShell-Usergroup-Austria/events/235727895/?eventId=235727895
