@@ -25,6 +25,14 @@
       link: http://www.scriptconf.org
       cost: EUR 150
 -
+  id: magento
+  name: "Magento Meetup"
+  events:
+    -
+      name: "Magento Meetup"
+      location: "Brucknerstudios"
+      date: 2017-03-21
+-
   id: socrates
   name: "SoCraTes Linz"
   events:
