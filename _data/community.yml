@@ -38,8 +38,9 @@
   events:
     -
       name: "Magento Meetup"
-      location: "Brucknerstudios"
+      location: "BrucknerStudios"
       date: 2017-03-21
+	  link: http://magewien.at/
 -
   id: socrates
   name: "SoCraTes Linz"
