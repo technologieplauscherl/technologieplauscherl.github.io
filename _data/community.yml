@@ -76,6 +76,12 @@
 -
   id: cocoaheads-linz
   name: "Cocoaheads Linz"
+  events:
+    -
+      name: "Cocoaheads Linz 30"
+      location: "Jumio Software Development GmbH"
+      date: 2017-02-23
+      link: https://www.facebook.com/events/938004146329561/permalink/957364624393513/
 -
   id: otelo-linz
   name: "Otelo Linz"
