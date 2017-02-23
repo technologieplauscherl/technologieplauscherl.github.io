@@ -4,6 +4,14 @@
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
+  -
+  id: technologieplauscherl
+  name: "Technologieplauscherl"
+  events:
+    -
+      name: "Technologieplauscherl XLVII"
+      location: "Dataformers"
+      date: 2017-05-18
 -
   id: topconf
   name: "Topconf Events"
