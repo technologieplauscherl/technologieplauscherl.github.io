@@ -127,3 +127,12 @@
       location: BBRZ Linz
       date: 2017-03-02
       link: https://www.meetup.com/de-DE/PowerShell-Usergroup-Austria/events/235727895/?eventId=235727895
+-
+  id: barcamp-sbg
+  name: "Barcamp Salzburg"
+  events:
+    -
+      name: "Barcamp The Next Web"
+      location: FH Salzburg 
+      date: 2017-04-21
+      link: https://barcamp-sbg.at/
