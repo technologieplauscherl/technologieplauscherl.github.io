@@ -39,7 +39,7 @@
       date: 2017-03-01
       link: http://topconf.com/linz-2017/
       cost: EUR 550
-	-
+    -
       name: "Cyber Security Conference 2017"
       location: "Ursulinenhof"
       date: 2017-05-09
@@ -70,7 +70,7 @@
   events:
     -
       name: "SoCraTes Linz"
-      location: ""
+      location: "Wissensturm"
       date: 2017-10-20
       link: http://socrates-conference.at/en/
       cost: EUR
@@ -80,7 +80,7 @@
   events:
     -
       name: "#devone"
-      location: ""
+      location: "Stahlwelten"
       date: 2017-06-01
       link: http://devone.at
       cost: EUR
@@ -95,9 +95,6 @@
       link: http://www.wearedevelopers.org
       cost: EUR 199
 -
-  id: coder-dojo
-  name: "Coder Dojo Linz"
--
   id: cocoaheads-linz
   name: "Cocoaheads Linz"
   events:
@@ -106,35 +103,6 @@
       location: "Jumio Software Development GmbH"
       date: 2017-02-23
       link: https://www.facebook.com/events/938004146329561/permalink/957364624393513/
--
-  id: otelo-linz
-  name: "Otelo Linz"
-  events:
-    -
-      name: "Computer Basteling"
-      location: Gemeinschaftszentrum Auwiesen
-      date: 2017-01-26
-      link: http://otelolinz.at
-    -
-      name: "Arduino Hack"
-      location: Gemeinschaftszentrum Auwiesen
-      date: 2017-01-26
-      link: http://otelolinz.at
-    -
-      name: "Repair Café"
-      location: Gemeinschaftszentrum Auwiesen
-      date: 2017-02-01
-      link: http://otelolinz.at
-    -
-      name: "Computer Basteling"
-      location: Gemeinschaftszentrum Auwiesen
-      date: 2017-02-02
-      link: http://otelolinz.at
-    -
-      name: "Computer Basteling"
-      location: Gemeinschaftszentrum Auwiesen
-      date: 2017-02-09
-      link: http://otelolinz.at
 -
   id: ejug
   name: "EJUG"
