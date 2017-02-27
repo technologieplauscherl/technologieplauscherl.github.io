@@ -140,3 +140,13 @@
       location: FH Salzburg 
       date: 2017-04-21
       link: https://barcamp-sbg.at/
+
+-
+  id: ccc
+  name: "Catalysts Coding Contest"
+  events:
+    -
+      name: "25. CCC"
+      location: Mehrere (Linz (JKU), Wien, ...)
+      date: 2017-03-31
+      link: https://contest.catalysts.cc/
