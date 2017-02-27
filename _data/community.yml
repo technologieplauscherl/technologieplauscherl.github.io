@@ -7,17 +7,17 @@
   events:
     -
       name: "Atlassian User Group Linz #1"
-	  location: "karriere.at"
-	  date: 2017-03-28
-	  url: "https://aug.atlassian.com/events/details/atlassian-linz-presents-atlassian-usergroup-linz-1-event-bei-karriereat"
+      location: "karriere.at"
+      date: 2017-03-28
+      url: "https://aug.atlassian.com/events/details/atlassian-linz-presents-atlassian-usergroup-linz-1-event-bei-karriereat"
 -
   id: vr-plauscherl
   name: "VR Plauscherl"
   events:
     -
       location: "My PlayStore"
-	  date: 2017-03-28
-	  url: "https://www.meetup.com/de-DE/VR-Plauscherl/events/237955248/?_af=event&_af_eid=237955248#"
+      date: 2017-03-28
+      url: "https://www.meetup.com/de-DE/VR-Plauscherl/events/237955248/?_af=event&_af_eid=237955248#"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
