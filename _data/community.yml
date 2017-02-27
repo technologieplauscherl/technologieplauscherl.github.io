@@ -39,6 +39,12 @@
       date: 2017-03-01
       link: http://topconf.com/linz-2017/
       cost: EUR 550
+	-
+      name: "Cyber Security Conference 2017"
+      location: "Ursulinenhof"
+      date: 2017-05-09
+      link: https://www.topconf.com/conference/cyber-security-conf-17/
+      cost: EUR 150	  
 -
   id: script
   name: "Script"
@@ -48,7 +54,7 @@
       location: "Central"
       date: 2017-01-27
       link: http://www.scriptconf.org
-      cost: EUR 150
+      cost: EUR 140
 -
   id: magento
   name: "Magento Meetup"
@@ -135,9 +141,6 @@
 -
   id: responsive
   name: "Responsive Org Linz"
--
-  id: cocoaheads
-  name: "Cocoaheads Linz"
 -
   id: wordpress-meetup
   name: "Wordpress Meetup Linz"
