@@ -2,6 +2,15 @@
   id: ux-stammtisch
   name: "UX Stammtisch Linz"
 -
+  id: ruby-linz
+  name: "Ruby User Group Linz (RUGL)"
+  events:
+    -
+	  name: "Ruby User Group Linz #15"
+	  locaction: "Runtastic"
+	  date: 2017-03-15
+	  link: "https://meetup.com/Ruby-User-Group-Linz-RUGL/events/237342046"
+-
   id: aug-linz
   name: "Atlassian User Group Linz"
   events:
