@@ -19,6 +19,13 @@ layout: default
 	</section>
 
 	{{content}}
+	
+	{% if page.video %}
+		<div style="text-align:center">
+			<iframe style="width:100%; height:50%;" src="https://www.youtube.com/embed/{{page.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+	{% endif %}
+	
 	<div class="buttons">
 	{% if page.event.facebook %}
 	<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
@@ -44,14 +51,7 @@ layout: default
 		</svg>
 	</a>
 	{% endif %}
-		
-	{% if page.video %}
-		<div style="text-align:center">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
-		</div>
-	{% endif %}
-		
-		
+			
 	</div>
 
 	{% if page.location %}
