@@ -123,14 +123,19 @@
   id: wordpress-meetup
   name: "Wordpress Meetup Linz"
 -
-  id: azure-bootcamp
-  name: "Global Azure Bootcamp"
+  id: ms-events
+  name: "Microsoft events"
   events:
     -
       name: "Global Azure Bootcamp"
       location: Wissensturm Linz
       date: 2017-04-22
       link: https://coding-club-linz.github.io/global-azure-bootcamp-2017/
+    -
+      name: "Visual Studio release party"
+      location: Wissensturm Linz
+      date: 2017-03-07
+      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x14117395c6e
 -
   id: powershell-ug
   name: "PowerShell Usergroup"
