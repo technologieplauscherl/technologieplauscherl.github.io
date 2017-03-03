@@ -20,26 +20,6 @@ layout: default
 	{{content}}
 	
 	{% if page.video %}
-		<style type="text/css">
-			
-			/* fluid video width taken from https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
-			section.video {
-				text-align: center;	
-				position: relative;
-				padding-bottom: 56.25%; /* 16:9 */
-				padding-top: 25px;
-				height: 0;
-			}
-			
-			section.video iframe {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-		</style>
-
 		<section class="video">
 			<iframe width="560" height="349" src="https://www.youtube.com/embed/{{page.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
 		</section>
