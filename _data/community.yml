@@ -31,6 +31,12 @@
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
+  events:
+    -
+	  name: "Stahlstadt #13"
+	  location: tbd
+	  date: 2017-03-27
+	  link: "https://www.meetup.com/de-DE/stahlstadt-js/events/238215491/"
 -
   id: technologieplauscherl
   name: "Technologieplauscherl"
