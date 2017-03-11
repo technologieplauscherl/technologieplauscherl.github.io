@@ -180,3 +180,13 @@
       location: Lunik2, Tabakfabrik
       date: 2017-03-14
       link: https://www.meetup.com/de-DE/TUGA-TYPO3-User-Group-Austria/events/238063644/?eventId=238063644&chapter_analytics_code=UA-74113768-1
+-
+  id: ms-build-streaming
+  name: "Microsoft //build Keynote-Streaming"
+  events:
+    -
+      name: "Microsoft //build Keynote-Streaming"
+      location: Wissensturm, Kärntnerstraße 26, 4020 Linz
+      date: 2017-05-10
+      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
+
