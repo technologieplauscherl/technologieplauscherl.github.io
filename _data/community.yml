@@ -45,6 +45,14 @@
   id: technologieplauscherl
   name: "Technologieplauscherl"
   events:
+      -
+      name: "Technologieplauscherl XLV"
+      location: "smec"
+      date: 2017-03-23
+    -
+      name: "Technologieplauscherl XLVI"
+      location: "WKOÖ"
+      date: 2017-04-17
     -
       name: "Technologieplauscherl XLVII"
       location: "Dataformers"
@@ -95,7 +103,7 @@
       link: http://socrates-conference.at/en/
       cost: EUR
 -
-  id: socrates
+  id: devone
   name: "#devone"
   events:
     -
