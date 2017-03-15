@@ -45,15 +45,15 @@
   id: technologieplauscherl
   name: "Technologieplauscherl"
   events:
-      -
+   -
       name: "Technologieplauscherl XLV"
       location: "smec"
       date: 2017-03-23
-    -
+   -
       name: "Technologieplauscherl XLVI"
       location: "WKOÖ"
       date: 2017-04-17
-    -
+   -
       name: "Technologieplauscherl XLVII"
       location: "Dataformers"
       date: 2017-05-18
