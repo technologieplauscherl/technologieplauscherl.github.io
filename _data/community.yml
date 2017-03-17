@@ -57,6 +57,10 @@
       name: "Technologieplauscherl XLVII"
       location: "Dataformers"
       date: 2017-05-18
+   -
+      name: "Technologieplauscherl XLVIII"
+      location: "KEBA"
+      date: 2017-06-22
 -
   id: topconf
   name: "Topconf Events"
