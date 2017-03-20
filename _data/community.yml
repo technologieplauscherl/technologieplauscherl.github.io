@@ -210,4 +210,13 @@
       location: Wissensturm
       date: 2017-05-10
       link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
+-
+  id: growth-hacking
+  name: "Growth Hacking Linz"
+  events:
+    -
+      name: "Growth Hacking Linz - Kickoff"
+      location: Akostart
+      date: 2017-03-21
+      link: https://www.facebook.com/events/422314518116280/433798553634543/
 
