@@ -224,4 +224,22 @@
       location: Akostart
       date: 2017-05-16
       link: https://www.facebook.com/groups/259582067786884/
-
+-
+  id: oeh-informatik
+  name: "ÖH JKU - StV Informatik"
+  events:
+    -
+      name: "Ludum Dare 38 - JKU Game Jam "
+      location: JKU Linz, Bankengebäude, Keller
+      date: 2017-03-21
+      link: https://www.facebook.com/events/1687620731538217/
+    -
+      name: "TEDxJKU Live"
+      location: JKU Linz, TNF-Turm, HS11-14
+      date: 2017-04-27
+      link: https://www.facebook.com/events/710576112445425/
+    -
+      name: "JKU LAN 9"
+      location: JKU Linz, Bankengebäude, Keller
+      date: 2017-05-05
+      link: https://lan.oeh.jku.at
