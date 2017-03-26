@@ -76,7 +76,7 @@
       location: "Courtyard Linz"
       date: 2017-05-09
       link: https://www.topconf.com/conference/cyber-security-conf-17/
-      cost: EUR 150	  
+      cost: EUR 150
 -
   id: script
   name: "Script"
@@ -178,7 +178,7 @@
   events:
     -
       name: "Barcamp The Next Web"
-      location: FH Salzburg 
+      location: FH Salzburg
       date: 2017-04-21
       link: https://barcamp-sbg.at/
 
@@ -243,3 +243,12 @@
       location: JKU Linz, Bankengebäude, Keller
       date: 2017-05-05
       link: https://lan.oeh.jku.at
+-
+  id: jku-im
+  name: "JKU Informationsmanagement"
+  events:
+    -
+      name: "Alexa Skill Building Workshop"
+      location: JKU Linz
+      date: 2017-03-29
+      link: https://www.reglist24.com/alexa-skill-building-workshop
