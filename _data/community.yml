@@ -140,6 +140,11 @@
       location: "troii."
       date: 2017-03-30
       link: https://www.meetup.com/Cocoaheads-Linz/events/238469328/
+    -
+      name: "Cocoaheads Linz 32"
+      location: "myAlfred"
+      date: 2017-04-27
+      link: https://www.meetup.com/Cocoaheads-Linz/events/238961443/
 -
   id: ejug
   name: "EJUG"
