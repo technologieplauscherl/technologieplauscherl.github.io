@@ -258,3 +258,12 @@
       location: JKU Linz
       date: 2017-03-29
       link: https://www.reglist24.com/alexa-skill-building-workshop
+-
+  id: dotnet-stammtisch
+  name: ".NET Stammtisch - Linz"
+  events:
+    -
+      name: ".Net Stammtisch #1"
+      location: Dynatrace, Freistädter Str. 313, 4040 Linz
+      date: 2017-05-23
+      link: https://www.facebook.com/events/103865070169125/
