@@ -267,3 +267,12 @@
       location: Dynatrace, Freistädter Str. 313, 4040 Linz
       date: 2017-05-23
       link: https://www.facebook.com/events/103865070169125/
+-
+  id: linz-cobol-meetup
+  name: "Linz Cobol Meetup"
+  events:
+    -
+      name: "Linz Cobol Meetup"
+      location: Axis Linz, Peter-Behrens-Platz 2, 4020 Linz
+      date: 2017-04-19
+      link: https://www.meetup.com/Linz-Cobol-Meetup/
