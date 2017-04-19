@@ -29,10 +29,10 @@
   name: "VR Plauscherl"
   events:
     -
-      name: "VR Plauscherl #1"
-      location: "My PlayStore"
-      date: 2017-03-28
-      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/237955248/?_af=event&_af_eid=237955248#"
+      name: "VR Plauscherl #2"
+      location: "startup 300"
+      date: 2017-06-13
+      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/238738553/"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
