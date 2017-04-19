@@ -149,6 +149,12 @@
 -
   id: ejug
   name: "EJUG"
+  events:
+    -
+      name: "EJUG Container/Docker Themenabend"
+      location: "Dynatrace"
+      date: 2017-05-31
+      link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/239295710/
 -
   id: responsive
   name: "Responsive Org Linz"
@@ -169,6 +175,11 @@
       location: Wissensturm Linz
       date: 2017-03-07
       link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x14117395c6e
+    -
+      name: "Microsoft //build Keynote-Streaming"
+      location: Wissensturm
+      date: 2017-05-10
+      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
 -
   id: powershell-ug
   name: "PowerShell Usergroup"
@@ -197,7 +208,15 @@
       location: Linz (JKU), Wien, ...
       date: 2017-03-31
       link: https://contest.catalysts.cc/
-
+-
+  id: iaam
+  name: "Infrastructure as a meetup"
+  events:
+    -
+      name: "Infrastructure as a Meetup 1"
+      location: smec
+      date: 2017-06-08
+      link: https://www.meetup.com/de-DE/iaam-linz/events/239305491/
 -
   id: tuga-61
   name: "TYPO3 Usergroup Meeting in Linz"
@@ -207,15 +226,6 @@
       location: Lunik2, Tabakfabrik
       date: 2017-03-14
       link: https://www.meetup.com/de-DE/TUGA-TYPO3-User-Group-Austria/events/238063644/?eventId=238063644&chapter_analytics_code=UA-74113768-1
--
-  id: ms-build-streaming
-  name: "Microsoft //build Keynote-Streaming"
-  events:
-    -
-      name: "Microsoft //build Keynote-Streaming"
-      location: Wissensturm
-      date: 2017-05-10
-      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
 -
   id: growth-hacking
   name: "Growth Hacking Linz"
