@@ -274,7 +274,7 @@
   events:
     -
       name: ".Net Stammtisch #1"
-      location: Dynatrace, Freistädter Str. 313, 4040 Linz
+      location: Dynatrace
       date: 2017-05-23
       link: https://www.facebook.com/events/103865070169125/
 -
@@ -283,6 +283,6 @@
   events:
     -
       name: "Linz Cobol Meetup"
-      location: Axis Linz, Peter-Behrens-Platz 2, 4020 Linz
+      location: Axis Linz
       date: 2017-04-19
       link: https://www.meetup.com/Linz-Cobol-Meetup/
