@@ -60,7 +60,7 @@
       date: 2017-05-18
    -
       name: "Technologieplauscherl XLVIII"
-      location: "KEBA"
+      location: "startup 300"
       date: 2017-06-22
 -
   id: topconf
@@ -151,7 +151,7 @@
   name: "EJUG"
   events:
     -
-      name: "EJUG Container/Docker Themenabend"
+      name: "EJUG devone warmup"
       location: "Dynatrace"
       date: 2017-05-31
       link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/239295710/
