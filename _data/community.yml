@@ -75,9 +75,9 @@
     -
       name: "Cyber Security Conference 2017"
       location: "Courtyard Linz"
-      date: 2017-05-09
+      date: 2017-06-13
       link: https://www.topconf.com/conference/cyber-security-conf-17/
-      cost: EUR 150
+      cost: EUR 250
 -
   id: script
   name: "Script"
