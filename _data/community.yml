@@ -49,19 +49,33 @@
    -
       name: "Technologieplauscherl XLV"
       location: "smec"
+      link: http://technologieplauscherl.at
       date: 2017-03-23
    -
       name: "Technologieplauscherl XLVI"
       location: "Wissensturm"
+      link: http://technologieplauscherl.at
       date: 2017-04-25
    -
       name: "Technologieplauscherl XLVII"
       location: "Dataformers"
+      link: http://technologieplauscherl.at
       date: 2017-05-18
    -
       name: "Technologieplauscherl XLVIII"
       location: "startup 300"
+      link: http://technologieplauscherl.at
       date: 2017-06-22
+   -
+      name: "Technologieplauscherl XLIX"
+      location: "Keba"
+      link: http://technologieplauscherl.at
+      date: 2017-07-18
+   -
+      name: "Technologieplauscherl L"
+      location: "Storyblok"
+      link: http://technologieplauscherl.at
+      date: 2017-08-16
 -
   id: topconf
   name: "Topconf Events"
