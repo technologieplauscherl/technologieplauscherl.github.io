@@ -160,6 +160,11 @@
       location: "myAlfred"
       date: 2017-04-27
       link: https://www.meetup.com/Cocoaheads-Linz/events/238961443/
+    -
+      name: "Cocoaheads Linz 33"
+      location: "Runtastic GmbH"
+      date: 2017-06-29
+      link: https://www.meetup.com/Cocoaheads-Linz/events/240648053/
 -
   id: ejug
   name: "EJUG"
