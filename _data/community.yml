@@ -29,19 +29,19 @@
   name: "VR Plauscherl"
   events:
     -
-      name: "VR Plauscherl #1"
-      location: "My PlayStore"
-      date: 2017-03-28
-      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/237955248/?_af=event&_af_eid=237955248#"
+      name: "VR Plauscherl #2"
+      location: "startup 300"
+      date: 2017-06-13
+      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/238738553/"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
   events:
    -
-      name: "Stahlstadt #13"
-      location: Axis Linz
-      date: 2017-03-27
-      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/238215491/"
+      name: "Stahlstadt #14"
+      location: karriere.at
+      date: 2017-06-07
+      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/239660401/"
 -
   id: technologieplauscherl
   name: "Technologieplauscherl"
@@ -49,19 +49,33 @@
    -
       name: "Technologieplauscherl XLV"
       location: "smec"
+      link: http://technologieplauscherl.at
       date: 2017-03-23
    -
       name: "Technologieplauscherl XLVI"
       location: "Wissensturm"
+      link: http://technologieplauscherl.at
       date: 2017-04-25
    -
       name: "Technologieplauscherl XLVII"
       location: "Dataformers"
+      link: http://technologieplauscherl.at
       date: 2017-05-18
    -
       name: "Technologieplauscherl XLVIII"
-      location: "KEBA"
+      location: "startup 300"
+      link: http://technologieplauscherl.at
       date: 2017-06-22
+   -
+      name: "Technologieplauscherl XLIX"
+      location: "Keba"
+      link: http://technologieplauscherl.at
+      date: 2017-07-18
+   -
+      name: "Technologieplauscherl L"
+      location: "Storyblok"
+      link: http://technologieplauscherl.at
+      date: 2017-08-16
 -
   id: topconf
   name: "Topconf Events"
@@ -75,17 +89,17 @@
     -
       name: "Cyber Security Conference 2017"
       location: "Courtyard Linz"
-      date: 2017-05-09
+      date: 2017-06-13
       link: https://www.topconf.com/conference/cyber-security-conf-17/
-      cost: EUR 150
+      cost: EUR 250
 -
   id: script
   name: "Script"
   events:
     -
-      name: "Script'17"
+      name: "Script'18"
       location: "Central"
-      date: 2017-01-27
+      date: 2018-01-19
       link: http://www.scriptconf.org
       cost: EUR 140
 -
@@ -146,9 +160,20 @@
       location: "myAlfred"
       date: 2017-04-27
       link: https://www.meetup.com/Cocoaheads-Linz/events/238961443/
+    -
+      name: "Cocoaheads Linz 33"
+      location: "Runtastic GmbH"
+      date: 2017-06-29
+      link: https://www.meetup.com/Cocoaheads-Linz/events/240648053/
 -
   id: ejug
   name: "EJUG"
+  events:
+    -
+      name: "EJUG devone warmup"
+      location: "Dynatrace"
+      date: 2017-05-31
+      link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/239295710/
 -
   id: responsive
   name: "Responsive Org Linz"
@@ -169,6 +194,11 @@
       location: Wissensturm Linz
       date: 2017-03-07
       link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x14117395c6e
+    -
+      name: "Microsoft //build Keynote-Streaming"
+      location: Wissensturm
+      date: 2017-05-10
+      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
 -
   id: powershell-ug
   name: "PowerShell Usergroup"
@@ -197,7 +227,15 @@
       location: Linz (JKU), Wien, ...
       date: 2017-03-31
       link: https://contest.catalysts.cc/
-
+-
+  id: iaam
+  name: "Infrastructure as a meetup"
+  events:
+    -
+      name: "Infrastructure as a Meetup 1"
+      location: smec
+      date: 2017-06-28
+      link: https://www.meetup.com/de-DE/iaam-linz/events/239305491/
 -
   id: tuga-61
   name: "TYPO3 Usergroup Meeting in Linz"
@@ -207,15 +245,6 @@
       location: Lunik2, Tabakfabrik
       date: 2017-03-14
       link: https://www.meetup.com/de-DE/TUGA-TYPO3-User-Group-Austria/events/238063644/?eventId=238063644&chapter_analytics_code=UA-74113768-1
--
-  id: ms-build-streaming
-  name: "Microsoft //build Keynote-Streaming"
-  events:
-    -
-      name: "Microsoft //build Keynote-Streaming"
-      location: Wissensturm
-      date: 2017-05-10
-      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
 -
   id: growth-hacking
   name: "Growth Hacking Linz"
@@ -229,6 +258,11 @@
       name: "Growth Hacking Stammtisch #2"
       location: Akostart
       date: 2017-05-16
+      link: https://www.facebook.com/groups/259582067786884/
+    -
+      name: "Growth Hacking Stammtisch #3"
+      location: factory300
+      date: 2017-07-25
       link: https://www.facebook.com/groups/259582067786884/
 -
   id: oeh-informatik
@@ -264,6 +298,25 @@
   events:
     -
       name: ".Net Stammtisch #1"
-      location: Dynatrace, Freistädter Str. 313, 4040 Linz
+      location: Dynatrace
       date: 2017-05-23
       link: https://www.facebook.com/events/103865070169125/
+-
+  id: linz-cobol-meetup
+  name: "Linz Cobol Meetup"
+  events:
+    -
+      name: "Linz Cobol Meetup"
+      location: Axis Linz
+      date: 2017-04-19
+      link: https://www.meetup.com/Linz-Cobol-Meetup/
+-
+  id: linuxwochen
+  name: "Linuxwochen"
+  events:
+    -
+      name: "Linuxwochen"
+      location: Wissensturm (13. und 14. Mai)
+      date: 2017-05-13
+      link: https://www.linuxwochen-linz.at/2017/
+
