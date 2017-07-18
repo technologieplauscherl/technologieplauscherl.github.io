@@ -283,6 +283,11 @@
       location: JKU Linz, Bankengebäude, Keller
       date: 2017-05-05
       link: https://lan.oeh.jku.at
+    -
+      name: "JKU LAN 10"
+      location: JKU Linz, Mensa
+      date: 2017-11-10
+      link: https://lan.oeh.jku.at
 -
   id: jku-im
   name: "JKU Informationsmanagement"
