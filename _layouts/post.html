@@ -12,13 +12,19 @@ layout: default
 	<h2>Sessions</h2>
 
 	<section class="speakers">
-
 		{% for speaker in page.speakers %}
 			{% include speaker.html speaker=speaker %}
 		{% endfor %}
 	</section>
 
 	{{content}}
+
+	{% if page.video %}
+		<section class="video">
+			<iframe width="560" height="349" src="https://www.youtube.com/embed/{{page.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
+		</section>
+	{% endif %}
+
 	<div class="buttons">
 	{% if page.event.facebook %}
 	<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
@@ -44,6 +50,7 @@ layout: default
 		</svg>
 	</a>
 	{% endif %}
+
 	</div>
 
 	{% if page.location %}
