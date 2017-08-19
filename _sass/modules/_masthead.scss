@@ -27,3 +27,17 @@
 .masthead .speaker__img {
 	box-shadow: 0 0 7px rgba(0,0,0,1);
 }
+
+.masthead .livestream {
+    border: 10px solid white;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 600px) {
+    .masthead .livestream {
+        height: 300px;
+        border-left: none;
+        border-right: none;
+    }
+}
