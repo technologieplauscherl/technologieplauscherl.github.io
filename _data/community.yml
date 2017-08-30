@@ -170,6 +170,11 @@
       location: "Runtastic GmbH"
       date: 2017-06-29
       link: https://www.meetup.com/Cocoaheads-Linz/events/240648053/
+    -
+      name: "Cocoaheads Linz 34"
+      location: "Egger Apps"
+      date: 2017-09-28
+      link: https://www.meetup.com/Cocoaheads-Linz/events/242947934/
 -
   id: ejug
   name: "EJUG"
