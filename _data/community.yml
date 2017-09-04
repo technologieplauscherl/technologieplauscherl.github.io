@@ -184,6 +184,11 @@
       location: "Dynatrace"
       date: 2017-05-31
       link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/239295710/
+    -
+      name: "EJUG Linz"
+      location: "Wissensturm"
+      date: 2017-09-12
+      link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/241997768/
 -
   id: responsive
   name: "Responsive Org Linz"
