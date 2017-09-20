@@ -341,6 +341,15 @@
       date: 2017-04-19
       link: https://www.meetup.com/Linz-Cobol-Meetup/
 -
+  id: otelo
+  name: "Otelo"
+  events:
+    -
+      name: "Otelo Arduino Hack"
+      location: Gemeindezentrum Auwiesen
+      date: 2017-09-28
+      link: http://www.otelo.or.at/de/event/arduino-hack-3
+-
   id: linuxwochen
   name: "Linuxwochen"
   events:
