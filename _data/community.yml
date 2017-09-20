@@ -81,6 +81,11 @@
       location: "Runtastic"
       link: http://technologieplauscherl.at
       date: 2017-09-21
+   -
+      name: "Technologieplauscherl LII"
+      location: "JKU, Science Park"
+      link: http://technologieplauscherl.at
+      date: 2017-10-11
 -
   id: topconf
   name: "Topconf Events"
@@ -242,6 +247,20 @@
       location: Linz (JKU), Wien, ...
       date: 2017-03-31
       link: https://contest.catalysts.cc/
+    -
+      name: "27th Coding Contest"
+      location: Linz (JKU) und mindestens 18 andere
+      date: 2017-10-20
+      link: https://www.codingcontest.org/
+-
+  id: factory300
+  name: "Factory300"
+  events:
+    -
+      name: "Blockchain Beginners Guide"
+      location: Factory300
+      date: 2017-10-04
+      link: https://www.facebook.com/events/1988009068110153/
 -
   id: iaam
   name: "Infrastructure as a meetup"
@@ -304,7 +323,7 @@
       date: 2017-05-05
       link: https://lan.oeh.jku.at
     -
-      name: "JKU LAN 10"
+      name: "JKU LAN 10 & JKU DICE"
       location: JKU Linz, Mensa
       date: 2017-11-10
       link: https://lan.oeh.jku.at
