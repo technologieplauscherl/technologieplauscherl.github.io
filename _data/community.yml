@@ -368,3 +368,12 @@
       location: Wissensturm (13. und 14. Mai)
       date: 2017-05-13
       link: https://www.linuxwochen-linz.at/2017/
+-
+  id: funlinz
+  name: "Fuckup Night Linz"
+  events:
+    -
+      name: "Fuckup Night Linz Vol. III"
+      location: Tabakfabrik
+      date: 2017-10-19
+      link: https://www.eventbrite.com/e/fuckup-night-linz-vol-iii-tickets-33390227068
