@@ -1,11 +1,18 @@
-<article class="cell cell--w25" itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
-	<div class="speaker">
-		<img src="{{include.speaker.img}}" alt="{{include.speaker.name}}" class="speaker__img">
-		<div class="speaker__info">
-			<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
-			<div class="speaker__session" itemprop="name">
+<div class="speaker">
+	<img src="{{include.speaker.img}}" alt="{{include.speaker.name}}" class="speaker__img">
+	<div class="speaker__info">
+		<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
+		{% if include.speaker.talk %}
+		<div class="speaker__session">
+			{% if include.speaker.talklink %}
+				<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
+			{% else %}
 				{{include.speaker.talk}}
-			</div>
+			{% endif %}
 		</div>
+		{% endif %}
+		{% if include.speaker.count %}
+		<span class="speaker__count">{{include.speaker.count}}</span>
+		{% endif %}
 	</div>
-</article>
+</div>

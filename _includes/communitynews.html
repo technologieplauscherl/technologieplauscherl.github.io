@@ -1,0 +1,43 @@
+{% assign m = include.news.date | date: "%-m" %}
+{% capture mon %}
+{% case m %}
+  {% when '1' %}Jan
+  {% when '2' %}Feb
+  {% when '3' %}Mar
+  {% when '4' %}Apr
+  {% when '5' %}Mai
+  {% when '6' %}Jun
+  {% when '7' %}Jul
+  {% when '8' %}Aug
+  {% when '9' %}Sep
+  {% when '10' %}Okt
+  {% when '11' %}Nov
+  {% when '12' %}Dez
+{% endcase %}
+{% endcapture %}
+{% unless include.news.link == null %}
+<a href="{{include.news.link}}" class="event">
+{% else %}
+<span class="event">
+{% endunless %}
+  <div class="event__details">
+    <div class="event__date" itemprop="startDate" content="{{include.news.date}}">
+      {{ include.news.date | date: "%-d" }}
+      <span class="event__month">{{mon}}</span>
+    </div>
+    <div class="event__information">
+      <h2 class="event__title" itemprop="name">{{include.news.name}}</h2>
+      {% if include.news.cost %}
+      <svg class="event__icon event__icon--cost"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-coin-euro"></use></svg>
+      {% endif %}
+      <div class="event__venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
+        <svg class="event__icon icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-compass2"></use></svg>
+        <span itemprop="name">{{include.news.location}}</span>
+      </div>
+    </div>
+  </div>
+{% unless include.news.link == null %}
+</a>
+{% else %}
+</span>
+{% endunless %}

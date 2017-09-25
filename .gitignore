@@ -7,3 +7,6 @@ app
 npm-debug.log
 old_site
 _site
+.idea
+.iml
+.DS_Store

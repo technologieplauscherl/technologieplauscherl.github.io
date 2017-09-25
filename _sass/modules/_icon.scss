@@ -1,0 +1,19 @@
+.icon {
+  fill: #fff;
+  height: 1rem;
+  width: 1rem;
+
+  @media(min-width: 800px) {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.wrapper .icon {
+  fill: #454545;
+}
+
+.buttons {
+  text-align: center;
+  padding: 1rem;
+}

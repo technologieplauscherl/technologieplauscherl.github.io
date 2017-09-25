@@ -5,42 +5,74 @@ body {
   height: 100%;
 
   background-color: $bg;
+  color: $text-color;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, img {
+* {
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+h1, h2, p, ul, ol, blockquote, img {
   margin: 0;
   padding: 0;
   line-height: 1.2em;
   margin-bottom: 1.25rem;
 }
 
+h1 {
+  margin-top: 2rem;
+
+  @media(min-width: 700px) {
+    margin-top: 0;
+  }
+}
+
 ol, ul {
 	padding-left: 1.25rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'bebas-neue';
+h1, h2 {
+	font-family: 'baby-neue';
 	text-align: center;
 }
 
 
 h1 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 
+h2 {
+	font-size: 1.5rem;
+	color: $pumpkin;
+	margin: 0;
+	padding: 1.25rem;
+}
 
 @media(min-width: 500px) {
 	h1 {
 		font-size: 3rem;
 	}
+
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 @media(min-width: 700px) {
 	h1 {
 		font-size: 4rem;
 	}
+
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 @media(min-width: 800px) {
@@ -49,24 +81,6 @@ h1 {
 	}
 }
 
-h2 {
-	font-size: 3rem;
-	color: $pumpkin;
-	margin: 0;
-	padding: 1.25rem;
-}
-
-h3 {
-	font-size: 2.5rem;
-}
-
-h4 {
-	font-size: 2rem;
-}
-
-h5 {
-	font-size: 1.5rem;
-}
 
 p, li {
 	line-height: 1.5em;
@@ -76,10 +90,6 @@ a {
 	color: $pumpkin;
 	font-weight: 600;
 	text-decoration: none;
-	-webkit-transition: color 0.3s;
-	-moz-transition: color 0.3s;
-	-ms-transition: color 0.3s;
-	-o-transition: color 0.3s;
 	transition: color 0.3s;
 
 	&:hover {
@@ -87,7 +97,11 @@ a {
 	}
 }
 
-iframe {
-	width: 100%;
-	border: 0;
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 10px;
+  margin-left: 20px;
 }

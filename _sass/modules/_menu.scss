@@ -1,0 +1,19 @@
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu__item {
+  max-height: 3.25rem;
+
+  @media(min-width: 700px) {
+    display: block;
+  }
+}
+
+.menu .link__icon {
+  position: relative;
+  right: auto; left: auto; top: auto;
+}

@@ -1,0 +1,74 @@
+---
+layout: default
+---
+<div class="backdrop">
+  <div class="slides">
+  {{content}}
+  </div>
+</div>
+<script>
+
+let running = true;
+let timeout = null;
+const intv = 15000;
+
+const nextSlide = () => {
+  const current = document.querySelector('.slide.is-active')
+  let next = current.nextElementSibling;
+  if (next === null) {
+    next = document.querySelector('.slide');
+  }
+  current.classList.toggle('is-active');
+  next.classList.toggle('is-active');
+  if (running) {
+    timeout = setTimeout(nextSlide, intv);
+  }
+}
+
+const run = () => {
+  running = true;
+  timeout = setTimeout(nextSlide, intv);
+};
+
+const pause = () => {
+  running = false;
+  clearTimeout(timeout);
+}
+
+const scale = () => {
+  const rate = window.innerHeight / 900;
+  document.querySelector('.slides').style.transform = `scale(${rate})`;
+};
+
+const showSlide = (n) => {
+  document.querySelector('.slide.is-active')
+    .classList.remove('is-active');
+  document.querySelector(`.slide:nth-of-type(${n})`)
+    .classList.add('is-active');
+  pause();
+};
+
+run();
+scale();
+
+document.addEventListener('keyup', (e) => {
+  switch(e.keyCode) {
+    case 49:
+      showSlide(1);
+      break;
+    case 50:
+      showSlide(2);
+      break;
+    case 80:
+      pause();
+      console.log('Pause');
+      break;
+    case 83:
+      run();
+      break;
+    default:
+      console.log('Do not know what to do');
+  }
+})
+
+</script>
