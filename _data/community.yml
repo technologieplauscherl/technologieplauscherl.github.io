@@ -350,6 +350,11 @@
       location: "Coworking Cube: Obere Landstraße 19, 4055 Pucking"
       date: 2017-07-26
       link: https://www.facebook.com/events/1003694579733452/
+    -
+      name: ".NET Stammtisch #3"
+      location: "bet-at-home: Hafenstraße 47-51, 4020 Linz"
+      date: 2017-10-24
+      link: https://dotnetstammtisch.github.io/
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
