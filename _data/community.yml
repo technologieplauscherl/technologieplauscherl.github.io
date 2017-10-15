@@ -396,3 +396,12 @@
       location: Tabakfabrik
       date: 2017-10-19
       link: https://www.eventbrite.com/e/fuckup-night-linz-vol-iii-tickets-33390227068
+-
+  id: pioneers
+  name: "Pioneers Industry 4.0 Hackathon"
+  events:
+    -
+      name: "Pioneers Industry 4.0 Hackathon (6.-8.11.)"
+      location: startup300
+      date: 2017-11-06
+      link: https://pioneers.io/discover/industry-hackathon
