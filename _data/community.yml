@@ -405,3 +405,12 @@
       location: startup300
       date: 2017-11-06
       link: https://pioneers.io/discover/industry-hackathon
+-
+  id: 7lytix
+  name: "Data Science Hackathon"
+  events:
+    -
+	  name: "7LYTIX Data Science Hackathon (15.-19.11.)"
+	  location: "Online (Anmeldeschluss 14.11.)"
+	  date: 2017-11-15
+	  link: https://hackathon.7lytix.com/
