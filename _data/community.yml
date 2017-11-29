@@ -151,6 +151,12 @@
       date: 2017-05-11
       link: http://www.wearedevelopers.org
       cost: EUR 199
+    -
+      name: "We Are Developers World Congress (3 days)"
+      location: "Vienna"
+      date: 2018-05-16
+      link: http://www.wearedevelopers.org
+      cost: EUR 199
 -
   id: cocoaheads-linz
   name: "Cocoaheads Linz"
