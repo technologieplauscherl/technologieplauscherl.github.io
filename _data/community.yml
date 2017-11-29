@@ -38,10 +38,10 @@
   name: "Stahlstadt.js"
   events:
    -
-      name: "Stahlstadt #15"
-      location: Storyblok
-      date: 2017-09-27
-      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/242535474/"
+      name: "Stahlstadt #16"
+      location: smec
+      date: 2017-11-29
+      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/244680268/"
 -
   id: technologieplauscherl
   name: "Technologieplauscherl"
@@ -81,6 +81,11 @@
       location: "Runtastic"
       link: http://technologieplauscherl.at
       date: 2017-09-21
+   -
+      name: "Technologieplauscherl LII"
+      location: "JKU, Science Park"
+      link: http://technologieplauscherl.at
+      date: 2017-10-11
 -
   id: topconf
   name: "Topconf Events"
@@ -170,6 +175,11 @@
       location: "Runtastic GmbH"
       date: 2017-06-29
       link: https://www.meetup.com/Cocoaheads-Linz/events/240648053/
+    -
+      name: "Cocoaheads Linz 34"
+      location: "Egger Apps"
+      date: 2017-09-28
+      link: https://www.meetup.com/Cocoaheads-Linz/events/242947934/
 -
   id: ejug
   name: "EJUG"
@@ -179,6 +189,11 @@
       location: "Dynatrace"
       date: 2017-05-31
       link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/239295710/
+    -
+      name: "EJUG Linz"
+      location: "Wissensturm"
+      date: 2017-09-12
+      link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/241997768/
 -
   id: responsive
   name: "Responsive Org Linz"
@@ -232,6 +247,20 @@
       location: Linz (JKU), Wien, ...
       date: 2017-03-31
       link: https://contest.catalysts.cc/
+    -
+      name: "27th Coding Contest"
+      location: JKU, HS1 und weltweit 25 andere
+      date: 2017-10-20
+      link: https://www.codingcontest.org/
+-
+  id: factory300
+  name: "Factory300"
+  events:
+    -
+      name: "Blockchain Beginners Guide"
+      location: factory300
+      date: 2017-10-04
+      link: https://www.facebook.com/events/1988009068110153/
 -
   id: iaam
   name: "Infrastructure as a meetup"
@@ -241,7 +270,7 @@
       location: smec
       date: 2017-06-28
       link: https://www.meetup.com/de-DE/iaam-linz/events/239305491/
-	-
+    -  
       name: "Infrastructure as a Meetup 2"
       location: factory300
       date: 2017-09-27
@@ -274,6 +303,11 @@
       location: factory300
       date: 2017-07-25
       link: https://www.facebook.com/groups/259582067786884/
+    -
+      name: "Growth Hacking Stammtisch #4"
+      location: factory300
+      date: 2017-10-17
+      link: https://www.facebook.com/events/1997588590477168/
 -
   id: oeh-informatik
   name: "ÖH JKU - StV Informatik"
@@ -294,8 +328,8 @@
       date: 2017-05-05
       link: https://lan.oeh.jku.at
     -
-      name: "JKU LAN 10"
-      location: JKU Linz, Mensa
+      name: "JKU LAN 10 & JKU DICE"
+      location: JKU, Mensa
       date: 2017-11-10
       link: https://lan.oeh.jku.at
 -
@@ -321,6 +355,11 @@
       location: "Coworking Cube: Obere Landstraße 19, 4055 Pucking"
       date: 2017-07-26
       link: https://www.facebook.com/events/1003694579733452/
+    -
+      name: ".NET Stammtisch #3"
+      location: "bet-at-home: Hafenstraße 47-51, 4020 Linz"
+      date: 2017-10-24
+      link: https://dotnetstammtisch.github.io/
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
@@ -331,6 +370,15 @@
       date: 2017-04-19
       link: https://www.meetup.com/Linz-Cobol-Meetup/
 -
+  id: otelo
+  name: "Otelo"
+  events:
+    -
+      name: "Otelo Arduino Hack"
+      location: Gemeindezentrum Auwiesen
+      date: 2017-09-28
+      link: http://www.otelo.or.at/de/event/arduino-hack-3
+-
   id: linuxwochen
   name: "Linuxwochen"
   events:
@@ -339,3 +387,30 @@
       location: Wissensturm (13. und 14. Mai)
       date: 2017-05-13
       link: https://www.linuxwochen-linz.at/2017/
+-
+  id: funlinz
+  name: "Fuckup Night Linz"
+  events:
+    -
+      name: "Fuckup Night Linz Vol. III"
+      location: Tabakfabrik
+      date: 2017-10-19
+      link: https://www.eventbrite.com/e/fuckup-night-linz-vol-iii-tickets-33390227068
+-
+  id: pioneers
+  name: "Pioneers Industry 4.0 Hackathon"
+  events:
+    -
+      name: "Pioneers Industry 4.0 Hackathon (6.-8.11.)"
+      location: startup300
+      date: 2017-11-06
+      link: https://pioneers.io/discover/industry-hackathon
+-
+  id: 7lytix
+  name: "Data Science Hackathon"
+  events:
+    -
+      name: "7LYTIX Data Science Hackathon (15.-19.11.)"
+      location: "Online (Anmeldeschluss 14.11.)"
+      date: 2017-11-15
+      link: https://hackathon.7lytix.com/
