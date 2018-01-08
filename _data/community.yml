@@ -267,6 +267,11 @@
       location: factory300
       date: 2017-10-04
       link: https://www.facebook.com/events/1988009068110153/
+    -
+      name: "Blockchain Meetup #5"
+      location: factory300
+      date: 2018-01-30
+      link: https://factory300.spaces.nexudus.com/en/events/view/471680209/blockchain-meetup-5
 -
   id: iaam
   name: "Infrastructure as a meetup"
@@ -407,6 +412,11 @@
       location: Tabakfabrik
       date: 2017-10-19
       link: https://www.eventbrite.com/e/fuckup-night-linz-vol-iii-tickets-33390227068
+    -
+      name: "Fuckup Night Linz Vol. IV"
+      location: Tabakfabrik
+      date: 2018-01-18
+      link: https://www.f6s.com/fuckupnightslinzvol.iv
 -
   id: pioneers
   name: "Pioneers Industry 4.0 Hackathon"
