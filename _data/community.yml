@@ -348,6 +348,11 @@
       location: JKU, Mensa
       date: 2017-11-10
       link: https://lan.oeh.jku.at
+    -
+      name: "Google #Hash Code Hub"
+      location: JKU
+      date: 2018-03-01
+      link: https://hashcode.withgoogle.com/hubs_list.html
 -
   id: jku-im
   name: "JKU Informationsmanagement"
