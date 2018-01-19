@@ -365,17 +365,22 @@
       name: ".NET Stammtisch #1"
       location: "Dynatrace"
       date: 2017-05-23
-      link: https://www.facebook.com/events/103865070169125/
+      link: https://dotnetstammtisch.at
     -
       name: ".NET Stammtisch #2"
       location: "Coworking Cube: Obere Landstraße 19, 4055 Pucking"
       date: 2017-07-26
-      link: https://www.facebook.com/events/1003694579733452/
+      link: https://dotnetstammtisch.at
     -
       name: ".NET Stammtisch #3"
       location: "bet-at-home: Hafenstraße 47-51, 4020 Linz"
       date: 2017-10-24
-      link: https://dotnetstammtisch.github.io/
+      link: https://dotnetstammtisch.at
+    -
+      name: ".NET Stammtisch #4"
+      location: "Factory300: Peter-Behrens-Platz 10, 4020 Linz"
+      date: 2018-02-20
+      link: https://dotnetstammtisch.at
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
