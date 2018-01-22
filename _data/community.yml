@@ -113,6 +113,16 @@
       link: http://www.scriptconf.org
       cost: EUR 140
 -
+  id: concat
+  name: ".concat()"
+  events:
+    -
+      name: ".concat() 2018"
+      location: "Salzburg"
+      date: 2018-03-03
+      link: https://2018.conc.at/
+      cost: EUR 270
+-
   id: magento
   name: "Magento Meetup"
   events:
