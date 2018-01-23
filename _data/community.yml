@@ -460,3 +460,12 @@
       location: "Online (Anmeldeschluss 14.11.)"
       date: 2017-11-15
       link: https://hackathon.7lytix.com/
+-
+  id: tedx
+  name: "TEDx Linz"
+  events:
+    -
+      name: "TEDx Linz: The new normal"
+      location: "AEC"
+      date: 2018-02-10
+      link: https://tedxlinz.at/
