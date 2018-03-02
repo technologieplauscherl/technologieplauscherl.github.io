@@ -306,6 +306,11 @@
       location: karriere.at
       date: 2018-02-07
       link: https://www.meetup.com/iaam-linz/events/245490961/	  
+    -
+      name: "Infrastructure as a Meetup 4"
+      location: smec
+      date: 2018-04-05
+      link: https://www.meetup.com/iaam-linz/events/248331134/ 	  
 -
   id: tuga-61
   name: "TYPO3 Usergroup Meeting in Linz"
