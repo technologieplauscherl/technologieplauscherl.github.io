@@ -305,7 +305,7 @@
       name: "Infrastructure as a Meetup 3"
       location: karriere.at
       date: 2018-02-07
-      link: https://www.meetup.com/iaam-linz/events/245490961/	  
+      link: https://www.meetup.com/iaam-linz/events/245490961/
 -
   id: tuga-61
   name: "TYPO3 Usergroup Meeting in Linz"
@@ -460,3 +460,12 @@
       location: "Online (Anmeldeschluss 14.11.)"
       date: 2017-11-15
       link: https://hackathon.7lytix.com/
+-
+  id: karriere.at
+  name: "Dev-Talk"
+  events:
+  	-
+  	  name: "DEV TALK - Erster Job, erster Fehler?"
+	  location: FH-Hagenberg
+      date: 2017-03-22
+      link: https://www.facebook.com/events/817228281797661/
