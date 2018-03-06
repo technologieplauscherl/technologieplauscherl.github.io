@@ -479,8 +479,8 @@
   id: karriere.at
   name: "Dev-Talk"
   events:
-  	-
-  	  name: "DEV TALK - Erster Job, erster Fehler?"
-	  location: FH-Hagenberg
+    -
+      name: "DEV TALK - Erster Job, erster Fehler?"
+      location: FH-Hagenberg
       date: 2018-03-22
       link: https://www.facebook.com/events/817228281797661/
