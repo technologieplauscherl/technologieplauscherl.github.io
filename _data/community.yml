@@ -306,6 +306,11 @@
       location: karriere.at
       date: 2018-02-07
       link: https://www.meetup.com/iaam-linz/events/245490961/
+    -
+      name: "Infrastructure as a Meetup 4"
+      location: smec
+      date: 2018-04-05
+      link: https://www.meetup.com/iaam-linz/events/248331134/
 -
   id: tuga-61
   name: "TYPO3 Usergroup Meeting in Linz"
@@ -460,6 +465,16 @@
       location: "Online (Anmeldeschluss 14.11.)"
       date: 2017-11-15
       link: https://hackathon.7lytix.com/
+-
+  id: tedx
+  name: "TEDx Linz"
+  events:
+    -
+      name: "TEDx Linz: The new normal"
+      location: "AEC"
+      date: 2018-02-10
+      link: https://tedxlinz.at/
+      cost: EUR
 -
   id: karriere.at
   name: "Dev-Talk"
