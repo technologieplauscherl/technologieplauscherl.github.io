@@ -287,6 +287,11 @@
       location: factory300
       date: 2018-01-30
       link: https://factory300.spaces.nexudus.com/en/events/view/471680209/blockchain-meetup-5
+    -
+      name: "Blockchain Meetup #6"
+      location: factory300
+      date: 2018-03-14
+      link: https://www.meetup.com/de-DE/Blockchain-Meetup-1/events/248330938/
 -
   id: iaam
   name: "Infrastructure as a meetup"
@@ -312,14 +317,14 @@
       date: 2018-04-05
       link: https://www.meetup.com/iaam-linz/events/248331134/
 -
-  id: tuga-61
+  id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
   events:
     -
-      name: "61. TYPO3 Usergroup Meeting"
-      location: Lunik2, Tabakfabrik
-      date: 2017-03-14
-      link: https://www.meetup.com/de-DE/TUGA-TYPO3-User-Group-Austria/events/238063644/?eventId=238063644&chapter_analytics_code=UA-74113768-1
+      name: "64. TYPO3 Usergroup Meeting"
+      location: Axis, Reelworx
+      date: 2018-03-14
+      link: https://www.meetup.com/de-DE/TUGA-TYPO3-User-Group-Austria/events/247781534/
 -
   id: growth-hacking
   name: "Growth Hacking Linz"
@@ -484,3 +489,12 @@
       location: FH-Hagenberg
       date: 2018-03-22
       link: https://www.facebook.com/events/817228281797661/
+-
+  id: agile-coffee
+  name: "Agile Coffee"
+  events:
+    -
+      name: "Agile Coffee"
+      location: karriere.at
+      date: 2018-03-08
+      link: https://www.meetup.com/de-DE/Agile-User-Group-Linz/events/247798603/
