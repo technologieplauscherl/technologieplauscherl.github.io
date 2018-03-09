@@ -10,6 +10,11 @@
       location: "Runtastic"
       date: 2017-03-15
       link: "https://meetup.com/Ruby-User-Group-Linz-RUGL/events/237342046"
+    -
+      name: "Ruby User Group Linz #20"
+      location: "tba."
+      date: 2018-05-15
+      link: "https://www.meetup.com/Ruby-User-Group-Linz-RUGL/events/245677239/"
 -
   id: aug-linz
   name: "Atlassian User Group Linz"
@@ -210,6 +215,16 @@
       location: "Wissensturm"
       date: 2017-09-12
       link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/241997768/
+    -
+      name: "EJUG: Kotlin all the things!"
+      location: "Catalysts Digital Future Space"
+      date: 2018-03-28
+      link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/248023580/
+    -
+      name: "EJUG: Cloud Native Java & Bootiful Testing"
+      location: "smec"
+      date: 2018-04-26
+      link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/248024229/
 -
   id: responsive
   name: "Responsive Org Linz"
@@ -452,6 +467,11 @@
       location: Tabakfabrik
       date: 2018-01-18
       link: https://www.f6s.com/fuckupnightslinzvol.iv
+    -
+      name: "Fuckup Night Linz Vol. V"
+      location: Tabakfabrik
+      date: 2018-05-01
+      link: https://www.facebook.com/events/566219833723437/
 -
   id: pioneers
   name: "Pioneers Industry 4.0 Hackathon"
@@ -461,6 +481,11 @@
       location: startup300
       date: 2017-11-06
       link: https://pioneers.io/discover/industry-hackathon
+    -
+      name: "Industry 4.0 Hackathon"
+      location: startup300
+      date: 2018-05-07
+      link: http://factory300.spaces.nexudus.com/de/events/view/542926439/industry-40-hackathon
 -
   id: 7lytix
   name: "Data Science Hackathon"
@@ -498,3 +523,36 @@
       location: karriere.at
       date: 2018-03-08
       link: https://www.meetup.com/de-DE/Agile-User-Group-Linz/events/247798603/
+-
+  id: linz-ai
+  name: "Linz.AI"
+  events:
+    -
+      name: "Linz.AI #1"
+      location: smec
+      date: 2018-03-06
+      link: https://www.meetup.com/linz-ai/events/247306900/
+    -
+      name: "Linz.AI #2"
+      location: Catalysts Digital Future Space
+      date: 2018-03-29
+      link: https://www.meetup.com/linz-ai/events/248055890/
+-
+  id: akarion
+  name: "Akarion"
+  events:
+    -
+      name: "DigitalShift"
+      location: Stahlwelten
+      date: 2018-03-15
+      link: https://digitalshift.xyz/
+      cost: EUR
+-
+  id: devlol
+  name: "/dev/lol"
+  events:
+    -
+      name: "Geekend Linz"
+      location: "Willy*Fred"
+      date: 2018-04-13
+      link: https://devlol.org/wiki/DevLoL/geekend/2018
