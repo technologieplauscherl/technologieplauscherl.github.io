@@ -91,6 +91,11 @@
       location: "JKU, Science Park"
       link: http://technologieplauscherl.at
       date: 2017-10-11
+   -
+      name: "Technologieplauscherl LVI"
+      location: "Celum, "
+      link: https://technologieplauscherl.at
+      date: 2018-04-25
 -
   id: topconf
   name: "Topconf Events"
