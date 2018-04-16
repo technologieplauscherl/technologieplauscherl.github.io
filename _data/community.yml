@@ -436,10 +436,10 @@
   name: "Linz Cobol Meetup"
   events:
     -
-      name: "Linz Cobol Meetup"
-      location: Axis Linz
-      date: 2017-04-19
-      link: https://www.meetup.com/Linz-Cobol-Meetup/
+      name: "90s Dev Meetup"
+      location: Storyblok
+      date: 2018-04-25
+      link: https://www.meetup.com/de-DE/90s-Dev-Meetup/
 -
   id: otelo
   name: "Otelo"
