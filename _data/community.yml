@@ -38,6 +38,11 @@
       location: "startup 300"
       date: 2017-06-13
       link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/238738553/"
+    -
+      name: "VR Plauscherl #6"
+      location: "Business Upper Austria / Techcenter Linz"
+      date: 2018-06-12
+      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/249935830/"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
