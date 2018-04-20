@@ -436,6 +436,11 @@
       location: "Factory300: Peter-Behrens-Platz 10, 4020 Linz"
       date: 2018-02-20
       link: https://dotnetstammtisch.at
+    -
+      name: ".NET Stammtisch #5"
+      location: "Dataformers: Gewerbepark Urfahr 8, 4040 Linz"
+      date: 2018-05-22
+      link: https://dotnetstammtisch.at
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
