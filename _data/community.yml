@@ -502,6 +502,15 @@
       date: 2018-05-07
       link: http://factory300.spaces.nexudus.com/de/events/view/542926439/industry-40-hackathon
 -
+  id: growthhackingmeetup
+  name: "Growth Hacking Meetup"
+  events:
+    -
+      name: "Growth Hacking Meetup #6"
+      location: factory300
+      date: 2018-05-15
+      link: https://www.facebook.com/events/242354159835864/
+-
   id: 7lytix
   name: "Data Science Hackathon"
   events:
