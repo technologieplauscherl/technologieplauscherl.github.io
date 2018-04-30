@@ -101,6 +101,11 @@
       location: "Celum, "
       link: https://technologieplauscherl.at
       date: 2018-04-25
+   -
+      name: "Technologieplauscherl LVII"
+      location: "Wissensturm"
+      link: https://technologieplauscherl.at
+      date: 2018-05-30
 -
   id: topconf
   name: "Topconf Events"
