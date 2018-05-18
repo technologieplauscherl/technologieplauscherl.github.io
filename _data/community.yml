@@ -590,3 +590,12 @@
       location: "Willy*Fred"
       date: 2018-04-13
       link: https://devlol.org/wiki/DevLoL/geekend/2018
+-
+  id: aws-ug
+  name: "AWS User Group Linz"
+  events:
+    -
+      name: "1st AWS User Group Linz"
+      location: "Dynatrace"
+      date: 2018-06-12
+      link: https://www.meetup.com/en-AU/AWS-User-Group-Linz/events/249598149/
