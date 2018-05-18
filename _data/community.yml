@@ -346,6 +346,11 @@
       location: smec
       date: 2018-04-05
       link: https://www.meetup.com/iaam-linz/events/248331134/
+    -
+      name: "Infrastructure as a Meetup 5"
+      location: dynatrace
+      date: 2018-06-28
+      link: https://www.meetup.com/de-DE/iaam-linz/events/250904697/	  
 -
   id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
