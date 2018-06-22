@@ -413,6 +413,11 @@
       location: JKU
       date: 2018-03-01
       link: https://hashcode.withgoogle.com/hubs_list.html
+    -
+      name: "Game Dev Meetup Linz"
+      location: JKU
+      date: 2018-07-10
+      link: https://www.facebook.com/events/1768716099873839/
 -
   id: jku-im
   name: "JKU Informationsmanagement"
