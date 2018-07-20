@@ -604,6 +604,11 @@
       location: "Dynatrace"
       date: 2018-06-12
       link: https://www.meetup.com/en-AU/AWS-User-Group-Linz/events/249598149/
+    -
+      name: "2nd AWS User Group Linz"
+      location: "Catalysts Digital Future Space"
+      date: 2018-09-25
+      link: https://www.meetup.com/en-AU/AWS-User-Group-Linz/events/252112439/
 -
   id: socrates
   name: "Socrates Days Linz"
