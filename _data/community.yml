@@ -172,6 +172,16 @@
       link: http://devone.at
       cost: EUR
 -
+  id: reactday
+  name: "React Day Berlin"
+  events:
+    -
+      name: "React Day Berlin"
+      location: "KOSMOS, Berlin"
+      date: 2018-11-30
+      link: https://reactday.berlin/
+      cost: EUR 300+
+-
   id: wad
   name: "We Are Developers"
   events:
