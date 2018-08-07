@@ -26,49 +26,22 @@ permalink: /history/
 	</p>
 	<p>
 		Die Gründer und Organisatoren:
-	<div class="speakers">
-		<div class="speaker">
-			<img src="https://avatars2.githubusercontent.com/u/4456121?v=3&s=460" alt="Elisabeth Rosemann"
-				 class="speaker__img">
-			<div class="speaker__info">
-				<span class="speaker__name" itemprop="performer">Elisabeth Rosemann</span>
-			</div>
-		</div>
-		<div class="speaker">
-			<img src="https://avatars0.githubusercontent.com/u/106848?v=3&s=200" alt="Dominik Hurnaus"
-				 class="speaker__img">
-			<div class="speaker__info">
-				<span class="speaker__name" itemprop="performer">Dominik Hurnaus</span>
-			</div>
-		</div>
-		<div class="speaker">
-			<img src="https://avatars3.githubusercontent.com/u/1374451?v=3&s=200" alt="Stefan Baumgartner"
-				 class="speaker__img">
-			<div class="speaker__info">
-				<span class="speaker__name" itemprop="performer">Stefan Baumgartner</span>
-			</div>
-		</div>
-		<div class="speaker">
-			<img src="https://avatars2.githubusercontent.com/u/1190606?v=3&s=200" alt="Hannes Sachsenhofer"
-				 class="speaker__img">
-			<div class="speaker__info">
-				<span class="speaker__name" itemprop="performer">Hannes Sachsenhofer</span>
-			</div>
-		</div>
-		<div class="speaker">
-			<img src="https://avatars0.githubusercontent.com/u/1763491?v=3&s=200" alt="Alexander Rosemann"
-				 class="speaker__img">
-			<div class="speaker__info">
-				<span class="speaker__name" itemprop="performer">Alexander Rosemann</span>
-			</div>
-		</div>
-		<div class="speaker">
-			<img src="https://avatars2.githubusercontent.com/u/2776512?v=3&s=200" alt="Phil Reither"
-				 class="speaker__img">
-			<div class="speaker__info">
-				<span class="speaker__name" itemprop="performer">Phil Reither</span>
-			</div>
-		</div>
-	</div>
+        <img src="/img/orgas.jpg" class="orgas__img">
+        <span class="speaker__name">Dominik&nbsp;Hurnaus, Alexander&nbsp;Rosemann, Elisabeth&nbsp;Rosemann,
+            Phil&nbsp;Reither, Stefan&nbsp;Baumgartner, Hannes&nbsp;Sachsenhofer, Thomas&nbsp;Einwaller</span>
 	</p>
+
+    <script>
+        (function() {
+            let image = document.querySelector('.orgas__img');
+
+            image.addEventListener('mouseover', function (event) {
+                image.src = "/img/orgas-wild.jpg";
+            });
+
+            image.addEventListener('mouseout', function (event) {
+                image.src = "/img/orgas.jpg";
+            });
+        })();
+    </script>
 </div>

@@ -6,6 +6,11 @@
 	{% assign post = site.plauscherl | last %}
 
 	<div class="bottom">
+        {% if post.video %}
+            <iframe class="livestream" width="900" height="500" src="https://www.youtube.com/embed/{{post.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
+        {% endif %}
+
+
 		{% if page.end %}
 		<p class="info">
 			Danke für die Vorträge an

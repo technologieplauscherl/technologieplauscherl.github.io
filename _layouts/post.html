@@ -3,7 +3,6 @@ layout: default
 ---
 <div class="wrapper">
 	<h1 itemprop="name">{{page.title}}</h1>
-	<b>hosted by karriere.at</b>
 	<p class="info">
 		<span itemprop="startDate" content="{{ page.date | date: "%Y-%m-%d" }}T{{page.timestring}}">
 			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{page.datestring}}
@@ -19,13 +18,13 @@ layout: default
 	</section>
 
 	{{content}}
-	
+
 	{% if page.video %}
 		<section class="video">
 			<iframe width="560" height="349" src="https://www.youtube.com/embed/{{page.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
 		</section>
 	{% endif %}
-	
+
 	<div class="buttons">
 	{% if page.event.facebook %}
 	<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
@@ -51,7 +50,7 @@ layout: default
 		</svg>
 	</a>
 	{% endif %}
-			
+
 	</div>
 
 	{% if page.location %}
