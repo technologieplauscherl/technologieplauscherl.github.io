@@ -182,6 +182,16 @@
       link: https://reactday.berlin/
       cost: EUR 300+
 -
+  id: lakeside
+  name: "Lakeside Hackfest"
+  events:
+    -
+      name: "Lakeside Hackfest"
+      location: "St. Georgen am Längsee"
+      date: 2018-08-25
+      link: https://www.lakeside-hackfest.com/
+      cost: EUR 60
+-
   id: wad
   name: "We Are Developers"
   events:
