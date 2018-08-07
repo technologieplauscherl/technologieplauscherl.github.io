@@ -476,6 +476,11 @@
       location: "Dataformers: Gewerbepark Urfahr 8, 4040 Linz"
       date: 2018-05-22
       link: https://dotnetstammtisch.at
+    -
+      name: ".NET Stammtisch #6 - .NET Conf Post-conf Meetup"
+      location: "Dynatrace"
+      date: 2018-09-18
+      link: https://www.meetup.com/NET-Stammtisch-Linz/events/253592680/
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
