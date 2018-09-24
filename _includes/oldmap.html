@@ -1,5 +1,5 @@
 <div class="map" id="map-canvas"></div>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQWiueu7EQxRWhVgIjjcRHi5dRfQlJfU" async defer></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQWiueu7EQxRWhVgIjjcRHi5dRfQlJfU"></script>
 <script type="text/javascript">
 	var locations = {
 		hackerSpace: new google.maps.LatLng({{include.map.lat}}, {{include.map.lng}})
@@ -52,5 +52,5 @@
 		// To add the marker to the map, call setMap();
 		marker.setMap(map);
 	}
-	google.maps.event.addDomListener(window, 'load', initialize);
+	initialize();
 </script>
