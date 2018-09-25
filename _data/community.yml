@@ -57,55 +57,10 @@
   name: "Technologieplauscherl"
   events:
    -
-      name: "Technologieplauscherl XLV"
-      location: "smec"
-      link: http://technologieplauscherl.at
-      date: 2017-03-23
-   -
-      name: "Technologieplauscherl XLVI"
-      location: "Wissensturm"
-      link: http://technologieplauscherl.at
-      date: 2017-04-25
-   -
-      name: "Technologieplauscherl XLVII"
-      location: "Dataformers"
-      link: http://technologieplauscherl.at
-      date: 2017-05-18
-   -
-      name: "Technologieplauscherl XLVIII"
-      location: "startup 300"
-      link: http://technologieplauscherl.at
-      date: 2017-06-22
-   -
-      name: "Technologieplauscherl XLIX"
-      location: "Keba"
-      link: http://technologieplauscherl.at
-      date: 2017-07-18
-   -
-      name: "Technologieplauscherl L"
-      location: "Storyblok"
-      link: http://technologieplauscherl.at
-      date: 2017-08-16
-   -
-      name: "Technologieplauscherl LI"
-      location: "Runtastic"
-      link: http://technologieplauscherl.at
-      date: 2017-09-21
-   -
-      name: "Technologieplauscherl LII"
-      location: "JKU, Science Park"
-      link: http://technologieplauscherl.at
-      date: 2017-10-11
-   -
-      name: "Technologieplauscherl LVI"
-      location: "Celum, "
+      name: "Technologieplauscherl LXII"
+      location: "DS Automotion (mit Shuttle-Service)"
       link: https://technologieplauscherl.at
-      date: 2018-04-25
-   -
-      name: "Technologieplauscherl LVII"
-      location: "Wissensturm"
-      link: https://technologieplauscherl.at
-      date: 2018-05-30
+      date: 2018-11-22
 -
   id: topconf
   name: "Topconf Events"
