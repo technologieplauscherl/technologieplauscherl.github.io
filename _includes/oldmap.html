@@ -1,56 +1,10 @@
 <div class="map" id="map-canvas"></div>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQWiueu7EQxRWhVgIjjcRHi5dRfQlJfU"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQWiueu7EQxRWhVgIjjcRHi5dRfQlJfU" defer></script>
 <script type="text/javascript">
-	var locations = {
-		hackerSpace: new google.maps.LatLng({{include.map.lat}}, {{include.map.lng}})
-	}
-	function initialize() {
-		var mapOptions = {
-			center: locations.hackerSpace,
-			zoom: 18,
-			scrollwheel: false,
-			draggable: false,
-			zoomable: false,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		var map = new google.maps.Map(document.getElementById("map-canvas"),
-			mapOptions);
-
-		var mql1 = window.matchMedia('(min-width: 40em');
-		mql1.addListener(function(m) {
-			if(m.matches) {
-				map.panBy(200,0);
-				map.setCenter(locations.hackerSpace);
-			}
-		});
-
-		var mql2 = window.matchMedia('(min-width: 60em');
-		mql2.addListener(function(m) {
-			if(m.matches) {
-				map.panBy(200,0);
-				map.setCenter(locations.hackerSpace);
-			}
-		});
-
-		var mql3 = window.matchMedia('(max-width: 40em');
-		mql3.addListener(function(m) {
-			if(m.matches) {
-				map.panBy(0,0);
-				map.setCenter(locations.hackerSpace);
-			}
-		});
-
-		if(window.innerWidth >= 40*16) {
-			map.panBy(200,0);
-		}
-
-		var marker = new google.maps.Marker({
-			position: locations.hackerSpace,
-			title: "DevLOL - Hackerspace Linz"
-		});
-
-		// To add the marker to the map, call setMap();
-		marker.setMap(map);
-	}
-	initialize();
+	window.plauscherlLocation = {
+		lat: {{include.map.lat}},
+		lng: {{include.map.lng}},
+		name: "{{include.host}}"
+	};
 </script>
+<script type="text/javascript" src="/javascript/oldmap-loader.js" defer></script>
