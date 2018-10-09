@@ -1,0 +1,13 @@
+[
+  "/",
+  "/archiv/",
+  "/community-news/",
+  "/stats/",
+  "/faq/",
+  "/history/",
+  {% for card in site.plauscherl %}
+    "{{card.url}}",
+    "/img/plauscherle/{{card.name}}.jpg",
+  {% endfor %}
+  "/css/main.css"
+]

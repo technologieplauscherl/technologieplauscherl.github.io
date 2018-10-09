@@ -23,3 +23,56 @@
 
   })(window.localStorage, XMLHttpRequest);
 </script>
+
+<script type="text/javascript">
+
+  window.addEventListener('DOMContentLoaded', function () {
+
+    function updateOnlineStatus () {
+      if (navigator.onLine) {
+        document.body.classList.remove('offline');
+      } else {
+        document.body.classList.add('offline');
+      }
+    };
+
+    function updateAnchors () {
+
+      var prefetched = {% include prefetched.json.liquid %};
+      var anchors = document.querySelectorAll('a');
+
+      for (var i = 0; i < anchors.length; i++) {
+
+        if (prefetched.indexOf(anchors[i].getAttribute('href')) !== -1) {
+
+          anchors[i].setAttribute('data-prefetched', 'yes');
+
+        } else {
+
+          anchors[i].setAttribute('data-prefetched', 'no');
+
+        }
+      }
+
+    }
+
+    function setupServiceWorker () {
+
+      if (navigator.serviceWorker) {
+
+        navigator.serviceWorker.register('/service-worker.js');
+
+      }
+
+    }
+
+    window.addEventListener('online',  updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+
+    updateAnchors();
+    updateOnlineStatus();
+    setupServiceWorker();
+
+  });
+
+</script>
