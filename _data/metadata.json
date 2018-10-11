@@ -9,6 +9,22 @@
       }
     },
     {
+      "name": "karriere.at",
+      "count": 5,
+      "pos": {
+        "lat": 48.318946,
+        "lng": 14.304752
+      }
+    },
+    {
+      "name": "Netural GmbH",
+      "count": 5,
+      "pos": {
+        "lat": 48.3126795,
+        "lng": 14.2962802
+      }
+    },
+    {
       "name": "smec",
       "count": 4,
       "pos": {
@@ -17,19 +33,11 @@
       }
     },
     {
-      "name": "karriere.at",
+      "name": "Dynatrace",
       "count": 4,
       "pos": {
-        "lat": 48.318946,
-        "lng": 14.304752
-      }
-    },
-    {
-      "name": "Netural GmbH",
-      "count": 4,
-      "pos": {
-        "lat": 48.312835,
-        "lng": 14.298349
+        "lat": 48.32926,
+        "lng": 14.32076
       }
     },
     {
@@ -41,19 +49,19 @@
       }
     },
     {
-      "name": "Dynatrace",
+      "name": "Keba AG",
       "count": 3,
       "pos": {
-        "lat": 48.32926,
-        "lng": 14.32076
+        "lat": 48.317379,
+        "lng": 14.289096
       }
     },
     {
-      "name": "Cyberhouse",
+      "name": "Tractive",
       "count": 2,
       "pos": {
-        "lat": 48.315171,
-        "lng": 14.302288
+        "lat": 48.2448273,
+        "lng": 14.230568
       }
     },
     {
@@ -65,11 +73,19 @@
       }
     },
     {
-      "name": "Keba AG",
+      "name": "Wirtschaftskammer WKO Linz",
       "count": 2,
       "pos": {
-        "lat": 48.317379,
-        "lng": 14.289096
+        "lat": 48.301201,
+        "lng": 14.294112
+      }
+    },
+    {
+      "name": "Runtastic",
+      "count": 2,
+      "pos": {
+        "lat": 48.243419,
+        "lng": 14.236858
       }
     },
     {
@@ -81,19 +97,19 @@
       }
     },
     {
-      "name": "Borland",
-      "count": 1,
+      "name": "Cyberhouse",
+      "count": 2,
       "pos": {
-        "lat": 48.310108,
-        "lng": 14.283888
+        "lat": 48.315171,
+        "lng": 14.302288
       }
     },
     {
-      "name": "Tech2b",
+      "name": "dataformers GmbH",
       "count": 1,
       "pos": {
-        "lat": 48.31905,
-        "lng": 14.308364
+        "lat": 48.317307,
+        "lng": 14.287531
       }
     },
     {
@@ -105,27 +121,11 @@
       }
     },
     {
-      "name": "Hackerspace Linz DevLoL",
+      "name": "Tech2b",
       "count": 1,
       "pos": {
-        "lat": 48.30583,
-        "lng": 14.28385
-      }
-    },
-    {
-      "name": "Usersnap",
-      "count": 1,
-      "pos": {
-        "lat": 48.313517,
-        "lng": 14.312948
-      }
-    },
-    {
-      "name": "FH-Hagenberg / HS 6",
-      "count": 1,
-      "pos": {
-        "lat": 48.36795,
-        "lng": 14.51286
+        "lat": 48.31905,
+        "lng": 14.308364
       }
     },
     {
@@ -137,11 +137,11 @@
       }
     },
     {
-      "name": "Tractive",
+      "name": "Hackerspace Linz DevLoL",
       "count": 1,
       "pos": {
-        "lat": 48.2452424,
-        "lng": 14.2276753
+        "lat": 48.30583,
+        "lng": 14.28385
       }
     },
     {
@@ -169,11 +169,11 @@
       }
     },
     {
-      "name": "dataformers GmbH",
+      "name": "Usersnap",
       "count": 1,
       "pos": {
-        "lat": 48.317307,
-        "lng": 14.287531
+        "lat": 48.313517,
+        "lng": 14.312948
       }
     },
     {
@@ -193,42 +193,69 @@
       }
     },
     {
-      "name": "Runtastic",
+      "name": "JKU Linz, Science Park 3, Hörsäle 18 und 19",
       "count": 1,
       "pos": {
-        "lat": 48.243419,
-        "lng": 14.236858
+        "lat": 48.3352429,
+        "lng": 14.3236258
       }
     },
     {
-      "name": "Wirtschaftskammer WKO Linz",
+      "name": "Celum",
       "count": 1,
       "pos": {
-        "lat": 48.301201,
-        "lng": 14.294112
+        "lat": 48.2548523,
+        "lng": 14.3760008
+      }
+    },
+    {
+      "name": "Wissensturm",
+      "count": 1,
+      "pos": {
+        "lat": 48.2907759,
+        "lng": 14.288377
+      }
+    },
+    {
+      "name": "Smarter Ecommerce (SMEC)",
+      "count": 1,
+      "pos": {
+        "lat": 48.3118323,
+        "lng": 14.2972489
+      }
+    },
+    {
+      "name": "Borland",
+      "count": 1,
+      "pos": {
+        "lat": 48.310108,
+        "lng": 14.283888
+      }
+    },
+    {
+      "name": "FH-Hagenberg / HS 6",
+      "count": 1,
+      "pos": {
+        "lat": 48.36795,
+        "lng": 14.51286
       }
     }
   ],
   "speakers": [
     {
       "name": "Phil Reither",
-      "count": 13,
+      "count": 12,
       "img": "//avatars2.githubusercontent.com/u/2776512?v=3&s=200"
     },
     {
       "name": "Thomas Einwaller",
-      "count": 9,
+      "count": 8,
       "img": "//avatars0.githubusercontent.com/u/103224?v=3&s=200"
     },
     {
       "name": "Dominik Hurnaus",
-      "count": 8,
-      "img": "//avatars0.githubusercontent.com/u/106848?v=3&s=200"
-    },
-    {
-      "name": "Hannes Sachsenhofer",
       "count": 7,
-      "img": "//avatars2.githubusercontent.com/u/1190606?v=3&s=200"
+      "img": "//avatars0.githubusercontent.com/u/106848?v=3&s=200"
     },
     {
       "name": "Stefan Baumgartner",
@@ -236,14 +263,24 @@
       "img": "//avatars3.githubusercontent.com/u/1374451?v=3&s=200"
     },
     {
-      "name": "Elisabeth Rosemann",
+      "name": "Hannes Sachsenhofer",
       "count": 6,
-      "img": "//avatars2.githubusercontent.com/u/4456121?v=3&s=460"
+      "img": "//avatars2.githubusercontent.com/u/1190606?v=3&s=200"
     },
     {
       "name": "Arno Hütter",
-      "count": 5,
+      "count": 6,
       "img": "//x1.xingassets.com/image/7_8_f_ce1ad0d6e_11379654_19/arno-h%C3%BCtter-foto.256x256.jpg"
+    },
+    {
+      "name": "Elisabeth Rosemann",
+      "count": 5,
+      "img": "//avatars2.githubusercontent.com/u/4456121?v=3&s=460"
+    },
+    {
+      "name": "David Tanzer",
+      "count": 5,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c50.151.621.621/s160x160/312215_174607659291187_222943803_n.jpg?oh=0f990aa1d38775c905313447641aa3ea&oe=56A9857C&__gda__=1449011900_a2a468b9c8e213241cd37081050a515a"
     },
     {
       "name": "Manuel Berger",
@@ -251,34 +288,9 @@
       "img": "//avatars0.githubusercontent.com/u/1924009"
     },
     {
-      "name": "Alexander Rosemann",
+      "name": "Klaus Lehner",
       "count": 3,
-      "img": "//lh5.googleusercontent.com/-5ug0cZ1XgnY/AAAAAAAAAAI/AAAAAAAAAAA/iE-x6zqARSs/s128-c-k/photo.jpg"
-    },
-    {
-      "name": "Erik Rusek",
-      "count": 3,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c0.16.200.200/p200x200/1461657_330941753714601_72797686_n.png"
-    },
-    {
-      "name": "Christoph Strobl",
-      "count": 3,
-      "img": "//pbs.twimg.com/profile_images/443764401510694912/udyDMcNb.png"
-    },
-    {
-      "name": "Günther Grill",
-      "count": 3,
-      "img": "//lh3.googleusercontent.com/-fPA7PzLw7f8/Vo40lpJoHvI/AAAAAAAACDU/JIRPqZPC81Y/w140-h139-p/Guenther_comic.png"
-    },
-    {
-      "name": "David Tanzer",
-      "count": 3,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c50.151.621.621/s160x160/312215_174607659291187_222943803_n.jpg?oh=0f990aa1d38775c905313447641aa3ea&oe=56A9857C&__gda__=1449011900_a2a468b9c8e213241cd37081050a515a"
-    },
-    {
-      "name": "Paul Lanzerstorfer",
-      "count": 3,
-      "img": "//imgur.com/TVsLskC.png"
+      "img": "//avatars0.githubusercontent.com/u/172195?v=3&s=200"
     },
     {
       "name": "Paul Klingelhuber",
@@ -286,47 +298,34 @@
       "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/484050_10151326811119746_578315574_a.jpg"
     },
     {
-      "name": "Dominik Angerer",
-      "count": 2,
-      "img": "http://placekitten.com/g/200/200"
+      "name": "Christoph Strobl",
+      "count": 3,
+      "img": "//pbs.twimg.com/profile_images/443764401510694912/udyDMcNb.png"
+    },
+    {
+      "name": "Paul Lanzerstorfer",
+      "count": 3,
+      "img": "//imgur.com/TVsLskC.png"
+    },
+    {
+      "name": "Günther Grill",
+      "count": 3,
+      "img": "//lh3.googleusercontent.com/-fPA7PzLw7f8/Vo40lpJoHvI/AAAAAAAACDU/JIRPqZPC81Y/w140-h139-p/Guenther_comic.png"
+    },
+    {
+      "name": "Robert Schmelzer",
+      "count": 3,
+      "img": "//x1.xingassets.com/image/7_3_0_b57234808_3452160_1/robert-schmelzer-foto.256x256.jpg"
     },
     {
       "name": "Rainer Stropek",
-      "count": 2,
+      "count": 3,
       "img": "//pbs.twimg.com/profile_images/967152604/RainerStropek_Ausschnitt_400x400.JPG"
     },
     {
-      "name": "Florian Brunner",
-      "count": 2
-    },
-    {
-      "name": "Michael Lanzinger",
-      "count": 2,
-      "img": "//scontent.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/11200639_1764156163854831_4829798571866319096_n.jpg?oh=84733b766fe67381f3889277290d3b8c&oe=57F4AC0A"
-    },
-    {
-      "name": "Daniel Khan",
-      "count": 2,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c88.26.324.324/s160x160/2706_1049293921262_5828179_n.jpg"
-    },
-    {
-      "name": "Joachim Sauer",
-      "count": 2,
-      "img": "//lh5.googleusercontent.com/-lTDEEVEx_Og/AAAAAAAAAAI/AAAAAAAAjbw/rEagVv8yZOo/s120-c/photo.jpg"
-    },
-    {
-      "name": "Karl-Michael Edlinger",
-      "count": 2,
-      "img": "/img/speaker_male_no_img.jpg"
-    },
-    {
-      "name": "Frederic Köberl",
-      "count": 2,
-      "img": "//scontent-vie1-1.xx.fbcdn.net/hprofile-xtl1/v/t1.0-1/p160x160/1915541_720229834783504_4360391494171749534_n.jpg?oh=708aa6a9cca9b3d8f2d7bce2fb6eae0d&oe=574F1A3B"
-    },
-    {
-      "name": "Jürgen Grieshofer",
-      "count": 2
+      "name": "Thomas Fischl",
+      "count": 3,
+      "img": "//x1.xingassets.com/image/2_8_1_abb002224_8447542_3/thomas-fischl-foto.256x256.jpg"
     },
     {
       "name": "René Pirringer",
@@ -334,14 +333,29 @@
       "img": "http://ciqua.com/images/photos/RP.jpg"
     },
     {
-      "name": "Michael Hurnaus",
+      "name": "Michael Lanzinger",
       "count": 2,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/p160x160/1463085_10151847745278246_473952397_n.jpg"
+      "img": "//scontent.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/11200639_1764156163854831_4829798571866319096_n.jpg?oh=84733b766fe67381f3889277290d3b8c&oe=57F4AC0A"
     },
     {
-      "name": "Klaus Lehner",
+      "name": "Alexander Rosemann",
       "count": 2,
-      "img": "//avatars0.githubusercontent.com/u/172195?v=3&s=200"
+      "img": "//lh5.googleusercontent.com/-5ug0cZ1XgnY/AAAAAAAAAAI/AAAAAAAAAAA/iE-x6zqARSs/s128-c-k/photo.jpg"
+    },
+    {
+      "name": "Frederic Köberl",
+      "count": 2,
+      "img": "//scontent-vie1-1.xx.fbcdn.net/hprofile-xtl1/v/t1.0-1/p160x160/1915541_720229834783504_4360391494171749534_n.jpg?oh=708aa6a9cca9b3d8f2d7bce2fb6eae0d&oe=574F1A3B"
+    },
+    {
+      "name": "Erik Rusek",
+      "count": 2,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c0.16.200.200/p200x200/1461657_330941753714601_72797686_n.png"
+    },
+    {
+      "name": "Joachim Sauer",
+      "count": 2,
+      "img": "//lh5.googleusercontent.com/-lTDEEVEx_Og/AAAAAAAAAAI/AAAAAAAAjbw/rEagVv8yZOo/s120-c/photo.jpg"
     },
     {
       "name": "Helmut Juskewycz",
@@ -349,9 +363,9 @@
       "img": "//avatars1.githubusercontent.com/u/306573?v=3&s=200"
     },
     {
-      "name": "Robert Schmelzer",
+      "name": "Daniel Khan",
       "count": 2,
-      "img": "//x1.xingassets.com/image/7_3_0_b57234808_3452160_1/robert-schmelzer-foto.256x256.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c88.26.324.324/s160x160/2706_1049293921262_5828179_n.jpg"
     },
     {
       "name": "Matthias Grimmer",
@@ -359,13 +373,19 @@
       "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/p160x160/14611_1013052038709384_2951873812529625325_n.jpg?oh=f0122209ef1046f60cce38341cadfb47&oe=55FE1620&__gda__=1442111383_79bb7a6923060c79f85f45fac8f4b7e6"
     },
     {
-      "name": "Thomas Pink",
-      "count": 2
+      "name": "Karl-Michael Edlinger",
+      "count": 2,
+      "img": "/img/speaker_male_no_img.jpg"
     },
     {
-      "name": "Thomas Fischl",
+      "name": "Dominik Angerer",
       "count": 2,
-      "img": "//x1.xingassets.com/image/2_8_1_abb002224_8447542_3/thomas-fischl-foto.256x256.jpg"
+      "img": "http://placekitten.com/g/200/200"
+    },
+    {
+      "name": "Hubert Ströbitzer",
+      "count": 2,
+      "img": "//x1.xingassets.com/image/e_5_5_7a23867eb_17792974_4/hubert-str%C3%B6bitzer-foto.256x256.jpg"
     },
     {
       "name": "Norbert Kehrer",
@@ -373,14 +393,39 @@
       "img": "/img/speaker_male_no_img.jpg"
     },
     {
-      "name": "Thomas Peham",
-      "count": 1,
-      "img": "//pbs.twimg.com/profile_images/697698619273650176/0dlFqg41.jpg"
+      "name": "Michael Hurnaus",
+      "count": 2,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/p160x160/1463085_10151847745278246_473952397_n.jpg"
     },
     {
-      "name": "David Brunnthaler",
+      "name": "Alexander Möslinger-Neundlinger",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c66.66.828.828/s160x160/1044923_10200218355882971_1842477700_n.jpg?oh=f3389c08beb47a4a0765892afb81026d&oe=54B656E1&__gda__=1421571984_b13f9f07a43259d911740789bad89c73"
+      "img": "/img/speaker-avatars/alexander_moeslinger_neundlinger.jpg"
+    },
+    {
+      "name": "Thomas Scheinecker",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/c50.50.621.621/s160x160/189204_4722750265928_1373196634_n.jpg"
+    },
+    {
+      "name": "Stephan Schober",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c0.0.160.160/p160x160/1476474_10201015987223192_1808483175_n.jpg?oh=eb77d585672cef5b3f73b68d23cc367b&oe=54539056&__gda__=1414733406_9332052bec482f211d651ed2f553148e"
+    },
+    {
+      "name": "Jakob Leitner",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/c53.176.662.662/s160x160/1146567_1400016863557858_996473903_n.jpg?oh=2469a55152336c24760d35625821ca60&oe=546F0042&__gda__=1415870809_c84d34a61c83da5b5ff50862e2f95a62"
+    },
+    {
+      "name": "Lukas Bischof",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/t1.0-1/c27.0.160.160/p160x160/207740_10150151070074335_8386304_n.jpg"
+    },
+    {
+      "name": "Stefan Schober",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/t1.0-1/c0.62.155.155/1609655_10202614311231776_1744730968_n.jpg"
     },
     {
       "name": "Michael Feichtinger",
@@ -388,9 +433,24 @@
       "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p160x160/10580258_10203481150204063_4625861252153908536_n.jpg?oh=bc70f9c714c62e8d533bb3b7f64bbe43&oe=5493AF52&__gda__=1417970823_9ff1576b35c91ab4cf7a2685d28c0dd2"
     },
     {
-      "name": "Stefan Schober",
+      "name": "David Brunnthaler",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/t1.0-1/c0.62.155.155/1609655_10202614311231776_1744730968_n.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c66.66.828.828/s160x160/1044923_10200218355882971_1842477700_n.jpg?oh=f3389c08beb47a4a0765892afb81026d&oe=54B656E1&__gda__=1421571984_b13f9f07a43259d911740789bad89c73"
+    },
+    {
+      "name": "Ralph Mayr",
+      "count": 1,
+      "img": "/img/speaker_male_no_img.jpg"
+    },
+    {
+      "name": "Florian Neumann",
+      "count": 1,
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c50.50.621.621/s200x200/296636_4561837011895_66238352_n.jpg"
+    },
+    {
+      "name": "Markus Schmidinger",
+      "count": 1,
+      "img": "/img/speaker_male_no_img.jpg"
     },
     {
       "name": "Lukas Eder",
@@ -438,9 +498,9 @@
       "img": "//pbs.twimg.com/profile_images/1666247103/6045809013_20f016700c_m_400x400.jpg"
     },
     {
-      "name": "Lukas Bischof",
+      "name": "André Steingreß",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/t1.0-1/c27.0.160.160/p160x160/207740_10150151070074335_8386304_n.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c49.49.619.619/s160x160/227052_135197649969146_1125277772_n.jpg"
     },
     {
       "name": "Robert Aistleitner",
@@ -453,9 +513,9 @@
       "img": "//i.imgur.com/UortHCO.jpg"
     },
     {
-      "name": "Jakob Leitner",
+      "name": "Wolfgang Gottesheim",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/c53.176.662.662/s160x160/1146567_1400016863557858_996473903_n.jpg?oh=2469a55152336c24760d35625821ca60&oe=546F0042&__gda__=1415870809_c84d34a61c83da5b5ff50862e2f95a62"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/c111.45.567.567/s160x160/291981_2323472856303_1336799925_n.jpg"
     },
     {
       "name": "Klaus Muckenhuber",
@@ -468,19 +528,19 @@
       "img": "//gravatar.com/avatar/227574aa93f55537a153c76ed4bcdc37?s=200"
     },
     {
-      "name": "Alexander Floh",
+      "name": "Thomas Knoll",
       "count": 1,
-      "img": "//avatars3.githubusercontent.com/u/3514359?v=3&s=200"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.0.180.180/s160x160/1385624_174423526082097_28285060_a.jpg"
     },
     {
-      "name": "Stephan Schober",
+      "name": "Attila Jakabfi",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/c0.0.160.160/p160x160/1476474_10201015987223192_1808483175_n.jpg?oh=eb77d585672cef5b3f73b68d23cc367b&oe=54539056&__gda__=1414733406_9332052bec482f211d651ed2f553148e"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/t1/c34.34.419.419/s200x200/943271_10151514821892983_561540714_n.jpg"
     },
     {
-      "name": "Stefan Schraml",
+      "name": "Christoph Stichlberger",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/t1.0-1/c66.33.407.407/s160x160/319952_2199421196546_1963878823_n.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1/c22.0.157.157/6248_1090874964647_7294244_n.jpg"
     },
     {
       "name": "Harald Zeitlhofer",
@@ -488,14 +548,14 @@
       "img": "//pbs.twimg.com/profile_images/453850359014764544/SQInVT-p.jpeg"
     },
     {
-      "name": "Thomas Scheinecker",
+      "name": "Harald Vogl",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/c50.50.621.621/s160x160/189204_4722750265928_1373196634_n.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c51.134.640.640/s200x200/384885_332202696797337_781807793_n.jpg"
     },
     {
-      "name": "Hubert Ströbitzer",
+      "name": "Christina Feilmayr",
       "count": 1,
-      "img": "//x1.xingassets.com/image/e_5_5_7a23867eb_17792974_4/hubert-str%C3%B6bitzer-foto.256x256.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p160x160/10325623_10201949509241781_2127667093409437054_n.jpg"
     },
     {
       "name": "Jakob Schröger",
@@ -503,9 +563,9 @@
       "img": "//media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/03f/235/1a53d90.jpg"
     },
     {
-      "name": "Florian Neumann",
+      "name": "Bernhard Wurm",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c50.50.621.621/s200x200/296636_4561837011895_66238352_n.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c16.16.203.203/s160x160/1005885_4439820572829_1200736474_n.jpg"
     },
     {
       "name": "Gregor Multerberger",
@@ -523,9 +583,9 @@
       "img": "//scontent-frt3-1.xx.fbcdn.net/hprofile-xfa1/v/t1.0-1/c2.0.160.160/p160x160/10440963_10203268907794892_4196136761228292623_n.jpg?oh=1e780579a2ba533b3036b887d10751c9&oe=5703EE57"
     },
     {
-      "name": "Markus Schmidinger",
+      "name": "Alex Seifert",
       "count": 1,
-      "img": "/img/speaker_male_no_img.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/c2.100.716.716/s160x160/10171289_10201812924110871_647201085_n.jpg"
     },
     {
       "name": "Andreas Gruber",
@@ -538,9 +598,9 @@
       "img": "//pbs.twimg.com/profile_images/694425461313638400/fjGj1QjB_400x400.jpg"
     },
     {
-      "name": "André Steingreß",
+      "name": "Andrzej Kozlowski",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c49.49.619.619/s160x160/227052_135197649969146_1125277772_n.jpg"
+      "img": "/img/speaker_male_no_img.jpg"
     },
     {
       "name": "Wolfgang Kerschbaumer",
@@ -548,9 +608,9 @@
       "img": "//www.cyberhouse.at/wke/wke.jpg"
     },
     {
-      "name": "Ralph Mayr",
+      "name": "Thomas Peham",
       "count": 1,
-      "img": "/img/speaker_male_no_img.jpg"
+      "img": "//pbs.twimg.com/profile_images/697698619273650176/0dlFqg41.jpg"
     },
     {
       "name": "Johann Hubert Sonntagbauer",
@@ -558,9 +618,9 @@
       "img": "https://raw.githubusercontent.com/technologieplauscherl/technologieplauscherl.github.io/master/img/speaker-avatars/johann_hubert_sonntagbauer.jpeg"
     },
     {
-      "name": "Wolfgang Gottesheim",
+      "name": "Mario Aichlseder",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/c111.45.567.567/s160x160/291981_2323472856303_1336799925_n.jpg"
+      "img": "/img/speaker_male_no_img.jpg"
     },
     {
       "name": "Christian Danner",
@@ -573,14 +633,14 @@
       "img": "//d3fzhvprqmsab7.cloudfront.net/wp-content/uploads/2016/05/dirk_800-150x150.png"
     },
     {
-      "name": "Thomas Knoll",
+      "name": "Tom Profelt",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/c0.0.180.180/s160x160/1385624_174423526082097_28285060_a.jpg"
+      "img": "//avatars3.githubusercontent.com/u/440368?v=3&s=200"
     },
     {
-      "name": "Alexander Möslinger-Neundlinger",
+      "name": "Stefan Schraml",
       "count": 1,
-      "img": "/img/speaker-avatars/alexander_moeslinger_neundlinger.jpg"
+      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/t1.0-1/c66.33.407.407/s160x160/319952_2199421196546_1963878823_n.jpg"
     },
     {
       "name": "Philipp Lengauer",
@@ -658,57 +718,124 @@
       "img": "//avatars0.githubusercontent.com/u/160495"
     },
     {
-      "name": "Attila Jakabfi",
+      "name": "Das Plauscherl",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/t1/c34.34.419.419/s200x200/943271_10151514821892983_561540714_n.jpg"
+      "img": "/img/icons/apple-touch-icon-120x120.png"
     },
     {
-      "name": "Christoph Stichlberger",
+      "name": "Armin Deliomini",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1/c22.0.157.157/6248_1090874964647_7294244_n.jpg"
+      "img": "/img/speaker-avatars/armin-deliomini.jpg"
     },
     {
-      "name": "Harald Vogl",
+      "name": "Peter Schöppl",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c51.134.640.640/s200x200/384885_332202696797337_781807793_n.jpg"
+      "img": "/img/speaker-avatars/schoeppl_peter_small.jpg"
     },
     {
-      "name": "Christina Feilmayr",
+      "name": "Thomas Profelt",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/t1.0-1/p160x160/10325623_10201949509241781_2127667093409437054_n.jpg"
+      "img": "/img/speaker-avatars/thomas-profelt.png"
     },
     {
-      "name": "Bernhard Wurm",
+      "name": "Armin Mandara",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/t1.0-1/c16.16.203.203/s160x160/1005885_4439820572829_1200736474_n.jpg"
+      "img": "/img/speaker-avatars/armin-mandara.jpg"
     },
     {
-      "name": "Alex Seifert",
+      "name": "Robert Wille",
       "count": 1,
-      "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/t1.0-1/c2.100.716.716/s160x160/10171289_10201812924110871_647201085_n.jpg"
+      "img": "/img/speaker-avatars/robert-wille.jpg"
     },
     {
-      "name": "Andrzej Kozlowski",
+      "name": "Johannes Pichler",
+      "count": 1,
+      "img": "/img/speaker-avatars/johannes-pichler.jpg"
+    },
+    {
+      "name": "Hannes Brandstätter-Müller",
+      "count": 1,
+      "img": "/img/speaker-avatars/HannesBrandstaetterMueller_small.jpg"
+    },
+    {
+      "name": "Paul Emathinger",
+      "count": 1,
+      "img": "/img/speaker-avatars/paul_emathinger.jpg"
+    },
+    {
+      "name": "Andreas Gattinger",
+      "count": 1,
+      "img": "/img/speaker-avatars/andreas-gattinger.jpg"
+    },
+    {
+      "name": "André Steingres",
+      "count": 1,
+      "img": "https://dtr.fm/wp-content/uploads/2013/09/cd8e1a73298b1e6c8caa9bec4e874583.png"
+    },
+    {
+      "name": "Leo Peneder",
+      "count": 1,
+      "img": "/img/speaker-avatars/leo-peneder.jpg"
+    },
+    {
+      "name": "Clemens Kaar",
+      "count": 1,
+      "img": "/img/speaker-avatars/clemens kaar.jpg"
+    },
+    {
+      "name": "Donovan Brown",
+      "count": 1,
+      "img": "http://donovanbrown.com/Custom/Themes/Standard/src/img/logo.png"
+    },
+    {
+      "name": "Rainer Pichler",
+      "count": 1,
+      "img": "/img/speaker-avatars/rainer-pichler.jpg"
+    },
+    {
+      "name": "Stefan Schaffelhofer",
+      "count": 1,
+      "img": "/img/speaker-avatars/stefan-schaffelhofer.jpg"
+    },
+    {
+      "name": "Thomas R. Koll",
+      "count": 1,
+      "img": "//tomk32.github.io/assets/tomk32.jpg"
+    },
+    {
+      "name": "Klaus Fischer",
+      "count": 1,
+      "img": "/img/speaker-avatars/klaus_fischer.jpg"
+    },
+    {
+      "name": "Peter Lanser",
       "count": 1,
       "img": "/img/speaker_male_no_img.jpg"
     },
     {
-      "name": "Jason Tevnan",
-      "count": 1
+      "name": "Markus Zöchling",
+      "count": 1,
+      "img": "/img/speaker-avatars/markus-zoechling.jpg"
     },
     {
-      "name": "Emmanuel Helm",
-      "count": 1
-    },
-    {
-      "name": "Mario Aichlseder",
+      "name": "Hermann Steffan",
       "count": 1,
       "img": "/img/speaker_male_no_img.jpg"
     },
     {
-      "name": "Tom Profelt",
+      "name": "Andreas Sackl & Georg Regal",
       "count": 1,
-      "img": "//avatars3.githubusercontent.com/u/440368?v=3&s=200"
+      "img": "/img/speaker_male_no_img.jpg"
+    },
+    {
+      "name": "Karl Artmann",
+      "count": 1,
+      "img": "/img/speaker_male_no_img.jpg"
+    },
+    {
+      "name": "Johannes Waslmeier",
+      "count": 1,
+      "img": "/img/speaker_male_no_img.jpg"
     },
     {
       "name": "Christoph Hochstrasser",
@@ -721,9 +848,34 @@
       "img": "//avatars3.githubusercontent.com/u/499094?v=3&s=200"
     },
     {
+      "name": "Thomas Pink",
+      "count": 1
+    },
+    {
+      "name": "Alexander Floh",
+      "count": 1,
+      "img": "//avatars3.githubusercontent.com/u/3514359?v=3&s=200"
+    },
+    {
+      "name": "Jürgen Grieshofer",
+      "count": 1
+    },
+    {
+      "name": "Florian Brunner",
+      "count": 1
+    },
+    {
       "name": "Michael Aspetsberger",
       "count": 1,
       "img": "//www.catalysts.cc/wp-content/uploads/userphoto/29.thumbnail.jpg"
+    },
+    {
+      "name": "Jason Tevnan",
+      "count": 1
+    },
+    {
+      "name": "Emmanuel Helm",
+      "count": 1
     }
   ]
 }
