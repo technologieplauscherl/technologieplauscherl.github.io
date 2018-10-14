@@ -107,16 +107,6 @@
       date: 2017-03-21
       link: http://magewien.at/
 -
-  id: socrates
-  name: "SoCraTes Linz"
-  events:
-    -
-      name: "SoCraTes Linz"
-      location: "Wissensturm"
-      date: 2017-10-20
-      link: http://socrates-conference.at/en/
-      cost: EUR
--
   id: devone
   name: "#devone"
   events:
@@ -278,6 +268,11 @@
       location: JKU, HS1 und weltweit viele andere
       date: 2018-04-27
       link: https://www.codingcontest.org/
+    -
+      name: "Coding Contest 2018"
+      location: JKU, HS1 und weltweit viele andere
+      date: 2018-11-16
+      link: https://register.codingcontest.org/
 -
   id: factory300
   name: "Factory300"
@@ -599,8 +594,29 @@
   name: "Socrates Days Linz"
   events:
     -
-      name: "Socrates Days Linz (2days)"
+      name: "SoCraTes Days Linz 2017 (2 days)"
+      location: "Wissensturm"
+      date: 2017-10-20
+      link: http://socrates-conference.at/en/
+      cost: EUR 40-80
+    -
+      name: "Socrates Days Linz 2018 (2 days)"
       location: "Wissensturm"
       date: 2018-10-12
       link: https://socrates-conference.at/
-      cost: EUR
+      cost: EUR 40-80
+    -
+      name: "Socrates Days Linz 2019 (2 days)"
+      location: "Wissensturm"
+      date: 2019-10-04
+      link: https://socrates-conference.at/
+      cost: EUR 30-80
+-
+  id: digitalfuture
+  name: "Digital Future Meetup"
+  events:
+    -
+      name: "Digital Future Meetup #4"
+      location: "factory300"
+      date: 2018-10-30
+      link: https://factory300.spaces.nexudus.com/de/events/view/679903335/digital-future-meetup--4
