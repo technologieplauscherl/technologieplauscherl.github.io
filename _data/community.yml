@@ -620,3 +620,12 @@
       location: "factory300"
       date: 2018-10-30
       link: https://factory300.spaces.nexudus.com/de/events/view/679903335/digital-future-meetup--4
+-
+  id: eJUG
+  name: "Enterprise Java User Group Austria"
+  events:
+    -
+      name: "Programming Language Platform Growth & Graal VM"
+      location: "Catalysts - Digital Future Space"
+      date: 2018-11-13
+      link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/255630550/
