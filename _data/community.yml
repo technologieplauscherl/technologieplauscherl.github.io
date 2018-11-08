@@ -629,3 +629,13 @@
       location: "Catalysts - Digital Future Space"
       date: 2018-11-13
       link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/255630550/
+-
+  id: WYOSS
+  name: "Waidhofen an der Ybbs Open Source Software"
+  events:
+    -
+      name: "Erstes WYOSS Meetup"
+      location: "Coworking Space Waidhofen an der Ybbs im beta-campus"
+      date: 2019-01-16
+      link: https://www.meetup.com/WYOSS-Waidhofen-an-der-Ybbs-Open-Source-Software/events/256232851/
+
