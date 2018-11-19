@@ -301,7 +301,7 @@
       location: smec
       date: 2017-06-28
       link: https://www.meetup.com/de-DE/iaam-linz/events/239305491/
-    -
+    -  
       name: "Infrastructure as a Meetup 2"
       location: factory300
       date: 2017-09-27
@@ -326,7 +326,12 @@
       location: karriere.at
       date: 2018-09-03
       link: https://www.meetup.com/iaam-linz/events/254402943/	  	  
--
+    -  
+      name: "Infrastructure as a Meetup 7"
+      location: factory300
+      date: 2019-01-30
+      link: https://www.meetup.com/iaam-linz/events/256538476/ 
+-      
   id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
   events:
