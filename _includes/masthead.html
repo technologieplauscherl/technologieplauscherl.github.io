@@ -30,7 +30,7 @@
 			{% endunless %}
 			{% unless page.end %}
 				Nächstes Treffen:<br>
-				<span itemprop="startDate" content="{{post.date}}T{{post.timestring}}">
+				<span itemprop="startDate" content="{{post.startDateIso8601}}">
           <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
           <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use></svg> {{post.timestring}} Uhr
         </span>

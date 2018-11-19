@@ -15,5 +15,5 @@
 Map &copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors
 {% endif %}
 {%if include.location.oldmap %}
-{% include oldmap.html map=include.location.oldmap %}
+{% include oldmap.html map=include.location.oldmap host=include.location.name %}
 {% endif %}
