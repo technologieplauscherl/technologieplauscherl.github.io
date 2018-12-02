@@ -441,6 +441,11 @@
       location: "Dynatrace"
       date: 2018-09-18
       link: https://www.meetup.com/NET-Stammtisch-Linz/events/253592680/
+    -
+      name: ".NET Stammtisch #7 - English edition with Connect() keynote"
+      location: "Tabakfabrik"
+      date: 2018-12-04
+      link: https://www.meetup.com/NET-Stammtisch-Linz/events/256314848/
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
