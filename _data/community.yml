@@ -43,6 +43,11 @@
       location: "Business Upper Austria / Techcenter Linz"
       date: 2018-06-12
       link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/249935830/"
+    -
+      name: "VR Plauscherl #7 feat. Judith Wiesinger (Magic Leap) & Tamiko Thiel"
+      location: "FH OÖ Campus Hagenberg"
+      date: 2019-01-25
+      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/257922186/"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
