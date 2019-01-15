@@ -116,9 +116,9 @@
   name: "#devone"
   events:
     -
-      name: "#devone"
+      name: "DevOne 2019"
       location: "Tabakfabrik"
-      date: 2018-04-26
+      date: 2019-04-11
       link: http://devone.at
       cost: EUR
 -
