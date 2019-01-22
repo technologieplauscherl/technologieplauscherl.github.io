@@ -654,11 +654,12 @@
       date: 2019-01-16
       link: https://www.meetup.com/WYOSS-Waidhofen-an-der-Ybbs-Open-Source-Software/events/256232851/
 -
-  id: easterhegg
-  name: "Ea"
+  id: c3w
+  name: "C3W"
   events:
     -
-      name: "Easterhegg 2019"
-      location: "Campus Gußhaus, „Das neue EI“, Wien"
+      name: "Easterhegg 2019 (4 days)"
+      location: "Campus Gußhaus, Das neue EI, Wien"
       date: 2019-04-19
       link: https://eh19.easterhegg.eu/
+	  cost: EUR 42
