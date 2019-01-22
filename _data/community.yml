@@ -653,7 +653,16 @@
       location: "Coworking Space Waidhofen an der Ybbs im beta-campus"
       date: 2019-01-16
       link: https://www.meetup.com/WYOSS-Waidhofen-an-der-Ybbs-Open-Source-Software/events/256232851/
-
+-
+  id: c3w
+  name: "C3W"
+  events:
+    -
+      name: "Easterhegg 2019 (4 days)"
+      location: "Campus Gußhaus, Das neue EI, Wien"
+      date: 2019-04-19
+      link: https://eh19.easterhegg.eu/
+      cost: EUR 42
 -
   id: mageAT29
   name: "29. Magento Meetup in Wels"
