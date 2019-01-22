@@ -663,3 +663,12 @@
       date: 2019-04-19
       link: https://eh19.easterhegg.eu/
       cost: EUR 42
+-
+  id: mageAT29
+  name: "29. Magento Meetup in Wels"
+  events:
+    -
+      name: "29. Magento Meetup in Wels"
+      location: "E-CONOMIX Office, Wels"
+      date: 2019-02-26
+      link: http://mage-meetup.at/
