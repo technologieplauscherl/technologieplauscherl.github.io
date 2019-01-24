@@ -604,6 +604,11 @@
       location: "Catalysts Digital Future Space"
       date: 2018-09-25
       link: https://www.meetup.com/en-AU/AWS-User-Group-Linz/events/252112439/
+    -
+      name: "3rd AWS User Group Linz"
+      location: "Netural (Tabakfabrik)"
+      date: 2019-01-30
+      link: https://www.meetup.com/de-DE/AWS-User-Group-Linz/events/257306435/
 -
   id: socrates
   name: "Socrates Days Linz"
