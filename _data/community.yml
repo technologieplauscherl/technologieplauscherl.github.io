@@ -58,6 +58,23 @@
       date: 2018-11-27
       link: "https://www.meetup.com/de-DE/stahlstadt-js/events/256061365/"
 -
+  id: stahlstadt-js
+  name: "Stahlstadt.js"
+  events:
+   -
+      name: "Stahlstadt #20"
+      location: RSG
+      date: 2019-03-07
+      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/259117676/"
+-
+  id: stahlstadt-js
+  name: "Stahlstadt.js"
+  events:
+   -
+      name: "Stahlstadt #21"
+      location: tba
+      date: 2019-04-02
+-
   id: technologieplauscherl
   name: "Technologieplauscherl"
   events:
