@@ -66,14 +66,17 @@
       location: RSG
       date: 2019-03-07
       link: "https://www.meetup.com/de-DE/stahlstadt-js/events/259117676/"
--
-  id: stahlstadt-js
-  name: "Stahlstadt.js"
-  events:
+   -
+      name: "Stahlstadt presents: Smashing Magazin"
+      location: Domhotel
+      cost: true
+      date: 2019-04-02
+      link: https://scriptconf.org
    -
       name: "Stahlstadt #21"
       location: tba
       date: 2019-04-02
+      link: https://scriptconf.org
 -
   id: technologieplauscherl
   name: "Technologieplauscherl"
