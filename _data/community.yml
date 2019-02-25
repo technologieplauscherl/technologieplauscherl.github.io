@@ -350,12 +350,12 @@
       name: "Infrastructure as a Meetup 5"
       location: Dynatrace
       date: 2018-06-28
-      link: https://www.meetup.com/de-DE/iaam-linz/events/250904697/	  
+      link: https://www.meetup.com/de-DE/iaam-linz/events/250904697/    
     -
       name: "Infrastructure as a Meetup 6"
       location: karriere.at
       date: 2018-09-03
-      link: https://www.meetup.com/iaam-linz/events/254402943/	  	  
+      link: https://www.meetup.com/iaam-linz/events/254402943/        
     -  
       name: "Infrastructure as a Meetup 7"
       location: factory300
@@ -365,7 +365,7 @@
       name: "Infrastructure as a Meetup 8"
       location: smec
       date: 2019-04-10
-      link: https://www.meetup.com/iaam-linz/events/258764365/ 	  
+      link: https://www.meetup.com/iaam-linz/events/258764365/    
 -      
   id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
@@ -707,3 +707,12 @@
       location: "E-CONOMIX Office, Wels"
       date: 2019-02-26
       link: http://mage-meetup.at/
+-
+  id: devtreff
+  name: "DevTreff im Quartier A"
+  events:
+    -
+      name: "DevTreff #4 im Quartier A"
+      location: "Quartier A - Amstetten"
+      date: 2019-05-16
+      link: https://devtreff.io/
