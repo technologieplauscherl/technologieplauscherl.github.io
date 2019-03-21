@@ -86,6 +86,11 @@
       location: "DS Automotion (mit Shuttle-Service)"
       link: https://technologieplauscherl.at
       date: 2018-11-22
+   -
+      name: "Technologieplauscherl 66"
+      location: "Wissensturm - hosted by Fronius"
+      link: https://technologieplauscherl.at
+      date: 2019-04-24
 -
   id: topconf
   name: "Topconf Events"
