@@ -721,3 +721,12 @@
       location: "Quartier A - Amstetten"
       date: 2019-05-16
       link: https://devtreff.io/
+-
+  id: womencode
+  name: "Women && Code"
+  events:
+    -
+      name: "Women && Code"
+      location: "Codersbay, TFL Linz"
+      date: 2019-04-17
+      link: https://www.meetup.com/de-DE/WomenAndCode/events/260081596/
