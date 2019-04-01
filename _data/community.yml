@@ -3,10 +3,10 @@
   name: "ASCII Art"
   events:
     -
-	  name: "ASCII Art Meetup Linz"
-	  location: Storyblok
-	  date: 2019-05-06
-	  link: https://www.meetup.com/de-DE/ascii-art/events/260234908/
+      name: "ASCII Art Meetup Linz"
+      location: Storyblok
+      date: 2019-05-06
+      link: https://www.meetup.com/de-DE/ascii-art/events/260234908/
 -
   id: ruby-linz
   name: "Ruby User Group Linz (RUGL)"
