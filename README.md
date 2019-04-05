@@ -1,4 +1,4 @@
-technologieplauscherl.at
+technologieplauscherl.at ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ========================
 
 Die Website für das Tech-Meetup in Linz -> [technologieplauscherl.at](http://technologieplauscherl.at)
