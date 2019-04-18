@@ -342,7 +342,7 @@
       location: smec
       date: 2017-06-28
       link: https://www.meetup.com/de-DE/iaam-linz/events/239305491/
-    -  
+    -
       name: "Infrastructure as a Meetup 2"
       location: factory300
       date: 2017-09-27
@@ -361,23 +361,23 @@
       name: "Infrastructure as a Meetup 5"
       location: Dynatrace
       date: 2018-06-28
-      link: https://www.meetup.com/de-DE/iaam-linz/events/250904697/    
+      link: https://www.meetup.com/de-DE/iaam-linz/events/250904697/
     -
       name: "Infrastructure as a Meetup 6"
       location: karriere.at
       date: 2018-09-03
-      link: https://www.meetup.com/iaam-linz/events/254402943/        
-    -  
+      link: https://www.meetup.com/iaam-linz/events/254402943/
+    -
       name: "Infrastructure as a Meetup 7"
       location: factory300
       date: 2019-01-30
-      link: https://www.meetup.com/iaam-linz/events/256538476/ 
-    -  
+      link: https://www.meetup.com/iaam-linz/events/256538476/
+    -
       name: "Infrastructure as a Meetup 8"
       location: smec
       date: 2019-04-10
-      link: https://www.meetup.com/iaam-linz/events/258764365/    
--      
+      link: https://www.meetup.com/iaam-linz/events/258764365/
+-
   id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
   events:
@@ -736,3 +736,13 @@
       location: "Codersbay, TFL Linz"
       date: 2019-04-17
       link: https://www.meetup.com/de-DE/WomenAndCode/events/260081596/
+-
+  id: uncodeference
+  name: "un{code}ference.io"
+  events:
+    -
+      name: "un{code}ference.io '19"
+      location: "Werkstätte Wattens, Tirol"
+      date: 2019-05-10
+      link: https://uncodeference.io/
+      cost: EUR 20+
