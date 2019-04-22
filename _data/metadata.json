@@ -104,6 +104,14 @@
         "lng": 14.236858
       }
     },
+	{
+      "name": "Tabakfabrik Linz",
+      "count": 2,
+      "pos": {
+        "lat": 48.312835,
+        "lng": 14.298349
+      }
+    },
     {
       "name": "Kepler Salon",
       "count": 1,
@@ -126,14 +134,6 @@
       "pos": {
         "lat": 48.310108,
         "lng": 14.283888
-      }
-    },
-    {
-      "name": "Tabakfabrik Linz",
-      "count": 1,
-      "pos": {
-        "lat": 48.312835,
-        "lng": 14.298349
       }
     },
     {
@@ -295,6 +295,11 @@
       "count": 5,
       "img": "//fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c50.151.621.621/s160x160/312215_174607659291187_222943803_n.jpg?oh=0f990aa1d38775c905313447641aa3ea&oe=56A9857C&__gda__=1449011900_a2a468b9c8e213241cd37081050a515a"
     },
+	{
+      "name": "Paul Lanzerstorfer",
+      "count": 4,
+      "img": "//www.xing.com/img/users/9/9/1/016bbe0f8.14932083,3.256x256.jpg"
+    },
     {
       "name": "Günther Grill",
       "count": 3,
@@ -309,11 +314,6 @@
       "name": "Rainer Stropek",
       "count": 3,
       "img": "//pbs.twimg.com/profile_images/967152604/RainerStropek_Ausschnitt_400x400.JPG"
-    },
-    {
-      "name": "Paul Lanzerstorfer",
-      "count": 3,
-      "img": "//imgur.com/TVsLskC.png"
     },
     {
       "name": "Thomas Fischl",
@@ -899,6 +899,16 @@
       "name": "Gregor Multerberger",
       "count": 1,
       "img": "//scontent-frt3-1.xx.fbcdn.net/hprofile-xpa1/v/t1.0-1/p160x160/12115733_1056301857723090_955067315156588742_n.jpg?oh=a025e7466520f3073eb99b7b7dcba8b4&oe=56ED4440"
+    },
+	{
+      "name": "Christian Weiß",
+      "count": 1,
+      "img": "/img/speaker_male_no_img.jpg"
+    },
+	{
+      "name": "Karina Streng",
+      "count": 1,
+      "img": "/img/speaker_female_no_img.jpg"
     }
   ]
 }
