@@ -746,3 +746,12 @@
       date: 2019-05-10
       link: https://uncodeference.io/
       cost: EUR 20+
+-
+  id: gophers
+  name: "Gophers Linz"
+  events:
+    -
+      name: "Gophers Linz #2"
+      location: "Karriere.at"
+      date: 2019-04-24
+      link: https://www.meetup.com/de-DE/Gophers-Linz/events/259466972/
