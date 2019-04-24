@@ -736,6 +736,16 @@
       location: "Codersbay, TFL Linz"
       date: 2019-04-17
       link: https://www.meetup.com/de-DE/WomenAndCode/events/260081596/
+    -
+      name: "Women && Code"
+      location: "CODERS.BAY, TFL Linz"
+      date: 2019-05-01
+      link: https://www.meetup.com/WomenAndCode/events/260729338/
+    -
+      name: "Women && Code"
+      location: "CODERS.BAY, TFL Linz"
+      date: 2019-05-15
+      link: https://www.meetup.com/WomenAndCode/events/260729492/
 -
   id: uncodeference
   name: "un{code}ference.io"
