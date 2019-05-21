@@ -492,6 +492,11 @@
       location: "Tabakfabrik"
       date: 2018-12-04
       link: https://www.meetup.com/NET-Stammtisch-Linz/events/256314848/
+    -
+      name: ".NET Stammtisch #8 - .NET Summer Event with the .NET Team from Microsoft"
+      location: "Factory300: Peter-Behrens-Platz 10, 4020 Linz"
+      date: 2019-07-23
+      link: https://www.meetup.com/NET-Stammtisch-Linz/events/261637908/
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
