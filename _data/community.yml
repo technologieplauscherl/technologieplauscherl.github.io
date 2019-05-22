@@ -59,10 +59,10 @@
   name: "Stahlstadt.js"
   events:
    -
-      name: "Stahlstadt #19"
-      location: Siemens
-      date: 2018-11-27
-      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/256061365/"
+      name: "Stahlstadt #22"
+      location: SMEC
+      date: 2019-06-05
+      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/261037989/"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
@@ -118,10 +118,10 @@
   name: "Script"
   events:
     -
-      name: "Script'18"
-      location: "Central"
-      date: 2018-01-19
-      link: http://www.scriptconf.org
+      name: "Script'19"
+      location: "tbd"
+      date: 2018-10-25
+      link: https://scriptconf.org
       cost: EUR 140
 -
   id: concat
