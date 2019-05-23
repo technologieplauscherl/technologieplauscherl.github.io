@@ -751,6 +751,11 @@
       location: "CODERS.BAY, TFL Linz"
       date: 2019-05-15
       link: https://www.meetup.com/WomenAndCode/events/260729492/
+    -
+      name: "Female Coders StudyGroup (formerly Women && Code)"
+      location: "factory300, TFL Linz"
+      date: 2019-05-29
+      link: https://www.facebook.com/events/669452410164180/
 -
   id: uncodeference
   name: "un{code}ference.io"
