@@ -784,3 +784,12 @@
       location: "Digital City Solutions GmbH"
       date: 2019-07-09
       link: https://www.meetup.com/de-DE/developer-meetup-enns/events/261730342/
+-
+  id: zeitcohackathon
+  name: "ZEIT Now Hackathon"
+  events:
+    -
+      name: "#1 ZEIT Now Integrations Hackathon"
+      location: "Online & San Francisco"
+      date: 2019-06-01
+      link: https://zeit.co/hackathon
