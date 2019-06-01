@@ -793,3 +793,13 @@
       location: "Online & San Francisco"
       date: 2019-06-01
       link: https://zeit.co/hackathon
+-
+  id: agiletour2019
+  name: "Agile Tour Vienna"
+  events:
+    -
+      name: "Agile Tour Vienna 2019"
+      location: "FH Campus Wien"
+      date: 2019-09-20
+      link: https://agiletourvienna.at/
+	  cost: EUR 99
