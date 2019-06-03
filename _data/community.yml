@@ -803,3 +803,12 @@
       date: 2019-09-20
       link: https://agiletourvienna.at/
       cost: EUR 99
+-
+  id: beer+code
+  name: "beer+code Ried"
+  events:
+   -
+      name: "beer+code #3"
+      location: "Techno-Z Ried"
+      link: https://www.beercoderied.at
+      date: 2019-07-04
