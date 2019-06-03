@@ -793,3 +793,12 @@
       location: "Online & San Francisco"
       date: 2019-06-01
       link: https://zeit.co/hackathon
+-
+  id: beer+code
+  name: "beer+code Ried"
+  events:
+   -
+      name: "beer+code #3"
+      location: "Techno-Z Ried"
+      link: https://www.beercoderied.at
+      date: 2019-07-04
