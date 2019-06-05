@@ -818,6 +818,6 @@
   events:
    -
       name: "Developer Meetup Enns DME001"
-	  location: "Digital City Solutions"
-	  link: https://www.meetup.com/de-DE/developer-meetup-enns/events/261730342/
-	  date: 2019-07-09
+      location: "Digital City Solutions"
+      link: https://www.meetup.com/de-DE/developer-meetup-enns/events/261730342/
+      date: 2019-07-09
