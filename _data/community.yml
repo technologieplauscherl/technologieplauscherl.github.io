@@ -8,6 +8,15 @@
       date: 2019-05-06
       link: https://www.meetup.com/de-DE/ascii-art/events/260234908/
 -
+  id: mozilla
+  name: "Mozilla Developer Roadshow"
+  events:
+    -
+      name: "Mozilla Developer Roadshow 2019"
+      location: Storyblok
+      date: 2019-08-28
+      link: https://mozilla-tito-devr.netlify.com/
+-
   id: ruby-linz
   name: "Ruby User Group Linz (RUGL)"
   events:
