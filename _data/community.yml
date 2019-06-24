@@ -821,4 +821,12 @@
       location: "Techno-Z Ried"
       link: https://www.beercoderied.at
       date: 2019-07-04
-
+-
+  id: aws-summer-tour
+  name: "AWS Summer Tour"
+  events:
+   -
+      name: "AWS Summer Tour @Storyblok"
+      location: "Storyblok, Peter-Behrens-Platz 2"
+      link: https://awssummertourstoryblok.splashthat.com/
+      date: 2019-07-31
