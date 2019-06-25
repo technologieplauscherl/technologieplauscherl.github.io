@@ -830,3 +830,12 @@
       location: "Storyblok, Peter-Behrens-Platz 2"
       link: https://awssummertourstoryblok.splashthat.com/
       date: 2019-07-31
+-
+  id: mozilla-developer-roadshow
+  name: "Mozilla Developer Roadshow"
+  events:
+   -
+      name: "Mozilla Developer Roadshow @Storyblok"
+      location: "Storyblok, Peter-Behrens-Platz 2"
+      link: https://ti.to/mdn/mozilla-developer-roadshow-2019-EU-Linz
+      date: 2019-08-28
