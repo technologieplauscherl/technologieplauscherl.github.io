@@ -166,11 +166,17 @@
   name: "React Day Berlin"
   events:
     -
-      name: "React Day Berlin"
+      name: "React Day Berlin 2018"
       location: "KOSMOS, Berlin"
       date: 2018-11-30
       link: https://reactday.berlin/
       cost: EUR 300+
+    -
+      name: "React Day Berlin 2019"
+      location: "KOSMOS, Berlin"
+      date: 2019-12-06
+      link: https://reactday.berlin/
+      cost: EUR 390+
 -
   id: lakeside
   name: "Lakeside Hackfest"
@@ -181,6 +187,12 @@
       date: 2018-08-25
       link: https://www.lakeside-hackfest.com/
       cost: EUR 60
+    -
+      name: "Lakeside Hackfest"
+      location: "Klagenfurt am Wörthersee"
+      date: 2019-09-06
+      link: https://www.lakeside-hackfest.com/
+      cost: EUR 95+
 -
   id: wad
   name: "We Are Developers"
