@@ -1,0 +1,123 @@
+<html>
+
+<head>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<style>
+		body {
+			background-color: #f7f7f8;
+			position: relative;
+			min-height: 100vh;
+			margin: 0;
+		}
+
+		.hidden {
+			display: none !important;
+		}
+
+		#rick {
+			width: 50%;
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-200%, -50%);
+			transition: none;
+		}
+
+		.start #rick {
+			transform: translate(-50%, -50%);
+			transition: transform 4s ease;
+		}
+
+		#kaboom {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 100%;
+			display: none;
+			transform: translate(-50%, -50%);
+		}
+
+		.end #kaboom {
+			display: block;
+		}
+
+		h1 {
+			font-family: 'Bangers';
+			font-size: 120px;
+			font-weight: normal;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			margin: 0;
+		}
+
+		h1.in {
+			transition: opacity 2s ease;
+			opacity: 1;
+		}
+	</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<img id="rick" src="rick_and_morty.gif">
+<img id="kaboom" src="kaboom_2.gif" alt=""/>
+<h1 id="winner"></h1>
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+
+<script>
+
+	console.log("test")
+	var running = false;
+
+	$('body').on('click', function(e) {
+		if(running) {
+			return;
+		}
+	running = true;
+	$('body').removeClass('end');
+	$('#kaboom').removeClass('hidden');
+	$('#winner').removeClass('in');
+	// $('#rick')[0].currentTime = 0;
+	// $('#rick')[0].pause();
+	$('body').addClass('start');
+	setTimeout(end, 5000);
+	});
+
+	var end = function() {
+		$('body').addClass('end');
+		$('body').removeClass('start');
+		setTimeout(removeBomb, 1000);
+	}
+
+	var removeBomb = function() {
+		$('#kaboom').addClass('hidden');
+		var idx = parseInt(Math.random() * uniques.length);
+		$('#winner').text(uniques[idx]);
+		$('#winner').addClass('in');
+		running = false;
+		uniques.splice(idx, 1);
+	}
+
+	var fb =  ['Peter Schmidbauer', 'Christina Stuerz', 'Joachim Sauer', 'Florian Harwöck', 'Philipp Hörtler', 'Franz Stumpner', 'Dominik Zöchbauer', 'Arthur Knaus', 'Tasha Leyn', 'Arno Huetter', 'Dan Alexandru', 'Deniz Akkoyun', 'Markus Wagner', 'Armin', 'Peter Pfarrhofer', 'Michael Mittermair', 'Gergely Kalapos', 'Sandra Mager', 'Nikolaus Kelis', 'Maria Muthenthaler', 'Gabika Mužilová', 'Isabella Bognermayr', 'Toni Pichler', 'Thomas Pichler', 'Bernd Wienerroither', 'Mike Ey', 'Philipp Korn', 'Eser Tukat', 'Paul Em', 'Mario Rader', 'Martin Zobl', 'Zugel Murillo Polanía', 'Mãrtin Waldmann', 'Matthias Holzinger', 'Hannes Brandstätter-Müller'];
+	var meetup = ['Andreas Frühwirt', 'Armin', 'Carina Lebherz', 'Christian Haider', 'Christian Kolb', 'Christian Zulehner', 'Christoph F', 'Florian Harwöck', 'Florian Weinrich', 'Gergely Kalapos', 'Hal Ko', 'Hans-Peter Weidinger', 'Josef Schaitl', 'Jürgen Brandstetter', 'ka.', 'Lucia G.', 'Manuel Moser', 'Mar Tell', 'Marie Birner', 'Mario Rader', 'Marko', 'Martin Niederl', 'Martin w.', 'Matthias Holzinger', 'Norbert Kehrer', 'Paul Latzelsperger', 'Philipp Remplbauer', 'Robert Baumgartner', 'Rory Hartong-Redden', 'Theo Kopetzky', 'Thomas Kent Rohrberg', 'Viljem Pitako', 'Vorname Nachname', 'Wolfgang Kerschbaumer'];
+	var members = meetup.concat(fb);
+	var uniques = Array.from(new Set(members));
+
+
+</script>
+
+</body>
+
+</html>

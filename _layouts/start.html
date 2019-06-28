@@ -10,7 +10,7 @@ layout: default
 		{% endif %}
 
 		{% if post.sponsor %}
-		<h2>Sponsoring</h2>
+		<h2 id="sponsoring">Sponsoring</h2>
 		<p>
 			Vielen Dank an {{ post.sponsor }} für die Verpflegung!
 		</p>
@@ -20,12 +20,12 @@ layout: default
 
 		{% assign post = site.plauscherl | last %}
 
-		<h2>Info</h2>
+		<h2 id="info">Info</h2>
 
 		{% include description.html %}
 
 
-		<h2>Vorherige Plauscherl</h2>
+		<h2 id="previous-plauscherls">Vorherige Plauscherl</h2>
 
 		<div class="cards">
 			{% for card in site.plauscherl reversed %}
