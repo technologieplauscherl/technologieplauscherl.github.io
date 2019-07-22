@@ -852,3 +852,12 @@
       location: "Storyblok, Peter-Behrens-Platz 2"
       link: https://awssummertourstoryblok.splashthat.com/
       date: 2019-07-31
+-
+  id: uppercode
+  name: "Uppercode Hackathon"
+  events:
+   -
+      name: "#uppercode2019 24h Hackathon"
+      location: "Haus OÖ Tourismus, Freistädterstraße 119"
+      link: https://www.uppercode.at/
+      date: 2019-10-18
