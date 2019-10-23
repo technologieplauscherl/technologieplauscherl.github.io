@@ -167,6 +167,20 @@
       link: http://devone.at
       cost: EUR
 -
+  id: swkw
+  name: "Softwerkskammer Wien"
+  events:
+    -
+      name: "Global Day of Coderetreat (Day1)"
+      location: "Zühlke Engineering, Handelskai 92, Vienna"
+      date: 2019-11-15
+      link: https://www.softwerkskammer.org/activities/gdcr19-vienna-1
+    -
+      name: "Global Day of Coderetreat (Day2)"
+      location: "DC Spaces, Leonard-Bernstein-Straße 10, Vienna"
+      date: 2019-11-16
+      link: https://www.softwerkskammer.org/activities/gdcr19-vienna-2
+-
   id: reactday
   name: "React Day Berlin"
   events:
