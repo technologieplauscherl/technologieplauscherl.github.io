@@ -787,6 +787,16 @@
       location: "factory300, TFL Linz"
       date: 2019-05-29
       link: https://www.facebook.com/events/669452410164180/
+    -
+      name: "Female Coders StudyGroup #X"
+      location: "factory300, TFL Linz"
+      date: 2019-11-06
+      link: https://www.meetup.com/Female-Coders-Linz/events/265144859/
+    -
+      name: "Female Coders StudyGroup #XI"
+      location: "Tractive, Randlstraße 18a"
+      date: 2019-11-20
+      link: https://www.meetup.com/Female-Coders-Linz/events/265189381/
 -
   id: uncodeference
   name: "un{code}ference.io"
