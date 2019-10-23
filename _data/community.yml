@@ -340,6 +340,11 @@
       location: JKU, HS1 und weltweit viele andere
       date: 2019-03-22
       link: https://register.codingcontest.org/
+    -
+      name: "32th Catalysts Coding Contest"
+      location: JKU, HS1 und weltweit viele andere
+      date: 2019-11-08
+      link: https://register.codingcontest.org/
 -
   id: factory300
   name: "Factory300"
@@ -475,6 +480,16 @@
       location: JKU
       date: 2018-07-10
       link: https://www.facebook.com/events/1768716099873839/
+    -
+      name: "JKU LAN 13"
+      location: JKU
+      date: 2019-12-13
+      link: https://www.facebook.com/jkugames/
+    -
+      name: "SIGFLAG Newbie CTF"
+      location: JKU
+      date: 2019-11-01
+      link: https://www.sigflag.at/events/#newbie
 -
   id: jku-im
   name: "JKU Informationsmanagement"
