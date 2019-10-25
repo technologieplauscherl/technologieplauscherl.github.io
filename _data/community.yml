@@ -2,271 +2,70 @@
   id: ascii-art
   name: "ASCII Art"
   events:
-    -
-      name: "ASCII Art Meetup Linz"
-      location: Storyblok
-      date: 2019-05-06
-      link: https://www.meetup.com/de-DE/ascii-art/events/260234908/
 -
   id: mozilla
   name: "Mozilla Developer Roadshow"
   events:
-    -
-      name: "Mozilla Developer Roadshow 2019"
-      location: Storyblok
-      date: 2019-08-28
-      link: https://mozilla-tito-devr.netlify.com/
 -
   id: ruby-linz
   name: "Ruby User Group Linz (RUGL)"
   events:
-    -
-      name: "Ruby User Group Linz #15"
-      location: "Runtastic"
-      date: 2017-03-15
-      link: "https://meetup.com/Ruby-User-Group-Linz-RUGL/events/237342046"
-    -
-      name: "Ruby User Group Linz #20"
-      location: "runtastic GmbH"
-      date: 2018-08-29
-      link: "https://www.meetup.com/Ruby-User-Group-Linz-RUGL/events/245677239/"
 -
   id: aug-linz
   name: "Atlassian User Group Linz"
   events:
-    -
-      name: "Atlassian User Group Linz #1"
-      location: "karriere.at"
-      date: 2017-03-28
-      link: "https://aug.atlassian.com/events/details/atlassian-linz-presents-atlassian-usergroup-linz-1-event-bei-karriereat"
-    -
-      name: "Atlassian User Group Linz #2"
-      location: "Software Quality Lab"
-      date: 2017-05-23
-      link: "https://aug.atlassian.com/events/details/atlassian-linz-presents-atlassian-user-group-treffen-im-mai"
 -
   id: vr-plauscherl
   name: "VR Plauscherl"
   events:
-    -
-      name: "VR Plauscherl #2"
-      location: "startup 300"
-      date: 2017-06-13
-      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/238738553/"
-    -
-      name: "VR Plauscherl #6"
-      location: "Business Upper Austria / Techcenter Linz"
-      date: 2018-06-12
-      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/249935830/"
-    -
-      name: "VR Plauscherl #7 feat. Judith Wiesinger (Magic Leap) & Tamiko Thiel"
-      location: "FH OÖ Campus Hagenberg"
-      date: 2019-01-25
-      link: "https://www.meetup.com/de-DE/VR-Plauscherl/events/257922186/"
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
   events:
-   -
-      name: "Stahlstadt #22"
-      location: SMEC
-      date: 2019-06-05
-      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/261037989/"
--
-  id: stahlstadt-js
-  name: "Stahlstadt.js"
-  events:
-   -
-      name: "Stahlstadt #20"
-      location: RSG
-      date: 2019-03-07
-      link: "https://www.meetup.com/de-DE/stahlstadt-js/events/259117676/"
-   -
-      name: "Stahlstadt presents: Smashing Magazine"
-      location: Domhotel
-      cost: true
-      date: 2019-04-02
-      link: https://scriptconf.org
-   -
-      name: "Stahlstadt #21"
-      location: "Grand Garage - 2. Stock - Werkstatt"
-      date: 2019-04-02
-      link: https://www.meetup.com/de-DE/stahlstadt-js/events/259696016/
 -
   id: technologieplauscherl
   name: "Technologieplauscherl"
   events:
-   -
-      name: "Technologieplauscherl LXII"
-      location: "DS Automotion (mit Shuttle-Service)"
-      link: https://technologieplauscherl.at
-      date: 2018-11-22
-   -
-      name: "Technologieplauscherl 66"
-      location: "Wissensturm - hosted by Fronius"
-      link: https://technologieplauscherl.at
-      date: 2019-04-24
-   -
-      name: "Technologieplauscherl 69"
-      location: "Fabasoft"
-      link: https://technologieplauscherl.at
-      date: 2019-07-25
 -
   id: topconf
   name: "Topconf Events"
   events:
-    -
-      name: "Topconf Linz 2017"
-      location: "Ursulinenhof"
-      date: 2017-03-01
-      link: http://topconf.com/linz-2017/
-      cost: EUR 550
-    -
-      name: "Cyber Security Conference 2017"
-      location: "Courtyard Linz"
-      date: 2017-06-13
-      link: https://www.topconf.com/conference/cyber-security-conf-17/
-      cost: EUR 250
 -
   id: script
   name: "Script"
   events:
-    -
-      name: "Script'19"
-      location: "Central Linz"
-      date: 2019-10-25
-      link: https://scriptconf.org
-      cost: EUR 140
 -
   id: concat
   name: ".concat()"
   events:
-    -
-      name: ".concat() 2018"
-      location: "Salzburg"
-      date: 2018-03-03
-      link: https://2018.conc.at/
-      cost: EUR 270
 -
   id: magento
   name: "Magento Meetup"
   events:
-    -
-      name: "Magento Meetup"
-      location: "BrucknerStudios"
-      date: 2017-03-21
-      link: http://magewien.at/
 -
   id: devone
   name: "#devone"
   events:
-    -
-      name: "DevOne 2019"
-      location: "Tabakfabrik"
-      date: 2019-04-11
-      link: http://devone.at
-      cost: EUR
 -
   id: reactday
   name: "React Day Berlin"
   events:
-    -
-      name: "React Day Berlin 2018"
-      location: "KOSMOS, Berlin"
-      date: 2018-11-30
-      link: https://reactday.berlin/
-      cost: EUR 300+
-    -
-      name: "React Day Berlin 2019"
-      location: "KOSMOS, Berlin"
-      date: 2019-12-06
-      link: https://reactday.berlin/
-      cost: EUR 390+
 -
   id: lakeside
   name: "Lakeside Hackfest"
   events:
-    -
-      name: "Lakeside Hackfest"
-      location: "St. Georgen am Längsee"
-      date: 2018-08-25
-      link: https://www.lakeside-hackfest.com/
-      cost: EUR 60
-    -
-      name: "Lakeside Hackfest"
-      location: "Klagenfurt am Wörthersee"
-      date: 2019-09-06
-      cost: EUR 95+
-      link: https://www.lakeside-hackfest.com/
 -
   id: wad
   name: "We Are Developers"
   events:
-    -
-      name: "We Are Developers"
-      location: "Marx Halle Wien"
-      date: 2017-05-11
-      link: http://www.wearedevelopers.org
-      cost: EUR 199
-    -
-      name: "We Are Developers World Congress (3 days)"
-      location: "Vienna"
-      date: 2018-05-16
-      link: http://www.wearedevelopers.org
-      cost: EUR 199
 -
   id: cocoaheads-linz
   name: "Cocoaheads Linz"
   events:
-    -
-      name: "Cocoaheads Linz 30"
-      location: "Jumio Software Development GmbH"
-      date: 2017-02-23
-      link: https://www.facebook.com/events/938004146329561/permalink/957364624393513/
-    -
-      name: "Cocoaheads Linz 31"
-      location: "troii."
-      date: 2017-03-30
-      link: https://www.meetup.com/Cocoaheads-Linz/events/238469328/
-    -
-      name: "Cocoaheads Linz 32"
-      location: "myAlfred"
-      date: 2017-04-27
-      link: https://www.meetup.com/Cocoaheads-Linz/events/238961443/
-    -
-      name: "Cocoaheads Linz 33"
-      location: "Runtastic GmbH"
-      date: 2017-06-29
-      link: https://www.meetup.com/Cocoaheads-Linz/events/240648053/
-    -
-      name: "Cocoaheads Linz 34"
-      location: "Egger Apps"
-      date: 2017-09-28
-      link: https://www.meetup.com/Cocoaheads-Linz/events/242947934/
 -
   id: ejug
   name: "EJUG"
   events:
-    -
-      name: "EJUG devone warmup"
-      location: "Dynatrace"
-      date: 2017-05-31
-      link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/239295710/
-    -
-      name: "EJUG Linz"
-      location: "Wissensturm"
-      date: 2017-09-12
-      link: https://www.meetup.com/de-DE/Enterprise-Java-User-Group-Austria/events/241997768/
-    -
-      name: "EJUG: Kotlin all the things!"
-      location: "Catalysts Digital Future Space"
-      date: 2018-03-28
-      link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/248023580/
-    -
-      name: "EJUG: Cloud Native Java & Bootiful Testing"
-      location: "smec"
-      date: 2018-04-26
-      link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/248024229/
 -
   id: responsive
   name: "Responsive Org Linz"
@@ -277,69 +76,18 @@
   id: ms-events
   name: "Microsoft events"
   events:
-    -
-      name: "Global Azure Bootcamp"
-      location: Wissensturm Linz
-      date: 2018-04-21
-      link: https://coding-club-linz.github.io/global-azure-bootcamp-2018/
-    -
-      name: "Visual Studio release party"
-      location: Wissensturm Linz
-      date: 2017-03-07
-      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x14117395c6e
-    -
-      name: "Microsoft //build Keynote-Streaming"
-      location: Wissensturm
-      date: 2017-05-10
-      link: https://www.microsoftevents.com/profile/form/index.cfm?PKformID=0x1175493d0ce
 -
   id: powershell-ug
   name: "PowerShell Usergroup"
   events:
-    -
-      name: "PowerShell Usergroup"
-      location: BBRZ Linz
-      date: 2017-03-02
-      link: https://www.meetup.com/de-DE/PowerShell-Usergroup-Austria/events/235727895/?eventId=235727895
 -
   id: barcamp-sbg
   name: "Barcamp Salzburg"
   events:
-    -
-      name: "Barcamp The Next Web"
-      location: FH Salzburg
-      date: 2017-04-21
-      link: https://barcamp-sbg.at/
-
 -
   id: ccc
   name: "Catalysts Coding Contest"
   events:
-    -
-      name: "25. Catalysts Coding Contest"
-      location: Linz (JKU), Wien, ...
-      date: 2017-03-31
-      link: https://contest.catalysts.cc/
-    -
-      name: "27th Coding Contest"
-      location: JKU, HS1 und weltweit 25 andere
-      date: 2017-10-20
-      link: https://www.codingcontest.org/
-    -
-      name: "28th Coding Contest"
-      location: JKU, HS1 und weltweit viele andere
-      date: 2018-04-27
-      link: https://www.codingcontest.org/
-    -
-      name: "Coding Contest 2018"
-      location: JKU, HS1 und weltweit viele andere
-      date: 2018-11-16
-      link: https://register.codingcontest.org/
-    -
-      name: "30th Catalysts Coding Contest"
-      location: JKU, HS1 und weltweit viele andere
-      date: 2019-03-22
-      link: https://register.codingcontest.org/
     -
       name: "32th Catalysts Coding Contest"
       location: JKU, HS1 und weltweit viele andere
@@ -349,70 +97,10 @@
   id: factory300
   name: "Factory300"
   events:
-    -
-      name: "Blockchain Beginners Guide"
-      location: factory300
-      date: 2017-10-04
-      link: https://www.facebook.com/events/1988009068110153/
-    -
-      name: "Blockchain Meetup #5"
-      location: factory300
-      date: 2018-01-30
-      link: https://factory300.spaces.nexudus.com/en/events/view/471680209/blockchain-meetup-5
-    -
-      name: "Blockchain Meetup #6"
-      location: factory300
-      date: 2018-03-14
-      link: https://www.meetup.com/de-DE/Blockchain-Meetup-1/events/248330938/
 -
   id: iaam
   name: "Infrastructure as a meetup"
   events:
-    -
-      name: "Infrastructure as a Meetup 1"
-      location: smec
-      date: 2017-06-28
-      link: https://www.meetup.com/de-DE/iaam-linz/events/239305491/
-    -
-      name: "Infrastructure as a Meetup 2"
-      location: factory300
-      date: 2017-09-27
-      link: https://www.meetup.com/de-DE/iaam-linz/events/242791989/
-    -
-      name: "Infrastructure as a Meetup 3"
-      location: karriere.at
-      date: 2018-02-07
-      link: https://www.meetup.com/iaam-linz/events/245490961/
-    -
-      name: "Infrastructure as a Meetup 4"
-      location: smec
-      date: 2018-04-05
-      link: https://www.meetup.com/iaam-linz/events/248331134/
-    -
-      name: "Infrastructure as a Meetup 5"
-      location: Dynatrace
-      date: 2018-06-28
-      link: https://www.meetup.com/de-DE/iaam-linz/events/250904697/
-    -
-      name: "Infrastructure as a Meetup 6"
-      location: karriere.at
-      date: 2018-09-03
-      link: https://www.meetup.com/iaam-linz/events/254402943/
-    -
-      name: "Infrastructure as a Meetup 7"
-      location: factory300
-      date: 2019-01-30
-      link: https://www.meetup.com/iaam-linz/events/256538476/
-    -
-      name: "Infrastructure as a Meetup 8"
-      location: smec
-      date: 2019-04-10
-      link: https://www.meetup.com/iaam-linz/events/258764365/
-    -
-      name: "Infrastructure as a Meetup 9"
-      location: karriere.at
-      date: 2019-07-03
-      link: https://www.meetup.com/iaam-linz/events/262259179/
     -
       name: "Infrastructure as a Meetup 10"
       location: tractive
@@ -422,69 +110,14 @@
   id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
   events:
-    -
-      name: "64. TYPO3 Usergroup Meeting"
-      location: Axis, Reelworx
-      date: 2018-03-14
-      link: https://www.meetup.com/de-DE/TUGA-TYPO3-User-Group-Austria/events/247781534/
 -
   id: growth-hacking
   name: "Growth Hacking Linz"
   events:
-    -
-      name: "Growth Hacking Linz - Kickoff"
-      location: Akostart
-      date: 2017-03-21
-      link: https://www.facebook.com/events/422314518116280/433798553634543/
-    -
-      name: "Growth Hacking Stammtisch #2"
-      location: Akostart
-      date: 2017-05-16
-      link: https://www.facebook.com/groups/259582067786884/
-    -
-      name: "Growth Hacking Stammtisch #3"
-      location: factory300
-      date: 2017-07-25
-      link: https://www.facebook.com/groups/259582067786884/
-    -
-      name: "Growth Hacking Stammtisch #4"
-      location: factory300
-      date: 2017-10-17
-      link: https://www.facebook.com/events/1997588590477168/
 -
   id: oeh-informatik
   name: "ÖH JKU - StV Informatik"
   events:
-    -
-      name: "Ludum Dare 38 - JKU Game Jam "
-      location: JKU Linz, Bankengebäude, Keller
-      date: 2017-04-21
-      link: https://www.facebook.com/events/1687620731538217/
-    -
-      name: "TEDxJKU Live"
-      location: JKU Linz, TNF-Turm, HS11-14
-      date: 2017-04-27
-      link: https://www.facebook.com/events/710576112445425/
-    -
-      name: "JKU LAN 9"
-      location: JKU Linz, Bankengebäude, Keller
-      date: 2017-05-05
-      link: https://lan.oeh.jku.at
-    -
-      name: "JKU LAN 10 & JKU DICE"
-      location: JKU, Mensa
-      date: 2017-11-10
-      link: https://lan.oeh.jku.at
-    -
-      name: "Google #Hash Code Hub"
-      location: JKU
-      date: 2018-03-01
-      link: https://hashcode.withgoogle.com/hubs_list.html
-    -
-      name: "Game Dev Meetup Linz"
-      location: JKU
-      date: 2018-07-10
-      link: https://www.facebook.com/events/1768716099873839/
     -
       name: "JKU LAN 13"
       location: JKU
@@ -499,314 +132,62 @@
   id: jku-im
   name: "JKU Informationsmanagement"
   events:
-    -
-      name: "Alexa Skill Building Workshop"
-      location: JKU Linz
-      date: 2017-03-29
-      link: https://www.reglist24.com/alexa-skill-building-workshop
 -
   id: dotnet-stammtisch
   name: ".NET Stammtisch - Linz"
   events:
-    -
-      name: ".NET Stammtisch #1"
-      location: "Dynatrace"
-      date: 2017-05-23
-      link: https://dotnetstammtisch.at
-    -
-      name: ".NET Stammtisch #2"
-      location: "Coworking Cube: Obere Landstraße 19, 4055 Pucking"
-      date: 2017-07-26
-      link: https://dotnetstammtisch.at
-    -
-      name: ".NET Stammtisch #3"
-      location: "bet-at-home: Hafenstraße 47-51, 4020 Linz"
-      date: 2017-10-24
-      link: https://dotnetstammtisch.at
-    -
-      name: ".NET Stammtisch #4"
-      location: "Factory300: Peter-Behrens-Platz 10, 4020 Linz"
-      date: 2018-02-20
-      link: https://dotnetstammtisch.at
-    -
-      name: ".NET Stammtisch #5"
-      location: "Dataformers: Gewerbepark Urfahr 8, 4040 Linz"
-      date: 2018-05-22
-      link: https://dotnetstammtisch.at
-    -
-      name: ".NET Stammtisch #6 - .NET Conf Post-conf Meetup"
-      location: "Dynatrace"
-      date: 2018-09-18
-      link: https://www.meetup.com/NET-Stammtisch-Linz/events/253592680/
-    -
-      name: ".NET Stammtisch #7 - English edition with Connect() keynote"
-      location: "Tabakfabrik"
-      date: 2018-12-04
-      link: https://www.meetup.com/NET-Stammtisch-Linz/events/256314848/
-    -
-      name: ".NET Stammtisch #8 - .NET Summer Event with the .NET Team from Microsoft"
-      location: "Factory300: Peter-Behrens-Platz 10, 4020 Linz"
-      date: 2019-07-23
-      link: https://www.meetup.com/NET-Stammtisch-Linz/events/261637908/
 -
   id: linz-cobol-meetup
   name: "Linz Cobol Meetup"
   events:
-    -
-      name: "90s Dev Meetup"
-      location: Storyblok
-      date: 2018-04-25
-      link: https://www.meetup.com/de-DE/90s-Dev-Meetup/
 -
   id: otelo
   name: "Otelo"
   events:
-    -
-      name: "Otelo Arduino Hack"
-      location: Gemeindezentrum Auwiesen
-      date: 2017-09-28
-      link: http://www.otelo.or.at/de/event/arduino-hack-3
 -
   id: linuxwochen
   name: "Linuxwochen"
   events:
-    -
-      name: "Linuxwochen"
-      location: Wissensturm (13. und 14. Mai)
-      date: 2017-05-13
-      link: https://www.linuxwochen-linz.at/2017/
 -
   id: funlinz
   name: "Fuckup Night Linz"
   events:
-    -
-      name: "Fuckup Night Linz Vol. III"
-      location: Tabakfabrik
-      date: 2017-10-19
-      link: https://www.eventbrite.com/e/fuckup-night-linz-vol-iii-tickets-33390227068
-    -
-      name: "Fuckup Night Linz Vol. IV"
-      location: Tabakfabrik
-      date: 2018-01-18
-      link: https://www.f6s.com/fuckupnightslinzvol.iv
-    -
-      name: "Fuckup Night Linz Vol. V"
-      location: Tabakfabrik
-      date: 2018-05-03
-      link: https://www.facebook.com/events/566219833723437/
 -
   id: pioneers
   name: "Pioneers Industry 4.0 Hackathon"
   events:
-    -
-      name: "Pioneers Industry 4.0 Hackathon (6.-8.11.)"
-      location: startup300
-      date: 2017-11-06
-      link: https://pioneers.io/discover/industry-hackathon
-    -
-      name: "Industry 4.0 Hackathon"
-      location: startup300
-      date: 2018-05-07
-      link: http://factory300.spaces.nexudus.com/de/events/view/542926439/industry-40-hackathon
--
-  id: growthhackingmeetup
-  name: "Growth Hacking Meetup"
-  events:
-    -
-      name: "Growth Hacking Meetup #6"
-      location: factory300
-      date: 2018-05-15
-      link: https://www.facebook.com/events/242354159835864/
--
-  id: 7lytix
-  name: "Data Science Hackathon"
-  events:
-    -
-      name: "7LYTIX Data Science Hackathon (15.-19.11.)"
-      location: "Online (Anmeldeschluss 14.11.)"
-      date: 2017-11-15
-      link: https://hackathon.7lytix.com/
--
-  id: tedx
-  name: "TEDx Linz"
-  events:
-    -
-      name: "TEDx Linz: The new normal"
-      location: "AEC"
-      date: 2018-02-10
-      link: https://tedxlinz.at/
-      cost: EUR
 -
   id: karriere.at
   name: "Dev-Talk"
   events:
-    -
-      name: "DEV TALK - Erster Job, erster Fehler?"
-      location: FH-Hagenberg
-      date: 2018-03-22
-      link: https://www.facebook.com/events/817228281797661/
 -
   id: agile-coffee
   name: "Agile Coffee"
   events:
-    -
-      name: "Agile Coffee"
-      location: karriere.at
-      date: 2018-03-08
-      link: https://www.meetup.com/de-DE/Agile-User-Group-Linz/events/247798603/
 -
   id: linz-ai
   name: "Linz.AI"
   events:
-    -
-      name: "Linz.AI #1"
-      location: smec
-      date: 2018-03-06
-      link: https://www.meetup.com/linz-ai/events/247306900/
-    -
-      name: "Linz.AI #2"
-      location: Catalysts Digital Future Space
-      date: 2018-05-29
-      link: https://www.meetup.com/linz-ai/events/248055890/
--
-  id: akarion
-  name: "Akarion"
-  events:
-    -
-      name: "DigitalShift"
-      location: Stahlwelten
-      date: 2018-03-15
-      link: https://digitalshift.xyz/
-      cost: EUR
--
-  id: devlol
-  name: "/dev/lol"
-  events:
-    -
-      name: "Geekend Linz"
-      location: "Willy*Fred"
-      date: 2018-04-13
-      link: https://devlol.org/wiki/DevLoL/geekend/2018
 -
   id: aws-ug
   name: "AWS User Group Linz"
   events:
-    -
-      name: "1st AWS User Group Linz"
-      location: "Dynatrace"
-      date: 2018-06-12
-      link: https://www.meetup.com/en-AU/AWS-User-Group-Linz/events/249598149/
-    -
-      name: "2nd AWS User Group Linz"
-      location: "Catalysts Digital Future Space"
-      date: 2018-09-25
-      link: https://www.meetup.com/en-AU/AWS-User-Group-Linz/events/252112439/
-    -
-      name: "3rd AWS User Group Linz"
-      location: "Netural (Tabakfabrik)"
-      date: 2019-01-30
-      link: https://www.meetup.com/de-DE/AWS-User-Group-Linz/events/257306435/
 -
   id: socrates
   name: "Socrates Days Linz"
   events:
-    -
-      name: "SoCraTes Days Linz 2017 (2 days)"
-      location: "Wissensturm"
-      date: 2017-10-20
-      link: http://socrates-conference.at/en/
-      cost: EUR 40-80
-    -
-      name: "Socrates Days Linz 2018 (2 days)"
-      location: "Wissensturm"
-      date: 2018-10-12
-      link: https://socrates-conference.at/
-      cost: EUR 40-80
-    -
-      name: "Socrates Days Linz 2019 (2 days)"
-      location: "Wissensturm"
-      date: 2019-10-04
-      link: https://socrates-conference.at/
-      cost: EUR 30-80
 -
   id: digitalfuture
   name: "Digital Future Meetup"
   events:
-    -
-      name: "Digital Future Meetup #4"
-      location: "factory300"
-      date: 2018-10-30
-      link: https://factory300.spaces.nexudus.com/de/events/view/679903335/digital-future-meetup--4
--
-  id: eJUG
-  name: "Enterprise Java User Group Austria"
-  events:
-    -
-      name: "Programming Language Platform Growth & Graal VM"
-      location: "Catalysts - Digital Future Space"
-      date: 2018-11-13
-      link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/255630550/
 -
   id: WYOSS
   name: "Waidhofen an der Ybbs Open Source Software"
   events:
-    -
-      name: "wyoss meetup no.2 - Erste Vorträge und Demos"
-      location: "Coworking Space Waidhofen an der Ybbs im beta-campus"
-      date: 2019-01-16
-      link: https://www.meetup.com/WYOSS-Waidhofen-an-der-Ybbs-Open-Source-Software/events/256232851/
--
-  id: c3w
-  name: "C3W"
-  events:
-    -
-      name: "Easterhegg 2019 (4 days)"
-      location: "Campus Gußhaus, Das neue EI, Wien"
-      date: 2019-04-19
-      link: https://eh19.easterhegg.eu/
-      cost: EUR 42
--
-  id: mageAT29
-  name: "29. Magento Meetup in Wels"
-  events:
-    -
-      name: "29. Magento Meetup in Wels"
-      location: "E-CONOMIX Office, Wels"
-      date: 2019-02-26
-      link: http://mage-meetup.at/
--
-  id: devtreff
-  name: "DevTreff im Quartier A"
-  events:
-    -
-      name: "DevTreff #4 im Quartier A"
-      location: "Quartier A - Amstetten"
-      date: 2019-05-16
-      link: https://devtreff.io/
 -
   id: womencode
   name: "Women && Code"
   events:
-    -
-      name: "Women && Code"
-      location: "Codersbay, TFL Linz"
-      date: 2019-04-17
-      link: https://www.meetup.com/de-DE/WomenAndCode/events/260081596/
-    -
-      name: "Women && Code"
-      location: "CODERS.BAY, TFL Linz"
-      date: 2019-05-01
-      link: https://www.meetup.com/WomenAndCode/events/260729338/
-    -
-      name: "Women && Code"
-      location: "CODERS.BAY, TFL Linz"
-      date: 2019-05-15
-      link: https://www.meetup.com/WomenAndCode/events/260729492/
-    -
-      name: "Female Coders StudyGroup (formerly Women && Code)"
-      location: "factory300, TFL Linz"
-      date: 2019-05-29
-      link: https://www.facebook.com/events/669452410164180/
     -
       name: "Female Coders StudyGroup #X"
       location: "factory300, TFL Linz"
@@ -817,77 +198,3 @@
       location: "Tractive, Randlstraße 18a"
       date: 2019-11-20
       link: https://www.meetup.com/Female-Coders-Linz/events/265189381/
--
-  id: uncodeference
-  name: "un{code}ference.io"
-  events:
-    -
-      name: "un{code}ference.io '19"
-      location: "Werkstätte Wattens, Tirol"
-      date: 2019-05-10
-      link: https://uncodeference.io/
-      cost: EUR 20+
--
-  id: gophers
-  name: "Gophers Linz"
-  events:
-    -
-      name: "Gophers Linz #2"
-      location: "Karriere.at"
-      date: 2019-04-24
-      link: https://www.meetup.com/de-DE/Gophers-Linz/events/259466972/
--
-  id: devmeetupenns
-  name: "Dev Meetup Enns"
-  events:
-    -
-      name: "Dev Meetup Enns DME001"
-      location: "Digital City Solutions GmbH"
-      date: 2019-07-09
-      link: https://www.meetup.com/de-DE/developer-meetup-enns/events/261730342/
--
-  id: zeitcohackathon
-  name: "ZEIT Now Hackathon"
-  events:
-    -
-      name: "#1 ZEIT Now Integrations Hackathon"
-      location: "Online & San Francisco"
-      date: 2019-06-01
-      link: https://zeit.co/hackathon
--
-  id: agiletour2019
-  name: "Agile Tour Vienna"
-  events:
-    -
-      name: "Agile Tour Vienna 2019"
-      location: "FH Campus Wien"
-      date: 2019-09-20
-      link: https://agiletourvienna.at/
-      cost: EUR 99
--
-  id: beer+code
-  name: "beer+code Ried"
-  events:
-   -
-      name: "beer+code #3"
-      location: "Techno-Z Ried"
-      link: https://www.beercoderied.at
-      date: 2019-07-04
--
-  id: aws-summer-tour
-  name: "AWS Summer Tour"
-  events:
-   -
-      name: "AWS Summer Tour @Storyblok"
-      location: "Storyblok, Peter-Behrens-Platz 2"
-      link: https://awssummertourstoryblok.splashthat.com/
-      date: 2019-07-31
--
-  id: uppercode
-  name: "Uppercode Hackathon"
-  events:
-   -
-      name: "#uppercode2019 24h Hackathon"
-      location: "Haus OÖ Tourismus, Freistädterstraße 119"
-      link: https://www.uppercode.at/
-      date: 2019-10-18
