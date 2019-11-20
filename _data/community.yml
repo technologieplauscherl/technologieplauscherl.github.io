@@ -119,10 +119,10 @@
   name: "ÖH JKU - StV Informatik"
   events:
     -
-      name: "JKU LAN 13"
+      name: "JKU GAMES - LAN & Spieletage"
       location: JKU
       date: 2019-12-13
-      link: https://www.facebook.com/jkugames/
+      link: https://games.oeh.jku.at
     -
       name: "SIGFLAG Newbie CTF"
       location: JKU
