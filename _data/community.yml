@@ -34,11 +34,12 @@
   id: script
   name: "Script"
   events:
-  -  name: "TSConf:EU"
-     location: "Central"
-     date: 2019-03-31
-     link: http://tsconf.eu
-     cost: EUR
+    -
+	  name: "TSConf:EU"
+      location: "Central"
+      date: 2019-03-31
+      link: https://tsconf.eu
+      cost: EUR
 -
   id: concat
   name: ".concat()"
@@ -51,11 +52,12 @@
   id: devone
   name: "#devone"
   events:
-  -  name: "DevOne 2020"
-     location: "Tabakfabrik"
-     date: 2019-04-23
-     link: http://devone.at
-     cost: EUR
+    -
+	  name: "DevOne 2020"
+      location: "Tabakfabrik"
+      date: 2019-04-23
+      link: http://devone.at
+      cost: EUR
 -
   id: reactday
   name: "React Day Berlin"
