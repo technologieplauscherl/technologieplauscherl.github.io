@@ -35,7 +35,7 @@
   name: "Script"
   events:
     -
-	  name: "TSConf:EU"
+      name: "TSConf:EU"
       location: "Central"
       date: 2019-03-31
       link: https://tsconf.eu
@@ -53,7 +53,7 @@
   name: "#devone"
   events:
     -
-	  name: "DevOne 2020"
+      name: "DevOne 2020"
       location: "Tabakfabrik"
       date: 2019-04-23
       link: http://devone.at
