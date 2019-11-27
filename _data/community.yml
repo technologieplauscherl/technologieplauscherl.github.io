@@ -34,6 +34,11 @@
   id: script
   name: "Script"
   events:
+  -  name: "TSConf:EU"
+     location: "Central"
+     date: 2019-03-31
+     link: http://tsconf.eu
+     cost: EUR
 -
   id: concat
   name: ".concat()"
