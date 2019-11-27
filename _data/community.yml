@@ -37,7 +37,7 @@
     -
       name: "TSConf:EU"
       location: "Central"
-      date: 2019-03-31
+      date: 2020-03-31
       link: https://tsconf.eu
       cost: EUR
 -
@@ -55,7 +55,7 @@
     -
       name: "DevOne 2020"
       location: "Tabakfabrik"
-      date: 2019-04-23
+      date: 2020-04-23
       link: http://devone.at
       cost: EUR
 -
