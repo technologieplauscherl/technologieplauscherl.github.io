@@ -46,6 +46,11 @@
   id: devone
   name: "#devone"
   events:
+  -  name: "DevOne 2020"
+     location: "Tabakfabrik"
+     date: 2019-04-23
+     link: http://devone.at
+     cost: EUR
 -
   id: reactday
   name: "React Day Berlin"
