@@ -101,9 +101,9 @@
   name: "Catalysts Coding Contest"
   events:
     -
-      name: "32th Catalysts Coding Contest"
+      name: "33th Catalysts Coding Contest"
       location: JKU, HS1 und weltweit viele andere
-      date: 2019-11-08
+      date: 2020-04-03
       link: https://register.codingcontest.org/
 -
   id: factory300
@@ -210,3 +210,12 @@
       location: "Tractive, Randlstraße 18a"
       date: 2019-11-20
       link: https://www.meetup.com/Female-Coders-Linz/events/265189381/
+-
+  id: beer+code
+  name: "beer+code Ried"
+  events:
+   -
+      name: "beer+code #6"
+      location: "HAK Ried"
+      link: https://www.meetup.com/de-DE/Beer-Code-Ried/events/267836614/
+      date: 2020-02-13
