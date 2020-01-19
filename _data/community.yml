@@ -61,7 +61,13 @@
 -
   id: reactday
   name: "React Day Berlin"
-  events:
+  events:  
+   -
+      name: "React Summit"
+      location: "Amsterdam"
+      link: https://reactsummit.com/
+      date: 2020-04-17
+      cost: EUR
 -
   id: lakeside
   name: "Lakeside Hackfest"
