@@ -120,10 +120,10 @@
   name: "Infrastructure as a meetup"
   events:
     -
-      name: "Infrastructure as a Meetup 10"
-      location: tractive
-      date: 2019-11-05
-      link: https://www.meetup.com/iaam-linz/events/262898477/
+      name: "Infrastructure as a Meetup 11"
+      location: dynatrace
+      date: 2020-02-26
+      link: https://www.meetup.com/iaam-linz/events/267641138/
 -
   id: tuga-64
   name: "TYPO3 Usergroup Meeting in Linz"
