@@ -22,10 +22,20 @@
   id: stahlstadt-js
   name: "Stahlstadt.js"
   events:
+    -
+      name: "Stahlstadt.js #24"
+      location: Dynatrace
+      date: 2020-02-06
+      link: https://www.meetup.com/de-DE/stahlstadt-js/events/268136639/
 -
   id: technologieplauscherl
   name: "Technologieplauscherl"
   events:
+    -
+      name: "Technologieplauscherl 75"
+      location: Dynatrace
+      date: 2020-04-21
+      link: https://technologieplauscherl.at
 -
   id: topconf
   name: "Topconf Events"
@@ -129,9 +139,14 @@
   name: "TYPO3 Usergroup Meeting in Linz"
   events:
 -
-  id: growth-hacking
-  name: "Growth Hacking Linz"
+  id: gab
+  name: "Global Azure Bootcamp"
   events:
+    -
+      name: "Global Azure Bootcamp"
+      location: Plus City
+      date: 2020-04-24
+      link: https://www.globalazurebootcamp.at
 -
   id: oeh-informatik
   name: "ÖH JKU - StV Informatik"
@@ -146,41 +161,10 @@
       location: JKU
       date: 2019-11-01
       link: https://www.sigflag.at/events/#newbie
--
-  id: jku-im
-  name: "JKU Informationsmanagement"
-  events:
+
 -
   id: dotnet-stammtisch
   name: ".NET Stammtisch - Linz"
-  events:
--
-  id: linz-cobol-meetup
-  name: "Linz Cobol Meetup"
-  events:
--
-  id: otelo
-  name: "Otelo"
-  events:
--
-  id: linuxwochen
-  name: "Linuxwochen"
-  events:
--
-  id: funlinz
-  name: "Fuckup Night Linz"
-  events:
--
-  id: pioneers
-  name: "Pioneers Industry 4.0 Hackathon"
-  events:
--
-  id: karriere.at
-  name: "Dev-Talk"
-  events:
--
-  id: agile-coffee
-  name: "Agile Coffee"
   events:
 -
   id: linz-ai
