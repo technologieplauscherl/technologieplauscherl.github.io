@@ -200,6 +200,16 @@
       location: "Tractive, Randlstraße 18a"
       date: 2019-11-20
       link: https://www.meetup.com/Female-Coders-Linz/events/265189381/
+    -
+      name: "Female Coders StudyGroup #XV"
+      location: "Wissensturm"
+      date: 2020-02-12
+      link: https://www.meetup.com/Female-Coders-Linz/events/267092922/
+    -
+      name: "Girls & Women Hackathon"
+      location: "CODERS.BAY, Grand Garage 4.Stock"
+      date: 2020-04-25
+      link: https://female-coders.at/hackathon/
 -
   id: beer+code
   name: "beer+code Ried"
