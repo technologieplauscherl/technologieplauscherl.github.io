@@ -123,7 +123,7 @@
   events:
     -
       name: "33th Catalysts Coding Contest"
-      location: JKU, HS1 und weltweit viele andere
+      location: JKU
       date: 2020-04-03
       link: https://register.codingcontest.org/
 -
@@ -136,7 +136,7 @@
   events:
     -
       name: "Infrastructure as a Meetup 11"
-      location: dynatrace
+      location: Dynatrace
       date: 2020-02-26
       link: https://www.meetup.com/iaam-linz/events/267641138/
 -
