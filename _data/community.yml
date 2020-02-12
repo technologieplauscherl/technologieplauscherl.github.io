@@ -15,9 +15,14 @@
   name: "Atlassian User Group Linz"
   events:
 -
-  id: vr-plauscherl
-  name: "VR Plauscherl"
+  id: granit-treff
+  name: "Granit Treff"
   events:
+    -
+      name: "Granit Treff Hagenberg"
+	  location: "Dynatrace Hagenberg"
+	  date: 2020-03-11
+	  link: https://www.meetup.com/de-DE/GranitTreff/events/268603424/
 -
   id: stahlstadt-js
   name: "Stahlstadt.js"
