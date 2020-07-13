@@ -228,3 +228,22 @@
       location: "HAK Ried"
       link: https://www.meetup.com/de-DE/Beer-Code-Ried/events/267836614/
       date: 2020-02-13
+-
+  id: rust-linz
+  name: "Rust Linz Meetup"
+  events:
+   -
+      name: "Rust Linz Meetup"
+      location: "Online/Remote"
+      date: 2020-08-06
+	  link: https://www.meetup.com/de-DE/Rust-Linz/events/271857182/
+   -
+      name: "Rust Linz Meetup"
+      location: "Online/Remote"
+      date: 2020-09-17
+	  link: https://www.meetup.com/de-DE/Rust-Linz/events/271857244/
+   -
+      name: "Rust Linz Meetup"
+      location: "Online/Remote"
+      date: 2020-10-08
+	  link: https://www.meetup.com/de-DE/Rust-Linz/events/271857253/
