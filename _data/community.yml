@@ -247,3 +247,13 @@
       location: "Online/Remote"
       date: 2020-10-08
       link: https://www.meetup.com/de-DE/Rust-Linz/events/271857253/
+-
+  id: cncf-linz
+  name: "Cloud Native Computing Linz Meetup"
+  events:
+   -
+      name: "Cloud Native Computing Linz Meetup"
+      location: "Online/Remote"
+      date: 2020-09-29
+      link: https://www.meetup.com/Cloud-Native-Computing-Linz/events/273245544/
+
