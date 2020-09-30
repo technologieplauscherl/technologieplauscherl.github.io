@@ -9,7 +9,7 @@ Du darfst dich gerne selbst als Speaker für das nächste Plauscherl auf der Web
 
 ```
 -
-  name: <Dein Name>
-  talk: <Dein Talk>
-  img: <Bild (ohne http: nur mit //) zu deinem Facebook/Google/Twitter Foto>
+  Name : <Dein Name>
+  Talk : <Dein Talk>
+  Img  : <Bild (ohne http: nur mit //) zu deinem Facebook/Google/Twitter Foto>
 ```
