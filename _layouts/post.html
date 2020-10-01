@@ -4,7 +4,7 @@ layout: default
 <main itemscope itemtype="http://schema.org/Event">
 	<div class="wrapper">
 		<h1 itemprop="name">{{page.title}}</h1>
-		<p class="info">
+		<span class="info">
 			<span itemprop="startDate" content="{{post.startDateIso8601}}">
 			<svg class="icon">
 				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use>
@@ -15,7 +15,7 @@ layout: default
 			</svg>
 			{{page.timestring}} Uhr
 			</span>
-		</p>
+		</span>
 		<h2>Sessions</h2>
 
 		<section class="speakers">
@@ -68,9 +68,9 @@ layout: default
 
 		{% if page.sponsor %}
 		<h2>Sponsoring</h2>
-		<p>
+		<span>
 			Vielen Dank an {{ page.sponsor }} für die Verpflegung!
-		</p>
+		</span>
 		{% endif %}
 	</div>
 </main>
