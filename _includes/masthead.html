@@ -12,9 +12,9 @@
 
 
 		{% if page.end %}
-		<p class="info">
+		<span class="info">
 			Danke für die Vorträge an
-		</p>
+		</span>
 		<ul class="no-bullets">
 			{% for speaker in post.speakers %}
 			<li>{{speaker.name}}</li>
@@ -23,7 +23,7 @@
 		{% else %}
 		{% include speakers.html %}
 		{% endif %}
-		<p class="info">
+		<span class="info">
 			{% unless page.dateset %}
 			Nächstes Treffen:<br/>
 			Ist in Planung
@@ -49,7 +49,7 @@
 				}
 				</script>
 			{% endunless %}
-		</p>
+		</span>
 
 		{% if page.end %}
 		<a href="https://www.facebook.com/groups/technologie.plauscherl/" class="link link--big link--facebook">
