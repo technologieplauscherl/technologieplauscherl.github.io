@@ -13,3 +13,7 @@ Du darfst dich gerne selbst als Speaker für das nächste Plauscherl auf der Web
   talk: <Dein Talk>
   img: <Bild (ohne http: nur mit //) zu deinem Facebook/Google/Twitter Foto>
 ```
+
+
+
+#amazing work
