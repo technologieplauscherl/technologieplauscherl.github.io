@@ -167,6 +167,15 @@
       link: https://www.sigflag.at/events/#newbie
 
 -
+  id: game-dev-linz
+  name: "Game Dev Linz"
+  events:
+    -
+      name: "Game Jam Linz 2021"
+      location: Online
+      date: 2021-09-10
+      link: https://itch.io/jam/game-jam-linz-2021
+-
   id: dotnet-stammtisch
   name: ".NET Stammtisch - Linz"
   events:
