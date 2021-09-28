@@ -228,16 +228,16 @@
       location: "Online/Remote"
       date: 2020-07-15
       link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/
-	-
+    -
       name: "Female Coders Studygroup"
       location: "Wissensturm & Remote (Hybrid)"
       date: 2021-10-06
       link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/280944495/
-	-
-      name: "Female Coders Rempote Workshop day"
+    -
+      name: "Female Coders Remote Workshop day"
       location: "Online/Remote"
       date: 2021-11-06
-	  link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/  
+      link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/  
 -
   id: games-and-lan
   name: "Games & LAN"
@@ -247,7 +247,6 @@
       location: "Grand Garage"
       link: https://games-and-lan.at/
       date: 2021-10-29
-	  
 -
   id: beer+code
   name: "beer+code Ried"
