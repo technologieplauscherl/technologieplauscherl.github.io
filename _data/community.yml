@@ -118,12 +118,12 @@
   events:
 -
   id: ccc
-  name: "Catalysts Coding Contest"
+  name: "Cloudflight Coding Contest"
   events:
     -
-      name: "33th Catalysts Coding Contest"
+      name: "35th Cloudflight Coding Contest"
       location: JKU
-      date: 2020-04-03
+      date: 2021-11-05
       link: https://register.codingcontest.org/
 -
   id: factory300
@@ -175,6 +175,15 @@
       location: Online
       date: 2021-09-10
       link: https://itch.io/jam/game-jam-linz-2021
+-
+  id: ccl
+  name: "Coding Club Linz"
+  events:
+    -
+      name: "Games & LAN"
+      location: Grand Garage
+      date: 2021-10-29
+      link: https://games-and-lan.at/
 -
   id: dotnet-stammtisch
   name: ".NET Stammtisch - Linz"
