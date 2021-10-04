@@ -209,8 +209,8 @@
   name: "Waidhofen an der Ybbs Open Source Software"
   events:
 -
-  id: womencode
-  name: "Women && Code"
+  id: femalecoders
+  name: "Female Coders"
   events:
     -
       name: "Female Coders StudyGroup #X"
@@ -237,6 +237,21 @@
       location: "Online/Remote"
       date: 2020-07-15
       link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/
+    -
+      name: "Female Coders Studygroup"
+      location: "Wissensturm & Remote (Hybrid)"
+      date: 2021-10-06
+      link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/280944495
+    -
+      name: "Female Coders Studygroup"
+      location: "Teamecho & Remote (Hybrid)"
+      date: 2021-10-20
+      link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/281198828
+    -
+      name: "Female Coders Remote Workshop day"
+      location: "Online/Remote"
+      date: 2021-11-06
+      link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/  
 -
   id: beer+code
   name: "beer+code Ried"
