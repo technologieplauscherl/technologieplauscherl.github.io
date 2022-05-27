@@ -252,6 +252,16 @@
       location: "Online/Remote"
       date: 2021-11-06
       link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/  
+    -
+      name: "Female Coders Studygroup"
+      location: "Dynatrace & Remote (Hybrid)"
+      date: 2022-06-08
+      link: https://www.meetup.com/Female-Coders-Linz/events/285952801/  
+    -
+      name: "Hackathon for Women & Girls"
+      location: "GRAND GARAGE"
+      date: 2022-09-17
+      link: https://www.meetup.com/Female-Coders-Linz/events/286136444/  
 -
   id: beer+code
   name: "beer+code Ried"
