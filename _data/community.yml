@@ -299,4 +299,13 @@
       location: "Online/Remote"
       date: 2020-09-29
       link: https://www.meetup.com/Cloud-Native-Computing-Linz/events/273245544/
-
+-
+  id: agile-tour
+  name: "Agile Tour"
+  events:  
+   -
+      name: "Agile Tour Vienna"
+      location: "Vienna"
+      link: https://agiletourvienna.at/
+      date: 2022-09-15
+      cost: EUR
