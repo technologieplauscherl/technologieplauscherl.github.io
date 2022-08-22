@@ -9,11 +9,17 @@
 		<span class="street-address">{{include.location.address}}</span>
 		<span class="postal-code">{{include.location.zip}}</span> <span class="locality">{{include.location.city}}</span>
 	</div>
+	{% if include.location.routelink %}
+		<span class="n"><a href="{{include.location.routelink}}">Routenplanung mit Google</a></span>
+	{% endif %}
+	{% if include.location.directionslink %}
+		<span class="n"><a href="{{include.location.directionslink}}">Anfahrtsbeschreibung</a></span>
+	{% endif %}
 </address>
-{%if include.location.map %}
+{% if include.location.map %}
 <iframe height='500' src='{{include.location.map}}'></iframe>
 Map &copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors
 {% endif %}
-{%if include.location.oldmap %}
+{% if include.location.oldmap %}
 {% include oldmap.html map=include.location.oldmap host=include.location.name %}
 {% endif %}
