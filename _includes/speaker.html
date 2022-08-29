@@ -3,13 +3,18 @@
 	<div class="speaker__info">
 		<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
 		{% if include.speaker.talk %}
-		<div class="speaker__session">
-			{% if include.speaker.talklink %}
-				<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
+			<div class="speaker__session">
+				{% if include.speaker.talklink %}
+					<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
+				{% else %}
+					{{include.speaker.talk}}
+				{% endif %}
+			</div>
+			{% if include.speaker.language == "en" %}
+				<img class="speaker__language" src="/img/english-language.svg" width="40" height="20" alt="English language flag" title="Vortrag ist auf Englisch / Talk is in English">
 			{% else %}
-				{{include.speaker.talk}}
-			{% endif %}
-		</div>
+				<img class="speaker__language" src="/img/german-language.svg" width="40" height="20" alt="German language flag" title="Vortrag ist auf Deutsch / Talk is in German">
+		    {% endif %}
 		{% endif %}
 		{% if include.speaker.count %}
 		<span class="speaker__count">{{include.speaker.count}}</span>
