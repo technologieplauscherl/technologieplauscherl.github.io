@@ -11,9 +11,13 @@ layout: none
     {% assign plauscherlReversed = site.plauscherl | sort: 'date' | reverse %}
     {% for post in plauscherlReversed limit:10 %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.datestring | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <title>{{ post.title | xml_escape }} | {{ post.startDateIso8601 | date: "%Y-%m-%d %H:%M" }} @ {{post.location.name | xml_escape }}</title>
+        <description>
+          {% for speaker in post.speakers %}
+            {{ speaker.name | xml_escape }}: {{ speaker.talk | xml_escape }}
+            <![CDATA[<br />]]>
+          {% endfor %}
+        </description>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
       </item>
