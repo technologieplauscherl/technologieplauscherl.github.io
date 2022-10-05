@@ -347,3 +347,12 @@
       location: "Vienna"
       date: 2022-10-15
       link: https://www.meetup.com/squer-brainfood-talks/events/288451266/
+-
+  id: jugend-hackt
+  name: "Jugend Hackt"
+  events:  
+   -
+      name: "Jugend Hackt Event 2022"
+      location: "Linz, Wissensturm"
+      date: 2022-10-28
+      link: https://jugendhackt.org/events/at-linz/
