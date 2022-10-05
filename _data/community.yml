@@ -125,6 +125,11 @@
       location: JKU
       date: 2021-11-05
       link: https://register.codingcontest.org/
+    -
+      name: "Cloudflight Coding Contest"
+      location: JKU
+      date: 2022-11-11
+      link: https://register.codingcontest.org/
 -
   id: factory300
   name: "Factory300"
@@ -165,7 +170,16 @@
       location: JKU
       date: 2019-11-01
       link: https://www.sigflag.at/events/#newbie
-
+    -
+      name: "SIGFLAG Become a hacker Beginner CTF Workshop"
+      location: Dynatrace
+      date: 2022-10-28
+      link: https://sigflag.at/become-a-hacker/
+    -
+      name: "JKU GAMES - LAN & Spieletage"
+      location: JKU
+      date: 2022-11-04
+      link: https://games.oeh.jku.at
 -
   id: game-dev-linz
   name: "Game Dev Linz"
@@ -184,6 +198,11 @@
       location: Grand Garage
       date: 2021-10-29
       link: https://games-and-lan.at/
+    -
+      name: "Coder Dojo (looking for Mentors)"
+      location: Grand Garage
+      date: 2022-10-21
+      link: https://linz.coderdojo.net/
 -
   id: dotnet-stammtisch
   name: ".NET Stammtisch - Linz"
@@ -262,6 +281,11 @@
       location: "GRAND GARAGE"
       date: 2022-09-17
       link: https://www.meetup.com/Female-Coders-Linz/events/286136444/  
+    -
+      name: "Female Coders Study Group"
+      location: "Wissensturm"
+      date: 2022-10-05
+      link: https://www.meetup.com/female-coders-linz/events/287557290/
 -
   id: beer+code
   name: "beer+code Ried"
@@ -299,6 +323,11 @@
       location: "Online/Remote"
       date: 2020-09-29
       link: https://www.meetup.com/Cloud-Native-Computing-Linz/events/273245544/
+   -
+      name: "17. Cloud Native Computing Linz Meetup"
+      location: "Cloudflight"
+      date: 2020-10-18
+      link: https://www.meetup.com/cloud-native-computing-linz/events/288482791/
 -
   id: agile-tour
   name: "Agile Tour"
@@ -309,3 +338,12 @@
       link: https://agiletourvienna.at/
       date: 2022-09-15
       cost: EUR
+-
+  id: squer-brainfood-events
+  name: "SQUER Brainfood Events Vienna"
+  events:  
+   -
+      name: "SOCRATES DAY 2022"
+      location: "Vienna"
+      date: 2022-10-15
+      link: https://www.meetup.com/squer-brainfood-talks/events/288451266/
