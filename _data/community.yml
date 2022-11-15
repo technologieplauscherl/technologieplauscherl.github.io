@@ -203,6 +203,11 @@
       location: Grand Garage
       date: 2022-10-21
       link: https://linz.coderdojo.net/
+    -
+      name: "Coder Dojo Live"
+      location: Grand Garage
+      date: 2022-12-02
+      link: https://linz.coderdojo.net/
 -
   id: dotnet-stammtisch
   name: ".NET Stammtisch - Linz"
