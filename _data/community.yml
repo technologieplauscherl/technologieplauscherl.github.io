@@ -286,6 +286,16 @@
       location: "Wissensturm"
       date: 2022-10-05
       link: https://www.meetup.com/female-coders-linz/events/287557290/
+    -
+      name: "Female Coders Study Group"
+      location: "ePunkt"
+      date: 2022-11-16
+      link: https://www.meetup.com/female-coders-linz/events/287557680/
+    -
+      name: "Female Coders Study Group - Advent of Code Edition"
+      location: "Wissensturm"
+      date: 2022-11-30
+      link: https://www.meetup.com/female-coders-linz/events/287557718/
 -
   id: beer+code
   name: "beer+code Ried"
@@ -314,6 +324,11 @@
       location: "Online/Remote"
       date: 2020-10-08
       link: https://www.meetup.com/de-DE/Rust-Linz/events/271857253/
+   -
+      name: "Rust Linz Meetup"
+      location: "Online/Remote"
+      date: 2022-11-24
+      link: https://www.meetup.com/rust-linz/events/289251460/
 -
   id: cncf-linz
   name: "Cloud Native Computing Linz Meetup"
@@ -326,8 +341,13 @@
    -
       name: "17. Cloud Native Computing Linz Meetup"
       location: "Cloudflight"
-      date: 2020-10-18
+      date: 2022-10-18
       link: https://www.meetup.com/cloud-native-computing-linz/events/288482791/
+   -
+      name: "18. Cloud Native Computing Linz Meetup"
+      location: "Tractive"
+      date: 2022-11-22
+      link: https://www.meetup.com/cloud-native-computing-linz/events/289318053/
 -
   id: agile-tour
   name: "Agile Tour"
@@ -356,6 +376,20 @@
       location: "Linz, Wissensturm"
       date: 2022-10-28
       link: https://jugendhackt.org/events/at-linz/
+-
+  id: 0xA
+  name: "0xA"
+  events:  
+   -
+      name: "0xA - Discovering Artificial Intelligence"
+      location: "JKU, HS4"
+      date: 2022-11-22
+      link: https://0xa.at/
+   -
+      name: "0xAthena - Tech Workshop Day"
+      location: "Grand Garage"
+      date: 2023-01-13
+      link: https://0xa.at/
 -
   id: wip
   name: "Work in Progress"
