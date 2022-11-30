@@ -414,3 +414,13 @@
       location: "Ubitec, Tabakfabrik"
       date: 2022-10-20
       link: https://wip.ubitec.at/
+-
+  id: neuronai
+  name: "neuron.ai"
+  events:
+   -
+      name: "neuron.ai x Danube Dynamics AI Challenge"
+      location: "JKU Linz"
+      date: 2022-12-09
+      link: https://neuron-ai.at/danube-dynamics-event/
+
