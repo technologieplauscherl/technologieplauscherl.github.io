@@ -36,11 +36,16 @@
   id: technologieplauscherl
   name: "Technologieplauscherl"
   events:
-    -
-      name: "Technologieplauscherl 75"
-      location: Dynatrace
-      date: 2020-04-21
-      link: https://technologieplauscherl.at
+      -
+        name: "Technologieplauscherl 75"
+        location: Dynatrace
+        date: 2020-04-21
+        link: https://technologieplauscherl.at
+      -
+        name: "Technologieplauscherl 79"
+        location: Ubitech, Tabakfabrik
+        date: 2023-01-26
+        link: https://technologieplauscherl.at
 -
   id: topconf
   name: "Topconf Events"
@@ -70,7 +75,7 @@
 -
   id: reactday
   name: "React Day Berlin"
-  events:  
+  events:
    -
       name: "React Summit"
       location: "Amsterdam"
@@ -222,8 +227,13 @@
   events:
 -
   id: socrates
-  name: "Socrates Days Linz"
+  name: "Socrates Linz"
   events:
+    -
+      name: "Socrates Days Linz 2023 - Date TBD"
+      location: TBD
+      date: 2023-07-07
+      link: https://socrates-conference.at/
 -
   id: digitalfuture
   name: "Digital Future Meetup"
@@ -275,17 +285,17 @@
       name: "Female Coders Remote Workshop day"
       location: "Online/Remote"
       date: 2021-11-06
-      link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/  
+      link: https://www.meetup.com/en-AU/Female-Coders-Linz/events/271674266/
     -
       name: "Female Coders Studygroup"
       location: "Dynatrace & Remote (Hybrid)"
       date: 2022-06-08
-      link: https://www.meetup.com/Female-Coders-Linz/events/285952801/  
+      link: https://www.meetup.com/Female-Coders-Linz/events/285952801/
     -
       name: "Hackathon for Women & Girls"
       location: "GRAND GARAGE"
       date: 2022-09-17
-      link: https://www.meetup.com/Female-Coders-Linz/events/286136444/  
+      link: https://www.meetup.com/Female-Coders-Linz/events/286136444/
     -
       name: "Female Coders Study Group"
       location: "Wissensturm"
@@ -356,7 +366,7 @@
 -
   id: agile-tour
   name: "Agile Tour"
-  events:  
+  events:
    -
       name: "Agile Tour Vienna"
       location: "Vienna"
@@ -366,7 +376,7 @@
 -
   id: squer-brainfood-events
   name: "SQUER Brainfood Events Vienna"
-  events:  
+  events:
    -
       name: "SOCRATES DAY 2022"
       location: "Vienna"
@@ -375,7 +385,7 @@
 -
   id: jugend-hackt
   name: "Jugend Hackt"
-  events:  
+  events:
    -
       name: "Jugend Hackt Event 2022"
       location: "Linz, Wissensturm"
@@ -384,7 +394,7 @@
 -
   id: 0xA
   name: "0xA"
-  events:  
+  events:
    -
       name: "0xA - Discovering Artificial Intelligence"
       location: "JKU, HS4"
@@ -398,7 +408,7 @@
 -
   id: wip
   name: "Work in Progress"
-  events:  
+  events:
    -
       name: "Work in Progress - Hacking an Online-Shop"
       location: "Ubitec, Tabakfabrik"
