@@ -423,4 +423,12 @@
       location: "JKU Linz"
       date: 2022-12-09
       link: https://neuron-ai.at/danube-dynamics-event/
-
+-
+  id: mobile-dev-gathering-linz
+  name: "Linzer Mobile Developer Gathering"
+  events:
+   -
+      name: "Linzer Mobile Developer Gathering"
+      location: "Tractive, Pasching"
+      date: 2023-02-08
+      link: https://www.linkedin.com/events/linzermobiledevelopergathering7010620570551607296/about/
