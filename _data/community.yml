@@ -415,6 +415,11 @@
       location: "Grand Garage"
       date: 2023-01-13
       link: https://0xa.at/
+   -
+      name: "Quantum Computing: From Theory to Practice"
+      location: "JKU Linz, Open Innovation Center"
+      date: 2023-03-28
+      link: https://0xa.at/events/qc
 -
   id: wip
   name: "Work in Progress"
