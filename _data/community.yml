@@ -373,6 +373,21 @@
       location: "Tractive"
       date: 2022-11-22
       link: https://www.meetup.com/cloud-native-computing-linz/events/289318053/
+   -
+      name: "Crossplase Use-cases"
+      location: "Dyntrace - Grünwinkel Lab"
+      date: 2023-03-28
+      link: https://community.cncf.io/events/details/cncf-linz-presents-cloud-native-linz-march-28-crossplane-use-cases/
+   -
+      name: "Save the date"
+      location: Porsche Informatik - Hagenberg Lab"
+      date: 2023-04-18
+      link: https://community.cncf.io/linz/
+   -
+      name: "Save the date"
+      location: "Cloudflight"
+      date: 2023-05-23
+      link: https://community.cncf.io/linz/
 -
   id: agile-tour
   name: "Agile Tour"
@@ -447,3 +462,5 @@
       location: "Tractive, Pasching"
       date: 2023-02-08
       link: https://www.linkedin.com/events/linzermobiledevelopergathering7010620570551607296/about/
+-
+  id: cncf-linz
