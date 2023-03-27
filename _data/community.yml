@@ -227,12 +227,12 @@
   events:
 -
   id: socrates
-  name: "Socrates Linz"
+  name: "SoCraTes Austria"
   events:
     -
-      name: "Socrates Days Linz 2023 - Date TBD"
-      location: TBD
-      date: 2023-07-07
+      name: "Socrates Austria 2023"
+      location: Wissensturm
+      date: 2023-09-22
       link: https://socrates-conference.at/
 -
   id: digitalfuture
