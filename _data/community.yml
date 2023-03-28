@@ -46,6 +46,11 @@
         location: Ubitec, Tabakfabrik
         date: 2023-01-26
         link: https://technologieplauscherl.at
+      -
+        name: "Technologieplauscherl 81"
+        location: DS Automotion, Lunzerstraße 60, 4030 Linz
+        date: 2023-05-25
+        link: https://technologieplauscherl.at
 -
   id: topconf
   name: "Topconf Events"
