@@ -481,4 +481,16 @@
       date: 2023-02-08
       link: https://www.linkedin.com/events/linzermobiledevelopergathering7010620570551607296/about/
 -
-  id: cncf-linz
+  id: opencommons
+  name: "Open Commons Linz"
+  events:
+  -
+      name: "WikiCon"
+      location: "Wissensturm, Linz"
+      date: 2023-09-29
+      link: https://de.wikipedia.org/wiki/Wikipedia:WikiCon_2023
+   -
+      name: "Jugend hackt"
+      location: "Wissensturm, Linz"
+      date: 2023-10-27
+      link: https://opencommons.linz.at/jugend-hackt/
