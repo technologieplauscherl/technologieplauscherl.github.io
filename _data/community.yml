@@ -252,6 +252,7 @@
       location: Wissensturm
       date: 2023-09-22
       link: https://socrates-conference.at/
+      cost: EUR
 -
   id: digitalfuture
   name: "Digital Future Meetup"
@@ -339,6 +340,16 @@
       location: "Wissensturm"
       date: 2023-02-08
       link: https://www.meetup.com/female-coders-linz/events/291166639/
+    -
+      name: "Female Coders Study Group"
+      location: "Wissensturm"
+      date: 2023-03-29
+      link: https://www.meetup.com/female-coders-linz/events/291622293/
+    -
+      name: "Hackathon for Women & Girls"
+      location: "Dynatrace Lab, Vienna"
+      date: 2023-05-06
+      link: https://www.meetup.com/female-coders-linz/events/292147931/
 -
   id: beer+code
   name: "beer+code Ried"
@@ -397,12 +408,12 @@
       date: 2023-03-28
       link: https://community.cncf.io/events/details/cncf-linz-presents-cloud-native-linz-march-28-crossplane-use-cases/
    -
-      name: "Save the date"
+      name: "22. Cloud Native Computing Linz Meetup"
       location: Porsche Informatik - Hagenberg Lab"
       date: 2023-04-18
       link: https://community.cncf.io/linz/
    -
-      name: "Save the date"
+      name: "23. Cloud Native Computing Linz Meetup"
       location: "Cloudflight"
       date: 2023-05-23
       link: https://community.cncf.io/linz/
@@ -480,5 +491,32 @@
       location: "Tractive, Pasching"
       date: 2023-02-08
       link: https://www.linkedin.com/events/linzermobiledevelopergathering7010620570551607296/about/
+-
+  id: update-social
+  name: "UpdateSocial"
+  events:
+   -
+      name: "UpdateSocial Ideenwerkstatt, 48h"
+      location: "LIT, JKU Linz"
+      date: 2023-04-21
+      link: https://updatesocial.org/mitmachen/
+-
+  id: ux-linz
+  name: "UX Linz Meetup"
+  events:
+   -
+      name: "UX Linz Meetup"
+      location: "Netural, Tabakfabrik"
+      date: 2023-04-13
+      link: https://www.meetup.com/ux-linz/events/291689553
+-
+  id: teach-2-code
+  name: "Teach2Code"
+  events:
+   -
+      name: "Teach2Code"
+      location: "HTBLA Leonding"
+      date: 2023-04-18
+      link: https://www.meetup.com/teach2code/events/292086220
 -
   id: cncf-linz
