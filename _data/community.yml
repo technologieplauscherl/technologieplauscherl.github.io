@@ -494,3 +494,13 @@
       location: "Wissensturm, Linz"
       date: 2023-10-27
       link: https://opencommons.linz.at/jugend-hackt/
+
+-
+  id: ux-linz
+  name: "UX Linz"
+  events:
+      -
+	    name: "UX Linz Meetup"
+        location: "Netural, Tabakfabrik Linz"
+        date: 2023-04-13
+        link: https://www.meetup.com/de-DE/ux-linz/events/ptvkbryfcfbmb/
