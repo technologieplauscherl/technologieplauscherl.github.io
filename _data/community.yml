@@ -194,6 +194,7 @@
             location: Wissensturm
             date: 2023-09-22
             link: https://socrates-conference.at/
+            cost: 39 EUR
 -   id: digitalfuture
     name: "Digital Future Meetup"
     events:
@@ -263,6 +264,14 @@
             location: "Wissensturm"
             date: 2023-02-08
             link: https://www.meetup.com/female-coders-linz/events/291166639/
+        -   name: "Female Coders Study Group"
+            location: "Wissensturm"
+            date: 2023-03-29
+            link: https://www.meetup.com/female-coders-linz/events/291622293/
+        -   name: "Hackathon for Women & Girls"
+            location: "Dynatrace Lab, Vienna"
+            date: 2023-05-06
+            link: https://www.meetup.com/female-coders-linz/events/292147931/
 -   id: beer+code
     name: "beer+code Ried"
     events:
@@ -304,15 +313,15 @@
             location: "Tractive"
             date: 2022-11-22
             link: https://www.meetup.com/cloud-native-computing-linz/events/289318053/
-        -   name: "Crossplase Use-cases"
-            location: "Dyntrace - Grünwinkel Lab"
+        -   name: "Crossplane Use-cases"
+            location: "Dynatrace - Grünwinkel Lab"
             date: 2023-03-28
             link: https://community.cncf.io/events/details/cncf-linz-presents-cloud-native-linz-march-28-crossplane-use-cases/
-        -   name: "Save the date"
+        -   name: "22. Cloud Native Computing Linz Meetup"
             location: Porsche Informatik - Hagenberg Lab"
             date: 2023-04-18
             link: https://community.cncf.io/linz/
-        -   name: "Save the date"
+        -   name: "23. Cloud Native Computing Linz Meetup"
             location: "Cloudflight"
             date: 2023-05-23
             link: https://community.cncf.io/linz/
@@ -393,3 +402,17 @@
             location: "Netural, Tabakfabrik Linz"
             date: 2023-04-13
             link: https://www.meetup.com/de-DE/ux-linz/events/ptvkbryfcfbmb/
+-   id: update-social
+    name: "UpdateSocial"
+    events:
+        -   name: "UpdateSocial Ideenwerkstatt, 48h"
+            location: "LIT, JKU Linz"
+            date: 2023-04-21
+            link: https://updatesocial.org/mitmachen/
+-   id: teach-2-code
+    name: "Teach2Code"
+    events:
+        -   name: "Teach2Code"
+            location: "HTBLA Leonding"
+            date: 2023-04-18
+            link: https://www.meetup.com/teach2code/events/292086220
