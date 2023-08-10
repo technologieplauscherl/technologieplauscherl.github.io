@@ -325,6 +325,18 @@
             location: "Cloudflight"
             date: 2023-05-23
             link: https://community.cncf.io/linz/
+        -   name: Cloud Native Computing Linz Meetup - September edition"
+            location: "Netcetera"
+            date: 2023-09-19
+            link: https://community.cncf.io/linz/
+        -   name: "Cloud Native Computing Linz Meetup- October edition"
+            location: "TechCenter"
+            date: 2023-10-18
+            link: https://community.cncf.io/linz/
+        -   name: "Cloud Native Computing Linz Meetup - November edition"
+            location: "MIC"
+            date: 2023-11-21
+            link: https://community.cncf.io/linz/
 -   id: agile-tour
     name: "Agile Tour"
     events:
