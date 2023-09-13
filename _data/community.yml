@@ -395,10 +395,14 @@
 -   id: mobile-dev-gathering-linz
     name: "Linzer Mobile Developer Gathering"
     events:
-        -   name: "Linzer Mobile Developer Gathering"
+        -   name: "1. Linzer Mobile Developer Gathering"
             location: "Tractive, Pasching"
             date: 2023-02-08
             link: https://www.linkedin.com/events/linzermobiledevelopergathering7010620570551607296/about/
+        -   name: "2. Linzer Mobile Developer Gathering"
+            location: "Hello Again, Leonding"
+            date: 2023-11-07
+            link: https://www.linkedin.com/events/2ndlinzermobiledevelopergatheri7092768943362236416/
 -   id: opencommons
     name: "Open Commons Linz"
     events:
