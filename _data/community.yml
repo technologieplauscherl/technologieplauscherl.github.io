@@ -432,3 +432,10 @@
             location: "HTBLA Leonding"
             date: 2023-04-18
             link: https://www.meetup.com/teach2code/events/292086220
+-   id: embedded-connect
+    name: "Embedded Connect"
+    events:
+        -   name: "Embedded Connect 2023 - Nordic / U-Blox / Tractive"
+            location: "Tractive, Pasching"
+            date: 2023-10-10
+            link: https://www.linkedin.com/events/embeddedconnectbytractive7104830255370018816/about/
