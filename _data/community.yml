@@ -83,6 +83,10 @@
             location: Dynatrace
             date: 2020-03-12
             link: https://www.meetup.com/Enterprise-Java-User-Group-Austria/events/268237277/
+        -   name: "EJUG"
+            location: DIG
+            date: 2023-09-28
+            link: https://www.meetup.com/enterprise-java-user-group-austria/events/294304878/
 -   id: responsive
     name: "Responsive Org Linz"
 -   id: wordpress-meetup
@@ -116,6 +120,10 @@
         -   name: "Cloudflight Coding Contest"
             location: JKU
             date: 2023-03-31
+            link: https://register.codingcontest.org/
+        -   name: "Cloudflight Coding Contest"
+            location: JKU
+            date: 2023-10-20
             link: https://register.codingcontest.org/
 -   id: factory300
     name: "Factory300"
@@ -156,6 +164,10 @@
             location: JKU
             date: 2022-11-04
             link: https://games.oeh.jku.at
+        -   name: "JKU GAMES - LAN & Spieletage"
+            location: JKU
+            date: 2023-12-08
+            link: https://games.oeh.jku.at
 -   id: game-dev-linz
     name: "Game Dev Linz"
     events:
@@ -163,6 +175,14 @@
             location: Online
             date: 2021-09-10
             link: https://itch.io/jam/game-jam-linz-2021
+        -   name: "Game Dev Linz Meetup"
+            location: Cloudflight
+            date: 2023-09-21
+            link: https://www.meetup.com/gamedev-linz/events/295732006/
+        -   name: "Game Jam Linz Meetup"
+            location: JKU, HS17
+            date: 2023-10-19
+            link: https://discord.gg/TYgtthXMys
 -   id: ccl
     name: "Coding Club Linz"
     events:
@@ -195,6 +215,14 @@
             date: 2023-09-22
             link: https://socrates-conference.at/
             cost: 39 EUR
+-   id: tedxlinz
+    name: "TEDxLinz"
+    events:
+        -   name: "TEDxLinz To Boldly Go"
+            location: LIT, JKU
+            date: 2023-11-18
+            link: https://www.tedxlinz.at/
+            cost: 79 EUR
 -   id: digitalfuture
     name: "Digital Future Meetup"
     events:
@@ -272,6 +300,10 @@
             location: "Dynatrace Lab, Vienna"
             date: 2023-05-06
             link: https://www.meetup.com/female-coders-linz/events/292147931/
+        -   name: "Hackathon for Women & Girls"
+            location: "Avocodo, Linz"
+            date: 2023-10-14
+            link: https://female-coders.at/hackathon-2023-linz-edition/
 -   id: beer+code
     name: "beer+code Ried"
     events:
@@ -436,6 +468,10 @@
             location: "HTBLA Leonding"
             date: 2023-04-18
             link: https://www.meetup.com/teach2code/events/292086220
+        -   name: "Teach2Code"
+            location: "Online"
+            date: 2023-09-26
+            link: https://www.meetup.com/teach2code/events/296158903
 -   id: embedded-connect
     name: "Embedded Connect"
     events:
