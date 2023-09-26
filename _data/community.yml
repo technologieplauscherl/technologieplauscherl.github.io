@@ -182,7 +182,7 @@
         -   name: "Game Jam Linz Meetup"
             location: JKU, HS17
             date: 2023-10-19
-            link: https://discord.gg/TYgtthXMys
+            link: https://www.meetup.com/gamedev-linz/events/296331334/
 -   id: ccl
     name: "Coding Club Linz"
     events:
@@ -391,6 +391,13 @@
             location: "Linz, Wissensturm"
             date: 2022-10-28
             link: https://jugendhackt.org/events/at-linz/
+-   id: grand-garage
+    name: "Grand Garage"
+    events:
+        -   name: "TechTuesday#3: Safety First!"
+            location: "GrandGarage"
+            date: 2023-10-10
+            link: https://grandgarage.eu/de/workshops/tech-tuesday
 -   id: 0xA
     name: "0xA"
     events:
