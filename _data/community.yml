@@ -59,6 +59,13 @@
             date: 2020-04-23
             link: https://devone.at
             cost: EUR
+-   id: boudicca
+    name: "boudicca.events"
+    events:
+        -   name: "Hacktoberfest mit boudicca.events"
+            location: "JKU, HF 9905"
+            link: https://discord.gg/hunhrUXG?event=1158328138384809995
+            date: 2023-10-18
 -   id: reactday
     name: "React Day Berlin"
     events:
