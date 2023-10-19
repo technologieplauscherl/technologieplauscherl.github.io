@@ -4,7 +4,7 @@ email: organizers@technologieplauscherl.at
 description: "Linzer Technologie Meetup - Mit Freunden zamkommen und über Technologie, Coding und Projekte reden"
 keywords: "Technologie, Web, Java, CSS, HTML, JavaScript, Groovy, Grails, Meetup"
 baseurl: ""
-#url: "http://technologieplauscherl.at"
+url: "https://technologieplauscherl.at"
 
 # Build settings
 markdown: kramdown
@@ -12,7 +12,7 @@ permalink: pretty
 sass:
   sass_dir: _sass/
   style: compressed
-gems:
+plugins:
 - jekyll-sitemap
 
 collections:
