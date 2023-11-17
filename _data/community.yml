@@ -449,6 +449,17 @@
             location: "Hello Again, Leonding"
             date: 2023-11-07
             link: https://www.linkedin.com/events/2ndlinzermobiledevelopergatheri7092768943362236416/
+-   id: gdg-linz
+    name: "Google Developers Group (GDG) Linz"
+    events:
+        -   name: "Trial GDG Linz event"
+            location: "TabakFabrik Factory300"
+            date: 2023-10-12
+            link: https://www.meetup.com/gdg-linz/
+        -   name: "GDG Linz Meetup #1"
+            location: "TabakFabrik Factory300"
+            date: 2023-12-05
+            link: https://www.meetup.com/gdg-linz/events/297375507/
 -   id: opencommons
     name: "Open Commons Linz"
     events:
