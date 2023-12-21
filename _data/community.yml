@@ -376,6 +376,18 @@
             location: "MIC"
             date: 2023-11-21
             link: https://community.cncf.io/linz/
+        -   name: "Cloud Native Computing Linz Meetup - Januay 2024 edition"
+            location: "karriere.at"
+            date: 2024-01-24
+            link: https://www.meetup.com/cloud-native-linz/events/297969068/
+        -   name: "Cloud Native Computing Linz Meetup - February 2024 edition"
+            location: "Gepardec IT Services"
+            date: 2024-02-27
+            link: https://www.meetup.com/cloud-native-linz/events/297969084/
+        -   name: "Cloud Native Computing Linz Meetup - March 2024 edition"
+            location: "runtastic"
+            date: 2024-03-26
+            link: https://www.meetup.com/cloud-native-linz/events/297969104/
 -   id: agile-tour
     name: "Agile Tour"
     events:
