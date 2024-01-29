@@ -396,6 +396,13 @@
             link: https://agiletourvienna.at/
             date: 2022-09-15
             cost: EUR
+-   id: agile-community-linz
+    name: "Agile Community Linz"
+    events:
+        -   name: "Agile Community Linz Meetup: Scale down to grow"
+            location: "Netural"
+            link: https://www.meetup.com/agile-user-group-linz/events/298440436/
+            date: 2024-02-29
 -   id: squer-brainfood-events
     name: "SQUER Brainfood Events Vienna"
     events:
