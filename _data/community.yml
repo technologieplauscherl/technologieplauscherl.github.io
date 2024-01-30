@@ -120,6 +120,7 @@
         -   name: "Expert Exchange"
             location: Cloudflight, Huemerstr. 23
             date: 2024-02-19
+            link: https://www.meetup.com/digital-future-meetup-linz/events/298775783/
 -   id: ccc
     name: "Cloudflight Coding Contest"
     events:
