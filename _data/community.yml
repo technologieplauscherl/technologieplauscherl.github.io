@@ -235,7 +235,7 @@
     events:
         -   name: "Håck Mas Castle"
             location: Schloss Ottenschlag
-            date: 2023-08-28
+            date: 2024-08-28
             link: https://håck-mas.at/
             cost: ?? EUR
 -   id: socrates
