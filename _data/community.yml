@@ -39,6 +39,14 @@
             location: DS Automotion, Lunzerstraße 60, 4030 Linz
             date: 2023-05-25
             link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 84"
+            location: CloudFlight, Huemerstraße 23, 4020 Linz
+            date: 2024-03-14
+            link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 85"
+            location: Tractive, Poststraße 4, 4061 Pasching
+            date: 2024-05-07
+            link: https://technologieplauscherl.at
 -   id: topconf
     name: "Topconf Events"
     events:
