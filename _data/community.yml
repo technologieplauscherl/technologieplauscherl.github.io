@@ -39,6 +39,14 @@
             location: DS Automotion, Lunzerstraße 60, 4030 Linz
             date: 2023-05-25
             link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 84"
+            location: CloudFlight, Huemerstraße 23, 4020 Linz
+            date: 2024-03-14
+            link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 85"
+            location: Tractive, Poststraße 4, 4061 Pasching
+            date: 2024-05-07
+            link: https://technologieplauscherl.at
 -   id: topconf
     name: "Topconf Events"
     events:
@@ -94,6 +102,10 @@
             location: DIG
             date: 2023-09-28
             link: https://www.meetup.com/enterprise-java-user-group-austria/events/294304878/
+        -   name: "EJUG Spring Modulith :: ArchUnit"
+            location: Dynatrace
+            date: 2024-01-31
+            link: https://www.meetup.com/enterprise-java-user-group-austria/events/296950501/
 -   id: responsive
     name: "Responsive Org Linz"
 -   id: wordpress-meetup
@@ -113,6 +125,10 @@
         -   name: "Expert Exchange: Hexagonal Architecture"
             location: Cloudflight, Huemerstr. 23
             date: 2023-04-17
+        -   name: "Expert Exchange"
+            location: Cloudflight, Huemerstr. 23
+            date: 2024-02-19
+            link: https://www.meetup.com/digital-future-meetup-linz/events/298775783/
 -   id: ccc
     name: "Cloudflight Coding Contest"
     events:
@@ -131,6 +147,10 @@
         -   name: "Cloudflight Coding Contest"
             location: JKU
             date: 2023-10-20
+            link: https://register.codingcontest.org/
+        -   name: "Cloudflight Coding Contest (+Afterparty)"
+            location: JKU
+            date: 2024-04-19
             link: https://register.codingcontest.org/
 -   id: factory300
     name: "Factory300"
@@ -190,6 +210,10 @@
             location: JKU, HS17
             date: 2023-10-19
             link: https://www.meetup.com/gamedev-linz/events/296331334/
+        -   name: "Game Dev Linz Meetup"
+            location: tba.
+            date: 2024-03-28
+            link: https://www.meetup.com/gamedev-linz/
 -   id: ccl
     name: "Coding Club Linz"
     events:
@@ -214,6 +238,14 @@
 -   id: aws-ug
     name: "AWS User Group Linz"
     events:
+-   id: hackmas
+    name: "Håck Mas"
+    events:
+        -   name: "Håck Mas Castle"
+            location: Schloss Ottenschlag
+            date: 2024-08-28
+            link: https://håck-mas.at/
+            cost: ?? EUR
 -   id: socrates
     name: "SoCraTes Austria"
     events:
@@ -222,6 +254,11 @@
             date: 2023-09-22
             link: https://socrates-conference.at/
             cost: 39 EUR
+        -   name: "Socrates Austria 2024"
+            location: Wissensturm
+            date: 2024-09-20
+            link: https://socrates-conference.at/
+            cost: ?? EUR
 -   id: tedxlinz
     name: "TEDxLinz"
     events:
@@ -230,6 +267,10 @@
             date: 2023-11-18
             link: https://www.tedxlinz.at/
             cost: 79 EUR
+        -   name: "TEDxLinz Community GetTogether"
+            location: Grand Garage
+            date: 2024-02-06
+            link: https://www.meetup.com/tedxlinz/events/298846267/
 -   id: digitalfuture
     name: "Digital Future Meetup"
     events:
@@ -311,6 +352,10 @@
             location: "Avocodo, Linz"
             date: 2023-10-14
             link: https://female-coders.at/hackathon-2023-linz-edition/
+        -   name: "Female Coders Study Group"
+            location: "Wissensturm"
+            date: 2024-02-07
+            link: https://www.meetup.com/female-coders-linz/events/295888830/
 -   id: beer+code
     name: "beer+code Ried"
     events:
@@ -376,6 +421,18 @@
             location: "MIC"
             date: 2023-11-21
             link: https://community.cncf.io/linz/
+        -   name: "Cloud Native Computing Linz Meetup - January 2024 edition"
+            location: "karriere.at"
+            date: 2024-01-24
+            link: https://www.meetup.com/cloud-native-linz/events/297969068/
+        -   name: "Cloud Native Computing Linz Meetup - February 2024 edition"
+            location: "Gepardec IT Services"
+            date: 2024-02-27
+            link: https://www.meetup.com/cloud-native-linz/events/297969084/
+        -   name: "Cloud Native Computing Linz Meetup - March 2024 edition"
+            location: "runtastic"
+            date: 2024-03-26
+            link: https://www.meetup.com/cloud-native-linz/events/297969104/
 -   id: agile-tour
     name: "Agile Tour"
     events:
@@ -384,6 +441,13 @@
             link: https://agiletourvienna.at/
             date: 2022-09-15
             cost: EUR
+-   id: agile-community-linz
+    name: "Agile Community Linz"
+    events:
+        -   name: "Agile Community Linz Meetup: Scale down to grow"
+            location: "Netural"
+            link: https://www.meetup.com/agile-user-group-linz/events/298440436/
+            date: 2024-02-29
 -   id: squer-brainfood-events
     name: "SQUER Brainfood Events Vienna"
     events:
@@ -449,6 +513,21 @@
             location: "Hello Again, Leonding"
             date: 2023-11-07
             link: https://www.linkedin.com/events/2ndlinzermobiledevelopergatheri7092768943362236416/
+-   id: gdg-linz
+    name: "Google Developers Group (GDG) Linz"
+    events:
+        -   name: "Trial GDG Linz event"
+            location: "TabakFabrik Factory300"
+            date: 2023-10-12
+            link: https://www.meetup.com/gdg-linz/
+        -   name: "GDG Linz Meetup #1"
+            location: "TabakFabrik Factory300"
+            date: 2023-12-05
+            link: https://www.meetup.com/gdg-linz/events/297375507/
+        -   name: "GDG Linz Meetup"
+            location: "TabakFabrik Factory300"
+            date: 2024-02-27
+            link: https://www.meetup.com/gdg-linz/events/298564825/
 -   id: opencommons
     name: "Open Commons Linz"
     events:
