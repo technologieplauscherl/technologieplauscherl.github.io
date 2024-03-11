@@ -47,6 +47,10 @@
             location: Tractive, Poststraße 4, 4061 Pasching
             date: 2024-05-07
             link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 86"
+            location: Ubitec, Tabakfabrik Peter-Behrens-Platz 2, A-4020 Linz
+            date: 2024-06-27
+            link: https://technologieplauscherl.at
 -   id: topconf
     name: "Topconf Events"
     events:
