@@ -35,13 +35,13 @@
             location: Ubitec, Tabakfabrik Peter-Behrens-Platz 2, A-4020 Linz
             date: 2024-06-27
             link: https://technologieplauscherl.at
--   id: agile
+-   id: agilecomm
     name: "Agile Community Linz"
+    events:
         -   name: "Community Get Together"
             location: Hofkneipe
             date: 2024-04-04
             link: https://www.meetup.com/de-DE/agile-user-group-linz/events/299595888/
-    events:
 -   id: script
     name: "Script"
     events:
