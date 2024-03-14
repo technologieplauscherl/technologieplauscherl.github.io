@@ -20,29 +20,13 @@
 -   id: stahlstadt-js
     name: "Stahlstadt.js"
     events:
-        -   name: "Stahlstadt.js #24"
-            location: Dynatrace
-            date: 2020-02-06
-            link: https://www.meetup.com/de-DE/stahlstadt-js/events/268136639/
+        -   name: "Stahlstadt.js jQuery Special"
+            location: Netural
+            date: 2024-04-03
+            link: https://www.meetup.com/de-DE/stahlstadt-js/events/299725322/
 -   id: technologieplauscherl
     name: "Technologieplauscherl"
     events:
-        -   name: "Technologieplauscherl 75"
-            location: Dynatrace
-            date: 2020-04-21
-            link: https://technologieplauscherl.at
-        -   name: "Technologieplauscherl 79"
-            location: Ubitec, Tabakfabrik
-            date: 2023-01-26
-            link: https://technologieplauscherl.at
-        -   name: "Technologieplauscherl 81"
-            location: DS Automotion, Lunzerstraße 60, 4030 Linz
-            date: 2023-05-25
-            link: https://technologieplauscherl.at
-        -   name: "Technologieplauscherl 84"
-            location: CloudFlight, Huemerstraße 23, 4020 Linz
-            date: 2024-03-14
-            link: https://technologieplauscherl.at
         -   name: "Technologieplauscherl 85"
             location: Tractive, Poststraße 4, 4061 Pasching
             date: 2024-05-07
@@ -51,8 +35,12 @@
             location: Ubitec, Tabakfabrik Peter-Behrens-Platz 2, A-4020 Linz
             date: 2024-06-27
             link: https://technologieplauscherl.at
--   id: topconf
-    name: "Topconf Events"
+-   id: agile
+    name: "Agile Community Linz"
+        -   name: "Community Get Together"
+            location: Hofkneipe
+            date: 2024-04-04
+            link: https://www.meetup.com/de-DE/agile-user-group-linz/events/299595888/
     events:
 -   id: script
     name: "Script"
