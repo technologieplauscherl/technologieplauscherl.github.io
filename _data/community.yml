@@ -164,6 +164,10 @@
             location: Plus City
             date: 2020-04-24
             link: https://www.globalazurebootcamp.at
+        -   name: "Global Azure Bootcamp"
+            location: HTL Leonding
+            date: 2024-04-20
+            link: https://www.globalazurebootcamp.at
 -   id: oeh-informatik
     name: "ÖH JKU - StV Informatik"
     events:
@@ -348,6 +352,10 @@
             location: "Wissensturm"
             date: 2024-02-07
             link: https://www.meetup.com/female-coders-linz/events/295888830/
+        -   name: "Female Coders: Hackathon for FINTAs"
+            location: "Cloudflight, Vienna"
+            date: 2024-04-13
+            link: https://female-coders.at
 -   id: beer+code
     name: "beer+code Ried"
     events:
