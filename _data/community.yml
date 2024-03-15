@@ -38,7 +38,7 @@
 -   id: agilecomm
     name: "Agile Community Linz"
     events:
-        -   name: "Community Get Together"
+        -   name: "Agile Community Get Together"
             location: Hofkneipe
             date: 2024-04-04
             link: https://www.meetup.com/de-DE/agile-user-group-linz/events/299595888/
