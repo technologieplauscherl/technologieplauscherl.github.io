@@ -5,11 +5,14 @@ Die Website für das Tech-Meetup in Linz -> [technologieplauscherl.at](http://te
 
 ## Talk via Pull Request
 
-Du darfst dich gerne selbst als Speaker für das nächste Plauscherl auf der Website eintragen: Aktuelles Plauscherl nehmen, und Folgendes hinzufügen:
+Du darfst dich gerne selbst als Speaker für das nächste Plauscherl auf der Website eintragen. Wir nehmen bis zu 4 Vorträge pro Veranstaltung.
+
+Dazu einfach das aktuellste Plauscherl-File unter /_plauscherl/ nehmen, und Folgendes hinzufügen:
 
 ```
 -
   name: <Dein Name>
   talk: <Dein Talk>
   img: <Bild (ohne http: nur mit //) zu deinem Facebook/Google/Twitter Foto>
+  language: "en"
 ```
