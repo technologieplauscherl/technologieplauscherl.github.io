@@ -531,10 +531,14 @@
             location: "TabakFabrik Factory300"
             date: 2023-12-05
             link: https://www.meetup.com/gdg-linz/events/297375507/
-        -   name: "GDG Linz Meetup"
+        -   name: "GDG Linz Meetup #2"
             location: "TabakFabrik Factory300"
             date: 2024-02-27
             link: https://www.meetup.com/gdg-linz/events/298564825/
+        -   name: "GDG Linz Google IO Watch Session"
+            location: "TabakFabrik Factory300"
+            date: 2024-05-14
+            link: https://www.meetup.com/gdg-linz/events/300286407/   
 -   id: opencommons
     name: "Open Commons Linz"
     events:
