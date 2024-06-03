@@ -66,6 +66,14 @@
             date: 2020-04-23
             link: https://devone.at
             cost: EUR
+-   id: developerweekeurope
+    name: "DeveloperWeek Europe"
+    events:
+        -   name: "DeveloperWeek Europe 2024"
+            location: "Online"
+            date: 2024-06-05
+            link: https://www.developerweek.com/europe/
+            cost: 100+EUR (free for Techplauscherl)
 -   id: boudicca
     name: "boudicca.events"
     events:
