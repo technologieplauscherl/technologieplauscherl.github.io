@@ -24,13 +24,6 @@
             location: Netural
             date: 2024-04-03
             link: https://www.meetup.com/de-DE/stahlstadt-js/events/299725322/
--   id: zephyr-meetup
-    name: "Zephyr Project Meetup"
-    events:
-        -   name: "Zephyr RTOS Embedded Meetup"
-            location: Tractive
-            date: 2024-06-12
-            link: https://www.zephyrproject.org/event/zephyr-meetup-austria-linz-tractive/
 -   id: technologieplauscherl
     name: "Technologieplauscherl"
     events:
