@@ -595,3 +595,10 @@
             location: "Tractive, Pasching"
             date: 2024-10-15
             link: https://www.linkedin.com/events/embeddedconnect2-07237411150873694208/
+-   id: valug
+    name: "Voralpen Linux User Group"
+    events:
+        -   name: "VALUG-Treffen - KI-Tools"
+            location: "VALUG-Klubraum, Alter Schl8hof Wels"
+            date: 2025-02-14
+            link: https://valug.at/events/2025-02-14/
