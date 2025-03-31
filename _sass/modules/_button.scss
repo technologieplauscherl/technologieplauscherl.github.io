@@ -7,6 +7,8 @@ $facebookIconColor: #29447E;
 
 $googlePlusBtnColor: #DB4A37;
 
+$linkedInBtnColor: rgb(10, 102, 194);
+
 $meetupBtnColor: #d62f30;
 
 .link {
@@ -61,6 +63,14 @@ $meetupBtnColor: #d62f30;
 
 	.link__icon {
 		background-color: darken($facebookBtnColor, 10);
+	}
+}
+
+.link--linkedin {
+	background-color: $linkedInBtnColor;
+
+	.link__icon {
+		background-color: darken($linkedInBtnColor, 10);
 	}
 }
 
