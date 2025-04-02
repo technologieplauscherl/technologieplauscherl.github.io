@@ -11,7 +11,7 @@
         {% endif %}
 
 
-		{% if page.end %}
+		{% if include.ended %}
 		<p class="info">
 			Danke für die Vorträge an
 		</p>
@@ -28,7 +28,7 @@
 			Nächstes Treffen:<br/>
 			Ist in Planung
 			{% endunless %}
-			{% unless page.end %}
+			{% unless include.ended %}
 				Nächstes Treffen:<br>
 				<span itemprop="startDate" content="{{post.startDateIso8601}}">
           <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
@@ -51,7 +51,7 @@
 			{% endunless %}
 		</p>
 
-		{% if page.end %}
+		{% if include.ended %}
 		<a href="https://www.linkedin.com/groups/12659872/" target="_blank" class="link link--big link--linkedin">
 			Planung auf LinkedIn
 			<svg class="link__icon">
@@ -67,7 +67,7 @@
 		</a>
 		{% endif %}
 
-		{% unless page.end %}
+		{% unless include.ended %}
 			{% if post.event %}
 				{% if post.event.facebook %}
 				<a href="https://www.facebook.com/events/{{post.event.facebook}}" class="link link--big link--facebook">
