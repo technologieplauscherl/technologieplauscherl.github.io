@@ -17,8 +17,7 @@
 	{% endif %}
 </address>
 {% if include.location.map %}
-<iframe height='500' src='{{include.location.map}}'></iframe>
-Map &copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors
+<iframe height='400' width='500' src='{{include.location.map}}'></iframe>
 {% endif %}
 {% if include.location.oldmap %}
 {% include oldmap.html map=include.location.oldmap host=include.location.name %}
