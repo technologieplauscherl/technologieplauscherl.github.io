@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
+
+{% assign post = site.plauscherl | last %}
+
+{% assign buildTimeInSecondsInEpoch = site.time | date: "%s" | plus: 0 %}
+{% assign plauscherlTimeInSecondsInEpoch = post.startDateIso8601 | date: "%s" | plus: 0 %}
+{% assign plauscherlEnded = false %}
+{% if plauscherlTimeInSecondsInEpoch < buildTimeInSecondsInEpoch %}
+{% assign plauscherlEnded = true %}
+{% endif %}
+
+
 <main itemscope itemtype="http://schema.org/Event">
-	{% include masthead.html %}
+	{% include masthead.html ended=plauscherlEnded %}
 	<div class="wrapper">
-		{% unless page.end %}
+		{% unless plauscherlEnded %}
 		{% if post.location %}
 		{% include location.html location=post.location %}
 		{% endif %}
@@ -18,8 +29,6 @@ layout: default
 
 		{% endunless %}
 
-		{% assign post = site.plauscherl | last %}
-
 		<h2 id="info">Info</h2>
 
 		{% include description.html %}
@@ -29,7 +38,7 @@ layout: default
 
 		<div class="cards">
 			{% for card in site.plauscherl reversed %}
-			{% if page.end %}
+			{% if plauscherlEnded %}
 			{% if forloop.index < 7 %}
 			{% include plauscherl-card.html %}
 			{% endif %}
