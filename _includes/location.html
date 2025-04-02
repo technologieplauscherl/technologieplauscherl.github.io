@@ -17,7 +17,7 @@
 	{% endif %}
 </address>
 {% if include.location.map %}
-<iframe height='400' width='500' src='{{include.location.map}}'></iframe>
+<iframe height='400' width='500' style="max-width: 80vw;max-height: 60vw" src='{{include.location.map}}'></iframe>
 {% endif %}
 {% if include.location.oldmap %}
 {% include oldmap.html map=include.location.oldmap host=include.location.name %}
