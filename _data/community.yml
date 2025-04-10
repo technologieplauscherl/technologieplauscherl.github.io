@@ -234,8 +234,12 @@
             date: 2022-12-02
             link: https://linz.coderdojo.net/
 -   id: dotnet-stammtisch
-    name: ".NET Stammtisch - Linz"
+    name: ".NET Stammtisch Linz"
     events:
+        -   name: ".NET Stammtisch Linz"
+            location: "Cloudflight"
+            date: 2025-04-24
+            link: https://www.meetup.com/net-stammtisch-linz/events/306827878/
 -   id: linz-ai
     name: "Linz.AI"
     events:
@@ -602,3 +606,7 @@
             location: "VALUG-Klubraum, Alter Schl8hof Wels"
             date: 2025-02-14
             link: https://valug.at/events/2025-02-14/
+        -   name: "VALUG-Treffen - OpenCloud"
+            location: "VALUG-Klubraum, Alter Schl8hof Wels"
+            date: 2025-04-11
+            link: https://valug.at/events/2025-04-11/
