@@ -27,13 +27,9 @@
 -   id: technologieplauscherl
     name: "Technologieplauscherl"
     events:
-        -   name: "Technologieplauscherl 85"
+        -   name: "Technologieplauscherl 87"
             location: Tractive, Poststraße 4, 4061 Pasching
-            date: 2024-05-07
-            link: https://technologieplauscherl.at
-        -   name: "Technologieplauscherl 86"
-            location: Ubitec, Tabakfabrik Peter-Behrens-Platz 2, A-4020 Linz
-            date: 2024-06-27
+            date: 2025-06-05
             link: https://technologieplauscherl.at
 -   id: agilecomm
     name: "Agile Community Linz"
@@ -445,6 +441,10 @@
             location: "runtastic"
             date: 2024-03-26
             link: https://www.meetup.com/cloud-native-linz/events/297969104/
+        -   name: "Cloud Native Computing Linz Meetup - April 2025 edition"
+            location: "Tractive GmbH, Poststrasse 4, 4061 Pasching"
+            date: 2025-04-29
+            link: https://meetu.ps/e/P0WBh/FXMTM/i
 -   id: agile-tour
     name: "Agile Tour"
     events:
