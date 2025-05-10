@@ -236,6 +236,14 @@
             location: "Cloudflight"
             date: 2025-04-24
             link: https://www.meetup.com/net-stammtisch-linz/events/306827878/
+        -   name: ".NET Stammtisch Linz"
+            location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
+            date: 2025-05-27
+            link: https://www.meetup.com/net-stammtisch-linz/events/307553012/
+        -   name: ".NET Stammtisch Linz"
+            location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
+            date: 2025-06-24
+            link: https://www.meetup.com/net-stammtisch-linz/
 -   id: linz-ai
     name: "Linz.AI"
     events:
