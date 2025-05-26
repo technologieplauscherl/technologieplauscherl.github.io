@@ -271,6 +271,11 @@
             date: 2024-09-20
             link: https://socrates-conference.at/
             cost: ?? EUR
+        -   name: "SoCraTes Austria 2025"
+            location: Wissensturm
+            date: 2025-09-26
+            link: https://socrates-conference.at/
+            cost: 80-120 EUR
 -   id: tedxlinz
     name: "TEDxLinz"
     events:
