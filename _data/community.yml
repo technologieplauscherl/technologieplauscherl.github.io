@@ -458,6 +458,10 @@
             location: "Tractive GmbH, Poststrasse 4, 4061 Pasching"
             date: 2025-04-29
             link: https://meetu.ps/e/P0WBh/FXMTM/i
+        -   name: "Cloud Native Computing Linz Meetup - July 2025 edition"
+            location: "Gepardec IT Services"
+            date: 2025-07-01
+            link: https://www.meetup.com/cloud-native-linz/events/307975704/
 -   id: agile-tour
     name: "Agile Tour"
     events:
