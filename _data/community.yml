@@ -572,6 +572,10 @@
             location: "TabakFabrik Factory300"
             date: 2024-05-14
             link: https://www.meetup.com/gdg-linz/events/300286407/
+        -   name: "Google Developer Group Linz - Build with AI"
+            location: "Tractive, Pasching"
+            date: 2025-08-12
+            link: https://gdg.community.dev/events/details/google-gdg-linz-presents-build-with-ai-from-gdg-linz/
 -   id: opencommons
     name: "Open Commons Linz"
     events:
