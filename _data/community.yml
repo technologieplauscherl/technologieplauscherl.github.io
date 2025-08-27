@@ -466,14 +466,18 @@
             location: "Gepardec IT Services"
             date: 2025-07-01
             link: https://www.meetup.com/cloud-native-linz/events/307975704/
+        -   name: "Cloud Native Computing Linz Meetup - September 2025 edition"
+            location: "netcetera"
+            date: 2025-09-24
+            link: https://cloudnativelinz.at/
         -   name: "Cloud Native Computing Linz Meetup - October 2025 edition"
             location: "LOUPE / Neue Werft"
             date: 2025-10-28
-            link: https://www.meetup.com/cloud-native-linz/
+            link: https://cloudnativelinz.at/
         -   name: "Cloud Native Computing Linz Meetup - November 2025 edition"
             location: "MIC"
             date: 2025-11-25
-            link: https://www.meetup.com/cloud-native-linz/
+            link: https://cloudnativelinz.at/
 -   id: agile-tour
     name: "Agile Tour"
     events:
