@@ -27,13 +27,13 @@
 -   id: technologieplauscherl
     name: "Technologieplauscherl"
     events:
-        -   name: "Technologieplauscherl 87"
-            location: Tractive, Poststraße 4, 4061 Pasching
-            date: 2025-06-05
-            link: https://technologieplauscherl.at
         -   name: "Technologieplauscherl 88"
             location: Cloudflight, Huemerstr. 23
             date: 2025-09-17
+            link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 89"
+            location: JKU Linz, LIT Open Innovation Center
+            date: 2025-11-13
             link: https://technologieplauscherl.at
 -   id: agilecomm
     name: "Agile Community Linz"
