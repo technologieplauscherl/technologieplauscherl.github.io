@@ -152,6 +152,10 @@
             location: JKU
             date: 2024-04-19
             link: https://register.codingcontest.org/
+        -   name: "Cloudflight Coding Contest"
+            location: JKU
+            date: 2025-11-14
+            link: https://register.codingcontest.org/
 -   id: factory300
     name: "Factory300"
     events:
@@ -202,22 +206,10 @@
 -   id: game-dev-linz
     name: "Game Dev Linz"
     events:
-        -   name: "Game Jam Linz 2021"
-            location: Online
-            date: 2021-09-10
-            link: https://itch.io/jam/game-jam-linz-2021
-        -   name: "Game Dev Linz Meetup"
-            location: Cloudflight
-            date: 2023-09-21
-            link: https://www.meetup.com/gamedev-linz/events/295732006/
-        -   name: "Game Jam Linz Meetup"
-            location: JKU, HS17
-            date: 2023-10-19
-            link: https://www.meetup.com/gamedev-linz/events/296331334/
-        -   name: "Game Dev Linz Meetup"
-            location: Ubitec
-            date: 2024-03-28
-            link: https://www.meetup.com/gamedev-linz/events/298904465/
+        -   name: "Bi-Monthly GameDev Linz Meetup"
+            location: LAST by Schachermayer
+            date: 2025-09-18
+            link: https://www.meetup.com/gamedev-linz/events/310902606/
 -   id: ccl
     name: "Coding Club Linz"
     events:
@@ -233,6 +225,9 @@
             location: Grand Garage
             date: 2022-12-02
             link: https://linz.coderdojo.net/
+        -   name: "Code Retreat Linz"
+            location: Wissensturm
+            date: 2026-01-31
 -   id: dotnet-stammtisch
     name: ".NET Stammtisch Linz"
     events:
@@ -588,6 +583,10 @@
             location: "Tractive, Pasching"
             date: 2025-08-12
             link: https://gdg.community.dev/events/details/google-gdg-linz-presents-build-with-ai-from-gdg-linz/
+        -   name: "DevFest Linz: Great AI Hackathon"
+            location: "tbd."
+            date: 2025-12-06
+            link: https://gdg.community.dev/events/details/google-gdg-linz-presents-devfest-linz-great-ai-hackathon/
 -   id: opencommons
     name: "Open Commons Linz"
     events:
@@ -636,6 +635,20 @@
             location: "Tractive, Pasching"
             date: 2024-10-15
             link: https://www.linkedin.com/events/embeddedconnect2-07237411150873694208/
+-   id: linuxfosslinz
+    name: "Linux / FOSS Meetup Linz"
+    events:
+        -   name: "Linux/FOSS Meetup #3"
+            location: "Cloudflight, Huemerstr. 23"
+            date: 2025-09-25
+            link: https://www.meetup.com/linux-foss-linz/events/310596297/
+-   id: itfutures
+    name: "IT Futures"
+    events:
+        -   name: "IT Futures Festival"
+            location: "Design Center"
+            date: 2025-10-02
+            link: https://it-futures.at/
 -   id: valug
     name: "Voralpen Linux User Group"
     events:
