@@ -244,7 +244,8 @@
             date: 2025-06-24
             link: https://www.meetup.com/net-stammtisch-linz/
         -   name: ".NET Stammtisch Linz"
-            location: "ITPRO, Am Winterhafen 11, 4020 Linz"
+            location: "ITPRO, Am Winterhafen 11, 4020 Linz
+            date: 2025-10
             link: https://www.meetup.com/net-stammtisch-linz/
 -   id: linz-ai
     name: "Linz.AI"
