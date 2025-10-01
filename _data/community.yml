@@ -227,7 +227,8 @@
             link: https://linz.coderdojo.net/
         -   name: "Code Retreat Linz"
             location: Wissensturm
-            date: 2026-01-31
+            date: 2026-02-28
+            link: https://coderetreat-linz.github.io/website/
 -   id: dotnet-stammtisch
     name: ".NET Stammtisch Linz"
     events:
