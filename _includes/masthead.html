@@ -31,8 +31,8 @@
 			{% unless include.ended %}
 				Nächstes Treffen:<br>
 				<span itemprop="startDate" content="{{post.startDateIso8601}}">
-          <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
-          <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use></svg> {{post.timestring}} Uhr
+          <svg class="icon" role="img" aria-label="am"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
+          <svg class="icon" role="img" aria-label="um"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use></svg> {{post.timestring}} Uhr
         </span>
 				<script type="application/ld+json">
 				{
