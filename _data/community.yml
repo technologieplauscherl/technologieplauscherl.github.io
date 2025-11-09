@@ -647,6 +647,10 @@
             location: "Cloudflight, Huemerstr. 23"
             date: 2025-09-25
             link: https://www.meetup.com/linux-foss-linz/events/310596297/
+        -   name: "Linux/FOSS Meetup #4"
+            location: "JKU"
+            date: 2026-01-22
+            link: https://www.meetup.com/linux-foss-linz/events/311658143/
 -   id: itfutures
     name: "IT Futures"
     events:
