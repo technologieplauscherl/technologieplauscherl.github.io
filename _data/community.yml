@@ -589,7 +589,7 @@
             date: 2025-08-12
             link: https://gdg.community.dev/events/details/google-gdg-linz-presents-build-with-ai-from-gdg-linz/
         -   name: "DevFest Linz: Great AI Hackathon"
-            location: "tbd."
+            location: "JKU, HS1"
             date: 2025-12-06
             link: https://gdg.community.dev/events/details/google-gdg-linz-presents-devfest-linz-great-ai-hackathon/
 -   id: opencommons
@@ -669,3 +669,7 @@
             location: "VALUG-Klubraum, Alter Schl8hof Wels"
             date: 2025-04-11
             link: https://valug.at/events/2025-04-11/
+        -   name: "VALUG-Treffen - Jujutsu"
+            location: "VALUG-Klubraum, Alter Schl8hof Wels"
+            date: 2025-11-14
+            link: https://valug.at/events/2025-11-14/
