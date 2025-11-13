@@ -673,3 +673,10 @@
             location: "VALUG-Klubraum, Alter Schl8hof Wels"
             date: 2025-11-14
             link: https://valug.at/events/2025-11-14/
+-   id: fhlug
+    name: "FH Hagenberg Linux User Group"
+    events:
+        -   name: "fhLUG: Zephyr RTOS"
+            location: FH Hagenberg
+            date: 2025-11-25
+            link: "https://fhlug.at/2025/11/getting-started-with-zephyr-rtos-without-real-hardware/"
