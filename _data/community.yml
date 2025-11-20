@@ -248,6 +248,10 @@
             location: "ITPRO, Am Winterhafen 11, 4020 Linz"
             date: 2025-10-28
             link: https://www.meetup.com/net-stammtisch-linz/
+        -   name: ".NET Stammtisch Linz"
+            location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
+            date: 2025-12-02
+            link: https://www.meetup.com/net-stammtisch-linz/events/312097884/
 -   id: linz-ai
     name: "Linz.AI"
     events:
