@@ -16,8 +16,9 @@
 				<img class="speaker__language" src="/img/german-language.svg" width="40" height="20" alt="Vortrag ist auf Deutsch / Talk is in German" title="Vortrag ist auf Deutsch / Talk is in German">
 		    {% endif %}
 		{% endif %}
-		{% if include.speaker.count %}
-		<span class="speaker__count">{{include.speaker.count}}</span>
+		{% assign count = include.count | default: include.speaker.count %}
+		{% if count %}
+		<span class="speaker__count">{{count}}</span>
 		{% endif %}
 	</div>
 </div>
