@@ -684,3 +684,10 @@
             location: FH Hagenberg
             date: 2025-11-25
             link: "https://fhlug.at/2025/11/getting-started-with-zephyr-rtos-without-real-hardware/"
+-   id: rubyconf_at
+    name: "RUBY CONF AT"
+    events:
+        -   name: "2026 RUBY CONF AT"
+            location: Das Muth, Vienna
+            date: 2026-05-29
+            link: "https://rubyconf.at/"
