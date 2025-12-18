@@ -23,6 +23,10 @@ permalink: /stats/
 				
 				{% for n in names %}
 					{% assign stripped_name = n | strip %}
+					{% comment %}Handle name changes via _data/speaker_aliases.yml{% endcomment %}
+					{% if site.data.speaker_aliases[stripped_name] %}
+						{% assign stripped_name = site.data.speaker_aliases[stripped_name] %}
+					{% endif %}
 					{% assign speaker_counts = speaker_counts | append: stripped_name | append: "|||" | append: img | append: ":::" %}
 				{% endfor %}
 			{% endif %}
