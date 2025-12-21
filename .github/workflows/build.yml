@@ -10,14 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Install dependencies
-        run: |
-          gem install jekyll jekyll-sitemap
-
-      - name: Build site
-        run: jekyll build
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
