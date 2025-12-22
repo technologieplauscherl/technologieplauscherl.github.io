@@ -17,6 +17,11 @@
   color: $text-color;
   font-weight: normal;
   display: flex;
+
+  body.dark-mode & {
+    background-color: #000;
+    border-color: #333;
+  }
 }
 
 @media(max-width: 400px) {

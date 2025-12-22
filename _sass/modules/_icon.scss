@@ -17,3 +17,9 @@
   text-align: center;
   padding: 1rem;
 }
+
+#icon-sun path:not(.path1) {
+  stroke: #ffff;
+  stroke-width: 2;
+  stroke-linecap: round;
+}

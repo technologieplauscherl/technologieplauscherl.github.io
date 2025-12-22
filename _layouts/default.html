@@ -7,14 +7,41 @@
     {{ content }}
     {% include svg-defs.html %}
     {% include footer.html %}
-	<script>
-		function init() {
-			var imgDefer = document.getElementsByTagName('img');
-			for (var i=0; i<imgDefer.length; i++) {
-				if(imgDefer[i].getAttribute('data-src')) {
-					imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-				} } }
-		window.onload = init;
-	</script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const button = document.getElementById('dark-mode-toggle');
+        const icon = button?.querySelector('use');
+        if (!button || !icon) return;
+
+        const setTheme = (isDark) => {
+          document.body.classList.toggle('dark-mode', isDark);
+          icon.setAttribute('href', isDark ? '#icon-sun' : '#icon-moon');
+        };
+
+        const mediaQuery =
+          window.matchMedia('(prefers-color-scheme: dark)');
+
+        setTheme(mediaQuery.matches);
+
+        // live change to brwoser settings
+        mediaQuery.addEventListener('change', (e) => {
+          setTheme(e.matches);
+        });
+
+        button.addEventListener('click', () => {
+          setTheme(!document.body.classList.contains('dark-mode'));
+        });
+      });
+
+      function init() {
+        var imgDefer = document.getElementsByTagName('img');
+        for (var i=0; i<imgDefer.length; i++) {
+          if(imgDefer[i].getAttribute('data-src')) {
+            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+          } 
+        } 
+      }
+      window.onload = init;
+    </script>
     </body>
 </html>
