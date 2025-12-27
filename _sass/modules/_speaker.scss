@@ -57,6 +57,56 @@
 	font-weight: 600;
 }
 
+.speaker__session a[title],
+.speaker__talk-title[title] {
+	cursor: help;
+	position: relative;
+}
+
+.speaker__session a,
+.speaker__talk-title {
+	position: relative;
+}
+
+.speaker__session a[data-abstract]:hover::after,
+.speaker__talk-title[data-abstract]:hover::after {
+	content: attr(data-abstract);
+	position: absolute;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #333;
+	color: white;
+	padding: 0.5rem 0.75rem;
+	border-radius: 4px;
+	white-space: normal;
+	word-wrap: break-word;
+	min-width: 100%;
+	font-size: 0.875rem;
+	font-weight: 400;
+	z-index: 1000;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	pointer-events: none;
+}
+
+.speaker__session a[data-abstract]:hover::before,
+.speaker__talk-title[data-abstract]:hover::before {
+	content: "";
+	position: absolute;
+	bottom: 115%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 5px solid transparent;
+	border-top-color: #333;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+.speaker__session a[data-abstract],
+.speaker__talk-title[data-abstract] {
+	cursor: help;
+}
+
 @media(min-width: 500px) {
 
 	.speaker {
