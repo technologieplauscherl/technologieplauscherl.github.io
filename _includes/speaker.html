@@ -5,9 +5,13 @@
 		{% if include.speaker.talk %}
 			<div class="speaker__session">
 				{% if include.speaker.talklink %}
-					<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
+					<a href="{{include.speaker.talklink}}" 
+						{% if include.speaker.abstract && include.speaker.abstract != empty %}data-abstract="{{include.speaker.abstract}}"{% endif %}
+					>{{include.speaker.talk}}</a>
 				{% else %}
-					{{include.speaker.talk}}
+					<span class="speaker__talk-title" 
+						{% if include.speaker.abstract && include.speaker.abstract != empty %}data-abstract="{{include.speaker.abstract}}"{% endif %}
+					>{{include.speaker.talk}}</span>
 				{% endif %}
 			</div>
 			{% if include.speaker.language == "en" %}
