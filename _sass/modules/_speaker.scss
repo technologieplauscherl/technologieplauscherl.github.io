@@ -79,8 +79,6 @@
 	margin: 0 0 0 0.25rem;
 }
 
-
-
 .speaker__abstract-summary:focus {
 	outline: 0.125rem solid #49c096;
 	outline-offset: 0.125rem;
@@ -93,17 +91,15 @@
 }
 
 .speaker__abstract {
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
+	position: fixed;
+	top: 50%;
+	left: 1rem;
+	right: 1rem;
+	transform: translateY(-50%);
 	background-color: #fff;
 	border: 0.25rem solid #ddd;
 	border-radius: 0.25rem;
 	padding: 0.75rem 1rem;
-	margin-top: 0.5rem;
-	min-width: 15rem;
-	max-width: 20rem;
 	z-index: 100;
 	box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
 	font-size: 0.875rem;
@@ -142,11 +138,12 @@
 	}
 
 	.speaker__abstract {
+		position: absolute;
+		top: 100%;
 		left: 50%;
 		right: auto;
 		transform: translateX(-50%);
-		margin: 0.5rem 0 0;
-		width: auto;
+		margin-top: 0.5rem;
 		max-width: 20rem;
 		min-width: 15rem;
 	}
