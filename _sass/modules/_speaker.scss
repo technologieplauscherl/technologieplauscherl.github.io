@@ -140,4 +140,14 @@
 	.speaker__info {
 		display: block;
 	}
+
+	.speaker__abstract {
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		margin: 0.5rem 0 0;
+		width: auto;
+		max-width: 20rem;
+		min-width: 15rem;
+	}
 }
