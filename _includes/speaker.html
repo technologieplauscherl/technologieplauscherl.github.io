@@ -7,7 +7,19 @@
 				{% if include.speaker.talklink %}
 					<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
 				{% else %}
-					{{include.speaker.talk}}
+					<span class="speaker__talk-title">{{include.speaker.talk}}</span>
+				{% endif %}
+				{% if include.speaker.abstract && include.speaker.abstract != empty %}
+					<details class="speaker__abstract-details">
+						<summary class="speaker__abstract-summary" aria-label="Abstract for {{include.speaker.talk}}">
+							<svg class="speaker__abstract-icon" aria-hidden="true">
+								<use xlink:href="#icon-info-circle"></use>
+							</svg>
+						</summary>
+						<div class="speaker__abstract" role="tooltip">
+							{{include.speaker.abstract}}
+						</div>
+					</details>
 				{% endif %}
 			</div>
 			{% if include.speaker.language == "en" %}
