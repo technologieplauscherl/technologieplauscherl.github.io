@@ -15,4 +15,5 @@ Dazu einfach das aktuellste Plauscherl-File unter /_plauscherl/ nehmen, und Folg
   talk: <Dein Talk>
   img: <Bild (ohne http: nur mit //) zu deinem Facebook/Google/Twitter Foto>
   language: "en"
+  abstract: "<Kurze Zusammenfassung deines Talks>"
 ```
