@@ -27,13 +27,9 @@
 -   id: technologieplauscherl
     name: "Technologieplauscherl"
     events:
-        -   name: "Technologieplauscherl 88"
-            location: Cloudflight, Huemerstr. 23
-            date: 2025-09-17
-            link: https://technologieplauscherl.at
-        -   name: "Technologieplauscherl 89"
-            location: JKU Linz, LIT Open Innovation Center
-            date: 2025-11-13
+        -   name: "Technologieplauscherl 90"
+            location: Ubitec
+            date: 2026-01-21
             link: https://technologieplauscherl.at
 -   id: agilecomm
     name: "Agile Community Linz"
@@ -233,25 +229,13 @@
     name: ".NET Stammtisch Linz"
     events:
         -   name: ".NET Stammtisch Linz"
-            location: "Cloudflight"
-            date: 2025-04-24
-            link: https://www.meetup.com/net-stammtisch-linz/events/306827878/
-        -   name: ".NET Stammtisch Linz"
-            location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
-            date: 2025-05-27
-            link: https://www.meetup.com/net-stammtisch-linz/events/307553012/
-        -   name: ".NET Stammtisch Linz"
-            location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
-            date: 2025-06-24
-            link: https://www.meetup.com/net-stammtisch-linz/
-        -   name: ".NET Stammtisch Linz"
-            location: "ITPRO, Am Winterhafen 11, 4020 Linz"
-            date: 2025-10-28
-            link: https://www.meetup.com/net-stammtisch-linz/
-        -   name: ".NET Stammtisch Linz"
             location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
             date: 2025-12-02
             link: https://www.meetup.com/net-stammtisch-linz/events/312097884/
+        -   name: ".NET Stammtisch Linz"
+            location: "Dynatrace - Lab Linz - Grünwinkel, Altenberger Straße 82, 4040 Linz"
+            date: 2026-01-22
+            link: https://www.meetup.com/net-stammtisch-linz/events/312366211/
 -   id: linz-ai
     name: "Linz.AI"
     events:
@@ -412,75 +396,11 @@
             date: 2022-11-24
             link: https://www.meetup.com/rust-linz/events/289251460/
 -   id: cncf-linz
-    name: "Cloud Native Computing Linz Meetup"
+    name: "Cloud Native Linz"
     events:
-        -   name: "Cloud Native Computing Linz Meetup"
-            location: "Online/Remote"
-            date: 2020-09-29
-            link: https://www.meetup.com/Cloud-Native-Computing-Linz/events/273245544/
-        -   name: "17. Cloud Native Computing Linz Meetup"
-            location: "Cloudflight"
-            date: 2022-10-18
-            link: https://www.meetup.com/cloud-native-computing-linz/events/288482791/
-        -   name: "18. Cloud Native Computing Linz Meetup"
-            location: "Tractive"
-            date: 2022-11-22
-            link: https://www.meetup.com/cloud-native-computing-linz/events/289318053/
-        -   name: "Crossplane Use-cases"
-            location: "Dynatrace - Grünwinkel Lab"
-            date: 2023-03-28
-            link: https://community.cncf.io/events/details/cncf-linz-presents-cloud-native-linz-march-28-crossplane-use-cases/
-        -   name: "22. Cloud Native Computing Linz Meetup"
-            location: Porsche Informatik - Hagenberg Lab"
-            date: 2023-04-18
-            link: https://community.cncf.io/linz/
-        -   name: "23. Cloud Native Computing Linz Meetup"
-            location: "Cloudflight"
-            date: 2023-05-23
-            link: https://community.cncf.io/linz/
-        -   name: Cloud Native Computing Linz Meetup - September edition"
-            location: "Netcetera"
-            date: 2023-09-19
-            link: https://community.cncf.io/linz/
-        -   name: "Cloud Native Computing Linz Meetup- October edition"
-            location: "TechCenter"
-            date: 2023-10-18
-            link: https://community.cncf.io/linz/
-        -   name: "Cloud Native Computing Linz Meetup - November edition"
-            location: "MIC"
-            date: 2023-11-21
-            link: https://community.cncf.io/linz/
-        -   name: "Cloud Native Computing Linz Meetup - January 2024 edition"
-            location: "karriere.at"
-            date: 2024-01-24
-            link: https://www.meetup.com/cloud-native-linz/events/297969068/
-        -   name: "Cloud Native Computing Linz Meetup - February 2024 edition"
-            location: "Gepardec IT Services"
-            date: 2024-02-27
-            link: https://www.meetup.com/cloud-native-linz/events/297969084/
-        -   name: "Cloud Native Computing Linz Meetup - March 2024 edition"
-            location: "runtastic"
-            date: 2024-03-26
-            link: https://www.meetup.com/cloud-native-linz/events/297969104/
-        -   name: "Cloud Native Computing Linz Meetup - April 2025 edition"
-            location: "Tractive GmbH, Poststrasse 4, 4061 Pasching"
-            date: 2025-04-29
-            link: https://meetu.ps/e/P0WBh/FXMTM/i
-        -   name: "Cloud Native Computing Linz Meetup - July 2025 edition"
-            location: "Gepardec IT Services"
-            date: 2025-07-01
-            link: https://www.meetup.com/cloud-native-linz/events/307975704/
-        -   name: "Cloud Native Computing Linz Meetup - September 2025 edition"
-            location: "netcetera"
-            date: 2025-09-24
-            link: https://cloudnativelinz.at/
-        -   name: "Cloud Native Computing Linz Meetup - October 2025 edition"
-            location: "LOUPE / Neue Werft"
-            date: 2025-10-28
-            link: https://cloudnativelinz.at/
-        -   name: "Cloud Native Computing Linz Meetup - November 2025 edition"
-            location: "MIC"
-            date: 2025-11-25
+        -   name: "Cloud Native Linz - January 2026 edition"
+            location: "Startrampe, Peter-Behrens-Platz 10, 4020 Linz"
+            date: 2026-01-27
             link: https://cloudnativelinz.at/
 -   id: agile-tour
     name: "Agile Tour"
@@ -665,18 +585,14 @@
 -   id: valug
     name: "Voralpen Linux User Group"
     events:
-        -   name: "VALUG-Treffen - KI-Tools"
+        -   name: "VALUG-Treffen"
             location: "VALUG-Klubraum, Alter Schl8hof Wels"
-            date: 2025-02-14
-            link: https://valug.at/events/2025-02-14/
-        -   name: "VALUG-Treffen - OpenCloud"
+            date: 2026-02-12
+            link: https://valug.at/events/2026-02-12/
+        -   name: "VALUG-Treffen"
             location: "VALUG-Klubraum, Alter Schl8hof Wels"
-            date: 2025-04-11
-            link: https://valug.at/events/2025-04-11/
-        -   name: "VALUG-Treffen - Jujutsu"
-            location: "VALUG-Klubraum, Alter Schl8hof Wels"
-            date: 2025-11-14
-            link: https://valug.at/events/2025-11-14/
+            date: 2026-03-12
+            link: https://valug.at/events/2026-03-12/
 -   id: fhlug
     name: "FH Hagenberg Linux User Group"
     events:
@@ -691,3 +607,24 @@
             location: Das Muth, Vienna
             date: 2026-05-29
             link: "https://rubyconf.at/"
+-   id: fosdem
+    name: "FOSDEM"
+    events:
+        -   name: "2026 FOSDEM"
+            location: Brussels
+            date: 2026-01-31
+            link: "https://fosdem.org/"
+-   id: platform-engineering-linz
+    name: "Platform Engineering Linz"
+    events:
+        -   name: "Platform Engineering Linz - Januar 2026"
+            location: Dynatrace, Am Fünfundzwanziger Turm 20, 4020 Linz
+            date: 2026-01-22
+            link: "https://www.meetup.com/platform-engineering-linz/events/312406370/"
+-   id: ki-stammtisch-linz
+    name: "KI Stammtisch"
+    events:
+        -   name: "KI Stammtisch"
+            location: Otelo Linz-Auwiesen
+            date: 2026-01-22
+            link: "https://www.otelolinz.at/events/ki-stammtisch-2/"
