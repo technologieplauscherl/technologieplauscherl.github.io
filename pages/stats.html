@@ -169,7 +169,13 @@ permalink: /stats/
 		});
 		map.addOverlay(popup);
 
-		map.on('singleclick', (evt) => {
+		// Add hover effect for pins
+		map.on('pointermove', (evt) => {
+			const feature = map.forEachFeatureAtPixel(evt.pixel, (feature) => feature);
+			map.getTargetElement().style.cursor = feature ? 'pointer' : '';
+		});
+
+		map.on('singleclick', function (evt) {
 			const feature = map.forEachFeatureAtPixel(evt.pixel, (feature) => feature );
 
 			if (feature) {
