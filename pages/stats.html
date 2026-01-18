@@ -99,57 +99,97 @@ permalink: /stats/
 	</div>
 	<h2>Top Veranstalter</h2>
 	<div class="map" id="map-canvas"></div>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYQWiueu7EQxRWhVgIjjcRHi5dRfQlJfU"></script>
-	<script type="text/javascript">
-		var locations = [];
-		{% for location in site.data.metadata.locations %}
-		locations.push({
-			pos: new google.maps.LatLng({{location.pos.lat}}, {{location.pos.lng}}),
-			name: '{{location.name}}',
-			count: {{location.count}}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.7.0/ol.css" integrity="sha512-UCLoDc+FJmck20rmYmTu5zzktNTRGIU3syqavD+KlU4BeLkw6LmcrQunxOw2iQ7hvKsApGBlWqbiy5hAudSQyw==" crossorigin="anonymous" type="text/css">
+	<script src="https://cdn.jsdelivr.net/npm/ol@10.7.0/dist/ol.js" integrity="sha512-tymZ5z004JrqdqWRw1niDkYSLuAkmQ2yonPLbwwvKDdAbGYkEOpv8SsmRvrV5xQkX7g/b59lJ4V5gwio/OaqPQ==" crossorigin="anonymous" type="application/javascript"></script>
+	<script type="application/javascript">
+	let vectorSource;
+	// Load data directly as an JSON object
+	const locations = {{ site.data.metadata.locations | jsonify }}.map(location => ({
+		coordinates: [location.pos.lng, location.pos.lat],
+		name: location.name,
+		count: location.count
+	}));
+
+	function initMap() {
+		const createMarker = (loc, map, vectorSource) => vectorSource.addFeature(
+			new ol.Feature({
+				geometry: new ol.geom.Point(ol.proj.fromLonLat(loc.coordinates)),
+				name: loc.name,
+				count: loc.count
+			}));
+		
+		// Create vector source and layer for markers
+		vectorSource = new ol.source.Vector();
+		const vectorLayer = new ol.layer.Vector({
+			source: vectorSource,
+			style: new ol.style.Style({
+				image: new ol.style.Icon({
+					anchor: [0.5, 1],
+					anchorXUnits: 'fraction',
+					anchorYUnits: 'fraction',
+					src: '/img/map-pin.svg',
+					scale: 1
+				})
+			})
 		});
-		{% endfor %}
-		var bounds = new google.maps.LatLngBounds ();
-		for(var i = 0, len = locations.length; i < len; i++) {
-			bounds.extend(locations[i].pos);
-		};
 
-		function createMarker(loc, map) {
-			var marker = new google.maps.Marker({
-				position: loc.pos,
-				title: loc.name,
-				map: map
-			});
+		// Create the map in dedicated div
+		const map = new ol.Map({
+			target: 'map-canvas',
+			layers: [
+				new ol.layer.Tile({
+					source: new ol.source.OSM()
+				}),
+				vectorLayer
+			],
+			view: new ol.View({
+				center: ol.proj.fromLonLat([14.290556, 48.303056]),
+				zoom: 12
+			}),
+			controls: ol.control.defaults.defaults()
+		});
 
-			var infowindow = new google.maps.InfoWindow({
-				content: loc.name + ': ' + loc.count + 'x'
-			});
+		// Add markers
+		locations.forEach((loc) => createMarker(loc, map, vectorSource));
 
-
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
+		// Fit view to show all markers
+		if (locations.length > 0) {
+			map.getView().fit(vectorSource.getExtent(), {
+				padding: [20, 20, 20, 20],
+				maxZoom: 16
 			});
 		}
 
-		function initialize() {
-			var mapOptions = {
-				zoom: 18,
-				scrollwheel: false,
-				draggable: true,
-				zoomable: true,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-			var map = new google.maps.Map(document.getElementById("map-canvas"),
-				mapOptions);
+		// Create popup overlay
+		const popup = new ol.Overlay({
+			element: document.createElement('div'),
+			positioning: 'bottom-center',
+			stopEvent: false,
+			offset: [0, -50]
+		});
+		map.addOverlay(popup);
 
-			var elems = [];
+		// Add hover effect for pins
+		map.on('pointermove', (evt) => {
+			const feature = map.forEachFeatureAtPixel(evt.pixel, (feature) => feature);
+			map.getTargetElement().style.cursor = feature ? 'pointer' : '';
+		});
 
-			for(var i = 0; i < locations.length; i++) {
-				createMarker(locations[i], map);
+		map.on('singleclick', function (evt) {
+			const feature = map.forEachFeatureAtPixel(evt.pixel, (feature) => feature );
+
+			if (feature) {
+				popup.setPosition(feature.getGeometry().getCoordinates());
+				popup.getElement().innerHTML = '<div style="background: white; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">' +
+					feature.get('name') + ': ' + feature.get('count') + 'x</div>';
+			} else {
+				popup.setPosition(undefined);
+				popup.getElement().innerHTML = '';
 			}
+		});
+	}
 
-			map.fitBounds(bounds);
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
+	// Initialize when page loads
+	document.addEventListener('DOMContentLoaded', initMap);
+</script>
 </div>
