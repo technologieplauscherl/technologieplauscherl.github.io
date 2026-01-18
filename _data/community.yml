@@ -31,6 +31,10 @@
             location: Ubitec
             date: 2026-01-21
             link: https://technologieplauscherl.at
+        -   name: "Technologieplauscherl 91"
+            location: Litec - HTL Paul-Hahn
+            date: 2026-03-24
+            link: https://technologieplauscherl.at
 -   id: agilecomm
     name: "Agile Community Linz"
     events:
