@@ -240,6 +240,10 @@
             location: "Dynatrace - Lab Linz - Grünwinkel, Altenberger Straße 82, 4040 Linz"
             date: 2026-01-22
             link: https://www.meetup.com/net-stammtisch-linz/events/312366211/
+        -   name: ".NET Stammtisch Linz"
+            location: "Keba AG"
+            date: 2026-02-24
+            link: https://www.meetup.com/net-stammtisch-linz/events/312471137/
 -   id: linz-ai
     name: "Linz.AI"
     events:
