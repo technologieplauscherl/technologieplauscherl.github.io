@@ -621,9 +621,9 @@
 -   id: platform-engineering-linz
     name: "Platform Engineering Linz"
     events:
-        -   name: "Platform Engineering Linz - Januar 2026"
+        -   name: "Platform Engineering Linz - February 2026"
             location: Dynatrace, Am Fünfundzwanziger Turm 20, 4020 Linz
-            date: 2026-01-22
+            date: 2026-02-12
             link: "https://www.meetup.com/platform-engineering-linz/events/312406370/"
 -   id: ki-stammtisch-linz
     name: "KI Stammtisch"
@@ -632,3 +632,17 @@
             location: Otelo Linz-Auwiesen
             date: 2026-01-22
             link: "https://www.otelolinz.at/events/ki-stammtisch-2/"
+-   id: women-in-ai
+    name: "Women in AI"
+    events:
+        -   name: "IT:U x WAI - AI Cannibalism?"
+            location: IT:U Education Campus
+            date: 2026-01-28
+            link: "https://www.meetup.com/women-in-ai-upper-austria/events/312835523"
+-   id: ki-punsch-und-bowle
+    name: "KI Punsch & Bowle"
+    events:
+        -   name: "KI Bowle: Industrial AI"
+            location: NXAI Office
+            date: 2026-03-12
+            link: "https://www.meetup.com/ki-punsch-bowle-nxai/events/312860900"
