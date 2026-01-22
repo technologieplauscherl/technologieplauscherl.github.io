@@ -17,3 +17,11 @@
   position: relative;
   right: auto; left: auto; top: auto;
 }
+
+.menu__btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}

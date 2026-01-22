@@ -5,6 +5,11 @@ $neph: #27ae60;
 
 $pumpkin: $brand;
 
-$bg: #fcfcfc;
+$bg-light: #fcfcfc;
+$text-light: #454545;
 
-$text-color: #454545;
+$bg-dark: #1a1a1a;
+$text-dark: #fcfcfc;
+
+$bg: var(--bg-color);
+$text-color: var(--text-color);
