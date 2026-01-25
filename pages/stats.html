@@ -180,7 +180,7 @@ permalink: /stats/
 
 			if (feature) {
 				popup.setPosition(feature.getGeometry().getCoordinates());
-				popup.getElement().innerHTML = '<div style="background: white; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">' +
+				popup.getElement().innerHTML = '<div style="background: white; color: black; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">' +
 					feature.get('name') + ': ' + feature.get('count') + 'x</div>';
 			} else {
 				popup.setPosition(undefined);
