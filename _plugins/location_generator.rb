@@ -3,7 +3,7 @@
 # Automatically generates the locations metadata by going through all Plauscherl pages
 # and extracting the "oldmap" locations for the pins. It also counts how often a Plauscherl
 # was at a certain location and provides the information accordingly.
-# Locations with the same coordinations will not be merged.
+# Locations with the same coordinates will be merged and their counts combined.
 
 module Jekyll
   # This generator runs before other generators
@@ -12,8 +12,7 @@ module Jekyll
     priority :highest
 
     def generate(site)
-      location_counts = {}
-      location_coords = {}
+      location_data_by_coords = {}
       processed_count = 0
 
       # Go through all files in "_plauscherl"
@@ -30,27 +29,43 @@ module Jekyll
           location_data['oldmap']['lng'],
           location_data['oldmap']['lat']
         ]
+        coord_key = "#{coordinates[0]},#{coordinates[1]}"
 
-        # Count occurrences of each location
-        if location_counts.key?(location_name)
-          location_counts[location_name] += 1
+        # Group by coordinates, merge locations at the same place
+        if location_data_by_coords.key?(coord_key)
+          location_info = location_data_by_coords[coord_key]
+          location_info[:count] += 1
+          
+          # Add unique location names
+          unless location_info[:names].include?(location_name)
+            location_info[:names] << location_name
+          end
         else
-          location_counts[location_name] = 1
-          location_coords[location_name] = coordinates
+          location_data_by_coords[coord_key] = {
+            count: 1,
+            names: [location_name],
+            coordinates: coordinates
+          }
         end
         
         processed_count += 1
       end
 
-      # Log processing results (visible in build output)
-      puts "LocationDataGenerator: Processed #{processed_count} plauscherl events, found #{location_counts.size} unique locations"
+      puts "LocationDataGenerator: Processed #{processed_count} plauscherl events, found #{location_data_by_coords.size} unique coordinate locations"
 
-      # Generate the locations array with coordinate format as expected by OpenLayer
-      locations = location_counts.map do |name, count|
+      # Generate the locations array
+      locations = location_data_by_coords.map do |_, location_info|
+        display_name = if location_info[:names].length == 1
+          location_info[:names].first
+        else 
+           location_info[:names].sort.join(' / ')
+        end
+
         {
-          'name' => name,
-          'count' => count,
-          'coordinates' => location_coords[name]
+          'name' => display_name,
+          'count' => location_info[:count],
+          'coordinates' => location_info[:coordinates],
+          'all_names' => location_info[:names].sort
         }
       end
 
