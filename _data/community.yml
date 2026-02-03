@@ -409,7 +409,11 @@
         -   name: "Cloud Native Linz - January 2026 edition"
             location: "Startrampe, Peter-Behrens-Platz 10, 4020 Linz"
             date: 2026-01-27
-            link: https://cloudnativelinz.at/
+            link: https://cloudnativelinz.at/        
+        -   name: "Cloud Native Linz - February 2026 edition"
+            location: "Tractive, Pasching"
+            date: 2026-02-24
+            link: https://cloudnativelinz.at/events/meetup/february-2026-edition-hosted-by-tractive/
 -   id: agile-tour
     name: "Agile Tour"
     events:
