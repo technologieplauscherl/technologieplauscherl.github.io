@@ -450,6 +450,10 @@
             location: "LAST by Schachermayer"
             date: 2024-03-15
             link: https://innovation.linz.at/de/aktuelle-projekte/linz-hackt/
+        -   name: "Linz hACkT 2026"
+            location: "Tabakfabrik Linz"
+            date: 2026-03-20
+            link: https://partizipation.linz.at/de-DE/projects/linz-hackt-2026
 -   id: grand-garage
     name: "Grand Garage"
     events:
