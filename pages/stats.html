@@ -6,86 +6,84 @@ permalink: /stats/
 <div class="grid">
 	<h2>Top Plauscher</h2>
 	<div class="speakers speakers--stats">
-	{% comment %}
+	{% comment -%}
 	Dynamically count speaker appearances across all plauscherl events.
 	Handles speakers with "&" by splitting them and ignoring shared images.
-	{% endcomment %}
-	{% assign speaker_counts = "" %}
+	{% endcomment -%}
+	{% assign speaker_counts = "" -%}
 	
-	{% for event in site.plauscherl %}
-		{% for speaker in event.speakers %}
-			{% if speaker.name %}
-				{% assign names = speaker.name | split: "&" %}
-				{% assign img = speaker.img %}
-				{% if names.size > 1 %}
-					{% assign img = "" %} {% comment %}Ignore shared images{% endcomment %}
-				{% endif %}
+	{% for event in site.plauscherl -%}
+		{% for speaker in event.speakers -%}
+			{% if speaker.name -%}
+				{% assign names = speaker.name | split: "&" -%}
+				{% assign img = speaker.img -%}
+				{% if names.size > 1 -%}
+					{% assign img = "" -%}{% comment -%}Ignore shared images{% endcomment -%}
+				{% endif -%}
 				
-				{% for n in names %}
-					{% assign stripped_name = n | strip %}
-					{% comment %}Handle name changes via _data/speaker_aliases.yml{% endcomment %}
-					{% if site.data.speaker_aliases[stripped_name] %}
-						{% assign stripped_name = site.data.speaker_aliases[stripped_name] %}
-					{% endif %}
-					{% assign speaker_counts = speaker_counts | append: stripped_name | append: "|||" | append: img | append: ":::" %}
-				{% endfor %}
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
+				{% for n in names -%}
+					{% assign stripped_name = n | strip -%}
+					{% comment -%}Handle name changes via _data/speaker_aliases.yml{% endcomment -%}
+					{% if site.data.speaker_aliases[stripped_name] -%}
+						{% assign stripped_name = site.data.speaker_aliases[stripped_name] -%}
+					{% endif -%}
+					{% assign speaker_counts = speaker_counts | append: stripped_name | append: "|||" | append: img | append: ":::" -%}
+				{% endfor -%}
+			{% endif -%}
+		{% endfor -%}
+	{% endfor -%}
 
-	{% assign speaker_entries = speaker_counts | split: ":::" %}
-	
-	{% comment %} Extract unique speakers {% endcomment %}
-	{% assign unique_speakers = ";;;" %}
-	{% for entry in speaker_entries %}
-		{% assign parts = entry | split: "|||" %}
-		{% assign name = parts[0] | strip %}
-		{% assign check_name = ";;;" | append: name | append: ";;;" %}
-		{% if name != "" %}
-			{% unless unique_speakers contains check_name %}
-				{% assign unique_speakers = unique_speakers | append: name | append: ";;;" %}
-			{% endunless %}
-		{% endif %}
-	{% endfor %}
+	{% assign speaker_entries = speaker_counts | split: ":::" -%}
+	{% comment -%} Extract unique speakers {% endcomment -%}
+	{% assign unique_speakers = ";;;" -%}
+	{% for entry in speaker_entries -%}
+		{% assign parts = entry | split: "|||" -%}
+		{% assign name = parts[0] | strip -%}
+		{% assign check_name = ";;;" | append: name | append: ";;;" -%}
+		{% if name != "" -%}
+			{% unless unique_speakers contains check_name -%}
+				{% assign unique_speakers = unique_speakers | append: name | append: ";;;" -%}
+			{% endunless -%}
+		{% endif -%}
+	{% endfor -%}
 
-	{% assign unique_names = unique_speakers | remove_first: ";;;" | split: ";;;" %}
-	{% assign speakers_with_count = "" %}
+	{% assign unique_names = unique_speakers | remove_first: ";;;" | split: ";;;" -%}
+	{% assign speakers_with_count = "" -%}
 	
-	{% comment %} Count occurrences and find latest image {% endcomment %}
-	{% for uname in unique_names %}
-		{% assign count = 0 %}
-		{% assign speaker_img = "" %}
+	{% comment -%} Count occurrences and find latest image {% endcomment -%}
+	{% for uname in unique_names -%}
+		{% assign count = 0 -%}
+		{% assign speaker_img = "" -%}
 		
-		{% for entry in speaker_entries %}
-			{% assign parts = entry | split: "|||" %}
-			{% assign name = parts[0] | strip %}
+		{% for entry in speaker_entries -%}
+			{% assign parts = entry | split: "|||" -%}
+			{% assign name = parts[0] | strip -%}
 			
-			{% if name == uname %}
-				{% assign count = count | plus: 1 %}
-				{% assign img = parts[1] %}
-				{% if img and img != "" %}
-					{% assign speaker_img = img %}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
+			{% if name == uname -%}
+				{% assign count = count | plus: 1 -%}
+				{% assign img = parts[1] -%}
+				{% if img and img != "" -%}
+					{% assign speaker_img = img -%}
+				{% endif -%}
+			{% endif -%}
+		{% endfor -%}
 		
-		{% if count > 0 %}
-			{% comment %}Zero-pad count for correct string sorting (e.g. 00012 vs 00008){% endcomment %}
-			{% assign count_padded = count | prepend: "00000" | slice: -5, 5 %}
-			{% assign speakers_with_count = speakers_with_count | append: count_padded | append: "|" | append: uname | append: "|" | append: speaker_img | append: ";;;" %}
-		{% endif %}
-	{% endfor %}
+		{% if count > 0 -%}
+			{% comment -%}Zero-pad count for correct string sorting (e.g. 00012 vs 00008){% endcomment -%}
+			{% assign count_padded = count | prepend: "00000" | slice: -5, 5 -%}
+			{% assign speakers_with_count = speakers_with_count | append: count_padded | append: "|" | append: uname | append: "|" | append: speaker_img | append: ";;;" -%}
+		{% endif -%}
+	{% endfor -%}
 
-	{% assign sorted_speakers = speakers_with_count | split: ";;;" | sort | reverse %}
+	{% assign sorted_speakers = speakers_with_count | split: ";;;" | sort | reverse -%}
 	
-	{% assign displayed = 0 %}
-	{% for speaker_entry in sorted_speakers %}
-		{% if speaker_entry != "" and displayed < 10 %}
-			{% assign s_parts = speaker_entry | split: "|" %}
-			{% assign s_count = s_parts[0] | plus: 0 %} {% comment %}Convert back to integer{% endcomment %}
-			{% assign s_name = s_parts[1] %}
-			{% assign s_img = s_parts[2] %}
-			
+	{% assign displayed = 0 -%}
+	{% for speaker_entry in sorted_speakers -%}
+		{% if speaker_entry != "" and displayed < 10 -%}
+			{% assign s_parts = speaker_entry | split: "|" -%}
+			{% assign s_count = s_parts[0] | plus: 0 -%} {% comment -%}Convert back to integer{% endcomment -%}
+			{% assign s_name = s_parts[1] -%}
+			{% assign s_img = s_parts[2] -%}
 			<div class="speaker">
 				<img src="{{ s_img }}" alt="{{ s_name }}" aria-hidden="true" class="speaker__img">
 				<div class="speaker__info">
@@ -93,9 +91,9 @@ permalink: /stats/
 					<span class="speaker__count">{{ s_count }}</span>
 				</div>
 			</div>
-			{% assign displayed = displayed | plus: 1 %}
-		{% endif %}
-	{% endfor %}
+			{% assign displayed = displayed | plus: 1 -%}
+		{% endif -%}
+	{% endfor -%}
 	</div>
 	<h2>Top Veranstalter</h2>
 	<div class="map" id="map-canvas"></div>
