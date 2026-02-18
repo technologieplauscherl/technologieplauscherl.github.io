@@ -85,7 +85,9 @@ permalink: /stats/
 			{% assign s_name = s_parts[1] -%}
 			{% assign s_img = s_parts[2] -%}
 			<div class="speaker">
-				<img src="{{ s_img }}" alt="{{ s_name }}" aria-hidden="true" class="speaker__img">
+				<img src="{{ s_img }}" alt="{{ s_name }} mit {{ s_count }} Vorträgen"
+					onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'"
+					aria-hidden="true" class="speaker__img">
 				<div class="speaker__info">
 					<span class="speaker__name" itemprop="performer">{{ s_name }}</span>
 					<span class="speaker__count">{{ s_count }}</span>
