@@ -1,5 +1,8 @@
 <a class="card" href="{{card.url}}">
-  <img class="card__bg" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="/img/plauscherle/{{card.name}}.jpg" onerror="if (!this.src.endsWith('fallback.png')) this.src = '/img/plauscherle/fallback.png'">
+  <img class="card__bg" 
+    src="/img/plauscherle/{{card.name}}.jpg"
+    loading="lazy"
+    onerror="if (!this.src.endsWith('fallback.png')) this.src = '/img/plauscherle/fallback.png'">
   <div class="card__number">{{card.name}}</div>
   <div class="card__info">
     {{card.datestring}} @ {{card.location.name}}
