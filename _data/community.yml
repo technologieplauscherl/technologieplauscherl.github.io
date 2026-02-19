@@ -241,9 +241,13 @@
             date: 2026-01-22
             link: https://www.meetup.com/net-stammtisch-linz/events/312366211/
         -   name: ".NET Stammtisch Linz"
-            location: "Keba AG"
+            location: "Keba AG, BG10"
             date: 2026-02-24
             link: https://www.meetup.com/net-stammtisch-linz/events/312471137/
+        -   name: ".NET Stammtisch Linz"
+            location: "XXXLDigital"
+            date: 2026-04-09
+            link: https://www.meetup.com/net-stammtisch-linz/events/313280750/
 -   id: linz-ai
     name: "Linz.AI"
     events:
