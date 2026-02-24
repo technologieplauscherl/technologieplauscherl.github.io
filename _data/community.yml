@@ -418,6 +418,10 @@
             location: "Tractive, Pasching"
             date: 2026-02-24
             link: https://cloudnativelinz.at/events/meetup/february-2026-edition-hosted-by-tractive/
+        -   name: "Cloud Native Linz - March 2026 edition"
+            location: "Gepardec"
+            date: 2026-03-18
+            link: https://cloudnativelinz.at/events/meetup/march-2026-edition-at-gepardec/
 -   id: agile-tour
     name: "Agile Tour"
     events:
