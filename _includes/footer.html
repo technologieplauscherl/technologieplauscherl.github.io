@@ -4,22 +4,3 @@
       {{ 'now' | date: "%Y" }} - Technologieplauscherl Linz  - <a href="/">Home</a> - <a href="/privacy">Datenschutz</a> - <a href="/feed">RSS</a> - <a href="http://twitter.com/plauscherl">Twitter</a>  - <a href="https://github.com/technologieplauscherl">GitHub</a> - <a href="https://www.youtube.com/c/Technologieplauscherl">YouTube</a> - <a href="/events.ics">.iCal</a>
     </p>
   </footer>
-  <script>
-  (function(s, xhr) {
-
-    var cssPath = '/css/fonts.css';
-
-    if (s.getItem('fcache2') === null) {
-      var http = new xhr();
-      http.open('GET', '//' + location.host + cssPath);
-      http.send();
-      http.onload = function() {
-        as(this.responseText);
-        s.setItem('fcache2', this.responseText);
-      }
-    } else {
-      as(s.getItem('fcache2'));
-    }
-
-  })(window.localStorage, XMLHttpRequest);
-</script>
