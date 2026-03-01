@@ -9,7 +9,7 @@
 		<span class="street-address">{{include.location.address}}</span>
 		<span class="postal-code">{{include.location.zip}}</span> <span class="locality">{{include.location.city}}</span>
 	</div>
-	<span class="n"><a href="https://www.google.com/maps/search/?api=1&query={{ include.location.oldmap.lat }},{{ include.location.oldmap.lng }}">Routenplanung mit Google</a></span>
+	<span class="n"><a href="https://www.google.com/maps/search/?api=1&query={{ include.location.coordinates.lat }},{{ include.location.coordinates.lng }}">Routenplanung mit Google</a></span>
 	{% if include.location.directionslink %}
 		<span class="n"><a href="{{include.location.directionslink}}">Anfahrtsbeschreibung</a></span>
 	{% endif %}
@@ -17,14 +17,14 @@
 {% comment -%}
 Generate OpenStreetMap Embedding from coordinates
 {% endcomment -%}
-{% assign lat = include.location.oldmap.lat %}
-{% assign lng = include.location.oldmap.lng %}
-{% assign delta = 0.005 %}
+{% assign lat = include.location.coordinates.lat -%}
+{% assign lng = include.location.coordinates.lng -%}
+{% assign delta = 0.005 -%}
 
-{% assign min_lng = lng | minus: delta %}
-{% assign min_lat = lat | minus: delta %}
-{% assign max_lng = lng | plus: delta %}
-{% assign max_lat = lat | plus: delta %}
+{% assign min_lng = lng | minus: delta -%}
+{% assign min_lat = lat | minus: delta -%}
+{% assign max_lng = lng | plus: delta -%}
+{% assign max_lat = lat | plus: delta -%}
 
 <iframe width="425" height="350"
 	frameborder="0" scrolling="no" 
