@@ -13,8 +13,8 @@ SEQUENCE:{{site.time | date: "%m%d%H%M%S"}}
 UID:{{ post.startDateIso8601 | date: "%Y%m%d" }}-{{post.name}}@{{ site.url | replace: "http://","" }}
 ORGANIZER;CN="{{ site.title }}":
  MAILTO:{{ site.email }}
-LOCATION:{{location_fmt | replace: ',', " "}} Austria{% if post.location.oldmap %}
-GEO:{{post.location.oldmap.lat}};{{post.location.oldmap.lng}}{% endif %}
+LOCATION:{{location_fmt | replace: ',', " "}} Austria{% if post.location.coordinates %}
+GEO:{{post.location.coordinates.lat}};{{post.location.coordinates.lng}}{% endif %}
 SUMMARY:{{ post.title }}
 CLASS:PUBLIC
 DTSTART;TZID={{timezone}}:{{ post.startDateIso8601 | date: "%Y%m%d" }}T{{starttime}}00

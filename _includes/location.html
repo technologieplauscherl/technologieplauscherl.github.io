@@ -9,16 +9,26 @@
 		<span class="street-address">{{include.location.address}}</span>
 		<span class="postal-code">{{include.location.zip}}</span> <span class="locality">{{include.location.city}}</span>
 	</div>
-	{% if include.location.routelink %}
-		<span class="n"><a href="{{include.location.routelink}}">Routenplanung mit Google</a></span>
-	{% endif %}
+	<span class="n"><a href="https://www.google.com/maps/search/?api=1&query={{ include.location.coordinates.lat }},{{ include.location.coordinates.lng }}">Routenplanung mit Google</a></span>
 	{% if include.location.directionslink %}
 		<span class="n"><a href="{{include.location.directionslink}}">Anfahrtsbeschreibung</a></span>
 	{% endif %}
 </address>
-{% if include.location.map %}
-<iframe height='400' width='500' style="max-width: 80vw;max-height: 60vw" src='{{include.location.map}}'></iframe>
-{% endif %}
-{% if include.location.oldmap %}
-{% include oldmap.html map=include.location.oldmap host=include.location.name %}
-{% endif %}
+{% comment -%}
+Generate OpenStreetMap Embedding from coordinates
+{% endcomment -%}
+{% assign lat = include.location.coordinates.lat -%}
+{% assign lng = include.location.coordinates.lng -%}
+{% assign delta = 0.005 -%}
+
+{% assign min_lng = lng | minus: delta -%}
+{% assign min_lat = lat | minus: delta -%}
+{% assign max_lng = lng | plus: delta -%}
+{% assign max_lat = lat | plus: delta -%}
+
+<iframe width="425" height="350"
+	frameborder="0" scrolling="no" 
+	marginheight="0" marginwidth="0" 
+	src="https://www.openstreetmap.org/export/embed.html?bbox={{ min_lng }}%2C{{ min_lat }}%2C{{ max_lng }}%2C{{ max_lat }}&amp;layer=mapnik&amp;marker={{ lat }}%2C{{ lng }}" 
+	style="border: 1px solid black">
+</iframe>

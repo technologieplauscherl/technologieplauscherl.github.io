@@ -104,16 +104,16 @@ permalink: /stats/
 	<script type="application/javascript">
 	{% comment -%}
 	Automatically generates the locations metadata by going through all Plauscherl pages
-	and extracting the "oldmap" locations for the pins. It also counts how often a Plauscherl
+	and extracting the "coordinates" locations for the pins. It also counts how often a Plauscherl
 	was at a certain location and provides the information accordingly.
 	Locations with the same coordinates will be merged and their counts combined.
 	{% endcomment -%}
 	{% assign locations_array = "" -%}
 	{% for event in site.plauscherl -%}
-		{% if event.location.oldmap -%}
+		{% if event.location.coordinates -%}
 			{% assign loc = event.location -%}
-			{% assign lat = loc.oldmap.lat -%}
-			{% assign lng = loc.oldmap.lng -%}
+			{% assign lat = loc.coordinates.lat -%}
+			{% assign lng = loc.coordinates.lng -%}
 			{% assign name = loc.name | replace: '"', '\"' -%}
 			{% assign key = lng | append: "," | append: lat -%}
 			{% assign entry = key | append: "|||" | append: name -%}
