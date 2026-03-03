@@ -1,5 +1,15 @@
 <div class="speaker">
-	<img src="{{include.speaker.img}}" alt="{{include.speaker.name}}" aria-hidden="true" class="speaker__img">
+	<img 
+		{% if include.speaker.img == empty -%}
+			src="/img/speaker_no_image.jpg"
+		{% else -%}
+			src="{{include.speaker.img}}"
+		{% endif -%}
+		alt="{{include.speaker.name}}"
+		aria-hidden="true"
+		class="speaker__img"
+		onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'"
+		aria-hidden="true" class="speaker__img">
 	<div class="speaker__info">
 		<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
 		{% if include.speaker.talk %}
