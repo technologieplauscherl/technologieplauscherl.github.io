@@ -21,15 +21,25 @@
         const mediaQuery =
           window.matchMedia('(prefers-color-scheme: dark)');
 
-        setTheme(mediaQuery.matches);
+        const storedTheme = localStorage.getItem('theme');
+
+        if (storedTheme) {
+          setTheme(storedTheme === 'dark');
+        } else {
+          setTheme(mediaQuery.matches);
+        }
 
         // live change to brwoser settings
         mediaQuery.addEventListener('change', (e) => {
-          setTheme(e.matches);
+          if (!localStorage.getItem('theme')) {
+            setTheme(e.matches);
+          }
         });
 
         button.addEventListener('click', () => {
-          setTheme(!document.body.classList.contains('dark-mode'));
+          const isDark = !document.body.classList.contains('dark-mode');
+          setTheme(isDark);
+          localStorage.setItem('theme', isDark ? 'dark' : 'light');
         });
       });
 
