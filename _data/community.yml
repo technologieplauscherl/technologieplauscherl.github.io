@@ -624,6 +624,10 @@
             location: FH Hagenberg
             date: 2025-11-25
             link: "https://fhlug.at/2025/11/getting-started-with-zephyr-rtos-without-real-hardware/"
+        -   name: "fhLUG: Grafiken mit LaTeX – A Beginner's Guide to TikZ"
+            location: FH Hagenberg
+            date: 2026-03-16
+            link: "https://fhlug.at/2026/03/schone-grafiken-mit-latex-a-beginners-guide-to-tikz/"
 -   id: rubyconf_at
     name: "RUBY CONF AT"
     events:
