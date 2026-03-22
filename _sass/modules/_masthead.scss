@@ -1,7 +1,7 @@
 .masthead {
 	position: relative;
 	width: 100%;
-	background-image: url(/img/bg_4_g.jpg);
+	background-color: $bg;
 	background-size: cover;
 	text-shadow: 0 0 7px rgba(0,0,0,1);
 	position: relative;
@@ -9,6 +9,31 @@
 	background-position: 40% 50%;
 	text-align: center;
 	color: #fff;
+	overflow: hidden;
+}
+
+.masthead::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background-image: url(/img/bg_4_g.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 40% 50%;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+	z-index: 0;
+	will-change: opacity;
+	pointer-events: none;
+}
+
+.masthead > * {
+	position: relative;
+	z-index: 1;
+}
+
+.masthead.masthead--loaded::after {
+	opacity: 1;
 }
 
 .masthead:before {
@@ -22,6 +47,7 @@
   background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
   padding-top: 1.5rem;
   background-repeat: repeat-x, repeat-x;
+	z-index: 2;
 }
 
 .masthead .speaker__img {
