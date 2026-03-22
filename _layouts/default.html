@@ -29,7 +29,7 @@
           setTheme(mediaQuery.matches);
         }
 
-        // live change to brwoser settings
+        // live change to browser settings
         mediaQuery.addEventListener('change', (e) => {
           if (!localStorage.getItem('theme')) {
             setTheme(e.matches);
@@ -52,6 +52,23 @@
         } 
       }
       window.onload = init;
+
+      // Fade in background image once loaded
+      (() => {
+        const masthead = document.querySelector('.masthead');
+        if (masthead == null) return;
+
+        const image = new Image();
+        image.onload = () => {
+          masthead.classList.add('masthead--loaded');
+        };
+        image.src = '/img/bg_4_g.jpg';
+
+        if (image.complete) {
+          // Image was already cached, (onLoad may not fire)
+          masthead.classList.add('masthead--loaded');
+        }
+      })();
     </script>
     </body>
 </html>
