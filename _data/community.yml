@@ -434,6 +434,10 @@
             location: "Gepardec"
             date: 2026-03-18
             link: https://cloudnativelinz.at/events/meetup/march-2026-edition-at-gepardec/
+        -   name: "Cloud Native Linz - April 2026 edition"
+            location: "Karriere.at"
+            date: 2026-04-21
+            link: https://cloudnativelinz.at/events/meetup/april-2026-edition-at-karriereat/
 -   id: agile-tour
     name: "Agile Tour"
     events:
