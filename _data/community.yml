@@ -648,6 +648,10 @@
             location: FH Hagenberg
             date: 2026-03-16
             link: "https://fhlug.at/2026/03/schone-grafiken-mit-latex-a-beginners-guide-to-tikz/"
+        -   name: "fhLUG: Hacking around with Frida"
+            location: FH Hagenberg
+            date: 2026-04-14
+            link: "https://fhlug.at/2026/04/hacking-around-with-frida/"
 -   id: rubyconf_at
     name: "RUBY CONF AT"
     events:
