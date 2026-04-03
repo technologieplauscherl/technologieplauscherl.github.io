@@ -1,7 +1,7 @@
 technologieplauscherl.at ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 ========================
 
-Die Website für das Tech-Meetup in Linz -> [technologieplauscherl.at](http://technologieplauscherl.at)
+Die Website für das Tech-Meetup in Linz -> [technologieplauscherl.at](https://technologieplauscherl.at)
 
 ## Talk via Pull Request
 
@@ -13,7 +13,7 @@ Dazu einfach das aktuellste Plauscherl-File unter /_plauscherl/ nehmen, und Folg
 -
   name: <Dein Name>
   talk: <Dein Talk>
-  img: <Bild (ohne http: nur mit //) zu deinem Facebook/Google/Twitter Foto>
+  img: <Bild (ohne Protokoll, nur mit `//`) zu deinem Facebook/Google/Twitter Foto>
   language: "en"
   abstract: "<Kurze Zusammenfassung deines Talks>"
 ```
