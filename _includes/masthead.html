@@ -36,11 +36,11 @@
         </span>
 				<script type="application/ld+json">
 				{
-				  "@context": "http://schema.org",
+				  "@context": "https://schema.org",
 				  "@type": "Event",
 				  "name": "{{post.title}}",
 				  "startDate" : "{{post.startDateIso8601}}",
-				  "url" : "http://technologieplauscherl.at",
+				  "url" : "https://technologieplauscherl.at",
 				  "location" : {
 				    "@type" : "Place",
 				    "name" : "{{post.location.name}}",
@@ -59,7 +59,7 @@
 			</svg>
 		</a>
 
-		<a href="http://www.meetup.com/Technologieplauscherl-Linz/" target="_blank" class="link link--big link--meetup">
+		<a href="https://www.meetup.com/Technologieplauscherl-Linz/" target="_blank" class="link link--big link--meetup">
 			Wir sind auf Meetup!
 			<svg class="link__icon">
 				<use xlink:href="#icon-meetup"></use>
@@ -78,7 +78,7 @@
 				</a>
 				{% endif %}
 				{% if post.event.meetup %}
-				<a href="http://www.meetup.com/Technologieplauscherl-Linz/events/{{post.event.meetup}}" class="link link--big link--meetup">
+				<a href="https://www.meetup.com/Technologieplauscherl-Linz/events/{{post.event.meetup}}" class="link link--big link--meetup">
 					Termin auf Meetup!
 					<svg class="link__icon">
 						<use xlink:href="#icon-meetup"></use>
