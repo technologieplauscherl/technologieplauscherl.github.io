@@ -1,10 +1,10 @@
 <head>
 	{% assign meta_title = page.title | default: site.title -%}
-	{% assign meta_description = page.description | default: site.description -%}
+	{% assign meta_description = page.og_description | default: site.description -%}
+	{% assign additional_image = page.og_image | default: '' -%}
 	{% comment -%}
 		In addition to the default image, specify a page-specific image if on a plauscherl-page (e.g. technologieplauscherl.at/91)
 	{% endcomment -%}
-	{% assign additional_image = '' -%}
 	{% if page.layout == "post" -%}
 		{% assign event_image_name = page.name | split: '.' | first -%}
 		{% assign event_image = '/img/plauscherle/' | append: event_image_name | append: '.jpg' -%}
@@ -31,7 +31,7 @@
 	<meta property="og:image:width" content="389">
 	<meta property="og:image:height" content="389">
 	{% if additional_image -%}
-		<meta property="og:image" content="{{ additional_image }}">
+		<meta property="og:image" content="{{ additional_image | escape}}">
 	{% endif -%}
 	<link rel="stylesheet" href="/css/main.css?3">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
