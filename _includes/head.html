@@ -1,14 +1,38 @@
 <head>
-	<meta charset="UTF-8">
-	<title>{{site.title}}</title>
+	{% assign meta_title = page.title | default: site.title -%}
+	{% assign meta_description = page.description | default: site.description -%}
+	{% comment -%}
+		In addition to the default image, specify a page-specific image if on a plauscherl-page (e.g. technologieplauscherl.at/91)
+	{% endcomment -%}
+	{% assign additional_image = '' -%}
+	{% if page.layout == "post" -%}
+		{% assign event_image_name = page.name | split: '.' | first -%}
+		{% assign event_image = '/img/plauscherle/' | append: event_image_name | append: '.jpg' -%}
+		{% assign event_image_file = site.static_files | where: 'path', event_image -%}
+		{% if event_image_file and event_image_file.size > 0 -%}
+			{% assign additional_image = event_image | absolute_url -%}
+		{% endif -%}
+	{% endif -%}
 
-	<meta name="description" content="{{site.description}}">
+	<meta charset="UTF-8">
+	<title>{{ meta_title | escape }}</title>
+
+	<meta name="description" content="{{ meta_description | escape }}">
 	<meta name="keywords" content="{{site.keywords}}">
 	<meta name="theme-color" content="#49c096">
 	<meta name="google-site-verification" content="pYVLeFwZuLqAwZGkiLch6r_mhe15tH3DCv1NSEEOqCE" />
 	<meta name="google-site-verification" content="uF0j4H_YphrtLmukjDEHQmNNHoIJVkXOPLv38d0XjMU" />
-	<meta property="og:image" content="/img/tp-button.jpg">
-	<meta property="og:image" content="/img/orgas.jpg">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="de_AT">
+	<meta property="og:title" content="{{ meta_title | escape }}">
+	<meta property="og:description" content="{{ meta_description | escape }}">
+	<meta property="og:url" content="{{ page.url | default: '/' | absolute_url }}">
+	<meta property="og:image" content="{{ '/img/tp-button.jpg' | absolute_url }}">
+	<meta property="og:image:width" content="389">
+	<meta property="og:image:height" content="389">
+	{% if additional_image -%}
+		<meta property="og:image" content="{{ additional_image }}">
+	{% endif -%}
 	<link rel="stylesheet" href="/css/main.css?3">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="alternate" type="application/rss+xml" title="Technologieplauscherl.at » Updates" href="https://www.technologieplauscherl.at/feed.xml">
