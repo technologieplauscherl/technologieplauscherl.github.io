@@ -16,12 +16,15 @@
 			Danke für die Vorträge an
 		</p>
 		<ul class="no-bullets">
-			{% for speaker in post.speakers %}
+			{% for talk in post.talks %}
+				{% assign speaker_list = talk.speakers | default: talk.speaker %}
+				{% for speaker in speaker_list %}
 			<li>{{speaker.name}}</li>
+				{% endfor %}
 			{% endfor %}
 		</ul>
 		{% else %}
-		{% include speakers.html %}
+		{% include speakers.html post=post %}
 		{% endif %}
 		<p class="info">
 			{% unless page.dateset %}

@@ -18,11 +18,7 @@ layout: default
 		</p>
 		<h2>Sessions</h2>
 
-		<section class="speakers">
-			{% for speaker in page.speakers %}
-			{% include speaker.html speaker=speaker %}
-			{% endfor %}
-		</section>
+		{% include speakers.html post=page %}
 
 		{{content}}
 

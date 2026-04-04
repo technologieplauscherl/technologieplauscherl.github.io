@@ -1,0 +1,54 @@
+
+{% assign speaker_count = 0 %}
+{% if include.talk.speakers and include.talk.speakers != empty %}
+	{% assign speaker_count = include.talk.speakers | size %}
+{% elsif include.talk.speaker and include.talk.speaker != empty %}
+	{% assign speaker_count = 1 %}
+{% endif %}
+
+<article class="talk{% if speaker_count > 2 %} talk--many-speakers{% endif %}" itemscope itemtype="https://schema.org/CreativeWork">
+	<ul class="talk__speakers" aria-label="Speakers">
+		{% if include.talk.speakers and include.talk.speakers != empty %}
+			{% for speaker in include.talk.speakers %}
+				<li class="talk__speaker" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+					<img
+						{% if speaker.img == empty -%}
+							src="/img/speaker_no_image.jpg"
+						{% else -%}
+							src="{{speaker.img}}"
+						{% endif -%}
+						alt="{{speaker.name}}"
+						class="talk__speaker-img"
+						onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
+					<span class="talk__speaker-name" itemprop="name">{{speaker.name}}</span>
+				</li>
+			{% endfor %}
+		{% elsif include.talk.speaker and include.talk.speaker != empty %}
+			<li class="talk__speaker" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+				<img
+					{% if include.talk.speaker.img == empty -%}
+						src="/img/speaker_no_image.jpg"
+					{% else -%}
+						src="{{include.talk.speaker.img}}"
+					{% endif -%}
+					alt="{{include.talk.speaker.name}}"
+					class="talk__speaker-img"
+					onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
+				<span class="talk__speaker-name" itemprop="name">{{include.talk.speaker.name}}</span>
+			</li>
+		{% endif %}
+	</ul>
+
+	<header class="talk__header">
+		<h3 class="talk__title" itemprop="name">{{ include.talk.talk | default: include.talk.title }}</h3>
+		{% if include.talk.language == "en" %}
+			<img class="talk__language" src="/img/english-language.svg" width="40" height="20" alt="Talk is in English" title="Talk is in English">
+		{% else %}
+			<img class="talk__language" src="/img/german-language.svg" width="40" height="20" alt="Talk is in German" title="Talk is in German">
+		{% endif %}
+	</header>
+
+	{% if include.talk.abstract and include.talk.abstract != empty %}
+		<p class="talk__abstract">{{ include.talk.abstract }}</p>
+	{% endif %}
+</article>
