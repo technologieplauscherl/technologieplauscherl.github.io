@@ -40,7 +40,21 @@
 	</ul>
 
 	<header class="talk__header">
-		<h3 class="talk__title" itemprop="name">{{ include.talk.talk | default: include.talk.title }}</h3>
+		<div class="talk__title-row">
+			<h3 class="talk__title" itemprop="name">{{ include.talk.talk | default: include.talk.title }}</h3>
+			{% if include.talk.abstract and include.talk.abstract != empty %}
+				<details class="talk__abstract-details">
+					<summary class="talk__abstract-summary" aria-label="Abstract for {{ include.talk.talk | default: include.talk.title }}">
+						<svg class="talk__abstract-icon" aria-hidden="true">
+							<use xlink:href="#icon-info-circle"></use>
+						</svg>
+					</summary>
+					<div class="talk__abstract" role="tooltip">
+						{{ include.talk.abstract }}
+					</div>
+				</details>
+			{% endif %}
+		</div>
 		{% if include.talk.language == "en" %}
 			<img class="talk__language" src="/img/english-language.svg" width="40" height="20" alt="Talk is in English" title="Talk is in English">
 		{% else %}
@@ -48,7 +62,9 @@
 		{% endif %}
 	</header>
 
-	{% if include.talk.abstract and include.talk.abstract != empty %}
-		<p class="talk__abstract">{{ include.talk.abstract }}</p>
+	{% if include.talk.talklink and include.talk.talklink != empty %}
+		<p class="talk__link">
+			<a href="{{ include.talk.talklink }}">Slides/Link</a>
+		</p>
 	{% endif %}
 </article>
