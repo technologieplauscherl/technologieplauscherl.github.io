@@ -13,9 +13,11 @@ layout: none
       <item>
         <title>{{ post.title | xml_escape }} | {{ post.startDateIso8601 | date: "%Y-%m-%d %H:%M" }} @ {{post.location.name | xml_escape }}</title>
         <description>
-          {% for speaker in post.speakers %}
-            {{ speaker.name | xml_escape }}: {{ speaker.talk | xml_escape }}
+          {% for talk in post.talks %}
+            {% for speaker in talk.speakers %}
+            {{ speaker.name | xml_escape }}: {{ talk.title | xml_escape }}
             <![CDATA[<br />]]>
+            {% endfor %}
           {% endfor %}
         </description>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
