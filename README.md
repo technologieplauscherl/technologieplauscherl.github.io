@@ -10,10 +10,13 @@ Du darfst dich gerne selbst als Speaker für das nächste Plauscherl auf der Web
 Dazu einfach das aktuellste Plauscherl-File unter /_plauscherl/ nehmen, und Folgendes hinzufügen:
 
 ```
--
-  name: <Dein Name>
-  talk: <Dein Talk>
-  img: <Bild (ohne Protokoll, nur mit `//`) zu deinem Facebook/Google/Twitter Foto>
-  language: "en"
-  abstract: "<Kurze Zusammenfassung deines Talks>"
+- title: <Dein Thema>
+  language: <"de" oder "en">
+  speakers:
+    - name: <Dein Name>
+      img: <Link zu einem Bild von dir, ohne "https://">
+    - name: <weiterer Speaker>
+      img: <Link zu einem Bild von diesem Speaker, ohne "https://">
 ```
+bei einem Vortrag mit mehreren Speakern zu einem Thema, einfach einen weiteren Eintrag unter "speakers" hinzufügen.
+Das Bild ist optional und sollte idealerweise quadratisch sein. Dieses kann unter [img/speaker-avatars](./img/speaker-avatars) abgelegt und dann referenziert werden.
