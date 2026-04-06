@@ -1,4 +1,8 @@
 <div class="speaker">
+	{% assign talk_title = include.talk | default: include.talk_legacy | default: include.speaker.talk %}
+	{% assign talk_link = include.talklink | default: include.speaker.talklink %}
+	{% assign talk_abstract = include.abstract | default: include.speaker.abstract %}
+	{% assign talk_language = include.language | default: include.speaker.language %}
 	<img 
 		{% if include.speaker.img == empty -%}
 			src="/img/speaker_no_image.jpg"
@@ -12,27 +16,27 @@
 		aria-hidden="true" class="speaker__img">
 	<div class="speaker__info">
 		<span class="speaker__name" itemprop="performer">{{include.speaker.name}}</span>
-		{% if include.speaker.talk %}
+		{% if talk_title %}
 			<div class="speaker__session">
-				{% if include.speaker.talklink %}
-					<a href="{{include.speaker.talklink}}">{{include.speaker.talk}}</a>
+				{% if talk_link %}
+					<a href="{{talk_link}}">{{talk_title}}</a>
 				{% else %}
-					<span class="speaker__talk-title">{{include.speaker.talk}}</span>
+					<span class="speaker__talk-title">{{talk_title}}</span>
 				{% endif %}
-				{% if include.speaker.abstract && include.speaker.abstract != empty %}
+				{% if talk_abstract && talk_abstract != empty %}
 					<details class="speaker__abstract-details">
-						<summary class="speaker__abstract-summary" aria-label="Abstract for {{include.speaker.talk}}">
+						<summary class="speaker__abstract-summary" aria-label="Abstract for {{talk_title}}">
 							<svg class="speaker__abstract-icon" aria-hidden="true">
 								<use xlink:href="#icon-info-circle"></use>
 							</svg>
 						</summary>
 						<div class="speaker__abstract" role="tooltip">
-							{{include.speaker.abstract}}
+							{{talk_abstract}}
 						</div>
 					</details>
 				{% endif %}
 			</div>
-			{% if include.speaker.language == "en" %}
+			{% if talk_language == "en" %}
 				<img class="speaker__language" src="/img/english-language.svg" width="40" height="20" alt="Vortrag ist auf Englisch / Talk is in English" title="Vortrag ist auf Englisch / Talk is in English">
 			{% else %}
 				<img class="speaker__language" src="/img/german-language.svg" width="40" height="20" alt="Vortrag ist auf Deutsch / Talk is in German" title="Vortrag ist auf Deutsch / Talk is in German">

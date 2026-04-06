@@ -1,5 +1,14 @@
+{% assign talks_source = include.post | default: post | default: page %}
+{% if talks_source.talks and talks_source.talks != empty %}
+<div class="speakers speakers--talks" aria-label="Vorträge">
+  {% for talk in talks_source.talks %}
+    {% include talk.html talk=talk %}
+  {% endfor %}
+{% else %}
 <div class="speakers" aria-label="Vorträge">
-{% for speaker in post.speakers %}
-  {% include speaker.html speaker=speaker %}
-{% endfor %}
+  {% assign speaker_list = talks_source.speakers | default: talks_source.speaker %}
+  {% for speaker in speaker_list %}
+    {% include speaker.html speaker=speaker %}
+  {% endfor %}
+{% endif %}
 </div>
