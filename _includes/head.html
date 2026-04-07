@@ -7,7 +7,7 @@
 	{% endcomment -%}
 	{% if page.layout == "post" -%}
 		{% assign event_image_name = page.name | split: '.' | first -%}
-		{% assign event_image = '/img/plauscherle/' | append: event_image_name | append: '.jpg' -%}
+		{% assign event_image = '/img/plauscherle/' | append: event_image_name | append: '.webp' -%}
 		{% assign event_image_file = site.static_files | where: 'path', event_image -%}
 		{% if event_image_file and event_image_file.size > 0 -%}
 			{% assign additional_image = event_image | absolute_url -%}
