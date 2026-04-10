@@ -6,9 +6,12 @@ og_description: "Alle vergangenen Veranstaltungen des Technologieplauscherls auf
 ---
 
 <div class="cards">
-{% for card in site.plauscherl reversed %}
-{% unless forloop.first %}
-{% include plauscherl-card.html %}
-{% endunless %}
-{% endfor %}
+{% assign buildTimeInSecondsInEpoch = site.time | date: "%s" | plus: 0 -%}
+{% for card in site.plauscherl reversed -%}
+{% assign cardTimeInSecondsInEpoch = card.startDateIso8601 | date: "%s" | plus: 0 -%}
+	{% comment -%} Only show past events in the archive based on the current time and event timestamp {% endcomment -%}
+	{% if cardTimeInSecondsInEpoch < buildTimeInSecondsInEpoch -%}
+	{% include plauscherl-card.html -%}
+	{% endif -%}
+{% endfor -%}
 </div>
