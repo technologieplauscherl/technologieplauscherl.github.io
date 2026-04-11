@@ -29,7 +29,7 @@
           setTheme(mediaQuery.matches);
         }
 
-        // live change to brwoser settings
+        // live change to browser settings
         mediaQuery.addEventListener('change', (e) => {
           if (!localStorage.getItem('theme')) {
             setTheme(e.matches);
@@ -42,16 +42,6 @@
           localStorage.setItem('theme', isDark ? 'dark' : 'light');
         });
       });
-
-      function init() {
-        var imgDefer = document.getElementsByTagName('img');
-        for (var i=0; i<imgDefer.length; i++) {
-          if(imgDefer[i].getAttribute('data-src')) {
-            imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-          } 
-        } 
-      }
-      window.onload = init;
     </script>
     </body>
 </html>
