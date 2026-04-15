@@ -8,6 +8,23 @@
     {% include svg-defs.html %}
     {% include footer.html %}
     <script>
+      // Fade in background image once loaded
+      (() => {
+        const masthead = document.querySelector('.masthead');
+        if (masthead == null) return;
+
+        const image = new Image();
+        image.onload = () => {
+          masthead.classList.add('masthead--loaded');
+        };
+        image.src = '/img/bg_4_g.jpg';
+
+        if (image.complete) {
+          // Image was already cached, (onLoad may not fire)
+          masthead.classList.add('masthead--loaded');
+        }
+      })();
+
       document.addEventListener('DOMContentLoaded', () => {
         const button = document.getElementById('dark-mode-toggle');
         const icon = button?.querySelector('use');
