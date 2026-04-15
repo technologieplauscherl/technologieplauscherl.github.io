@@ -43,6 +43,22 @@
 				  "@type": "Event",
 				  "name": "{{post.title}}",
 				  "startDate" : "{{post.startDateIso8601}}",
+				  "performer" : [
+					{% assign performer_names = "|" %}
+					{% for talk in post.talks %}
+						{% for speaker in talk.speakers %}
+							{% assign performer_key = "|" | append: speaker.name | append: "|" %}
+							{% unless performer_names contains performer_key %}
+								{% if performer_names != "|" %},{% endif %}
+								{
+								  "@type" : "Person",
+								  "name" : "{{speaker.name}}"
+								}
+								{% assign performer_names = performer_names | append: speaker.name | append: "|" %}
+							{% endunless %}
+						{% endfor %}
+					{% endfor %}
+				  ],
 				  "url" : "https://technologieplauscherl.at",
 				  "location" : {
 				    "@type" : "Place",
