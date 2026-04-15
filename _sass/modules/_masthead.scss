@@ -1,14 +1,26 @@
 .masthead {
 	position: relative;
 	width: 100%;
-	background-image: url(/img/bg_4_g.jpg);
-	background-size: cover;
 	text-shadow: 0 0 7px rgba(0,0,0,1);
-	position: relative;
-	background-repeat: no-repeat;
-	background-position: 40% 50%;
 	text-align: center;
 	color: #fff;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.masthead .masthead__bg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 40% 50%;
+	z-index: 0;
+}
+
+.masthead > :not(.masthead__bg) {
+	position: relative;
+	z-index: 2;
 }
 
 .masthead:before {
@@ -17,6 +29,7 @@
   width: 100%;
   bottom: 0;
   left: 0;
+  z-index: 1;
   background-image: linear-gradient(45deg, $bg 0%, $bg 25%, transparent 25%, transparent 100%),
 		linear-gradient(-45deg, $bg 0%, $bg 25%, transparent 25%, transparent 100%);
   background-size: 1.5rem 1.5rem, 1.5rem 1.5rem;
