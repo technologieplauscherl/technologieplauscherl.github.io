@@ -21,7 +21,7 @@ there are multiple speakers for a given talk.
           {% elsif talk.speaker and talk.speaker != empty %}
             {% assign speaker_count = 1 %}
           {% endif %}
-          <td class="talks-table__cell talks-table__cell--speakers">
+          <td class="talks-table__cell talks-table__cell--speakers" style="order: {{ forloop.index }}0;">
             <div class="talks-table__cell-inner">
               <ul class="talks-table__speakers" aria-label="Speakers">
                 {% if talk.speakers and talk.speakers != empty %}
@@ -61,7 +61,7 @@ there are multiple speakers for a given talk.
 
       <tr class="talks-table__row talks-table__row--titles">
         {% for talk in talks_source.talks %}
-          <td class="talks-table__cell talks-table__cell--title" itemprop="name">
+          <td class="talks-table__cell talks-table__cell--title" itemprop="name" style="order: {{ forloop.index }}1;">
             <div class="talks-table__cell-inner">
               <div class="talk__title-row">
                 <h3 class="talk__title">{{ talk.talk | default: talk.title }}</h3>
@@ -90,7 +90,7 @@ there are multiple speakers for a given talk.
 
       <tr class="talks-table__row talks-table__row--languages">
         {% for talk in talks_source.talks %}
-          <td class="talks-table__cell talks-table__cell--language">
+          <td class="talks-table__cell talks-table__cell--language" style="order: {{ forloop.index }}2;">
             <div class="talks-table__cell-inner">
               {% if talk.language == "en" %}
                 <img class="talk__language" src="/img/english-language.svg" width="40" height="20" alt="Talk is in English" title="Talk is in English">

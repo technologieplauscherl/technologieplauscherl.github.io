@@ -77,6 +77,41 @@
 	height: 112px;
 }
 
+@media(max-width: 499px) {
+	.talks-table-wrapper {
+		overflow-x: visible;
+	}
+	.talks-table {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		column-gap: 0.5rem;
+		align-items: center;
+	}
+	.talks-table tbody, .talks-table__row {
+		display: contents;
+	}
+	.talks-table__cell {
+		width: auto;
+		padding: 0;
+	}
+	.talks-table__cell--speakers {
+		grid-column: 1 / -1;
+		margin-top: 2.5rem;
+	}
+	.talks-table__cell--language {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+	.talks-table__cell--title .talks-table__cell-inner {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.talk__title-row {
+		justify-content: center;
+	}
+}
+
 .talk__header {
 	display: flex;
 	flex-direction: column;
