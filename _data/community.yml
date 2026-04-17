@@ -652,6 +652,10 @@
             location: FH Hagenberg
             date: 2026-04-14
             link: "https://fhlug.at/2026/04/hacking-around-with-frida/"
+        -   name: "fhLUG: Real Linux on Phones?!"
+            location: FH Hagenberg
+            date: 2026-05-18
+            link: "https://fhlug.at/2026/04/real-linux-on-phones/"
 -   id: rubyconf_at
     name: "RUBY CONF AT"
     events:
