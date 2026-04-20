@@ -11,3 +11,5 @@ _site
 .iml
 .DS_Store
 .jekyll-metadata
+# Krita tmp/backup files
+*~
