@@ -23,7 +23,20 @@ DTSTAMP:{{ post.startDateIso8601 | date: "%Y%m%dT%H%M%S" }}Z
 URL:{{ post.url | prepend: site.baseurl | prepend: site.url }}
 DESCRIPTION:URL: {{ post.url | prepend: site.baseurl | prepend: site.url }}\n
   \nLocation: {{post.location.name}} {{location_fmt}}\n
-  \nSpeakers:\n{% for speaker in post.speakers %}{{speaker.name}}
-  \n{{speaker.talk}}{% unless forloop.last %}\n\n{% endunless %}{% endfor %}
+  \nSpeakers:\n
+  {%- if post.talks and post.talks != empty -%}
+    {%- for talk in post.talks -%}
+      {%- for speaker in talk.speakers -%}
+{{ speaker.name }}{%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}\n{{ talk.title }}
+      {%- unless forloop.last -%}\n\n{% endunless -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign speaker_list = post.speakers | default: post.speaker -%}
+    {%- for speaker in speaker_list -%}
+{{speaker.name}}\n{{speaker.talk}}
+      {%- unless forloop.last -%}\n\n{% endunless -%}
+    {%- endfor -%}
+  {%- endif %}
 END:VEVENT{% endif %}{% endfor %}
 END:VCALENDAR
