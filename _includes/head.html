@@ -1,11 +1,17 @@
 <head>
 	{% assign meta_title = page.title | default: site.title -%}
-	{% assign meta_description = page.og_description | default: site.description -%}
+	{% assign meta_description = site.description -%}
 	{% assign additional_image = page.og_image | default: '' -%}
 	{% comment -%}
 		In addition to the default image, specify a page-specific image if on a plauscherl-page (e.g. technologieplauscherl.at/91)
 	{% endcomment -%}
 	{% if page.layout == "post" -%}
+		{% comment -%}
+			Construct a meta description for plauscherl pages, e.g. "Technologieplauscherl am 12.12.2024 bei ... in ..."}
+		{% endcomment -%}
+		{% assign event_location_name = page.location.name | default: '' -%}
+		{% assign event_location_city = page.location.city | default: '' -%}
+		{% assign meta_description = 'Technologieplauscherl am ' | append: page.datestring | append: ' bei ' | append: event_location_name | append: ' in ' | append: event_location_city -%}
 		{% assign event_image_name = page.name | split: '.' | first -%}
 		{% assign event_image = '/img/plauscherle/' | append: event_image_name | append: '.webp' -%}
 		{% assign event_image_file = site.static_files | where: 'path', event_image -%}
@@ -13,6 +19,11 @@
 			{% assign additional_image = event_image | absolute_url -%}
 		{% endif -%}
 	{% endif -%}
+	
+	{% comment -%}
+		Rank a page specific description as the highest priority
+	{% endcomment -%}
+	{% assign meta_description = page.og_description | default: meta_description -%}
 
 	<meta charset="UTF-8">
 	<title>{{ meta_title | escape }}</title>
