@@ -263,6 +263,10 @@
 -   id: linz-ai
     name: "Linz.AI"
     events:
+        -   name: "Linz.AI - Data Science Meetup"
+            location: Cloudflight
+            date: 2026-05-19
+            link: https://www.meetup.com/linz-ai/events/314412620/
 -   id: aws-ug
     name: "AWS User Group Linz"
     events:
