@@ -698,3 +698,10 @@
             location: NXAI Office
             date: 2026-03-12
             link: "https://www.meetup.com/ki-punsch-bowle-nxai/events/312860900"
+-   id: security-native-linz
+    name: "SecurityNative Meetup Linz"
+    events:
+        -   name: "SecurityNative Meetup Linz"
+            location: Dynatrace Linz HQ
+            date: 2026-07-02
+            link: "https://www.linkedin.com/company/securitynative/"
