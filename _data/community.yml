@@ -237,29 +237,14 @@
     name: ".NET Stammtisch Linz"
     events:
         -   name: ".NET Stammtisch Linz"
-            location: "GRAND GARAGE, Peter-Behrens-Platz 6, 4020 Linz"
-            date: 2025-12-02
-            link: https://www.meetup.com/net-stammtisch-linz/events/312097884/
-        -   name: ".NET Stammtisch Linz"
-            location: "Dynatrace - Lab Linz - Grünwinkel, Altenberger Straße 82, 4040 Linz"
-            date: 2026-01-22
-            link: https://www.meetup.com/net-stammtisch-linz/events/312366211/
-        -   name: ".NET Stammtisch Linz"
-            location: "Keba AG, BG10"
-            date: 2026-02-24
-            link: https://www.meetup.com/net-stammtisch-linz/events/312471137/
-        -   name: ".NET Stammtisch Linz"
-            location: "XXXLDigital"
-            date: 2026-04-09
-            link: https://www.meetup.com/net-stammtisch-linz/events/313280750/
-        -   name: ".NET Stammtisch Linz"
             location: "CALPANA"
             date: 2026-05-12
-            link: https://www.meetup.com/net-stammtisch-linz/
+            link: https://www.meetup.com/net-stammtisch-linz/events/314147481/
         -   name: ".NET Stammtisch Linz"
             location: "ITPRO"
             date: 2026-06-09
-            link: https://www.meetup.com/net-stammtisch-linz/
+            link: https://www.meetup.com/net-stammtisch-linz/events/314658076/
+        -   name: ".NET Stammtisch Linz"
 -   id: linz-ai
     name: "Linz.AI"
     events:
