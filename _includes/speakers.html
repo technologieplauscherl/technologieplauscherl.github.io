@@ -1,9 +1,108 @@
+{% comment -%}
+Places speakers in a table-like layout in the following style:
+| Speakers 1 | Speakers 2 | Speakers 3 |
+| Title 1    | Title 2    | Title 3    |
+| Language 1 | Language 2 | Language 3 |
+
+The individual cells are centered and speaker images are reduced in size if
+there are multiple speakers for a given talk.
+{% endcomment -%}
+
 {% assign talks_source = include.post | default: post | default: page %}
 {% if talks_source.talks and talks_source.talks != empty %}
-<div class="speakers speakers--talks" aria-label="Vorträge">
-  {% for talk in talks_source.talks %}
-    {% include talk.html talk=talk %}
-  {% endfor %}
+<div class="speakers speakers--talks talks-table-wrapper" aria-label="Vorträge">
+  <table class="talks-table" role="presentation">
+    <tbody>
+      <tr class="talks-table__row talks-table__row--speakers">
+        {% for talk in talks_source.talks %}
+          {% assign speaker_count = 0 %}
+          {% if talk.speakers and talk.speakers != empty %}
+            {% assign speaker_count = talk.speakers | size %}
+          {% elsif talk.speaker and talk.speaker != empty %}
+            {% assign speaker_count = 1 %}
+          {% endif %}
+          <td class="talks-table__cell talks-table__cell--speakers" style="order: {{ forloop.index }}0;">
+            <div class="talks-table__cell-inner">
+              <ul class="talks-table__speakers" aria-label="Speakers">
+                {% if talk.speakers and talk.speakers != empty %}
+                  {% for speaker in talk.speakers %}
+                    <li class="talks-table__speaker" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+                      <img
+                        {% if speaker.img == empty -%}
+                          src="/img/speaker_no_image.jpg"
+                        {% else -%}
+                          src="{{speaker.img}}"
+                        {% endif -%}
+                        alt="{{speaker.name}}"
+                        class="talk__speaker-img{% if speaker_count > 2 %} talks-table__speaker-img--small{% endif %}"
+                        onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
+                      <span class="talk__speaker-name" itemprop="name">{{speaker.name}}</span>
+                    </li>
+                  {% endfor %}
+                {% elsif talk.speaker and talk.speaker != empty %}
+                  <li class="talks-table__speaker" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
+                    <img
+                      {% if talk.speaker.img == empty -%}
+                        src="/img/speaker_no_image.jpg"
+                      {% else -%}
+                        src="{{talk.speaker.img}}"
+                      {% endif -%}
+                      alt="{{talk.speaker.name}}"
+                      class="talk__speaker-img"
+                      onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
+                    <span class="talk__speaker-name" itemprop="name">{{talk.speaker.name}}</span>
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+          </td>
+        {% endfor %}
+      </tr>
+
+      <tr class="talks-table__row talks-table__row--titles">
+        {% for talk in talks_source.talks %}
+          <td class="talks-table__cell talks-table__cell--title" itemprop="name" style="order: {{ forloop.index }}1;">
+            <div class="talks-table__cell-inner">
+              <div class="talk__title-row">
+                <h3 class="talk__title">{{ talk.talk | default: talk.title }}</h3>
+                {% if talk.abstract and talk.abstract != empty %}
+                  <details class="talk__abstract-details">
+                    <summary class="talk__abstract-summary" aria-label="Abstract for {{ talk.talk | default: talk.title }}">
+                      <svg class="talk__abstract-icon" aria-hidden="true">
+                        <use xlink:href="#icon-info-circle"></use>
+                      </svg>
+                    </summary>
+                    <div class="talk__abstract" role="tooltip">
+                      {{ talk.abstract }}
+                    </div>
+                  </details>
+                {% endif %}
+              </div>
+              {% if talk.talklink and talk.talklink != empty %}
+                <p class="talk__link">
+                  <a href="{{ talk.talklink }}">Slides/Link</a>
+                </p>
+              {% endif %}
+            </div>
+          </td>
+        {% endfor %}
+      </tr>
+
+      <tr class="talks-table__row talks-table__row--languages">
+        {% for talk in talks_source.talks %}
+          <td class="talks-table__cell talks-table__cell--language" style="order: {{ forloop.index }}2;">
+            <div class="talks-table__cell-inner">
+              {% if talk.language == "en" %}
+                <img class="talk__language" src="/img/english-language.svg" width="40" height="20" alt="Talk is in English" title="Talk is in English">
+              {% else %}
+                <img class="talk__language" src="/img/german-language.svg" width="40" height="20" alt="Talk is in German" title="Talk is in German">
+              {% endif %}
+            </div>
+          </td>
+        {% endfor %}
+      </tr>
+    </tbody>
+  </table>
 {% else %}
 <div class="speakers" aria-label="Vorträge">
   {% assign speaker_list = talks_source.speakers | default: talks_source.speaker %}
