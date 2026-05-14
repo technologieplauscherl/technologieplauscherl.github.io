@@ -691,6 +691,10 @@
             location: NXAI Office
             date: 2026-03-12
             link: "https://www.meetup.com/ki-punsch-bowle-nxai/events/312860900"
+        -   name: "KI Bowle: How to bridge Safety and AI?"
+            location: NXAI Office
+            date: 2026-05-20
+            link: "https://www.meetup.com/ki-punsch-bowle-nxai/events/313908370/"
 -   id: security-native-linz
     name: "SecurityNative Meetup Linz"
     events:
