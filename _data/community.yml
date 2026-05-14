@@ -427,6 +427,10 @@
             location: "Karriere.at"
             date: 2026-04-21
             link: https://cloudnativelinz.at/events/meetup/april-2026-edition-at-karriereat/
+        -   name: "Cloud Native Linz - May 2026 edition"
+            location: "Dynatrace Linz HQ"
+            date: 2026-05-26
+            link: https://cloudnativelinz.at/events/meetup/may-2026-edition-at-dynatrace/
 -   id: agile-tour
     name: "Agile Tour"
     events:
