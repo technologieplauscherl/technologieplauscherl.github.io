@@ -3,16 +3,16 @@
 <address itemprop="location" itemscope itemtype="https://schema.org/Place">
 	<span class="n" itemprop="name">{{include.location.name}}</span>
 	<div itemprop="address">
-		{%if include.location.addition %}
+		{%if include.location.addition -%}
 		<span class="street-address">{{include.location.addition}}</span>
-		{% endif %}
+		{% endif -%}
 		<span class="street-address">{{include.location.address}}</span>
 		<span class="postal-code">{{include.location.zip}}</span> <span class="locality">{{include.location.city}}</span>
 	</div>
 	<span class="n"><a href="https://www.google.com/maps/search/?api=1&query={{ include.location.coordinates.lat }},{{ include.location.coordinates.lng }}">Routenplanung mit Google</a></span>
-	{% if include.location.directionslink %}
+	{% if include.location.directionslink -%}
 		<span class="n"><a href="{{include.location.directionslink}}">Anfahrtsbeschreibung</a></span>
-	{% endif %}
+	{% endif -%}
 </address>
 {% comment -%}
 Generate OpenStreetMap Embedding from coordinates
