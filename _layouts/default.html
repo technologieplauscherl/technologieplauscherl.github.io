@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
-  {% include head.html %}
+  {% include head.html -%}
 
     <body>
-    {% include menu.html %}
+    {% include menu.html -%}
     {{ content }}
-    {% include svg-defs.html %}
-    {% include footer.html %}
+    {% include svg-defs.html -%}
+    {% include footer.html -%}
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const button = document.getElementById('dark-mode-toggle');

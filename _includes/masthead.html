@@ -3,35 +3,35 @@
 		<h1 itemprop="name">Technologieplauscherl</h1>
 	</div>
 
-	{% assign post = site.plauscherl | last %}
+	{% assign post = site.plauscherl | last -%}
 
 	<div class="bottom">
-        {% if post.video %}
+		{% if post.video -%}
             <iframe class="livestream" width="900" height="500" src="https://www.youtube.com/embed/{{post.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
-        {% endif %}
+		{% endif -%}
 
 
-		{% if include.ended %}
+		{% if include.ended -%}
 		<p class="info">
 			Danke für die Vorträge an
 		</p>
 		<ul class="no-bullets">
-			{% for talk in post.talks %}
-				{% assign speaker_list = talk.speakers | default: talk.speaker %}
-				{% for speaker in speaker_list %}
+			{% for talk in post.talks -%}
+				{% assign speaker_list = talk.speakers | default: talk.speaker -%}
+				{% for speaker in speaker_list -%}
 			<li>{{speaker.name}}</li>
-				{% endfor %}
-			{% endfor %}
+				{% endfor -%}
+			{% endfor -%}
 		</ul>
-		{% else %}
-		{% include speakers.html post=post %}
-		{% endif %}
+		{% else -%}
+		{% include speakers.html post=post -%}
+		{% endif -%}
 		<p class="info">
-			{% unless page.dateset %}
+			{% unless page.dateset -%}
 			Nächstes Treffen:<br/>
 			Ist in Planung
-			{% endunless %}
-			{% unless include.ended %}
+			{% endunless -%}
+			{% unless include.ended -%}
 				Nächstes Treffen:<br>
 				<span itemprop="startDate" content="{{post.startDateIso8601}}">
           <svg class="icon" role="img" aria-label="am"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
@@ -44,20 +44,20 @@
 				  "name": "{{post.title}}",
 				  "startDate" : "{{post.startDateIso8601}}",
 				  "performer" : [
-					{% assign performer_names = "|" %}
-					{% for talk in post.talks %}
-						{% for speaker in talk.speakers %}
-							{% assign performer_key = "|" | append: speaker.name | append: "|" %}
-							{% unless performer_names contains performer_key %}
-								{% if performer_names != "|" %},{% endif %}
+					{% assign performer_names = "|" -%}
+					{% for talk in post.talks -%}
+						{% for speaker in talk.speakers -%}
+							{% assign performer_key = "|" | append: speaker.name | append: "|" -%}
+							{% unless performer_names contains performer_key -%}
+								{% if performer_names != "|" -%},{% endif -%}
 								{
 								  "@type" : "Person",
 								  "name" : "{{speaker.name}}"
 								}
-								{% assign performer_names = performer_names | append: speaker.name | append: "|" %}
-							{% endunless %}
-						{% endfor %}
-					{% endfor %}
+								{% assign performer_names = performer_names | append: speaker.name | append: "|" -%}
+							{% endunless -%}
+						{% endfor -%}
+					{% endfor -%}
 				  ],
 				  "url" : "https://technologieplauscherl.at",
 				  "location" : {
@@ -67,10 +67,10 @@
 				  }
 				}
 				</script>
-			{% endunless %}
+			{% endunless -%}
 		</p>
 
-		{% if include.ended %}
+		{% if include.ended -%}
 		<a href="https://www.linkedin.com/groups/12659872/" target="_blank" class="link link--big link--linkedin">
 			Planung auf LinkedIn
 			<svg class="link__icon">
@@ -84,27 +84,27 @@
 				<use xlink:href="#icon-meetup"></use>
 			</svg>
 		</a>
-		{% endif %}
+		{% endif -%}
 
-		{% unless include.ended %}
-			{% if post.event %}
-				{% if post.event.facebook %}
+		{% unless include.ended -%}
+			{% if post.event -%}
+				{% if post.event.facebook -%}
 				<a href="https://www.facebook.com/events/{{post.event.facebook}}" class="link link--big link--facebook">
 					Termin auf Facebook
 					<svg class="link__icon">
 						<use xlink:href="#icon-facebook"></use>
 					</svg>
 				</a>
-				{% endif %}
-				{% if post.event.meetup %}
+				{% endif -%}
+				{% if post.event.meetup -%}
 				<a href="https://www.meetup.com/Technologieplauscherl-Linz/events/{{post.event.meetup}}" class="link link--big link--meetup">
 					Termin auf Meetup!
 					<svg class="link__icon">
 						<use xlink:href="#icon-meetup"></use>
 					</svg>
 				</a>
-				{% endif %}
-			{% endif %}
-		{% endunless %}
+				{% endif -%}
+			{% endif -%}
+		{% endunless -%}
 	</div>
 </div>

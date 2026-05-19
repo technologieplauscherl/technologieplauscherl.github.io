@@ -8,24 +8,24 @@ The individual cells are centered and speaker images are reduced in size if
 there are multiple speakers for a given talk.
 {% endcomment -%}
 
-{% assign talks_source = include.post | default: post | default: page %}
-{% if talks_source.talks and talks_source.talks != empty %}
+{% assign talks_source = include.post | default: post | default: page -%}
+{% if talks_source.talks and talks_source.talks != empty -%}
 <div class="speakers speakers--talks talks-table-wrapper" aria-label="Vorträge">
   <table class="talks-table" role="presentation">
     <tbody>
       <tr class="talks-table__row talks-table__row--speakers">
-        {% for talk in talks_source.talks %}
-          {% assign speaker_count = 0 %}
-          {% if talk.speakers and talk.speakers != empty %}
-            {% assign speaker_count = talk.speakers | size %}
-          {% elsif talk.speaker and talk.speaker != empty %}
-            {% assign speaker_count = 1 %}
-          {% endif %}
+        {% for talk in talks_source.talks -%}
+          {% assign speaker_count = 0 -%}
+          {% if talk.speakers and talk.speakers != empty -%}
+            {% assign speaker_count = talk.speakers | size -%}
+          {% elsif talk.speaker and talk.speaker != empty -%}
+            {% assign speaker_count = 1 -%}
+          {% endif -%}
           <td class="talks-table__cell talks-table__cell--speakers" style="order: {{ forloop.index }}0;">
             <div class="talks-table__cell-inner">
               <ul class="talks-table__speakers" aria-label="Speakers">
-                {% if talk.speakers and talk.speakers != empty %}
-                  {% for speaker in talk.speakers %}
+                {% if talk.speakers and talk.speakers != empty -%}
+                  {% for speaker in talk.speakers -%}
                     <li class="talks-table__speaker" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
                       <img
                         {% if speaker.img == empty -%}
@@ -34,12 +34,12 @@ there are multiple speakers for a given talk.
                           src="{{speaker.img}}"
                         {% endif -%}
                         alt="{{speaker.name}}"
-                        class="talk__speaker-img{% if speaker_count > 2 %} talks-table__speaker-img--small{% endif %}"
+                        class="talk__speaker-img{% if speaker_count > 2 -%} talks-table__speaker-img--small{% endif -%}"
                         onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
                       <span class="talk__speaker-name" itemprop="name">{{speaker.name}}</span>
                     </li>
-                  {% endfor %}
-                {% elsif talk.speaker and talk.speaker != empty %}
+                  {% endfor -%}
+                {% elsif talk.speaker and talk.speaker != empty -%}
                   <li class="talks-table__speaker" itemprop="contributor" itemscope itemtype="https://schema.org/Person">
                     <img
                       {% if talk.speaker.img == empty -%}
@@ -52,20 +52,20 @@ there are multiple speakers for a given talk.
                       onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
                     <span class="talk__speaker-name" itemprop="name">{{talk.speaker.name}}</span>
                   </li>
-                {% endif %}
+                {% endif -%}
               </ul>
             </div>
           </td>
-        {% endfor %}
+        {% endfor -%}
       </tr>
 
       <tr class="talks-table__row talks-table__row--titles">
-        {% for talk in talks_source.talks %}
+        {% for talk in talks_source.talks -%}
           <td class="talks-table__cell talks-table__cell--title" itemprop="name" style="order: {{ forloop.index }}1;">
             <div class="talks-table__cell-inner">
               <div class="talk__title-row">
                 <h3 class="talk__title">{{ talk.talk | default: talk.title }}</h3>
-                {% if talk.abstract and talk.abstract != empty %}
+                {% if talk.abstract and talk.abstract != empty -%}
                   <details class="talk__abstract-details">
                     <summary class="talk__abstract-summary" aria-label="Abstract for {{ talk.talk | default: talk.title }}">
                       <svg class="talk__abstract-icon" aria-hidden="true">
@@ -76,38 +76,38 @@ there are multiple speakers for a given talk.
                       {{ talk.abstract }}
                     </div>
                   </details>
-                {% endif %}
+                {% endif -%}
               </div>
-              {% if talk.talklink and talk.talklink != empty %}
+              {% if talk.talklink and talk.talklink != empty -%}
                 <p class="talk__link">
                   <a href="{{ talk.talklink }}">Slides/Link</a>
                 </p>
-              {% endif %}
+              {% endif -%}
             </div>
           </td>
-        {% endfor %}
+        {% endfor -%}
       </tr>
 
       <tr class="talks-table__row talks-table__row--languages">
-        {% for talk in talks_source.talks %}
+        {% for talk in talks_source.talks -%}
           <td class="talks-table__cell talks-table__cell--language" style="order: {{ forloop.index }}2;">
             <div class="talks-table__cell-inner">
-              {% if talk.language == "en" %}
+              {% if talk.language == "en" -%}
                 <img class="talk__language" src="/img/english-language.svg" width="40" height="20" alt="Talk is in English" title="Talk is in English">
-              {% else %}
+              {% else -%}
                 <img class="talk__language" src="/img/german-language.svg" width="40" height="20" alt="Talk is in German" title="Talk is in German">
-              {% endif %}
+              {% endif -%}
             </div>
           </td>
-        {% endfor %}
+        {% endfor -%}
       </tr>
     </tbody>
   </table>
-{% else %}
+{% else -%}
 <div class="speakers" aria-label="Vorträge">
-  {% assign speaker_list = talks_source.speakers | default: talks_source.speaker %}
-  {% for speaker in speaker_list %}
-    {% include speaker.html speaker=speaker %}
-  {% endfor %}
-{% endif %}
+  {% assign speaker_list = talks_source.speakers | default: talks_source.speaker -%}
+  {% for speaker in speaker_list -%}
+    {% include speaker.html speaker=speaker -%}
+  {% endfor -%}
+{% endif -%}
 </div>

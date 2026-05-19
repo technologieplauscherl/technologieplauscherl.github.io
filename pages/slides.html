@@ -4,27 +4,27 @@ title: Slides
 permalink: /slides/
 ---
 
-{% assign post = site.plauscherl | last %}
+{% assign post = site.plauscherl | last -%}
 
 <div class="slide flex is-active">
   <h1 class="full">{{post.title}}</h1>
-  {% include speakers.html %}
+  {% include speakers.html -%}
   <div class="slide__info">
     <div class="slide__item">
       <h2>Vielen Dank an unseren Host:</h2>
 	  <div class="slide__logos">
-      {% unless post.location.image == null %}
-      {% for img in post.location.image %}
+      {% unless post.location.image == null -%}
+      {% for img in post.location.image -%}
       <figure>
         <img src="{{img}}" alt="{{post.location.name}}" />
       </figure>
-      {% endfor %}
+      {% endfor -%}
 	  </div>
-	  {% else %}
+	  {% else -%}
       <p>
         {{post.location.name}}
       </p>
-    {% endunless %}
+    {% endunless -%}
     </div>
     <div class="slide__item">
       <h2>Mehr Info zum Plauscherl unter:</h2>
@@ -36,5 +36,5 @@ permalink: /slides/
 </div>
 <div class="slide">
   <h1>Community News</h1>
-  {% include communitynews--loop.html %}
+  {% include communitynews--loop.html -%}
 </div>
