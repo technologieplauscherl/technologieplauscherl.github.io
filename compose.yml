@@ -1,0 +1,16 @@
+services:
+  site:
+    image: ghcr.io/actions/jekyll-build-pages
+    container_name: gh_page
+    working_dir: /github/workspace
+    environment:
+      INPUT_SOURCE: .
+      INPUT_DESTINATION: _site
+      GITHUB_WORKSPACE: /github/workspace
+    entrypoint: ["jekyll"]
+    command: ["serve", "--livereload", "--incremental", "--host", "0.0.0.0"]
+    ports:
+      - "4000:4000"
+      - "35729:35729" # Livereload port
+    volumes:
+      - ./:/github/workspace:rw
