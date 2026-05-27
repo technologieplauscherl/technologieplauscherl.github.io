@@ -649,6 +649,10 @@
             location: FH Hagenberg
             date: 2026-05-18
             link: "https://fhlug.at/2026/04/real-linux-on-phones/"
+        -   name: "fhLUG: Typst – Wie man Dokumente programmiert"
+            location: FH Hagenberg
+            date: 2026-06-08
+            link: "https://fhlug.at/2026/05/typst-wie-man-dokumente-programmiert/"
 -   id: rubyconf_at
     name: "RUBY CONF AT"
     events:
