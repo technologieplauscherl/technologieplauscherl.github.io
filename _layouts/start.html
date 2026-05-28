@@ -37,18 +37,13 @@ layout: default
 		<h2 id="previous-plauscherls">Vorherige Plauscherl</h2>
 
 		<div class="cards">
-			{% for card in site.plauscherl reversed -%}
-			{% if plauscherlEnded -%}
-			{% if forloop.index < 7 -%}
-			{% include plauscherl-card.html -%}
-			{% endif -%}
-			{% else -%}
-			{% if forloop.index > 1 and forloop.index < 8 -%}
-			{% include plauscherl-card.html -%}
-			{% endif -%}
-			{% endif -%}
-
-			{% endfor -%}
+			{% assign counter = 0 -%}
+			 {% for card in site.plauscherl reversed -%}
+				{% if card.layout == "post" and plauscherlEnded and counter < 6 -%}
+					{% assign counter = counter | plus: 1 -%}
+					{% include plauscherl-card.html -%}
+				{% endif -%}
+			{% endfor -%} 
 		</div>
 		<a href="/archiv/" class="link link--big">
 			Zum Archiv
