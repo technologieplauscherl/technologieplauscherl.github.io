@@ -1,11 +1,13 @@
-<div class="masthead">
+{% assign post = site.plauscherl | last -%}
+
+<div class="masthead{% if post.layout == "page" %} masthead--plain{% endif %}">
 	<div class="top">
 		<h1 itemprop="name">Technologieplauscherl</h1>
 	</div>
 
-	{% assign post = site.plauscherl | last -%}
-
 	<div class="bottom">
+		{% if post.layout == "post" -%}
+
 		{% if post.video -%}
             <iframe class="livestream" width="900" height="500" src="https://www.youtube.com/embed/{{post.video}}?ecver=1" frameborder="0" allowfullscreen></iframe>
 		{% endif -%}
@@ -69,6 +71,9 @@
 				</script>
 			{% endunless -%}
 		</p>
+		{% else if post.layout == "page" -%}
+			{{ post.content }}
+		{% endif -%}
 
 		{% if include.ended -%}
 		<a href="https://www.linkedin.com/groups/12659872/" target="_blank" class="link link--big link--linkedin">
