@@ -38,6 +38,10 @@
             location: Hofkneipe
             date: 2024-04-04
             link: https://www.meetup.com/de-DE/agile-user-group-linz/events/299595888/
+        -   name: "Agile Meetup>>Shift Next"
+            location: MIC
+            date: 2026-06-11
+            link: https://www.meetup.com/agile-user-group-linz/events/315066607/
 -   id: script
     name: "Script"
     events:
