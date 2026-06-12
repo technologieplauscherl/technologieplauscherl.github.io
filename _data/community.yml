@@ -613,6 +613,10 @@
             location: "JKU"
             date: 2026-01-22
             link: https://www.meetup.com/linux-foss-linz/events/311658143/
+        -   name: "Linux/FOSS Meetup #5"
+            location: "Grand Garage"
+            date: 2026-06-25
+            link: https://www.meetup.com/linux-foss-linz/events/315201971/
 -   id: itfutures
     name: "IT Futures"
     events:
