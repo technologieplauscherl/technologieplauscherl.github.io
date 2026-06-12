@@ -166,9 +166,13 @@
             location: Dynatrace
             date: 2020-02-26
             link: https://www.meetup.com/iaam-linz/events/267641138/
--   id: tuga-64
+-   id: tuga-typo3
     name: "TYPO3 Usergroup Meeting in Linz"
     events:
+        -   name: "TUGA 103"
+            location: Cyberhouse
+            date: 2026-06-30
+            link: https://www.meetup.com/tuga-typo3-user-group-austria/events/315065553/
 -   id: gab
     name: "Global Azure Bootcamp"
     events:
