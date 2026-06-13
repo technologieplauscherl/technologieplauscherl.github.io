@@ -156,6 +156,10 @@
             location: JKU
             date: 2025-11-14
             link: https://register.codingcontest.org/
+        -   name: "Cloudflight Coding Contest"
+            location: JKU
+            date: 2026-10-23
+            link: https:///register.codingcontest.org/
 -   id: factory300
     name: "Factory300"
     events:
@@ -244,7 +248,6 @@
             location: "ITPRO"
             date: 2026-06-09
             link: https://www.meetup.com/net-stammtisch-linz/events/314658076/
-        -   name: ".NET Stammtisch Linz"
 -   id: linz-ai
     name: "Linz.AI"
     events:
