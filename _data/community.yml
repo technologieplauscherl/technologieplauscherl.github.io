@@ -113,6 +113,13 @@
 -   id: ms-events
     name: "Microsoft events"
     events:
+-   id: ms-fabric
+    name: "Microsoft Fabric User Group Austria"
+    events:
+        -   name: "Microsoft Fabric & Power BI Stammtisch #1"
+            location: Solaris
+            date: 2026-07-22
+            link: https://www.meetup.com/microsoft-fabric-user-group-austria/events/315569206/
 -   id: powershell-ug
     name: "PowerShell Usergroup"
     events:
