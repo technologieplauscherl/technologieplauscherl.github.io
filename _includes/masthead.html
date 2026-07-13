@@ -36,8 +36,8 @@
 			{% unless include.ended -%}
 				Nächstes Treffen:<br>
 				<span itemprop="startDate" content="{{post.startDateIso8601}}">
-          <svg class="icon" role="img" aria-label="am"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use></svg> {{post.datestring}}
-          <svg class="icon" role="img" aria-label="um"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use></svg> {{post.timestring}} Uhr
+          <svg class="icon" role="img" aria-label="am"><use href="/img/svgs/calendar.svg#icon-calendar"></use></svg> {{post.datestring}}
+          <svg class="icon" role="img" aria-label="um"><use href="/img/svgs/clock.svg#icon-clock"></use></svg> {{post.timestring}} Uhr
         </span>
 				<script type="application/ld+json">
 				{
@@ -79,14 +79,14 @@
 		<a href="https://www.linkedin.com/groups/12659872/" target="_blank" class="link link--big link--linkedin">
 			Planung auf LinkedIn
 			<svg class="link__icon">
-				<use xlink:href="#icon-linkedin"></use>
+				<use href="/img/svgs/linkedin.svg#icon-linkedin"></use>
 			</svg>
 		</a>
 
 		<a href="https://www.meetup.com/Technologieplauscherl-Linz/" target="_blank" class="link link--big link--meetup">
 			Wir sind auf Meetup!
 			<svg class="link__icon">
-				<use xlink:href="#icon-meetup"></use>
+				<use href="/img/svgs/meetup.svg#icon-meetup"></use>
 			</svg>
 		</a>
 		{% endif -%}
@@ -97,7 +97,7 @@
 				<a href="https://www.facebook.com/events/{{post.event.facebook}}" class="link link--big link--facebook">
 					Termin auf Facebook
 					<svg class="link__icon">
-						<use xlink:href="#icon-facebook"></use>
+						<use href="/img/svgs/facebook.svg#icon-facebook"></use>
 					</svg>
 				</a>
 				{% endif -%}
@@ -105,7 +105,7 @@
 				<a href="https://www.meetup.com/Technologieplauscherl-Linz/events/{{post.event.meetup}}" class="link link--big link--meetup">
 					Termin auf Meetup!
 					<svg class="link__icon">
-						<use xlink:href="#icon-meetup"></use>
+						<use href="/img/svgs/meetup.svg#icon-meetup"></use>
 					</svg>
 				</a>
 				{% endif -%}

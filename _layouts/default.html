@@ -5,7 +5,6 @@
     <body>
     {% include menu.html -%}
     {{ content }}
-    {% include svg-defs.html -%}
     {% include footer.html -%}
     <script>
       document.addEventListener('DOMContentLoaded', () => {
@@ -15,7 +14,10 @@
 
         const setTheme = (isDark) => {
           document.body.classList.toggle('dark-mode', isDark);
-          icon.setAttribute('href', isDark ? '#icon-sun' : '#icon-moon');
+          icon.setAttribute(
+            'href',
+            isDark ? '/img/svgs/sun.svg#icon-sun' : '/img/svgs/moon.svg#icon-moon'
+          );
         };
 
         const mediaQuery =
