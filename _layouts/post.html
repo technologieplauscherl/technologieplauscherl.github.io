@@ -16,11 +16,11 @@ layout: default
 		<p class="info">
 			<span itemprop="startDate" content="{{post.startDateIso8601}}">
 			<svg class="icon">
-				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-calendar"></use>
+				<use href="/img/svgs/calendar.svg#icon-calendar"></use>
 			</svg>
 			{{page.datestring}}
 			<svg class="icon">
-				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-clock"></use>
+				<use href="/img/svgs/clock.svg#icon-clock"></use>
 			</svg>
 			{{page.timestring}} Uhr
 			</span>
@@ -43,7 +43,7 @@ layout: default
 			<a href="https://www.facebook.com/events/{{page.event.facebook}}" class="link link--big link--facebook">
 				Event auf Facebook
 				<svg class="link__icon">
-					<use xlink:href="#icon-facebook"></use>
+					<use href="/img/svgs/facebook.svg#icon-facebook"></use>
 				</svg>
 			</a>
 			{% endif -%}
@@ -52,7 +52,7 @@ layout: default
 			   class="link link--big link--meetup">
 				Termin auf Meetup!
 				<svg class="link__icon">
-					<use xlink:href="#icon-meetup"></use>
+					<use href="/img/svgs/meetup.svg#icon-meetup"></use>
 				</svg>
 			</a>
 			{% endif -%}
@@ -60,7 +60,7 @@ layout: default
 			<a href="https://drive.google.com/folderview?id={{page.pictures}}" class="link link--big link--pictures">
 				Fotos vom Event
 				<svg class="link__icon">
-					<use xlink:href="#icon-camera"></use>
+					<use href="/img/svgs/camera.svg#icon-camera"></use>
 				</svg>
 			</a>
 			{% endif -%}
