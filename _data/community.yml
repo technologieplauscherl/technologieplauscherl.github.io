@@ -446,6 +446,10 @@
             location: "Dynatrace Linz HQ"
             date: 2026-05-26
             link: https://cloudnativelinz.at/events/meetup/may-2026-edition-at-dynatrace/
+        -   name: "Cloud Native Linz - September 2026 edition"
+            location: "Netcetera"
+            date: 2026-09-16
+            link: https://cloudnativelinz.at/events/meetup/september-2026-edition-at-netcetera/
 -   id: agile-tour
     name: "Agile Tour"
     events:
