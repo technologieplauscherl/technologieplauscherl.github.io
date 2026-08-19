@@ -707,10 +707,10 @@
 -   id: women-in-ai
     name: "Women in AI"
     events:
-        -   name: "IT:U x WAI - AI Cannibalism?"
-            location: IT:U Education Campus
-            date: 2026-01-28
-            link: "https://www.meetup.com/women-in-ai-upper-austria/events/312835523"
+        -   name: "Trustworthy AI in the Age of Deep Fakes"
+            location: Wissensturm
+            date: 2026-09-16
+            link: https://www.meetup.com/women-in-ai-upper-austria/events/316062764/
 -   id: ki-punsch-und-bowle
     name: "KI Punsch & Bowle"
     events:
