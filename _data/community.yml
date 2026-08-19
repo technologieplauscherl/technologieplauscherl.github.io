@@ -519,10 +519,10 @@
 -   id: wip
     name: "Work in Progress"
     events:
-        -   name: "Work in Progress - Hacking an Online-Shop"
+        -   name: "Work in Progress - Wie KI-Agenten Arbeit übernehmen"
             location: "Ubitec, Tabakfabrik"
-            date: 2022-10-20
-            link: https://wip.ubitec.at/
+            date: 2026-10-01
+            link: https://www.linkedin.com/events/7495362853370036224/
 -   id: neuronai
     name: "neuron.ai"
     events:
