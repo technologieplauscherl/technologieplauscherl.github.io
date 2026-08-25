@@ -17,6 +17,10 @@
             location: "Skybar Hagenberg, Softwarepark 32"
             date: 2026-05-05
             link: https://www.meetup.com/de-de/granittreff/events/313203735/
+        -   name: "GranitTreff #6 Hagenberg"
+            location: "Skybar Hagenberg, Softwarepark 32"
+            date: 2026-10-20
+            link: https://www.meetup.com/granittreff/events/315050233/
 -   id: stahlstadt-js
     name: "Stahlstadt.js"
     events:
