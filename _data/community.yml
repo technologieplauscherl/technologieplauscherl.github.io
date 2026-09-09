@@ -451,9 +451,13 @@
             date: 2026-05-26
             link: https://cloudnativelinz.at/events/meetup/may-2026-edition-at-dynatrace/
         -   name: "Cloud Native Linz - September 2026 edition"
-            location: "Netcetera"
+            location: "G+D Netcetera"
             date: 2026-09-16
             link: https://cloudnativelinz.at/events/meetup/september-2026-edition-at-netcetera/
+        -   name: "Cloud Native Linz - Pub Quiz"
+            location: "Salonschiff Frl Florentine"
+            date: 2026-10-07
+            link: https://cloudnativelinz.at/events/meetup/october-2026-pubquiz-edition/
 -   id: agile-tour
     name: "Agile Tour"
     events:
