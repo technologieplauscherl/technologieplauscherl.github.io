@@ -227,8 +227,8 @@
     events:
         -   name: "Bi-Monthly GameDev Linz Meetup"
             location: LAST by Schachermayer
-            date: 2026-06-18
-            link: https://www.meetup.com/gamedev-linz/events/315165155/
+            date: 2026-09-25
+            link: https://www.meetup.com/gamedev-linz/events/316564288/
 -   id: ccl
     name: "Coding Club Linz"
     events:
