@@ -595,10 +595,10 @@
 -   id: ux-linz
     name: "UX Linz"
     events:
-        -   name: "UX Linz Meetup"
-            location: "Netural, Tabakfabrik Linz"
-            date: 2023-04-13
-            link: https://www.meetup.com/de-DE/ux-linz/events/ptvkbryfcfbmb/
+        -   name: "UX Linz :-: Connect"
+            location: "Hofkneipe, Ludlgasse 16"
+            date: 2026-10-08
+            link: https://www.meetup.com/ux-linz/events/316398635/
 -   id: update-social
     name: "UpdateSocial"
     events:
