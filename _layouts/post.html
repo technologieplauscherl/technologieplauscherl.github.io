@@ -57,7 +57,10 @@ layout: default
 			</a>
 			{% endif -%}
 			{% if page.pictures -%}
-			<a href="https://drive.google.com/folderview?id={{page.pictures}}" class="link link--big link--pictures">
+			{% comment -%}
+			Technically, the album name is always "TP<number>", but it may not be instantly available. Therefore, using "pictures" as a marker
+			{% endcomment -%}
+			<a href="https://fotos.techplauscherl.at/gallery/{{page.pictures}}" class="link link--big link--pictures">
 				Fotos vom Event
 				<svg class="link__icon">
 					<use href="/img/svgs/camera.svg#icon-camera"></use>
