@@ -579,6 +579,10 @@
             location: "Dynatrace Linz HQ, Linz"
             date: 2026-03-31
             link: https://www.meetup.com/gdg-linz/events/313647477/?eventOrigin=group_events_list
+        -   name: "Google Developer Group Linz - DevFest Linz 2026"
+            location: "Dynatrace HQ, Linz"
+            date: 2026-11-26
+            link: https://www.meetup.com/gdg-linz/events/316775415/
 -   id: opencommons
     name: "Open Commons Linz"
     events:
