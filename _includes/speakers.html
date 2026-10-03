@@ -34,7 +34,7 @@ there are multiple speakers for a given talk.
                           src="{{speaker.img}}"
                         {% endif -%}
                         alt="{{speaker.name}}"
-                        class="talk__speaker-img{% if speaker_count > 2 -%} talks-table__speaker-img--small{% endif -%}"
+                        class="talk__speaker-img{% if speaker_count > 2 %} talks-table__speaker-img--small{% endif -%}"
                         onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
                       <span class="talk__speaker-name" itemprop="name">{{speaker.name}}</span>
                     </li>
