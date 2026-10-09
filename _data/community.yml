@@ -751,3 +751,10 @@
             location: Grand Garage, Tabakfabrik
             date: 2026-09-11
             link: "https://partizipation.linz.at/de-AT/projects/ki-hackathon-ars-electronica"
+-   id: zephyr-meetup
+    name: "Zephyr Project Meetup"
+    events:
+        -   name: "Zephyr Project Meetup"
+            location: FH Hagenberg
+            date: 2026-11-18
+            link: "https://www.zephyrproject.org/event/zephyr-project-meetup-nov-18-2026-hagenberg-austria/"
