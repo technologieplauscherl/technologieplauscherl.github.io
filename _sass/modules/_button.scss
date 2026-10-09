@@ -11,6 +11,8 @@ $linkedInBtnColor: rgb(10, 102, 194);
 
 $meetupBtnColor: #FF4A79;
 
+$instagramBtnColor: #833AB4;
+
 .link {
 	text-decoration: none;
 	color: $btnTextColor;
@@ -80,5 +82,13 @@ $meetupBtnColor: #FF4A79;
 
 	.link__icon {
 		background-color: darken($meetupBtnColor, 10);
+	}
+}
+
+.link--instagram {
+	background-color: $instagramBtnColor;
+
+	.link__icon {
+		background-color: darken($instagramBtnColor, 10);
 	}
 }

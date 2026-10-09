@@ -75,21 +75,6 @@
 			{{ post.content }}
 		{% endif -%}
 
-		{% if include.ended -%}
-		<a href="https://www.linkedin.com/company/technologieplauscherl/" target="_blank" class="link link--big link--linkedin">
-			Updates auf LinkedIn
-			<svg class="link__icon">
-				<use href="/img/svgs/linkedin.svg#icon-linkedin"></use>
-			</svg>
-		</a>
-
-		<a href="https://www.meetup.com/Technologieplauscherl-Linz/" target="_blank" class="link link--big link--meetup">
-			Wir sind auf Meetup!
-			<svg class="link__icon">
-				<use href="/img/svgs/meetup.svg#icon-meetup"></use>
-			</svg>
-		</a>
-		{% endif -%}
 
 		{% unless include.ended -%}
 			{% if post.event -%}
@@ -111,5 +96,22 @@
 				{% endif -%}
 			{% endif -%}
 		{% endunless -%}
+
+		<p class="info">
+			Für Updates folgt uns auf
+		</p>
+		<a href="https://www.instagram.com/technologieplauscherl/" target="_blank" class="link link--big link--instagram">
+			Instagram
+			<svg class="link__icon">
+				<use href="/img/svgs/instagram.svg#icon-instagram"></use>
+			</svg>
+		</a>
+		
+		<a href="https://www.linkedin.com/company/technologieplauscherl/" target="_blank" class="link link--big link--linkedin">
+			LinkedIn
+			<svg class="link__icon">
+				<use href="/img/svgs/linkedin.svg#icon-linkedin"></use>
+			</svg>
+		</a>
 	</div>
 </div>
