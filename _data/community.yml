@@ -691,6 +691,10 @@
             location: FH Hagenberg
             date: 2026-06-08
             link: "https://fhlug.at/2026/05/typst-wie-man-dokumente-programmiert/"
+        -   name: "fhLUG: End of Ten"
+            location: FH Hagenberg
+            date: 2026-10-21
+            link: "https://fhlug.at/2026/10/end-of-ten/"
 -   id: rubyconf_at
     name: "RUBY CONF AT"
     events:
