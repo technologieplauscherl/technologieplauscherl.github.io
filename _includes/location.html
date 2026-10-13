@@ -13,6 +13,9 @@
 	{% if include.location.directionslink -%}
 		<span class="n"><a href="{{include.location.directionslink}}">Anfahrtsbeschreibung</a></span>
 	{% endif -%}
+	{% if include.location.directionsinfo -%}
+		<span class="n">{{include.location.directionsinfo}}</span>
+	{% endif -%}
 </address>
 {% comment -%}
 Generate OpenStreetMap Embedding from coordinates
