@@ -457,6 +457,10 @@
             location: "Salonschiff Frl Florentine"
             date: 2026-10-07
             link: https://cloudnativelinz.at/events/meetup/october-2026-pubquiz-edition/
+        -   name: "Cloud Native Linz - November 2026 Edition"
+            location: "Dynatrace Linz HQ"
+            date: 2026-11-25
+            link: https://cloudnativelinz.at/events/meetup/november-2026-save-the-date/
 -   id: agile-tour
     name: "Agile Tour"
     events:
