@@ -49,6 +49,10 @@
             location: Smarter Ecommerce, Tabakfabrik
             date: 2026-10-01
             link: https://www.meetup.com/shift-next-linz/events/316578569/
+        -   name: "Shift>>Next: Beyond the Usual"
+            location: KEBA
+            date: 2026-11-26
+            link: https://www.meetup.com/shift-next-linz/events/316706673/
 -   id: script
     name: "Script"
     events:
