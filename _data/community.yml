@@ -259,9 +259,9 @@
     name: ".NET Stammtisch Linz"
     events:
         -   name: ".NET Stammtisch Linz"
-            location: "smartpoint"
-            date: 2026-10-14
-            link: https://www.meetup.com/net-stammtisch-linz/events/316663852/
+            location: "TGW"
+            date: 2026-11-18
+            link: https://www.meetup.com/net-stammtisch-linz/events/317130107/
 -   id: linz-ai
     name: "Linz.AI"
     events:
