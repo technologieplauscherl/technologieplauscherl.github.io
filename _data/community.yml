@@ -39,6 +39,9 @@
             location: XXXLDigital
             date: 2026-11-19
             link: https://technologieplauscherl.at/94/
+        -   name: "Technologieplauscherl 95"
+            location: Dynatrace Linz HQ
+            date: 2027-01-28
 -   id: agilecomm
     name: "Agile Community Linz"
     events:
