@@ -1,0 +1,1875 @@
+---
+layout: live
+title: Technologieplauscherl - Live
+permalink: /live/
+og_description: "Infoseite für die Community-News und co"
+---
+{% assign current_event = site.plauscherl | last -%}
+{% assign host_name = current_event.location.name | strip -%}
+{% assign sponsor_name = current_event.sponsor | strip_html | strip -%}
+<main class="deck">
+
+	<!-- ───────────── Slide 1: Cover ───────────── -->
+	<section class="deck-slide deck-slide--cover" aria-label="Willkommen" data-kiosk>
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--blob"></span>
+			<span class="deck-shape deck-shape--ring"></span>
+			<span class="deck-shape deck-shape--dots"></span>
+			<span class="deck-shape deck-shape--stripes"></span>
+			<span class="deck-shape deck-shape--bolt deck-shape--bolt-a"></span>
+			<span class="deck-shape deck-shape--bolt deck-shape--bolt-b"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		<div class="deck-slide__body deck-cover">
+			<div class="deck-cover__logo">
+				<span class="deck-cover__halo" aria-hidden="true"></span>
+				<img src="/img/svgs/tp-logo.svg" alt="Technologieplauscherl Logo" class="logo-dark" />
+				<img src="/img/svgs/tp-logo-bw.svg" alt="Technologieplauscherl Logo" class="logo-light" />
+			</div>
+			<div class="deck-cover__text">
+				<span class="deck-kicker">Willkommen beim</span>
+				<h1 class="deck-cover__title">Technologie&shy;plauscherl</h1>
+				<p class="deck-cover__tagline">Schön, dass <mark>ihr da seid!</mark></p>
+			</div>
+		</div>
+	</section>
+
+	<!-- ───────────── Slide 2: Tonight's agenda ───────────── -->
+	<section class="deck-slide deck-slide--agenda" aria-label="Agenda" data-kiosk>
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--blob"></span>
+			<span class="deck-shape deck-shape--ring"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		<div class="deck-slide__body">
+			<div class="deck-slide__heading">
+				<span class="deck-kicker">Tonight</span>
+				<h1 class="deck-slide__title">Today's <mark>Agenda</mark></h1>
+				<p class="deck-agenda__meta">{{ current_event.title }} · {{ current_event.datestring }}</p>
+			</div>
+
+			{% assign talk_count = current_event.talks | size -%}
+			<ol class="deck-agenda{% if talk_count > 3 %} deck-agenda--many{% endif %}">
+				{% for talk in current_event.talks -%}
+				<li class="deck-talk">
+					<span class="deck-talk__num" aria-hidden="true">{{ forloop.index }}</span>
+					<div class="deck-talk__avatars" aria-hidden="true">
+						{% if talk.speakers and talk.speakers != empty -%}
+							{% for speaker in talk.speakers -%}
+							<img src="{% if speaker.img == empty or speaker.img == nil %}/img/speaker_no_image.jpg{% else %}{{ speaker.img }}{% endif %}" alt="" onerror="this.onerror = null; this.src = '/img/speaker_no_image.jpg'" />
+							{% endfor -%}
+						{% elsif talk.speaker -%}
+							<img src="{% if talk.speaker.img == empty or talk.speaker.img == nil %}/img/speaker_no_image.jpg{% else %}{{ talk.speaker.img }}{% endif %}" alt="" onerror="this.onerror = null; this.src = '/img/speaker_no_image.jpg'" />
+						{% endif -%}
+					</div>
+					<div class="deck-talk__info">
+						<h2 class="deck-talk__title">{{ talk.title | default: talk.talk }}</h2>
+						<p class="deck-talk__speakers">
+							{%- if talk.speakers and talk.speakers != empty -%}
+								{%- for speaker in talk.speakers -%}{{ speaker.name }}{% unless forloop.last %} &amp; {% endunless %}{%- endfor -%}
+							{%- elsif talk.speaker -%}
+								{{ talk.speaker.name }}
+							{%- endif -%}
+						</p>
+					</div>
+					{% if talk.language == "en" -%}
+					<span class="deck-talk__lang"><img src="/img/english-language.svg" alt="" />EN</span>
+					{% else -%}
+					<span class="deck-talk__lang"><img src="/img/german-language.svg" alt="" />DE</span>
+					{% endif -%}
+				</li>
+				{% else -%}
+				<li class="deck-talk deck-talk--tba">
+					<div class="deck-talk__info">
+						<h2 class="deck-talk__title">Talks will be announced soon</h2>
+					</div>
+				</li>
+				{% endfor -%}
+			</ol>
+		</div>
+	</section>
+
+	<!-- ───────────── Slide 3: Picture consent ───────────── -->
+	<section class="deck-slide deck-slide--consent" aria-label="Fotos und Videos">
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--blob"></span>
+			<span class="deck-shape deck-shape--stripes"></span>
+			<span class="deck-shape deck-shape--dots"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		<div class="deck-slide__body deck-consent">
+			<div class="deck-consent__visual" aria-hidden="true">
+				<div class="deck-consent__disc">
+					<svg viewBox="0 0 32 32"><use href="/img/svgs/camera.svg#icon-camera"></use></svg>
+				</div>
+				<span class="deck-rec">Rec</span>
+			</div>
+			<div class="deck-consent__text">
+				<span class="deck-kicker">Photos &amp; Videos</span>
+				<h1 class="deck-slide__title deck-slide__title--left">Say <mark>cheese!</mark></h1>
+				<p class="deck-consent__lead">We take photos and record the talks for our website, socials and YouTube.</p>
+				<p class="deck-consent__de" lang="de">Wir machen Fotos und zeichnen die Talks für Website, Socials und YouTube auf.</p>
+				<div class="deck-consent__note">
+					<p><strong>Don't want to be in the pictures?</strong> Just tell one of the organizers – no questions asked.</p>
+					<p class="deck-consent__de" lang="de">Lieber nicht aufs Foto? Sag einfach dem Orga-Team Bescheid.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% if host_name and host_name != empty -%}
+	<!-- ───────────── Slide 4: Host & sponsor ───────────── -->
+	<section class="deck-slide deck-slide--host" aria-label="Danke an unseren Host" data-kiosk>
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--ring"></span>
+			<span class="deck-shape deck-shape--dots"></span>
+			<span class="deck-shape deck-shape--squircle"></span>
+			<span class="deck-shape deck-shape--bolt deck-shape--bolt-b"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		{% assign same_sponsor = false -%}
+		{% if sponsor_name == host_name %}{% assign same_sponsor = true %}{% endif -%}
+		{% assign separate_sponsor = false -%}
+		{% if sponsor_name != empty and same_sponsor == false %}{% assign separate_sponsor = true %}{% endif -%}
+		{% comment %}Logos only when both have one, so host and sponsor stay visually equal{% endcomment -%}
+		{% assign use_logos = false -%}
+		{% if current_event.location.image -%}
+			{% if separate_sponsor == false or current_event.sponsor_image -%}
+				{% assign use_logos = true -%}
+			{% endif -%}
+		{% endif -%}
+
+		<div class="deck-slide__body deck-host">
+			<span class="deck-kicker">Danke!</span>
+			{% if separate_sponsor -%}
+			<h1 class="deck-host__thanks">Thanks to our host &amp; sponsor</h1>
+			<div class="deck-host__credits deck-host__credits--pair">
+				<div class="deck-host__credit">
+					<span class="deck-host__role">Venue</span>
+					{% if use_logos -%}
+					<div class="deck-host__logos">{% for img in current_event.location.image %}<img src="{{ img }}" alt="{{ host_name }}" />{% endfor %}</div>
+					{% else -%}
+					<p class="deck-host__name"><mark>{{ host_name }}</mark></p>
+					{% endif -%}
+				</div>
+				<div class="deck-host__credit">
+					<span class="deck-host__role">Food &amp; Drinks</span>
+					{% if use_logos -%}
+					<div class="deck-host__logos">{% for img in current_event.sponsor_image %}<img src="{{ img }}" alt="{{ sponsor_name }}" />{% endfor %}</div>
+					{% else -%}
+					<p class="deck-host__name"><mark>{{ sponsor_name }}</mark></p>
+					{% endif -%}
+				</div>
+			</div>
+			{% else -%}
+			<h1 class="deck-host__thanks">Thanks to our host</h1>
+			<div class="deck-host__credits">
+				<div class="deck-host__credit">
+					{% if use_logos -%}
+					<div class="deck-host__logos">{% for img in current_event.location.image %}<img src="{{ img }}" alt="{{ host_name }}" />{% endfor %}</div>
+					{% else -%}
+					<p class="deck-host__name"><mark>{{ host_name }}</mark></p>
+					{% endif -%}
+				</div>
+			</div>
+			<p class="deck-host__lead">for having us tonight!</p>
+			{% endif -%}
+		</div>
+	</section>
+	{% endif -%}
+
+	<!-- ───────────── Slide 5: Community News ───────────── -->
+	<section class="deck-slide deck-slide--news" aria-label="Community News">
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--blob"></span>
+			<span class="deck-shape deck-shape--dots"></span>
+			<span class="deck-shape deck-shape--squircle"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		<div class="deck-slide__body">
+			<div class="deck-slide__heading">
+				<span class="deck-kicker">Community</span>
+				<h1 class="deck-slide__title">Aktuelle Community <mark>News</mark></h1>
+			</div>
+			<div class="deck-news">
+				{% include communitynews--loop.html %}
+			</div>
+		</div>
+	</section>
+
+	<!-- ───────────── Slide 6: Call for Speakers ───────────── -->
+	<section class="deck-slide deck-slide--speakers" aria-label="Call for Speakers">
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--ring"></span>
+			<span class="deck-shape deck-shape--stripes"></span>
+			<span class="deck-shape deck-shape--dots"></span>
+			<span class="deck-shape deck-shape--bolt deck-shape--bolt-a"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		<div class="deck-slide__body deck-speakers">
+			<div class="deck-speakers__text">
+				<span class="deck-kicker">Call for Speakers</span>
+				<h1 class="deck-slide__title deck-slide__title--left">Do you want to speak <mark>next?</mark></h1>
+				<p class="deck-speakers__lead">Contact us via</p>
+				<a class="deck-mail-pill" href="mailto:organizers@technologieplauscherl.at">
+					<span class="deck-mail-pill__icon" aria-hidden="true"></span>
+					organizers@technologieplauscherl.at
+				</a>
+			</div>
+			<div class="deck-speakers__visual">
+				<span class="deck-orbit" aria-hidden="true"></span>
+				<span class="deck-orbit deck-orbit--inner" aria-hidden="true"></span>
+				<div class="deck-speakers__disc">
+					<img src="/img/svgs/tp-logo.svg" alt="Technologieplauscherl Logo" class="logo-dark" />
+					<img src="/img/svgs/tp-logo-bw.svg" alt="Technologieplauscherl Logo" class="logo-light" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ───────────── Slide 7: Socials ───────────── -->
+	<section class="deck-slide deck-slide--socials" aria-label="Follow us" data-kiosk>
+		<div class="deck-slide__decor" aria-hidden="true">
+			<span class="deck-shape deck-shape--blob"></span>
+			<span class="deck-shape deck-shape--ring"></span>
+			<span class="deck-shape deck-shape--squircle"></span>
+			<span class="deck-shape deck-shape--bolt deck-shape--bolt-a"></span>
+			<span class="deck-shape deck-shape--bolt deck-shape--bolt-b"></span>
+		</div>
+
+		<header class="deck-slide__bar" aria-hidden="true">
+			<span class="deck-slide__brand">Technologieplauscherl</span>
+		</header>
+
+		<div class="deck-slide__body deck-socials">
+			<div class="deck-socials__text">
+				<span class="deck-kicker">Stay in touch</span>
+				<h1 class="deck-slide__title deck-slide__title--left">Follow <mark>us</mark> on</h1>
+				<p class="deck-socials__lead">Meetup · LinkedIn · Instagram<br/> YouTube · GitHub</p>
+				<p class="deck-socials__url">technologieplauscherl.at/socials</p>
+			</div>
+			<div class="deck-socials__qr">
+				<span class="deck-scan-tag">Scan me</span>
+				<img class="qr-code" src="/img/tp-socials.png" alt="QR-Code zu technologieplauscherl.at/socials" />
+			</div>
+		</div>
+	</section>
+
+	<nav class="deck__dots" aria-label="Folien"></nav>
+	<div class="deck__progress" aria-hidden="true"><span></span></div>
+</main>
+
+<style>
+/* ==========================================================================
+   Live deck – all styles scoped to this page
+   Palette: brand teal #174741 + neon green #70FF72
+   ========================================================================== */
+
+body.live-layout {
+	/* Light (default) – best for washed-out projectors in bright rooms */
+	--deck-bg: #F3FAF5;
+	--deck-surface: #FFFFFF;
+	--deck-ink: #0A2522;           /* ~16:1 on bg */
+	--deck-muted: #2C4F4A;         /* ~8:1 on bg */
+	--deck-brand: #174741;
+	--deck-neon: #70FF72;
+	--deck-accent: #174741;        /* text accent */
+	--deck-on-accent: #70FF72;     /* text on accent surfaces */
+	--deck-mark: #70FF72;          /* highlighter */
+	--deck-mark-ink: #0A2522;
+	--deck-line: #174741;
+	--deck-shape: #70FF72;
+	--deck-shape-2: #174741;
+	--deck-shadow: 0 1.5rem 3rem -1.5rem rgba(10, 37, 34, .45);
+
+	background: var(--deck-bg);
+	color: var(--deck-ink);
+	overflow-x: hidden;
+}
+
+body.live-layout.dark-mode {
+	/* Dark – for dimmed rooms; deep teal instead of pure black keeps it calm */
+	--deck-bg: #061A17;
+	--deck-surface: #0E2C28;
+	--deck-ink: #FFFFFF;           /* ~17:1 on bg */
+	--deck-muted: #CDEBDD;
+	--deck-accent: #70FF72;        /* ~14:1 on bg */
+	--deck-on-accent: #061A17;
+	--deck-mark: #70FF72;
+	--deck-mark-ink: #061A17;
+	--deck-line: #70FF72;
+	--deck-shape: #70FF72;
+	--deck-shape-2: #2A7A6F;
+	--deck-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, .8);
+}
+
+html:has(body.live-layout) {
+	scroll-behavior: smooth;
+	scroll-snap-type: y proximity;
+}
+
+/* A deck has no website footer */
+body.live-layout > footer {
+	display: none;
+}
+
+/* ---------- Deck & deck-slide frame ---------- */
+
+.deck {
+	--pad-x: clamp(1.5rem, 5vw, 6rem);
+	--pad-y: clamp(1.25rem, 4vh, 3.5rem);
+
+	/* Type scale. On 16:9 1u = 1vw (= 1.78vh). On 4:3 the height has room
+	   to spare, so 1u grows to 1.15vw there instead of shrinking with the
+	   narrower width. Every font size in the deck uses one of these steps. */
+	--u: min(1.15vw, 1.78vh);
+	--fs-xs:  max(.9rem, 1.2 * var(--u));
+	--fs-s:   max(1rem,   1.5 * var(--u));
+	--fs-m:   max(1.15rem, 2 * var(--u));
+	--fs-l:   max(1.4rem, 2.75 * var(--u));
+	--fs-xl:  max(1.9rem, 3.75 * var(--u));
+	--fs-2xl: max(2.4rem, 6 * var(--u));
+	--fs-3xl: max(2.8rem, 8.5 * var(--u));
+
+	--font-display: 'clash-display', 'baby-neue', 'open-sans', sans-serif;
+	--display-word-spacing: .18em;   /* Clash Display's own space is tight */
+	--label-tracking: .08em;         /* uppercase pills, tags and labels */
+
+	font-size: var(--fs-m);
+	line-height: 1.35;
+}
+
+.deck-slide {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	min-height: 100vh;
+	min-height: 100svh;
+	padding: calc(var(--pad-y) * 2 + 2rem) var(--pad-x) calc(var(--pad-y) * 2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	scroll-snap-align: start;
+}
+
+.deck-slide + .deck-slide {
+	border-top: .35rem solid var(--deck-brand);
+}
+
+.deck-slide__body {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 110rem;
+	margin: 0 auto;
+}
+
+.deck-slide__bar {
+	position: absolute;
+	z-index: 2;
+	top: var(--pad-y);
+	left: var(--pad-x);
+	right: var(--pad-x);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	color: var(--deck-muted);
+}
+
+.deck-slide__brand {
+	display: inline-flex;
+	align-items: center;
+	gap: .6em;
+}
+
+.deck-slide__brand::before {
+	content: "";
+	width: .9em;
+	height: .9em;
+	border-radius: 50%;
+	background: var(--deck-neon);
+	box-shadow: 0 0 0 .2em var(--deck-brand);
+}
+
+/* ---------- Typography ---------- */
+
+.deck h1 {
+	margin: 0;
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0;
+	color: var(--deck-ink);
+}
+
+.deck-slide__title {
+	font-size: var(--fs-2xl);
+	text-align: center;
+}
+
+.deck-slide__title--left {
+	text-align: left;
+}
+
+.deck-slide__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: .5em;
+	margin-bottom: clamp(1.5rem, 5vh, 4rem);
+}
+
+.deck-kicker {
+	display: inline-block;
+	align-self: flex-start;
+	padding: .3em .9em;
+	border-radius: 999px;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-s);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	line-height: 1.2;
+}
+
+body.dark-mode .deck-kicker {
+	background: var(--deck-neon);
+	color: var(--deck-on-accent);
+}
+
+.deck-slide__heading .deck-kicker {
+	align-self: center;
+}
+
+/* Highlighter-marker effect */
+.deck mark {
+	color: var(--deck-mark-ink);
+	background: linear-gradient(transparent 8%, var(--deck-mark) 8%, var(--deck-mark) 92%, transparent 92%);
+	padding: 0 .12em;
+	margin: 0 -.04em;
+	border-radius: .08em;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+}
+
+.deck p {
+	margin: 0;
+	font-size: inherit;
+}
+
+/* ---------- Decorative CSS shapes ---------- */
+
+.deck-slide__decor {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.deck-shape {
+	position: absolute;
+	display: block;
+}
+
+.deck-shape--blob {
+	width: clamp(16rem, 38vw, 48rem);
+	aspect-ratio: 1;
+	right: -10vw;
+	top: -14vw;
+	background: var(--deck-shape);
+	border-radius: 62% 38% 46% 54% / 55% 45% 55% 45%;
+	animation: deck-morph 18s ease-in-out infinite alternate;
+}
+
+.deck-shape--ring {
+	width: clamp(12rem, 26vw, 34rem);
+	aspect-ratio: 1;
+	left: -7vw;
+	bottom: -9vw;
+	border-radius: 50%;
+	border: clamp(1.25rem, 2.6vw, 3.5rem) solid var(--deck-shape-2);
+	animation: deck-float 12s ease-in-out infinite alternate;
+}
+
+.deck-shape--dots {
+	width: clamp(8rem, 18vw, 22rem);
+	aspect-ratio: 4 / 3;
+	right: 6vw;
+	bottom: 8vh;
+	background-image: radial-gradient(var(--deck-shape-2) 22%, transparent 24%);
+	background-size: clamp(1.25rem, 1.8vw, 2.25rem) clamp(1.25rem, 1.8vw, 2.25rem);
+	opacity: .55;
+}
+
+.deck-shape--stripes {
+	width: clamp(10rem, 22vw, 28rem);
+	height: clamp(3rem, 6vw, 7rem);
+	left: 4vw;
+	top: 18vh;
+	transform: rotate(-12deg);
+	background: repeating-linear-gradient(
+		-45deg,
+		var(--deck-shape) 0 .8rem,
+		transparent .8rem 1.8rem
+	);
+	border-radius: .75rem;
+}
+
+.deck-shape--squircle {
+	width: clamp(6rem, 11vw, 14rem);
+	aspect-ratio: 1;
+	left: 5vw;
+	bottom: 10vh;
+	border-radius: 30%;
+	background: var(--deck-brand);
+	transform: rotate(18deg);
+	box-shadow: 1.25rem 1.25rem 0 0 var(--deck-shape);
+	animation: deck-tilt 14s ease-in-out infinite alternate;
+}
+
+/* Lightning “sparks” – echo of the megaphone in the QR code */
+.deck-shape--bolt {
+	width: clamp(3.5rem, 6vw, 8rem);
+	aspect-ratio: 3 / 5;
+	background: var(--deck-shape);
+	clip-path: polygon(55% 0, 0 58%, 42% 58%, 30% 100%, 100% 38%, 56% 38%, 78% 0);
+	filter: drop-shadow(.35rem .35rem 0 var(--deck-brand));
+}
+
+.deck-shape--bolt-a {
+	left: 12vw;
+	top: 12vh;
+	transform: rotate(-14deg);
+	animation: deck-zap 6s ease-in-out infinite;
+}
+
+.deck-shape--bolt-b {
+	right: 14vw;
+	bottom: 12vh;
+	width: clamp(2.5rem, 4vw, 5.5rem);
+	transform: rotate(16deg);
+	animation: deck-zap 6s ease-in-out 3s infinite;
+}
+
+/* ---------- Slide 1: Cover ---------- */
+
+.deck-cover {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: clamp(2rem, 6vw, 8rem);
+}
+
+.deck-cover__logo {
+	position: relative;
+	width: clamp(12rem, 26vw, 34rem);
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+}
+
+.deck-cover__halo {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: var(--deck-surface);
+	border: clamp(.5rem, .8vw, 1rem) solid var(--deck-brand);
+	box-shadow:
+		0 0 0 clamp(.75rem, 1.4vw, 1.75rem) var(--deck-neon),
+		var(--deck-shadow);
+}
+
+.deck-cover__logo img {
+	position: relative;
+	width: 72%;
+	transform: translateX(4%);
+}
+
+.deck-cover__text {
+	display: flex;
+	flex-direction: column;
+	gap: .4em;
+}
+
+.deck-cover__title {
+	text-align: left;
+	font-size: var(--fs-3xl);
+	hyphens: manual;
+}
+
+.deck-cover__tagline {
+	font-size: var(--fs-l);
+	font-weight: 700;
+	color: var(--deck-muted);
+}
+
+.deck-slide--news .deck-shape--blob {
+	top: auto;
+	bottom: -20vw;
+	right: -16vw;
+}
+
+.deck-slide--news .deck-shape--dots {
+	right: auto;
+	left: 3vw;
+	bottom: 3vh;
+}
+
+.deck-slide--news .deck-shape--squircle {
+	left: auto;
+	right: 4vw;
+	top: 14vh;
+	bottom: auto;
+	width: clamp(4rem, 6vw, 8rem);
+}
+
+.deck-slide--cover .deck-shape--blob {
+	right: -12vw;
+	top: auto;
+	bottom: -18vw;
+	width: clamp(18rem, 44vw, 56rem);
+}
+
+.deck-slide--cover .deck-shape--ring {
+	left: auto;
+	right: 18vw;
+	top: -8vw;
+	bottom: auto;
+}
+
+.deck-slide--cover .deck-shape--dots {
+	right: auto;
+	left: 3vw;
+	bottom: 6vh;
+}
+
+.deck-slide--cover .deck-shape--stripes {
+	left: auto;
+	right: 4vw;
+	top: 22vh;
+	transform: rotate(10deg);
+}
+
+.deck-slide--cover .deck-shape--bolt-a {
+	left: 42vw;
+	top: 5vh;
+}
+
+/* ---------- Slide 2: Community News ---------- */
+
+.deck-slide--news .deck-slide__title {
+	font-size: var(--fs-xl);
+}
+
+.deck-slide--news .deck-slide__heading {
+	gap: .35em;
+	margin-bottom: clamp(1rem, 3.5vh, 3rem);
+}
+
+.deck-news .events {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+	gap: clamp(1rem, 1.6vw, 2rem);
+	max-width: none;
+	margin: 0;
+}
+
+.deck-news .event {
+	width: auto;
+	margin: 0;
+	font-size: var(--fs-s);          /* card paddings (em) follow the card text size */
+	font-style: normal;
+	text-decoration: none;
+	color: var(--deck-ink);
+	background: var(--deck-surface);
+	border: .2rem solid var(--deck-line);
+	border-radius: clamp(.75rem, 1.2vw, 1.5rem);
+	overflow: hidden;
+	box-shadow: .6rem .6rem 0 0 var(--deck-brand), var(--deck-shadow);
+}
+
+body.dark-mode .deck-news .event {
+	background: var(--deck-surface);
+	border-color: var(--deck-line);
+	box-shadow: .6rem .6rem 0 0 var(--deck-neon), var(--deck-shadow);
+}
+
+.deck-news .event__details {
+	width: 100%;
+	align-items: stretch;
+}
+
+.deck-news .event__date {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 auto;
+	width: 2em;
+	min-width: 0;
+	padding: .4em .2em;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	font-size: var(--fs-l);
+	line-height: 1;
+}
+
+body.dark-mode .deck-news .event__date {
+	background: var(--deck-neon);
+	color: var(--deck-on-accent);
+}
+
+.deck-news .event__month {
+	margin-top: .2em;
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+}
+
+.deck-news .event__information {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: .35em;
+	padding: .8em 1em;
+	min-width: 0;
+}
+
+.deck-news .event__title {
+	padding: 0;
+	font-family: 'open-sans', 'Helvetica', sans-serif;
+	font-size: var(--fs-s);
+	font-weight: 800;
+	line-height: 1.15;
+	text-align: left;
+	color: var(--deck-ink);
+	overflow-wrap: anywhere;
+	hyphens: auto;
+}
+
+.deck-news .event__venue,
+.deck-news .event__additional-info {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+	font-size: var(--fs-xs);
+	font-weight: 600;
+	color: var(--deck-muted);
+}
+
+.deck-news .event .event__icon {
+	flex: 0 0 auto;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.deck-news .event__icon--cost {
+	top: .6em;
+	right: .6em;
+	width: 1.4em;
+	height: 1.4em;
+	color: var(--deck-accent);
+}
+
+/* ---------- Slide 3: Call for Speakers ---------- */
+
+.deck-speakers {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	align-items: center;
+	gap: clamp(2rem, 5vw, 7rem);
+}
+
+.deck-speakers__text {
+	container-type: inline-size;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: clamp(1rem, 3vh, 2.25rem);
+}
+
+.deck-speakers__lead {
+	font-size: var(--fs-m);
+	font-weight: 700;
+	color: var(--deck-muted);
+}
+
+.deck-mail-pill {
+	align-self: flex-start;
+	display: inline-flex;
+	align-items: center;
+	gap: .6em;
+	max-width: 100%;
+	padding: .55em 1em;
+	border-radius: 999px;
+	--pill-ink: #FFFFFF;
+	background: var(--deck-brand);
+	color: var(--pill-ink);
+	transition: none;
+	border: .2rem solid var(--deck-brand);
+	box-shadow: .5rem .5rem 0 0 var(--deck-neon);
+	/* ~23.5em wide in total -> 4cqi keeps it inside the text column */
+	font-size: min(var(--fs-s), 4cqi);
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+body.dark-mode .deck-mail-pill {
+	background: var(--deck-neon);
+	border-color: var(--deck-neon);
+	--pill-ink: var(--deck-on-accent);
+	box-shadow: .5rem .5rem 0 0 var(--deck-shape-2);
+}
+
+.deck-mail-pill:hover,
+.deck-mail-pill:focus-visible {
+	color: var(--pill-ink);
+	transform: translate(-.15rem, -.15rem);
+}
+
+/* Envelope drawn with CSS */
+.deck-mail-pill__icon {
+	position: relative;
+	flex: 0 0 auto;
+	width: 1.3em;
+	height: .9em;
+	border: .12em solid currentColor;
+	border-radius: .15em;
+}
+
+.deck-mail-pill__icon::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -.38em;
+	width: .75em;
+	height: .75em;
+	border-right: .12em solid currentColor;
+	border-bottom: .12em solid currentColor;
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.deck-speakers__visual {
+	position: relative;
+	justify-self: center;
+	width: clamp(14rem, 30vw, 40rem);
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+}
+
+.deck-orbit {
+	--ring: clamp(.3rem, .5vw, .6rem);
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	border: var(--ring) dashed var(--deck-line);
+	animation: deck-spin 40s linear infinite;
+}
+
+/* Ball sits centred on the ring line (half the border width outside the
+   padding box) and travels with the spinning ring */
+.deck-orbit::after {
+	content: "";
+	position: absolute;
+	top: calc(var(--ring) / -2);
+	left: 50%;
+	width: 12%;
+	aspect-ratio: 1;
+	box-sizing: border-box;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: var(--deck-neon);
+	border: .3rem solid var(--deck-brand);
+}
+
+.deck-orbit--inner {
+	inset: 11%;
+	border-style: solid;
+	border-color: var(--deck-neon);
+	animation-direction: reverse;
+	animation-duration: 28s;
+}
+
+.deck-orbit--inner::after {
+	top: auto;
+	bottom: calc(var(--ring) / -2);
+	transform: translate(-50%, 50%);
+	width: 9%;
+	background: var(--deck-brand);
+	border-color: var(--deck-neon);
+}
+
+.deck-speakers__disc {
+	position: relative;
+	width: 66%;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: var(--deck-surface);
+	border: clamp(.4rem, .6vw, .8rem) solid var(--deck-brand);
+	box-shadow: var(--deck-shadow);
+}
+
+.deck-speakers__disc img {
+	width: 70%;
+	transform: translateX(4%);
+}
+
+.deck-slide--speakers .deck-shape--ring {
+	left: auto;
+	right: -6vw;
+	top: -10vw;
+	bottom: auto;
+}
+
+.deck-slide--speakers .deck-shape--stripes {
+	left: auto;
+	right: 8vw;
+	top: auto;
+	bottom: 8vh;
+	transform: rotate(8deg);
+}
+
+.deck-slide--speakers .deck-shape--dots {
+	right: auto;
+	left: 44vw;
+	bottom: 4vh;
+}
+
+.deck-slide--speakers .deck-shape--bolt-a {
+	left: auto;
+	right: 40vw;
+	top: 10vh;
+}
+
+/* ---------- Slide 4: Socials ---------- */
+
+.deck-socials {
+	display: grid;
+	grid-template-columns: 1.2fr auto;
+	align-items: center;
+	gap: clamp(2rem, 6vw, 8rem);
+}
+
+.deck-socials__text {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(1rem, 3vh, 2.25rem);
+}
+
+.deck-socials__lead {
+	font-size: var(--fs-m);
+	font-weight: 700;
+	color: var(--deck-muted);
+}
+
+.deck-socials__url {
+	align-self: flex-start;
+	font-size: var(--fs-m);
+	font-weight: 800;
+	color: var(--deck-accent);
+	border-bottom: .2em solid var(--deck-neon);
+	overflow-wrap: anywhere;
+}
+
+.deck-socials__qr {
+	position: relative;
+	padding: clamp(1rem, 1.6vw, 2rem);
+	background: #FFFFFF;             /* QR codes need a light quiet zone */
+	border: .3rem solid var(--deck-brand);
+	border-radius: clamp(1.5rem, 3vw, 4rem);
+	box-shadow: 1rem 1rem 0 0 var(--deck-neon), var(--deck-shadow);
+	transform: rotate(2deg);
+}
+
+body.dark-mode .deck-socials__qr {
+	border-color: var(--deck-neon);
+	box-shadow: 1rem 1rem 0 0 var(--deck-shape-2), var(--deck-shadow);
+}
+
+.qr-code {
+	display: block;
+	width: clamp(16rem, min(34vw, 62vh), 48rem);
+	aspect-ratio: 1;
+	border-radius: clamp(1rem, 2vw, 2.5rem);
+}
+
+@supports (corner-shape: squircle) {
+	.deck-socials__qr {
+		border-radius: clamp(3rem, 6vw, 8rem);
+		corner-shape: squircle;
+	}
+	.qr-code {
+		border-radius: clamp(2rem, 4vw, 5rem);
+		corner-shape: squircle;
+	}
+}
+
+.deck-scan-tag {
+	position: absolute;
+	z-index: 1;
+	top: -1.1em;
+	left: -1.1em;
+	padding: .35em .9em;
+	border-radius: 999px;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-s);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	transform: rotate(-8deg);
+	border: .2rem solid var(--deck-neon);
+}
+
+.deck-slide--socials .deck-shape--blob {
+	right: auto;
+	left: 22vw;
+	top: auto;
+	bottom: -30vw;
+}
+
+.deck-slide--socials .deck-shape--ring {
+	left: auto;
+	right: -8vw;
+	bottom: -10vw;
+}
+
+.deck-slide--socials .deck-shape--squircle {
+	left: 4vw;
+	top: 14vh;
+	bottom: auto;
+	width: clamp(4rem, 7vw, 9rem);
+}
+
+.deck-slide--socials .deck-shape--bolt-a {
+	left: 48vw;
+	right: auto;
+	top: 16vh;
+}
+
+.deck-slide--socials .deck-shape--bolt-b {
+	right: auto;
+	left: 8vw;
+	bottom: 10vh;
+}
+
+/* ---------- Agenda ---------- */
+
+.deck-slide--agenda .deck-slide__title {
+	font-size: var(--fs-xl);
+}
+
+.deck-slide--agenda .deck-slide__heading {
+	gap: .35em;
+	margin-bottom: clamp(1rem, 3.5vh, 3rem);
+}
+
+.deck-agenda__meta {
+	font-size: var(--fs-s);
+	font-weight: 700;
+	color: var(--deck-muted);
+	text-align: center;
+}
+
+.deck-agenda {
+	--avatar: clamp(3.5rem, 5.5vw, 8rem);
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 92rem;
+	display: flex;
+	flex-direction: column;
+	gap: clamp(.9rem, 2.4vh, 2.25rem);
+}
+
+.deck-agenda--many {
+	--avatar: clamp(3rem, min(4.2vw, 8vh), 6rem);
+	gap: clamp(.6rem, 1.6vh, 1.5rem);
+}
+
+/* 4+ talks: drop the kicker and tighten rows so the list fits one screen */
+.deck-slide__heading:has(+ .deck-agenda--many) .deck-kicker {
+	display: none;
+}
+
+.deck-agenda--many .deck-talk {
+	padding-block: clamp(.5rem, 1.1vh, 1.25rem);
+}
+
+.deck-agenda--many .deck-talk__info {
+	gap: .1em;
+}
+
+.deck-talk {
+	display: grid;
+	grid-template-columns: auto auto 1fr auto;
+	align-items: center;
+	gap: clamp(1rem, 2vw, 2.5rem);
+	margin: 0;
+	padding: clamp(.75rem, 1.6vh, 1.5rem) clamp(1rem, 2vw, 2.5rem);
+	background: var(--deck-surface);
+	border: .2rem solid var(--deck-line);
+	border-radius: clamp(.75rem, 1.2vw, 1.5rem);
+	box-shadow: .6rem .6rem 0 0 var(--deck-brand), var(--deck-shadow);
+}
+
+body.dark-mode .deck-talk {
+	box-shadow: .6rem .6rem 0 0 var(--deck-neon), var(--deck-shadow);
+}
+
+.deck-talk--tba {
+	grid-template-columns: 1fr;
+	text-align: center;
+}
+
+.deck-talk__num {
+	display: grid;
+	place-items: center;
+	width: 1.5em;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-l);
+	line-height: 1;
+}
+
+body.dark-mode .deck-talk__num {
+	background: var(--deck-neon);
+	color: var(--deck-on-accent);
+}
+
+.deck-talk__avatars {
+	display: flex;
+}
+
+.deck-talk__avatars img {
+	margin: 0;
+	width: var(--avatar);
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 50%;
+	border: .25rem solid var(--deck-brand);
+	background: var(--deck-surface);
+}
+
+body.dark-mode .deck-talk__avatars img {
+	border-color: var(--deck-neon);
+}
+
+.deck-talk__avatars img + img {
+	margin-left: calc(var(--avatar) * -.3);
+}
+
+.deck-talk__info {
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: .25em;
+}
+
+.deck .deck-talk__title {
+	margin: 0;
+	padding: 0;
+	font-family: 'open-sans', 'Helvetica', sans-serif;
+	font-size: var(--fs-m);
+	font-weight: 800;
+	line-height: 1.15;
+	text-transform: none;
+	text-align: left;
+	color: var(--deck-ink);
+	text-wrap: balance;
+	overflow-wrap: anywhere;
+}
+
+.deck-talk--tba .deck-talk__title {
+	text-align: center;
+}
+
+.deck-talk__speakers {
+	font-size: var(--fs-s);
+	font-weight: 600;
+	color: var(--deck-muted);
+}
+
+.deck-talk__lang {
+	display: inline-flex;
+	align-items: center;
+	gap: .45em;
+	padding: .3em .75em;
+	border-radius: 999px;
+	border: .15rem solid var(--deck-line);
+	color: var(--deck-accent);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	letter-spacing: var(--label-tracking);
+	line-height: 1;
+}
+
+.deck-talk__lang img {
+	margin: 0;                      /* undo the site reset's img margin-bottom */
+	height: 1em;
+	width: auto;
+	border-radius: .15em;
+}
+
+.deck-slide--agenda .deck-shape--blob {
+	top: -22vw;
+	right: -18vw;
+}
+
+.deck-slide--agenda .deck-shape--ring {
+	left: -12vw;
+	bottom: -14vw;
+}
+
+
+/* ---------- Picture consent ---------- */
+
+.deck-consent {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: clamp(2rem, 6vw, 8rem);
+}
+
+.deck-consent__visual {
+	--bracket: clamp(.4rem, .7vw, .9rem);
+	--bracket-len: 22%;
+	position: relative;
+	width: clamp(12rem, 28vw, 36rem);
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+}
+
+/* Viewfinder corner brackets */
+.deck-consent__visual::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	--c: var(--deck-line);
+	background:
+		linear-gradient(var(--c), var(--c)) top left / var(--bracket-len) var(--bracket),
+		linear-gradient(var(--c), var(--c)) top left / var(--bracket) var(--bracket-len),
+		linear-gradient(var(--c), var(--c)) top right / var(--bracket-len) var(--bracket),
+		linear-gradient(var(--c), var(--c)) top right / var(--bracket) var(--bracket-len),
+		linear-gradient(var(--c), var(--c)) bottom left / var(--bracket-len) var(--bracket),
+		linear-gradient(var(--c), var(--c)) bottom left / var(--bracket) var(--bracket-len),
+		linear-gradient(var(--c), var(--c)) bottom right / var(--bracket-len) var(--bracket),
+		linear-gradient(var(--c), var(--c)) bottom right / var(--bracket) var(--bracket-len);
+	background-repeat: no-repeat;
+}
+
+.deck-consent__disc {
+	width: 68%;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: var(--deck-brand);
+	box-shadow:
+		0 0 0 clamp(.5rem, 1vw, 1.25rem) var(--deck-neon),
+		var(--deck-shadow);
+}
+
+.deck-consent__disc svg {
+	width: 50%;
+	height: 50%;
+	fill: var(--deck-neon);
+}
+
+.deck-rec {
+	position: absolute;
+	top: 6%;
+	right: 6%;
+	display: inline-flex;
+	align-items: center;
+	gap: .45em;
+	padding: .3em .75em;
+	border-radius: 999px;
+	background: var(--deck-surface);
+	color: var(--deck-ink);
+	border: .2rem solid var(--deck-line);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-s);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	line-height: 1;
+}
+
+.deck-rec::before {
+	content: "";
+	width: .7em;
+	height: .7em;
+	border-radius: 50%;
+	background: #E5383B;
+	animation: deck-blink 1.6s steps(1, end) infinite;
+}
+
+.deck-consent__text {
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: clamp(.75rem, 2.4vh, 2rem);
+}
+
+.deck-consent__lead {
+	font-size: var(--fs-m);
+	font-weight: 700;
+	line-height: 1.25;
+	color: var(--deck-ink);
+}
+
+.deck-consent__de {
+	font-size: var(--fs-s);
+	font-weight: 600;
+	color: var(--deck-muted);
+}
+
+.deck-consent__lead + .deck-consent__de {
+	font-size: var(--fs-s);
+	margin-top: -.4em;
+}
+
+.deck-consent__note {
+	display: flex;
+	flex-direction: column;
+	gap: .35em;
+	padding: .8em 1.1em;
+	font-size: var(--fs-s);
+	background: var(--deck-surface);
+	border: .2rem solid var(--deck-line);
+	border-left-width: .6em;
+	border-radius: clamp(.75rem, 1.2vw, 1.5rem);
+	box-shadow: var(--deck-shadow);
+}
+
+.deck-consent__note strong {
+	color: var(--deck-accent);
+}
+
+.deck-slide--consent .deck-shape--blob {
+	top: auto;
+	bottom: -24vw;
+	right: -14vw;
+}
+
+.deck-slide--consent .deck-shape--stripes {
+	left: auto;
+	right: 5vw;
+	top: 14vh;
+	transform: rotate(10deg);
+}
+
+.deck-slide--consent .deck-shape--dots {
+	right: auto;
+	left: 3vw;
+	bottom: 4vh;
+}
+
+
+/* ---------- Host & sponsor ---------- */
+
+/* The names are the hero; the thank-you line is the supporting act */
+.deck-host {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: clamp(1rem, 3vh, 2.75rem);
+}
+
+.deck-host .deck-kicker {
+	align-self: center;
+	font-size: var(--fs-s);
+}
+
+.deck .deck-host__thanks {
+	font-size: var(--fs-2xl);
+	color: var(--deck-muted);
+}
+
+.deck-host__credits {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(1.5rem, 5vh, 4.5rem);
+	margin: clamp(.25rem, 1.5vh, 1.5rem) 0;
+}
+
+.deck-host__credit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(.4rem, 1.2vh, 1rem);
+}
+
+.deck .deck-host__name {
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	/* min() with vh keeps the names on screen for short projector resolutions */
+	/* Clash Display caps are wide: ~11 caps fill the 16:9 / 4:3 content width */
+	font-size: var(--fs-3xl);
+	text-transform: uppercase;
+	line-height: 1.05;
+	color: var(--deck-ink);
+	overflow-wrap: anywhere;
+	text-wrap: balance;
+}
+
+.deck-host__credits--pair .deck-host__name {
+	font-size: var(--fs-2xl);
+}
+
+.deck-host__role {
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-s);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	color: var(--deck-accent);
+}
+
+.deck-host__logos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: clamp(1rem, 2vw, 2.5rem);
+	padding: clamp(1rem, 2vw, 2rem) clamp(1.5rem, 3vw, 3rem);
+	background: #FFFFFF;             /* logos are usually made for light backgrounds */
+	border-radius: clamp(.75rem, 1.5vw, 2rem);
+}
+
+.deck-host__logos img {
+	margin: 0;
+	max-width: min(70vw, 50rem);
+	max-height: 30vh;
+	object-fit: contain;
+}
+
+.deck-host__credits--pair .deck-host__logos img {
+	max-height: 18vh;
+}
+
+.deck-host__lead {
+	font-size: var(--fs-l);
+	font-weight: 700;
+	color: var(--deck-muted);
+}
+
+.deck-slide--host .deck-shape--ring {
+	left: -10vw;
+	bottom: -12vw;
+}
+
+.deck-slide--host .deck-shape--dots {
+	right: auto;
+	left: 40vw;
+	bottom: 4vh;
+}
+
+.deck-slide--host .deck-shape--squircle {
+	left: auto;
+	right: 4vw;
+	top: 12vh;
+	bottom: auto;
+	width: clamp(4rem, 6vw, 8rem);
+}
+
+.deck-slide--host .deck-shape--bolt-b {
+	right: auto;
+	left: 30vw;
+	bottom: auto;
+	top: 14vh;
+}
+
+/* ---------- Kiosk mode (#welcome): crossfading loop of selected slides ---------- */
+
+html:has(body.deck-kiosk) {
+	scroll-snap-type: none;
+}
+
+body.deck-kiosk {
+	overflow: hidden;
+}
+
+.deck-kiosk .deck-slide:not([data-kiosk]) {
+	display: none;
+}
+
+.deck-kiosk .deck-slide {
+	position: fixed;
+	inset: 0;
+	min-height: 0;
+	height: 100vh;
+	height: 100svh;
+	border-top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .9s ease, visibility 0s linear .9s;
+}
+
+.deck-kiosk .deck-slide.is-active {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity .9s ease, visibility 0s;
+}
+
+/* ---------- Logo theme switching ---------- */
+
+body:not(.dark-mode) .deck .logo-dark,
+body.dark-mode .deck .logo-light {
+	display: none;
+}
+
+/* ---------- Navigation chrome ---------- */
+
+.deck__dots {
+	position: fixed;
+	z-index: 10;
+	right: clamp(.75rem, 1.5vw, 2rem);
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	gap: .8rem;
+}
+
+.deck__dots button {
+	width: clamp(.9rem, 1vw, 1.4rem);
+	aspect-ratio: 1;
+	padding: 0;
+	border-radius: 50%;
+	border: .2rem solid var(--deck-brand);
+	background: var(--deck-surface);
+	cursor: pointer;
+	transition: transform .2s ease, background-color .2s ease;
+}
+
+body.dark-mode .deck__dots button {
+	border-color: var(--deck-neon);
+}
+
+.deck__dots button[aria-current="true"] {
+	background: var(--deck-neon);
+	transform: scale(1.35);
+}
+
+.deck__progress {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: clamp(.35rem, .5vw, .6rem);
+	background: color-mix(in srgb, var(--deck-brand) 25%, transparent);
+}
+
+.deck__progress span {
+	display: block;
+	height: 100%;
+	width: var(--progress, 0%);
+	background: var(--deck-neon);
+	box-shadow: 0 0 0 .1rem var(--deck-brand);
+	transition: width .4s ease;
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes deck-morph {
+	to { border-radius: 40% 60% 58% 42% / 42% 58% 42% 58%; transform: rotate(14deg) scale(1.04); }
+}
+
+@keyframes deck-float {
+	to { transform: translate(2vw, -2vw); }
+}
+
+@keyframes deck-tilt {
+	to { transform: rotate(-6deg) translateY(-1.5vh); }
+}
+
+@keyframes deck-spin {
+	to { transform: rotate(360deg); }
+}
+
+@keyframes deck-blink {
+	50% { opacity: .15; }
+}
+
+@keyframes deck-zap {
+	0%, 80%, 100% { opacity: 1; }
+	85% { opacity: .35; }
+	90% { opacity: 1; }
+	95% { opacity: .5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:has(body.live-layout) { scroll-behavior: auto; }
+	.deck *, .deck *::before, .deck *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Smaller screens (preview on laptops / phones) ---------- */
+
+@media (max-width: 900px) {
+	.deck-cover,
+	.deck-speakers,
+	.deck-socials,
+	.deck-consent {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+	}
+	.deck-cover__text,
+	.deck-speakers__text,
+	.deck-socials__text,
+	.deck-consent__text {
+		align-items: center;
+	}
+	.deck-consent__visual {
+		width: min(60vw, 16rem);
+	}
+	.deck-talk {
+		grid-template-columns: auto 1fr;
+	}
+	.deck-talk__avatars {
+		display: none;
+	}
+	.deck-talk__lang {
+		grid-column: 2;
+		justify-self: start;
+	}
+	.deck-slide__title--left,
+	.deck-cover__title {
+		text-align: center;
+	}
+	.deck-kicker,
+	.deck-mail-pill,
+	.deck-socials__url {
+		align-self: center;
+	}
+	.deck-speakers__visual {
+		order: -1;
+		width: min(60vw, 18rem);
+	}
+	.deck__dots {
+		display: none;
+	}
+	.deck-shape--stripes,
+	.deck-shape--dots {
+		display: none;
+	}
+}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const allSlides = Array.from(document.querySelectorAll(".deck .deck-slide"));
+		const dotsNav = document.querySelector(".deck__dots");
+		const progress = document.querySelector(".deck__progress");
+		const progressBar = progress.querySelector("span");
+
+		// Kiosk mode: /live/#welcome loops the slides marked with data-kiosk
+		const KIOSK_HASH = "#welcome";
+		const KIOSK_INTERVAL = 15000; // ms per slide
+
+		let kiosk = false;
+		let slides = allSlides;
+		let dots = [];
+		let current = 0;
+		let timer = null;
+
+		// Let our long name break as "Technologie-plauscherl" in narrow news cards
+		document.querySelectorAll(".deck-news .event__title").forEach(t => {
+			t.textContent = t.textContent.replace(/Technologieplauscherl/g, "Technologie­plauscherl");
+		});
+
+		// Navigation dots (rebuilt per mode, since kiosk shows a subset)
+		function buildDots() {
+			dotsNav.replaceChildren();
+			dots = slides.map((slide, i) => {
+				const dot = document.createElement("button");
+				dot.type = "button";
+				dot.setAttribute("aria-label", "Folie " + (i + 1) + ": " + (slide.getAttribute("aria-label") || ""));
+				dot.addEventListener("click", () => goTo(i));
+				dotsNav.appendChild(dot);
+				return dot;
+			});
+		}
+
+		// Scroll mode: the active slide is the one covering the vertical centre of the viewport
+		function activeIndex() {
+			if (kiosk) return current;
+			const mid = window.innerHeight / 2;
+			const idx = slides.findIndex(s => {
+				const { top, bottom } = s.getBoundingClientRect();
+				return top <= mid && bottom > mid;
+			});
+			return idx === -1 ? 0 : idx;
+		}
+
+		function step(direction) {
+			if (kiosk) {
+				goTo(current + direction);
+				return;
+			}
+			const { top, bottom } = slides[activeIndex()].getBoundingClientRect();
+			const h = window.innerHeight;
+			if (direction > 0 && bottom > h + 2) {
+				window.scrollBy({ top: Math.min(bottom - h, h * 0.8), behavior: "smooth" });
+			} else if (direction < 0 && top < -2) {
+				window.scrollBy({ top: Math.max(top, -h * 0.8), behavior: "smooth" });
+			} else {
+				goTo(activeIndex() + direction);
+			}
+		}
+
+		function goTo(i) {
+			if (kiosk) {
+				show((i + slides.length) % slides.length);
+				return;
+			}
+			const target = Math.max(0, Math.min(slides.length - 1, i));
+			slides[target].scrollIntoView({ behavior: "smooth", block: "start" });
+		}
+
+		// Kiosk: crossfade to slide i and (re)start the auto-advance countdown
+		function show(i) {
+			current = i;
+			slides.forEach((s, j) => s.classList.toggle("is-active", j === i));
+			update();
+
+			clearTimeout(timer);
+			timer = setTimeout(() => show((current + 1) % slides.length), KIOSK_INTERVAL);
+
+			// progress bar doubles as countdown to the next slide
+			progressBar.style.transition = "none";
+			progressBar.style.width = "0%";
+			void progressBar.offsetWidth;
+			progressBar.style.transition = "width " + KIOSK_INTERVAL + "ms linear";
+			progressBar.style.width = "100%";
+		}
+
+		function update() {
+			const idx = activeIndex();
+			dots.forEach((d, i) => d.setAttribute("aria-current", i === idx ? "true" : "false"));
+			if (!kiosk) {
+				progress.style.setProperty("--progress", ((idx + 1) / slides.length * 100) + "%");
+			}
+		}
+
+		function applyMode() {
+			kiosk = location.hash === KIOSK_HASH;
+			document.body.classList.toggle("deck-kiosk", kiosk);
+			slides = kiosk ? allSlides.filter(s => s.hasAttribute("data-kiosk")) : allSlides;
+
+			clearTimeout(timer);
+			allSlides.forEach(s => s.classList.remove("is-active"));
+			progressBar.style.transition = "";
+			progressBar.style.width = "";
+
+			buildDots();
+			if (kiosk) {
+				show(0);
+			} else {
+				update();
+			}
+		}
+
+		window.addEventListener("scroll", () => { if (!kiosk) update(); }, { passive: true });
+		window.addEventListener("resize", update);
+		window.addEventListener("hashchange", applyMode);
+		applyMode();
+
+		// Keyboard + presenter clickers (which send PageUp / PageDown)
+		const NEXT = ["ArrowDown", "ArrowRight", "PageDown", " "];
+		const PREV = ["ArrowUp", "ArrowLeft", "PageUp"];
+
+		document.addEventListener("keydown", function (evt) {
+			if (evt.altKey || evt.ctrlKey || evt.metaKey) return;
+
+			if (evt.key === " " && evt.shiftKey) {
+				evt.preventDefault();
+				step(-1);
+			} else if (NEXT.includes(evt.key)) {
+				evt.preventDefault();
+				step(1);
+			} else if (PREV.includes(evt.key)) {
+				evt.preventDefault();
+				step(-1);
+			} else if (evt.key === "Home") {
+				evt.preventDefault();
+				goTo(0);
+			} else if (evt.key === "End") {
+				evt.preventDefault();
+				goTo(slides.length - 1);
+			} else if (evt.key === "f" || evt.key === "F") {
+				if (document.fullscreenElement) {
+					document.exitFullscreen();
+				} else {
+					document.documentElement.requestFullscreen?.();
+				}
+			} else if (evt.key === "d" || evt.key === "D") {
+				// quick theme flip for changing room light; uses the site's stored preference
+				const isDark = !document.body.classList.contains("dark-mode");
+				document.body.classList.toggle("dark-mode", isDark);
+				try { localStorage.setItem("theme", isDark ? "dark" : "light"); } catch (e) {}
+			}
+		});
+	});
+</script>

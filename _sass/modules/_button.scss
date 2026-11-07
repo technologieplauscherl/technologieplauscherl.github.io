@@ -5,7 +5,9 @@ $btnIconColor: #29447E;
 $facebookBtnColor: #3B5998;
 $facebookIconColor: #29447E;
 
-$googlePlusBtnColor: #DB4A37;
+$youtubeBtnColor: rgb(255, 0, 51);
+
+$githubBtnColor: #0FBF3E;
 
 $linkedInBtnColor: rgb(10, 102, 194);
 
@@ -23,7 +25,7 @@ $instagramBtnColor: #833AB4;
 	position: relative;
 	margin: 0.5rem;
 
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 
 	@media(min-width: 700px) {
 		font-size: 1.25rem;
@@ -45,8 +47,8 @@ $instagramBtnColor: #833AB4;
 .link__icon {
 	background-color: lighten($btnBgColor, 10);
 
-	height: 2.7rem;
-	width: 2.7rem;
+	height: 3.1rem;
+	width: 3.1rem;
 	padding: 0.75rem;
 	fill: #fff;
 
@@ -74,6 +76,22 @@ $instagramBtnColor: #833AB4;
 
 	.link__icon {
 		background-color: darken($linkedInBtnColor, 10);
+	}
+}
+
+.link--youtube {
+	background-color: $youtubeBtnColor;
+
+	.link__icon {
+		background-color: darken($youtubeBtnColor, 10);
+	}
+}
+
+.link--github {
+	background-color: $githubBtnColor;
+
+	.link__icon {
+		background-color: darken($githubBtnColor, 10);
 	}
 }
 

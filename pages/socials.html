@@ -1,0 +1,75 @@
+---
+layout: page
+title: Folge uns auf Social Media
+permalink: /socials/
+og_description: "Social Media channels"
+---
+
+<section class="socials">
+    <a href="https://www.meetup.com/Technologieplauscherl-Linz" class="link link--big link--meetup">
+        Meetup
+        <svg class="link__icon">
+            <use href="/img/svgs/meetup.svg#icon-meetup"></use>
+        </svg>
+    </a>
+    
+    <a href="https://www.linkedin.com/company/technologieplauscherl/" target="_blank" class="link link--big link--linkedin">
+        LinkedIn
+        <svg class="link__icon">
+            <use href="/img/svgs/linkedin.svg#icon-linkedin"></use>
+        </svg>
+    </a>
+
+    <a href="https://www.instagram.com/technologieplauscherl/" target="_blank" class="link link--big link--instagram">
+        Instagram
+        <svg class="link__icon">
+            <use href="/img/svgs/instagram.svg#icon-instagram"></use>
+        </svg>
+    </a>
+
+    <a href="https://github.com/technologieplauscherl" target="_blank" class="link link--big link--github">
+        GitHub
+        <svg class="link__icon">
+			<use href="/img/svgs/github.svg#icon-github"></use>
+        </svg>
+    </a>
+
+    <a href="https://www.youtube.com/c/Technologieplauscherl" target="_blank" class="link link--big link--youtube">
+        YouTube
+        <svg class="link__icon">
+            <use href="/img/svgs/youtube.svg#icon-youtube"></use>
+        </svg>
+    </a>
+</section>
+
+<style>
+    .socials {
+        display: flex;
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center;    /* Centers items horizontally */
+        gap: 1em;
+    }
+    
+    .socials > a {
+        margin-top: 2em;
+        width: 100%;
+        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-style: italic;
+    }
+
+    @media screen and (max-width: 700px) {
+       .wrapper {
+          margin-top: 4em;
+       }
+
+       .socials > a {
+            max-width: 80vw;
+            font-size: 1.1rem;
+       }
+    }
+</style>

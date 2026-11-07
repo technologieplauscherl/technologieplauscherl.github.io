@@ -1,0 +1,12 @@
+{% assign meta_title = page.title | default: site.title -%}
+{% assign meta_description = site.description -%}
+
+<!DOCTYPE html>
+<html lang="de">
+  {% include head.html -%}
+  
+    <body class="live-layout">
+    {{ content }}
+    {% include footer.html -%}
+    </body>
+</html>

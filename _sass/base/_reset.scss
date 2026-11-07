@@ -101,7 +101,8 @@ p, li {
 }
 
 a {
-	color: $pumpkin;
+  --link-text-color: $pumpkin;
+	color: var(--link-text-color);
 	font-weight: 600;
 	text-decoration: none;
 	transition: color 0.3s;
