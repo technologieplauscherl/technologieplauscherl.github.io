@@ -1,0 +1,138 @@
+---
+layout: live
+title: Technologieplauscherl - Live
+permalink: /live/
+og_description: "Infoseite für die Community-News und co"
+---
+<div class="live-container">
+	<section>
+		<div class="presentation-content">
+			<h1 class="presentation-content__title">Aktuelle Community News</h1>
+			{% include communitynews--loop.html %}
+		</div>
+	</section>
+
+	<section>
+		<h1 class="presentation-content__title">Do you want to speak next?</h1>
+		<div class="call-for-speakers-content">
+			<img src="/img/svgs/tp-logo.svg" alt="GitHub" class="social-icon logo-dark" />
+			<img src="/img/svgs/tp-logo-bw.svg" alt="GitHub" class="social-icon logo-light" />
+			<p>
+				Contact us via <a>organizers@technologieplauscherl.at</a>
+			</p>
+		</div>
+	</section>
+
+	<section>
+		<h1> Follow us on</h1>
+		<img class="qr-code" src="/img/tp-socials.png" />
+	</section>
+</div>
+
+<style>
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+.live-container p {
+  font-size: 18pt;
+}
+
+.live-container a {
+	font-style: italic;
+	--link-text-color: #174741;
+}
+
+body.dark-mode .live-container a {
+	--link-text-color: #70FF72;
+}
+
+.call-for-speakers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.live-container {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.presentation-content__title {
+	margin-bottom: 1rem;
+}
+
+.presentation-actions {
+	margin-top: 2rem;
+	text-align: right;
+}
+
+@supports (corner-shape: squircle) {
+	.qr-code {
+		aspect-ratio: 1;
+		border-radius: 5rem;
+		corner-shape: squircle;
+	}
+}
+
+.qr-code {
+    aspect-ratio: 1;
+    border-radius: 2.5rem;
+}
+
+body:not(.dark-mode) .logo-dark {
+  display: none;
+}
+
+body.dark-mode .logo-light {
+  display: none;
+}
+
+section {
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	/* DEV-ONLY: Drop it later on */
+	border: 1px solid #ddd;
+}
+</style>
+
+<script>
+	function getActiveSectionIndex(sections) {
+		return Array.from(sections).findIndex(element => {
+		  const { top, bottom } = element.getBoundingClientRect()
+		  return bottom > 0 && top < window.innerHeight
+		});
+	}
+
+	function handleKeyPress(sections, direction) {
+		const nextSection = getActiveSectionIndex(sections) + direction;
+		if (0 <= nextSection && nextSection < sections.length) {
+			sections[nextSection].scrollIntoView({behavior: "smooth"});
+		}
+	}
+
+	document.addEventListener("DOMContentLoaded", function() {
+		const sections = document.querySelectorAll("section");
+
+		document.addEventListener("keydown", function (evt) {
+			let direction = Number.NaN;
+			if (evt.key === "ArrowDown") {
+				direction = 1;
+			} else if (evt.key === "ArrowUp") {
+				direction = -1;
+			}
+			if (!Number.isNaN(direction)) {
+				evt.preventDefault()
+				handleKeyPress(sections, direction)
+			}
+		})
+	})
+</script>
