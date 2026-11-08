@@ -4,8 +4,65 @@
 <!DOCTYPE html>
 <html lang="de">
   {% include head.html -%}
-  
+
     <body class="live-layout">
+    <link rel="stylesheet" href="/css/next-generation.css?1">
+    <script>
+      // Web fonts: same localStorage cache as the site footer (`as` comes from head.html)
+      (function (s, xhr) {
+        var cssPath = "/css/fonts.css";
+
+        if (s.getItem("fcache3") === null) {
+          var http = new xhr();
+          http.open("GET", "//" + location.host + cssPath);
+          http.send();
+          http.onload = function () {
+            as(this.responseText);
+            s.removeItem("fcache2");
+            s.setItem("fcache3", this.responseText);
+          };
+        } else {
+          as(s.getItem("fcache3"));
+        }
+      })(window.localStorage, XMLHttpRequest);
+
+      // Color theme: same logic as the site footer – a stored choice wins,
+      // otherwise follow the OS / browser setting (also when it changes live).
+      // Global, so the pages can flip it from their own key handlers.
+      const deckTheme = (function () {
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        const setTheme = (isDark) => document.body.classList.toggle("dark-mode", isDark);
+        const storedTheme = localStorage.getItem("theme");
+
+        // body already exists here, so apply before first paint to avoid a flash
+        setTheme(storedTheme ? storedTheme === "dark" : mediaQuery.matches);
+
+        mediaQuery.addEventListener("change", (e) => {
+          if (!localStorage.getItem("theme")) {
+            setTheme(e.matches);
+          }
+        });
+
+        return {
+          toggle() {
+            const isDark = !document.body.classList.contains("dark-mode");
+            setTheme(isDark);
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+          }
+        };
+      })();
+
+      // The brand dot in every slide banner switches the theme
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".deck-theme-toggle").forEach(btn => {
+          btn.addEventListener("click", (evt) => {
+            deckTheme.toggle();
+            // mouse click: drop focus so Space keeps advancing slides
+            if (evt.detail > 0) btn.blur();
+          });
+        });
+      });
+    </script>
     {{ content }}
     </body>
 </html>

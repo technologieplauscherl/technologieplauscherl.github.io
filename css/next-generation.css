@@ -1,0 +1,421 @@
+/* ==========================================================================
+   Next-generation deck styles – shared by the pages using the "live" layout
+   (/live/, /shareables/). Page-specific styles stay inline in each page.
+   Palette: brand teal #174741 + neon green #70FF72
+   ========================================================================== */
+
+body.live-layout {
+	/* Light (default) – best for washed-out projectors in bright rooms */
+	--deck-bg: #F3FAF5;
+	--deck-surface: #FFFFFF;
+	--deck-ink: #0A2522;           /* ~16:1 on bg */
+	--deck-muted: #2C4F4A;         /* ~8:1 on bg */
+	--deck-brand: #174741;
+	--deck-neon: #70FF72;
+	--deck-accent: #174741;        /* text accent */
+	--deck-on-accent: #70FF72;     /* text on accent surfaces */
+	--deck-mark: #70FF72;          /* highlighter */
+	--deck-mark-ink: #0A2522;
+	--deck-line: #174741;
+	--deck-shape: #70FF72;
+	--deck-shape-2: #174741;
+	--deck-shadow: 0 1.5rem 3rem -1.5rem rgba(10, 37, 34, .45);
+
+	background: var(--deck-bg);
+	color: var(--deck-ink);
+	overflow-x: hidden;
+}
+
+body.live-layout.dark-mode {
+	/* Dark – for dimmed rooms; deep teal instead of pure black keeps it calm */
+	--deck-bg: #061A17;
+	--deck-surface: #0E2C28;
+	--deck-ink: #FFFFFF;           /* ~17:1 on bg */
+	--deck-muted: #CDEBDD;
+	--deck-accent: #70FF72;        /* ~14:1 on bg */
+	--deck-on-accent: #061A17;
+	--deck-mark: #70FF72;
+	--deck-mark-ink: #061A17;
+	--deck-line: #70FF72;
+	--deck-shape: #70FF72;
+	--deck-shape-2: #2A7A6F;
+	--deck-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, .8);
+}
+
+html:has(body.live-layout) {
+	scroll-behavior: smooth;
+	scroll-snap-type: y proximity;
+}
+
+/* ---------- Deck & deck-slide frame ---------- */
+
+.deck {
+	--pad-x: clamp(1.5rem, 5vw, 6rem);
+	--pad-y: clamp(1.25rem, 4vh, 3.5rem);
+
+	/* Type scale. On 16:9 1u = 1vw (= 1.78vh). On 4:3 the height has room
+	   to spare, so 1u grows to 1.15vw there instead of shrinking with the
+	   narrower width. Every font size in the deck uses one of these steps. */
+	--u: min(1.15vw, 1.78vh);
+	--fs-xs:  max(.9rem, 1.2 * var(--u));
+	--fs-s:   max(1rem,   1.5 * var(--u));
+	--fs-m:   max(1.15rem, 2 * var(--u));
+	--fs-l:   max(1.4rem, 2.75 * var(--u));
+	--fs-xl:  max(1.9rem, 3.75 * var(--u));
+	--fs-2xl: max(2.4rem, 6 * var(--u));
+	--fs-3xl: max(2.8rem, 8.5 * var(--u));
+
+	--font-display: 'clash-display', 'baby-neue', 'open-sans', sans-serif;
+	--display-word-spacing: .18em;   /* Clash Display's own space is tight */
+	--label-tracking: .08em;         /* uppercase pills, tags and labels */
+
+	font-size: var(--fs-m);
+	line-height: 1.35;
+}
+
+.deck-slide {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	min-height: 100vh;
+	min-height: 100svh;
+	padding: calc(var(--pad-y) * 2 + 2rem) var(--pad-x) calc(var(--pad-y) * 2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	scroll-snap-align: start;
+}
+
+.deck-slide + .deck-slide {
+	border-top: .35rem solid var(--deck-brand);
+}
+
+.deck-slide__body {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	max-width: 110rem;
+	margin: 0 auto;
+}
+
+.deck-slide__bar {
+	position: absolute;
+	z-index: 2;
+	top: var(--pad-y);
+	left: var(--pad-x);
+	right: var(--pad-x);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	color: var(--deck-muted);
+}
+
+.deck-slide__brand {
+	display: inline-flex;
+	align-items: center;
+	gap: .6em;
+}
+
+/* The brand dot doubles as the light/dark theme switch */
+.deck-theme-toggle {
+	position: relative;
+	flex: 0 0 auto;
+	width: .9em;
+	height: .9em;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: var(--deck-neon);
+	box-shadow: 0 0 0 .2em var(--deck-brand);
+	font: inherit;
+	cursor: pointer;
+	transition: transform .2s ease;
+}
+
+/* Larger hit area than the visible dot */
+.deck-theme-toggle::after {
+	content: "";
+	position: absolute;
+	inset: -.6em;
+	border-radius: 50%;
+}
+
+.deck-theme-toggle:hover,
+.deck-theme-toggle:focus-visible {
+	transform: scale(1.25);
+}
+
+.deck-theme-toggle:focus-visible {
+	outline: .15em solid var(--deck-accent);
+	outline-offset: .35em;
+}
+
+/* ---------- Typography ---------- */
+
+.deck h1 {
+	margin: 0;
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0;
+	color: var(--deck-ink);
+}
+
+.deck-slide__title {
+	font-size: var(--fs-2xl);
+	text-align: center;
+}
+
+.deck-slide__title--left {
+	text-align: left;
+}
+
+.deck-slide__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: .5em;
+	margin-bottom: clamp(1.5rem, 5vh, 4rem);
+}
+
+.deck-kicker {
+	display: inline-block;
+	align-self: flex-start;
+	padding: .3em .9em;
+	border-radius: 999px;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-s);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	line-height: 1.2;
+}
+
+body.dark-mode .deck-kicker {
+	background: var(--deck-neon);
+	color: var(--deck-on-accent);
+}
+
+.deck-slide__heading .deck-kicker {
+	align-self: center;
+}
+
+/* Highlighter-marker effect */
+.deck mark {
+	color: var(--deck-mark-ink);
+	background: linear-gradient(transparent 8%, var(--deck-mark) 8%, var(--deck-mark) 92%, transparent 92%);
+	padding: 0 .12em;
+	margin: 0 -.04em;
+	border-radius: .08em;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+}
+
+.deck p {
+	margin: 0;
+	font-size: inherit;
+}
+
+/* ---------- Decorative CSS shapes ---------- */
+
+.deck-slide__decor {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.deck-shape {
+	position: absolute;
+	display: block;
+}
+
+.deck-shape--blob {
+	width: clamp(16rem, 38vw, 48rem);
+	aspect-ratio: 1;
+	right: -10vw;
+	top: -14vw;
+	background: var(--deck-shape);
+	border-radius: 62% 38% 46% 54% / 55% 45% 55% 45%;
+	animation: deck-morph 18s ease-in-out infinite alternate;
+}
+
+.deck-shape--ring {
+	width: clamp(12rem, 26vw, 34rem);
+	aspect-ratio: 1;
+	left: -7vw;
+	bottom: -9vw;
+	border-radius: 50%;
+	border: clamp(1.25rem, 2.6vw, 3.5rem) solid var(--deck-shape-2);
+	animation: deck-float 12s ease-in-out infinite alternate;
+}
+
+.deck-shape--dots {
+	width: clamp(8rem, 18vw, 22rem);
+	aspect-ratio: 4 / 3;
+	right: 6vw;
+	bottom: 8vh;
+	background-image: radial-gradient(var(--deck-shape-2) 22%, transparent 24%);
+	background-size: clamp(1.25rem, 1.8vw, 2.25rem) clamp(1.25rem, 1.8vw, 2.25rem);
+	opacity: .55;
+}
+
+.deck-shape--stripes {
+	width: clamp(10rem, 22vw, 28rem);
+	height: clamp(3rem, 6vw, 7rem);
+	left: 4vw;
+	top: 18vh;
+	transform: rotate(-12deg);
+	background: repeating-linear-gradient(
+		-45deg,
+		var(--deck-shape) 0 .8rem,
+		transparent .8rem 1.8rem
+	);
+	border-radius: .75rem;
+}
+
+.deck-shape--squircle {
+	width: clamp(6rem, 11vw, 14rem);
+	aspect-ratio: 1;
+	left: 5vw;
+	bottom: 10vh;
+	border-radius: 30%;
+	background: var(--deck-brand);
+	transform: rotate(18deg);
+	box-shadow: 1.25rem 1.25rem 0 0 var(--deck-shape);
+	animation: deck-tilt 14s ease-in-out infinite alternate;
+}
+
+/* Lightning “sparks” – echo of the megaphone in the QR code */
+.deck-shape--bolt {
+	width: clamp(3.5rem, 6vw, 8rem);
+	aspect-ratio: 3 / 5;
+	background: var(--deck-shape);
+	clip-path: polygon(55% 0, 0 58%, 42% 58%, 30% 100%, 100% 38%, 56% 38%, 78% 0);
+	filter: drop-shadow(.35rem .35rem 0 var(--deck-brand));
+}
+
+.deck-shape--bolt-a {
+	left: 12vw;
+	top: 12vh;
+	transform: rotate(-14deg);
+	animation: deck-zap 6s ease-in-out infinite;
+}
+
+.deck-shape--bolt-b {
+	right: 14vw;
+	bottom: 12vh;
+	width: clamp(2.5rem, 4vw, 5.5rem);
+	transform: rotate(16deg);
+	animation: deck-zap 6s ease-in-out 3s infinite;
+}
+
+/* ---------- Talk language pill ---------- */
+
+.deck-talk__lang {
+	display: inline-flex;
+	align-items: center;
+	gap: .45em;
+	padding: .3em .75em;
+	border-radius: 999px;
+	border: .15rem solid var(--deck-line);
+	color: var(--deck-accent);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	letter-spacing: var(--label-tracking);
+	line-height: 1;
+}
+
+.deck-talk__lang img {
+	margin: 0;                      /* undo the site reset's img margin-bottom */
+	height: 1em;
+	width: auto;
+	border-radius: .15em;
+}
+
+/* ---------- Logo theme switching ---------- */
+
+body:not(.dark-mode) .deck .logo-dark,
+body.dark-mode .deck .logo-light {
+	display: none;
+}
+
+/* ---------- Navigation chrome ---------- */
+
+.deck__dots {
+	position: fixed;
+	z-index: 10;
+	right: clamp(.75rem, 1.5vw, 2rem);
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	gap: .8rem;
+}
+
+.deck__dots button {
+	width: clamp(.9rem, 1vw, 1.4rem);
+	aspect-ratio: 1;
+	padding: 0;
+	border-radius: 50%;
+	border: .2rem solid var(--deck-brand);
+	background: var(--deck-surface);
+	cursor: pointer;
+	transition: transform .2s ease, background-color .2s ease;
+}
+
+body.dark-mode .deck__dots button {
+	border-color: var(--deck-neon);
+}
+
+.deck__dots button[aria-current="true"] {
+	background: var(--deck-neon);
+	transform: scale(1.35);
+}
+
+/* ---------- Motion ---------- */
+
+@keyframes deck-morph {
+	to { border-radius: 40% 60% 58% 42% / 42% 58% 42% 58%; transform: rotate(14deg) scale(1.04); }
+}
+
+@keyframes deck-float {
+	to { transform: translate(2vw, -2vw); }
+}
+
+@keyframes deck-tilt {
+	to { transform: rotate(-6deg) translateY(-1.5vh); }
+}
+
+@keyframes deck-spin {
+	to { transform: rotate(360deg); }
+}
+
+@keyframes deck-blink {
+	50% { opacity: .15; }
+}
+
+@keyframes deck-zap {
+	0%, 80%, 100% { opacity: 1; }
+	85% { opacity: .35; }
+	90% { opacity: 1; }
+	95% { opacity: .5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:has(body.live-layout) { scroll-behavior: auto; }
+	.deck *, .deck *::before, .deck *::after { animation: none !important; transition: none !important; }
+}
