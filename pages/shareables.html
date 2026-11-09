@@ -1,0 +1,805 @@
+---
+layout: live
+title: Technologieplauscherl - Shareables
+permalink: /shareables/
+og_description: "Social-Media-Kacheln zu den Talks des nächsten Technologieplauscherl"
+sitemap: false
+---
+{% assign current_event = site.plauscherl | last -%}
+{% assign talk_count = current_event.talks | size -%}
+{% capture event_info -%}
+			<footer class="share-event">
+				<span class="share-event__label">Save the date</span>
+				<ul class="share-event__facts">
+					<li><svg aria-hidden="true"><use href="/img/svgs/calendar.svg#icon-calendar"></use></svg><span>{{ current_event.datestring }}{% if current_event.timestring %}<span class="share-event__sep">, </span>{{ current_event.timestring }}{% endif %}</span></li>
+					{% if current_event.location.name -%}
+					<li><svg aria-hidden="true"><use href="/img/svgs/compass.svg#icon-compass2"></use></svg><span>{{ current_event.location.name | strip }}{% if current_event.location.city %}<span class="share-event__sep">, </span>{{ current_event.location.city }}{% endif %}</span></li>
+					{% endif -%}
+				</ul>
+				<p class="share-event__url">technologieplauscherl.at/{{ current_event.url | split: '/' | last }}</p>
+			</footer>
+{%- endcapture -%}
+{% capture brand_bar -%}
+			<header class="deck-slide__bar">
+				<span class="deck-slide__brand"><button type="button" class="deck-theme-toggle" aria-label="Farbschema wechseln"></button><span aria-hidden="true">Technologieplauscherl</span></span>
+				<span class="share-bar__event">{{ current_event.title | remove: 'Technologieplauscherl' | strip }}</span>
+			</header>
+{%- endcapture -%}
+{% capture decor -%}
+			<div class="deck-slide__decor" aria-hidden="true">
+				<span class="deck-shape deck-shape--blob"></span>
+				<span class="deck-shape deck-shape--ring"></span>
+				<span class="deck-shape deck-shape--dots"></span>
+				<span class="deck-shape deck-shape--bolt deck-shape--bolt-a"></span>
+			</div>
+{%- endcapture -%}
+<main class="deck deck--share">
+
+	<!-- ───────────── How to (not meant for sharing) ───────────── -->
+	<section class="deck-slide share-slide share-slide--help" id="help" aria-label="Anleitung">
+		{{ decor }}
+		{{ brand_bar }}
+
+		<div class="deck-slide__body share-help">
+			<span class="deck-kicker">How to</span>
+			<h1 class="share__title">Social media <mark>shareables</mark></h1>
+			<p class="share-help__lead">Scroll to a slide and take a screenshot. Every slide fits 1:1, 4:5 and 9:16.</p>
+			<dl class="share-help__keys">
+				<div><dt><kbd>H</kbd></dt><dd>Hide / show the navigation dots for clean screenshots</dd></div>
+				<div><dt><kbd>D</kbd></dt><dd>Switch light / dark theme (or click the dot in the banner)</dd></div>
+				<div><dt><kbd>↑</kbd><kbd>↓</kbd></dt><dd>Previous / next slide</dd></div>
+			</dl>
+			<p class="share-help__sizes">Window or dev-tools device size: <strong>1080×1080</strong> · <strong>1080×1350</strong> · <strong>1080×1920</strong></p>
+		</div>
+	</section>
+
+	{% if talk_count > 0 -%}
+	<!-- ───────────── Overview: all talks ───────────── -->
+	<section class="deck-slide share-slide share-slide--overview" id="overview" aria-label="Alle Talks">
+		{{ decor }}
+		{{ brand_bar }}
+
+		<div class="deck-slide__body share-overview">
+			<div class="share-overview__heading">
+				<span class="deck-kicker">Soon</span>
+				<h1 class="share__title">The <mark>Talks</mark></h1>
+			</div>
+			<ol class="share-lineup{% if talk_count > 3 %} share-lineup--many{% endif %}">
+				{% for talk in current_event.talks -%}
+				<li class="share-lineup__talk">
+					<div class="share-lineup__avatars" aria-hidden="true">
+						{% if talk.speakers and talk.speakers != empty -%}
+							{% for speaker in talk.speakers -%}
+							<img src="{% if speaker.img == empty or speaker.img == nil %}/img/speaker_no_image.jpg{% else %}{{ speaker.img }}{% endif %}" alt="" onerror="this.onerror = null; this.src = '/img/speaker_no_image.jpg'" />
+							{% endfor -%}
+						{% elsif talk.speaker -%}
+							<img src="{% if talk.speaker.img == empty or talk.speaker.img == nil %}/img/speaker_no_image.jpg{% else %}{{ talk.speaker.img }}{% endif %}" alt="" onerror="this.onerror = null; this.src = '/img/speaker_no_image.jpg'" />
+						{% endif -%}
+					</div>
+					<div class="share-lineup__info">
+						<h2 class="share-lineup__title">{{ talk.title | default: talk.talk }}</h2>
+						<p class="share-lineup__speakers">
+							{%- if talk.speakers and talk.speakers != empty -%}
+								{%- for speaker in talk.speakers -%}{{ speaker.name }}{% unless forloop.last %} &amp; {% endunless %}{%- endfor -%}
+							{%- elsif talk.speaker -%}
+								{{ talk.speaker.name }}
+							{%- endif -%}
+						</p>
+					</div>
+				</li>
+				{% endfor -%}
+			</ol>
+		</div>
+
+		{{ event_info }}
+	</section>
+	{% endif -%}
+
+	{% for talk in current_event.talks -%}
+	{% assign title = talk.title | default: talk.talk -%}
+	{% assign title_length = title | size -%}
+	<!-- ───────────── Talk {{ forloop.index }} ───────────── -->
+	<section class="deck-slide share-slide" id="talk-{{ forloop.index }}" aria-label="Talk {{ forloop.index }}: {{ title | escape }}">
+		{{ decor }}
+		{{ brand_bar }}
+
+		<div class="deck-slide__body share">
+			<div class="share__avatars{% if talk.speakers.size > 1 %} share__avatars--multi{% endif %}">
+				{% if talk.speakers and talk.speakers != empty -%}
+					{% for speaker in talk.speakers -%}
+					<img src="{% if speaker.img == empty or speaker.img == nil %}/img/speaker_no_image.jpg{% else %}{{ speaker.img }}{% endif %}" alt="{{ speaker.name }}" onerror="this.onerror = null; this.src = '/img/speaker_no_image.jpg'" />
+					{% endfor -%}
+				{% elsif talk.speaker -%}
+					<img src="{% if talk.speaker.img == empty or talk.speaker.img == nil %}/img/speaker_no_image.jpg{% else %}{{ talk.speaker.img }}{% endif %}" alt="{{ talk.speaker.name }}" onerror="this.onerror = null; this.src = '/img/speaker_no_image.jpg'" />
+				{% endif -%}
+			</div>
+
+			<div class="share__text">
+				<span class="deck-kicker">Talk {{ forloop.index }}{% if talk_count > 1 %} of {{ talk_count }}{% endif %}</span>
+				<h1 class="share__title{% if title_length > 70 %} share__title--xlong{% elsif title_length > 40 %} share__title--long{% endif %}">{{ title }}</h1>
+				<p class="share__speakers">
+					{%- if talk.speakers and talk.speakers != empty -%}
+						{%- for speaker in talk.speakers -%}{{ speaker.name }}{% unless forloop.last %} &amp; {% endunless %}{%- endfor -%}
+					{%- elsif talk.speaker -%}
+						{{ talk.speaker.name }}
+					{%- endif -%}
+				</p>
+				{% if talk.language == "en" -%}
+				<span class="deck-talk__lang"><img src="/img/english-language.svg" alt="" />EN</span>
+				{% else -%}
+				<span class="deck-talk__lang"><img src="/img/german-language.svg" alt="" />DE</span>
+				{% endif -%}
+			</div>
+		</div>
+
+		{{ event_info }}
+	</section>
+	{% else -%}
+	<section class="deck-slide share-slide" aria-label="Talks will be announced soon">
+		{{ decor }}
+		{{ brand_bar }}
+
+		<div class="deck-slide__body share share--tba">
+			<div class="share__text">
+				<span class="deck-kicker">Soon</span>
+				<h1 class="share__title">Talks will be announced <mark>soon</mark></h1>
+			</div>
+		</div>
+
+		{{ event_info }}
+	</section>
+	{% endfor -%}
+
+	<nav class="deck__dots" aria-label="Folien"></nav>
+</main>
+
+<style>
+/* ==========================================================================
+   Shareables – one talk per slide, sized for social media screenshots.
+   Shared styles: /css/next-generation.css
+
+   Everything scales with --s (1% of the shorter viewport side), so a
+   screenshot looks the same at any resolution. Layouts per aspect ratio:
+     1:1  (and wider)  avatar beside the text
+     4:5               stacked
+     9:16              stacked, bigger, with story-UI safe zones
+   ========================================================================== */
+
+html:has(body.live-layout) {
+	scroll-snap-type: y mandatory;
+}
+
+.deck--share {
+	--s: min(1vw, 1vh);
+	--pad-x: calc(6 * var(--s));
+	--pad-y: calc(5 * var(--s));
+	--fs-xs:  calc(2.2 * var(--s));
+	--fs-s:   calc(2.8 * var(--s));
+	--fs-m:   calc(3.6 * var(--s));
+	--fs-l:   calc(4.4 * var(--s));
+	--fs-xl:  calc(6.2 * var(--s));
+	--avatar: calc(36 * var(--s));
+	--bar-h:  calc(4 * var(--s));
+	--safe-top: 0px;
+	--safe-bottom: 0px;
+}
+
+.deck--share .deck-slide {
+	height: 100vh;
+	height: 100svh;
+	min-height: 0;
+	padding: calc(var(--safe-top) + var(--pad-y) * 2 + var(--bar-h)) var(--pad-x) calc(var(--safe-bottom) + var(--pad-y));
+	justify-content: space-between;
+	gap: calc(4 * var(--s));
+	scroll-snap-stop: always;
+	border-top: 0;
+}
+
+.deck--share .deck-slide__bar {
+	top: calc(var(--safe-top) + var(--pad-y));
+}
+
+/* Pill, so it stays readable on top of the neon blob in both themes */
+.share-bar__event {
+	padding: .3em .8em;
+	border-radius: 999px;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+}
+
+/* ---------- Talk ---------- */
+
+/* Default (portrait, 4:5): everything stacked and centred */
+.share {
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: calc(4 * var(--s));
+	text-align: center;
+	max-width: none;
+}
+
+.share__avatars {
+	display: flex;
+	justify-content: center;
+	flex: 0 0 auto;
+}
+
+.share__avatars img {
+	margin: 0;
+	width: var(--avatar);
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 50%;
+	background: var(--deck-surface);
+	border: calc(1 * var(--s)) solid var(--deck-brand);
+	box-shadow:
+		0 0 0 calc(1.6 * var(--s)) var(--deck-neon),
+		var(--deck-shadow);
+}
+
+.share__avatars--multi img {
+	width: calc(var(--avatar) * .72);
+}
+
+.share__avatars--multi img + img {
+	margin-left: calc(var(--avatar) * -.14);
+}
+
+.share__text {
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: calc(2 * var(--s));
+}
+
+.deck--share .deck-kicker {
+	align-self: auto;
+}
+
+.deck .share__title {
+	text-align: inherit;
+	font-size: var(--fs-xl);
+	line-height: 1.05;
+	text-transform: none;
+	text-wrap: balance;
+	overflow-wrap: anywhere;
+	hyphens: auto;
+}
+
+.deck .share__title--long  { font-size: calc(var(--fs-xl) * .85); }
+.deck .share__title--xlong { font-size: calc(var(--fs-xl) * .7); }
+
+/* Own background so the names stay readable on top of the shapes;
+   the negative margin keeps the text aligned with the title */
+.deck .share__speakers {
+	font-size: var(--fs-m);
+	font-weight: 700;
+	color: var(--deck-muted);
+	background: var(--deck-bg);
+	padding: .1em .35em;
+	margin-inline: -.35em;
+	border-radius: .3em;
+}
+
+.share--tba .share__title {
+	font-size: calc(var(--fs-xl) * 1.2);
+	text-transform: uppercase;
+}
+
+/* ---------- Event info (on every slide) ---------- */
+
+.share-event {
+	position: relative;
+	z-index: 1;
+	flex: 0 0 auto;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas:
+		"label label"
+		"facts url";
+	align-items: end;
+	gap: calc(1.4 * var(--s)) calc(3 * var(--s));
+	padding: calc(2.4 * var(--s)) calc(3 * var(--s));
+	font-size: var(--fs-s);
+	background: var(--deck-surface);
+	border: calc(.4 * var(--s)) solid var(--deck-line);
+	border-radius: calc(2.2 * var(--s));
+	box-shadow: calc(1 * var(--s)) calc(1 * var(--s)) 0 0 var(--deck-brand), var(--deck-shadow);
+}
+
+body.dark-mode .share-event {
+	box-shadow: calc(1 * var(--s)) calc(1 * var(--s)) 0 0 var(--deck-neon), var(--deck-shadow);
+}
+
+.share-event__label {
+	grid-area: label;
+	justify-self: start;
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	color: var(--deck-accent);
+}
+
+.share-event__facts {
+	grid-area: facts;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: calc(.8 * var(--s));
+	font-weight: 800;
+	line-height: 1.2;
+	color: var(--deck-ink);
+}
+
+.share-event__facts li {
+	display: flex;
+	align-items: center;
+	gap: .6em;
+	margin: 0;
+}
+
+.share-event__facts svg {
+	flex: 0 0 auto;
+	width: 1em;
+	height: 1em;
+	fill: var(--deck-accent);
+}
+
+.deck .share-event__url {
+	grid-area: url;
+	font-size: var(--fs-xs);
+	font-weight: 800;
+	color: var(--deck-accent);
+	border-bottom: .2em solid var(--deck-neon);
+	white-space: nowrap;
+}
+
+.share-event__facts li > span {
+	white-space: nowrap;
+}
+
+/* ---------- Decorative shapes, sized in --s and varied per slide ---------- */
+
+.deck--share .deck-shape--blob {
+	width: calc(52 * var(--s));
+	right: calc(-16 * var(--s));
+	top: calc(-18 * var(--s));
+	/* Half-strength neon, so text running across the blob stays legible */
+	background: color-mix(in srgb, var(--deck-shape) 50%, var(--deck-bg));
+}
+
+.deck--share .deck-shape--ring {
+	width: calc(38 * var(--s));
+	border-width: calc(4 * var(--s));
+	/* Half strength as well – it can run behind the banner */
+	border-color: color-mix(in srgb, var(--deck-shape-2) 50%, var(--deck-bg));
+	left: calc(-14 * var(--s));
+	bottom: calc(-12 * var(--s));
+}
+
+.deck--share .deck-shape--dots {
+	width: calc(24 * var(--s));
+	background-size: calc(2.6 * var(--s)) calc(2.6 * var(--s));
+	right: calc(4 * var(--s));
+	bottom: 30%;
+}
+
+.deck--share .deck-shape--bolt-a {
+	width: calc(8 * var(--s));
+	left: calc(8 * var(--s));
+	top: 24%;
+}
+
+.share-slide:nth-of-type(3n+2) .deck-shape--blob {
+	right: auto;
+	left: calc(-20 * var(--s));
+	top: auto;
+	bottom: calc(-20 * var(--s));
+}
+
+.share-slide:nth-of-type(3n+2) .deck-shape--ring {
+	left: auto;
+	right: calc(-12 * var(--s));
+	bottom: auto;
+	top: calc(-10 * var(--s));
+}
+
+.share-slide:nth-of-type(3n+2) .deck-shape--dots {
+	right: auto;
+	left: calc(3 * var(--s));
+	bottom: auto;
+	top: 18%;
+}
+
+.share-slide:nth-of-type(3n+2) .deck-shape--bolt-a {
+	left: auto;
+	right: calc(8 * var(--s));
+	top: 40%;
+	transform: rotate(14deg);
+}
+
+.share-slide:nth-of-type(3n) .deck-shape--blob {
+	right: calc(-22 * var(--s));
+	top: 30%;
+}
+
+/* Tucked into the corner, clear of the banner */
+.share-slide:nth-of-type(3n) .deck-shape--ring {
+	left: calc(-24 * var(--s));
+	bottom: auto;
+	top: calc(-29 * var(--s));
+}
+
+.share-slide:nth-of-type(3n) .deck-shape--dots {
+	right: auto;
+	left: calc(4 * var(--s));
+	bottom: 26%;
+}
+
+/* ---------- How-to slide ---------- */
+
+.share-help {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: calc(3 * var(--s));
+	text-align: center;
+	max-width: calc(110 * var(--s));
+}
+
+.deck--share .share-help .deck-kicker {
+	align-self: center;
+}
+
+.deck .share-help__lead,
+.deck .share-help__sizes {
+	font-size: var(--fs-s);
+	font-weight: 700;
+	color: var(--deck-muted);
+}
+
+.share-help__keys {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: calc(1.6 * var(--s)) calc(2.4 * var(--s));
+	margin: 0;
+	padding: calc(2.4 * var(--s)) calc(3 * var(--s));
+	text-align: left;
+	background: var(--deck-surface);
+	border: calc(.4 * var(--s)) solid var(--deck-line);
+	border-radius: calc(2.2 * var(--s));
+	box-shadow: calc(1 * var(--s)) calc(1 * var(--s)) 0 0 var(--deck-brand), var(--deck-shadow);
+}
+
+body.dark-mode .share-help__keys {
+	box-shadow: calc(1 * var(--s)) calc(1 * var(--s)) 0 0 var(--deck-neon), var(--deck-shadow);
+}
+
+.share-help__keys div {
+	display: contents;
+}
+
+/* The how-to slide carries more text; keep the corners quiet */
+.share-slide--help .deck-shape--ring,
+.share-slide--help .deck-shape--dots {
+	display: none;
+}
+
+.share-help__keys dt {
+	display: flex;
+	gap: calc(.8 * var(--s));
+}
+
+.share-help__keys dd {
+	margin: 0;
+	font-size: var(--fs-s);
+	font-weight: 600;
+	color: var(--deck-ink);
+}
+
+.share-help kbd {
+	display: inline-grid;
+	place-items: center;
+	min-width: 1.6em;
+	padding: .15em .35em;
+	border-radius: .3em;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	box-shadow: 0 .15em 0 0 var(--deck-neon);
+	font-family: var(--font-display);
+	font-weight: 600;
+	font-size: var(--fs-m);
+	line-height: 1.1;
+}
+
+.share-help__sizes strong {
+	color: var(--deck-accent);
+	white-space: nowrap;
+}
+
+/* ---------- Overview slide ---------- */
+
+.share-overview {
+	flex: 1 1 auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: calc(3 * var(--s));
+	max-width: calc(120 * var(--s));
+}
+
+.share-overview__heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: calc(1.5 * var(--s));
+	text-align: center;
+}
+
+.deck--share .share-overview .deck-kicker {
+	align-self: center;
+}
+
+.share-lineup {
+	--lineup-avatar: calc(10 * var(--s));
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: calc(1.8 * var(--s));
+}
+
+.share-lineup--many {
+	--lineup-avatar: calc(8 * var(--s));
+	gap: calc(1.2 * var(--s));
+}
+
+.share-lineup__talk {
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	align-items: center;
+	gap: calc(2.4 * var(--s));
+	margin: 0;
+	padding: calc(1.4 * var(--s)) calc(2.4 * var(--s));
+	background: var(--deck-surface);
+	border: calc(.4 * var(--s)) solid var(--deck-line);
+	border-radius: calc(2 * var(--s));
+	box-shadow: calc(.8 * var(--s)) calc(.8 * var(--s)) 0 0 var(--deck-brand);
+}
+
+body.dark-mode .share-lineup__talk {
+	box-shadow: calc(.8 * var(--s)) calc(.8 * var(--s)) 0 0 var(--deck-neon);
+}
+
+.share-lineup__avatars {
+	display: flex;
+}
+
+.share-lineup__avatars img {
+	margin: 0;
+	width: var(--lineup-avatar);
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 50%;
+	background: var(--deck-surface);
+	border: calc(.5 * var(--s)) solid var(--deck-brand);
+}
+
+body.dark-mode .share-lineup__avatars img {
+	border-color: var(--deck-neon);
+}
+
+.share-lineup__avatars img + img {
+	margin-left: calc(var(--lineup-avatar) * -.3);
+}
+
+.share-lineup__info {
+	display: flex;
+	flex-direction: column;
+	gap: calc(.5 * var(--s));
+}
+
+.deck .share-lineup__title {
+	margin: 0;
+	padding: 0;
+	font-family: 'open-sans', 'Helvetica', sans-serif;
+	font-size: var(--fs-s);
+	font-weight: 800;
+	line-height: 1.15;
+	text-align: left;
+	text-transform: none;
+	color: var(--deck-ink);
+	text-wrap: balance;
+	overflow-wrap: anywhere;
+}
+
+.deck .share-lineup__speakers {
+	font-size: var(--fs-xs);
+	font-weight: 700;
+	color: var(--deck-muted);
+}
+
+/* ---------- 1:1 and wider: avatar beside the text ---------- */
+
+@media (min-aspect-ratio: 9/10) {
+	.deck--share {
+		--avatar: calc(34 * var(--s));
+	}
+	.share {
+		display: grid;
+		grid-template-columns: auto minmax(0, 1fr);
+		align-items: center;
+		align-content: center;
+		gap: calc(5 * var(--s));
+		text-align: left;
+		width: 100%;
+		max-width: calc(120 * var(--s));
+	}
+	.share__text {
+		align-items: flex-start;
+	}
+	.deck--share .deck-shape--bolt {
+		display: none;
+	}
+	.share--tba {
+		display: flex;
+		text-align: center;
+	}
+	.share--tba .share__text {
+		align-items: center;
+	}
+	.share__avatars--multi {
+		flex-direction: column;
+		align-items: center;
+	}
+	.share__avatars--multi img + img {
+		margin-left: 0;
+		margin-top: calc(var(--avatar) * -.2);
+	}
+	.share-event {
+		width: 100%;
+		max-width: calc(120 * var(--s));
+		margin: 0 auto;
+	}
+}
+
+/* ---------- 9:16 (stories / reels): bigger, inside the safe zones ---------- */
+
+@media (max-aspect-ratio: 2/3) {
+	.deck--share {
+		/* Story UI covers ~13% at the top and ~16% at the bottom */
+		--safe-top: 10vh;
+		--safe-bottom: 12vh;
+		--fs-s:  calc(3.2 * var(--s));
+		--fs-m:  calc(4.2 * var(--s));
+		--fs-xl: calc(7 * var(--s));
+		--avatar: calc(40 * var(--s));
+	}
+	.share {
+		gap: calc(5 * var(--s));
+	}
+	.share__text {
+		gap: calc(3 * var(--s));
+	}
+	.share-event {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"label"
+			"facts"
+			"url";
+		justify-items: center;
+		text-align: center;
+	}
+	.share-event__label,
+	.share-event__url {
+		justify-self: center;
+	}
+	.share-event__facts {
+		align-items: center;
+	}
+	.share-lineup {
+		--lineup-avatar: calc(14 * var(--s));
+		gap: calc(2.6 * var(--s));
+	}
+	.share-lineup--many {
+		--lineup-avatar: calc(11 * var(--s));
+	}
+	.share-overview {
+		gap: calc(5 * var(--s));
+	}
+	.deck--share .deck-shape--blob {
+		width: calc(64 * var(--s));
+		top: calc(-30 * var(--s));
+	}
+}
+
+/* Hidden chrome for clean screenshots (key "h") */
+.share-clean .deck__dots {
+	display: none;
+}
+</style>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const slides = Array.from(document.querySelectorAll(".deck .deck-slide"));
+		const dotsNav = document.querySelector(".deck__dots");
+
+		const dots = slides.map((slide, i) => {
+			const dot = document.createElement("button");
+			dot.type = "button";
+			dot.setAttribute("aria-label", "Folie " + (i + 1) + ": " + (slide.getAttribute("aria-label") || ""));
+			dot.addEventListener("click", () => goTo(i));
+			dotsNav.appendChild(dot);
+			return dot;
+		});
+
+		// The active slide is the one covering the vertical centre of the viewport
+		function activeIndex() {
+			const mid = window.innerHeight / 2;
+			const idx = slides.findIndex(s => {
+				const { top, bottom } = s.getBoundingClientRect();
+				return top <= mid && bottom > mid;
+			});
+			return idx === -1 ? 0 : idx;
+		}
+
+		function goTo(i) {
+			const target = Math.max(0, Math.min(slides.length - 1, i));
+			slides[target].scrollIntoView({ behavior: "smooth", block: "start" });
+		}
+
+		function update() {
+			const idx = activeIndex();
+			dots.forEach((d, i) => d.setAttribute("aria-current", i === idx ? "true" : "false"));
+		}
+
+		window.addEventListener("scroll", update, { passive: true });
+		window.addEventListener("resize", update);
+		update();
+
+		// Keyboard + presenter clickers (which send PageUp / PageDown)
+		const NEXT = ["ArrowDown", "ArrowRight", "PageDown", " "];
+		const PREV = ["ArrowUp", "ArrowLeft", "PageUp"];
+
+		document.addEventListener("keydown", function (evt) {
+			if (evt.altKey || evt.ctrlKey || evt.metaKey) return;
+
+			if (evt.key === " " && evt.shiftKey) {
+				evt.preventDefault();
+				goTo(activeIndex() - 1);
+			} else if (NEXT.includes(evt.key)) {
+				evt.preventDefault();
+				goTo(activeIndex() + 1);
+			} else if (PREV.includes(evt.key)) {
+				evt.preventDefault();
+				goTo(activeIndex() - 1);
+			} else if (evt.key === "Home") {
+				evt.preventDefault();
+				goTo(0);
+			} else if (evt.key === "End") {
+				evt.preventDefault();
+				goTo(slides.length - 1);
+			} else if (evt.key === "d" || evt.key === "D") {
+				deckTheme.toggle();
+			} else if (evt.key === "h" || evt.key === "H") {
+				// hide the navigation dots for clean screenshots
+				document.body.classList.toggle("share-clean");
+			}
+		});
+	});
+</script>
