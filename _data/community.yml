@@ -760,10 +760,14 @@
 -   id: security-native-linz
     name: "SecurityNative Meetup Linz"
     events:
-        -   name: "SecurityNative Meetup Linz"
+        -   name: "Supply Chain & Surveillance: Who's really in control?"
             location: Dynatrace Linz HQ
             date: 2026-07-02
             link: "https://www.meetup.com/de-de/security-native-europe/events/314673763/"
+        -   name: "LLM Vulnerabilities & E-Health Security"
+            location: Cloudflight
+            date: 2026-12-03
+            link: "https://www.meetup.com/de-de/security-native-europe/events/317466215/"
 -   id: ars-electronica
     name: "Ars Electronica"
     events:
