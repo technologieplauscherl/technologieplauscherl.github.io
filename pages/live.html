@@ -57,7 +57,7 @@ og_description: "Infoseite für die Community-News und co"
 			</div>
 
 			{% assign talk_count = current_event.talks | size -%}
-			<ol class="deck-agenda{% if talk_count > 3 %} deck-agenda--many{% endif %}">
+			<ol class="deck-agenda{% if talk_count > 3 %} deck-agenda--many{% endif %}" data-event="{{ current_event.url }}">
 				{% for talk in current_event.talks -%}
 				<li class="deck-talk">
 					<span class="deck-talk__num" aria-hidden="true">{{ forloop.index }}</span>
@@ -85,6 +85,7 @@ og_description: "Infoseite für die Community-News und co"
 					{% else -%}
 					<span class="deck-talk__lang"><img src="/img/german-language.svg" alt="" />DE</span>
 					{% endif -%}
+					<span class="deck-talk__status">Cancelled</span>
 				</li>
 				{% else -%}
 				<li class="deck-talk deck-talk--tba">
@@ -942,6 +943,60 @@ body.dark-mode .deck-talk__avatars img {
 	color: var(--deck-muted);
 }
 
+/* Cancelled talk (short-notice changes, toggled live via Ctrl + talk number).
+   Everything switches to the muted ink, which keeps ~7:1 contrast on the
+   greyed card in both themes. The .deck-agenda prefix beats the
+   body.dark-mode overrides above. */
+.deck-talk__status {
+	display: none;
+}
+
+.deck-agenda .deck-talk.deck-talk--cancelled {
+	background: color-mix(in srgb, var(--deck-muted) 10%, var(--deck-bg));
+	border-style: dashed;
+	border-color: var(--deck-muted);
+	box-shadow: .6rem .6rem 0 0 color-mix(in srgb, var(--deck-muted) 30%, transparent);
+}
+
+.deck-agenda .deck-talk--cancelled .deck-talk__num {
+	background: var(--deck-muted);
+	color: var(--deck-bg);
+}
+
+.deck-agenda .deck-talk--cancelled .deck-talk__avatars img {
+	border-color: var(--deck-muted);
+	filter: grayscale(1);
+	opacity: .55;
+}
+
+.deck .deck-talk--cancelled .deck-talk__title {
+	color: var(--deck-muted);
+	text-decoration: line-through;
+	text-decoration-thickness: .08em;
+}
+
+.deck-talk--cancelled .deck-talk__lang {
+	display: none;
+}
+
+/* Takes the language pill's grid cell, so the row layout stays stable */
+.deck-talk--cancelled .deck-talk__status {
+	display: inline-flex;
+	align-items: center;
+	padding: .35em .85em;
+	border-radius: 999px;
+	background: var(--deck-muted);
+	color: var(--deck-bg);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: var(--fs-xs);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	line-height: 1;
+	transform: rotate(-4deg);
+}
+
 
 
 .deck-slide--agenda .deck-shape--blob {
@@ -1324,7 +1379,8 @@ body.deck-kiosk {
 	.deck-talk__avatars {
 		display: none;
 	}
-	.deck-talk__lang {
+	.deck-talk__lang,
+	.deck-talk__status {
 		grid-column: 2;
 		justify-self: start;
 	}
@@ -1483,6 +1539,43 @@ body.deck-kiosk {
 			}
 		}
 
+		// Cancelled talks: Ctrl + talk number toggles the card. Kept in localStorage
+		// per event so a page reload (or a second tab) shows the same state.
+		const agenda = document.querySelector(".deck-agenda");
+		const talks = Array.from(agenda.querySelectorAll(".deck-talk:not(.deck-talk--tba)"));
+		const CANCELLED_KEY = "deck-cancelled-talks:" + (agenda.dataset.event || "");
+
+		function loadCancelled() {
+			try {
+				const stored = JSON.parse(localStorage.getItem(CANCELLED_KEY));
+				return Array.isArray(stored) ? stored : [];
+			} catch (e) {
+				return [];
+			}
+		}
+
+		function applyCancelled() {
+			const cancelled = loadCancelled();
+			talks.forEach((talk, i) => talk.classList.toggle("deck-talk--cancelled", cancelled.includes(i + 1)));
+		}
+
+		function toggleCancelled(num) {
+			const talk = talks[num - 1];
+			if (!talk) return;
+			talk.classList.toggle("deck-talk--cancelled");
+			try {
+				const cancelled = talks.flatMap((t, i) => t.classList.contains("deck-talk--cancelled") ? [i + 1] : []);
+				if (cancelled.length) {
+					localStorage.setItem(CANCELLED_KEY, JSON.stringify(cancelled));
+				} else {
+					localStorage.removeItem(CANCELLED_KEY);
+				}
+			} catch (e) { /* storage unavailable: state just won't survive a reload */ }
+		}
+
+		applyCancelled();
+		window.addEventListener("storage", evt => { if (evt.key === CANCELLED_KEY) applyCancelled(); });
+
 		window.addEventListener("scroll", () => { if (!kiosk) update(); }, { passive: true });
 		window.addEventListener("resize", update);
 		window.addEventListener("hashchange", applyMode);
@@ -1493,6 +1586,14 @@ body.deck-kiosk {
 		const PREV = ["ArrowUp", "ArrowLeft", "PageUp"];
 
 		document.addEventListener("keydown", function (evt) {
+			// Ctrl + 1…9 (top row or numpad, independent of keyboard layout)
+			const talkKey = /^(?:Digit|Numpad)([1-9])$/.exec(evt.code);
+			if (talkKey && evt.ctrlKey && !evt.altKey && !evt.metaKey && !evt.shiftKey) {
+				evt.preventDefault(); // otherwise the browser switches tabs
+				toggleCancelled(Number(talkKey[1]));
+				return;
+			}
+
 			if (evt.altKey || evt.ctrlKey || evt.metaKey) return;
 
 			if (evt.key === " " && evt.shiftKey) {
