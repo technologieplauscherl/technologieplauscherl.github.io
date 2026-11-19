@@ -10,6 +10,13 @@
 -   id: aug-linz
     name: "Atlassian User Group Linz"
     events:
+-   id: linzer-aug
+    name: "Linzer Arduino User Group"
+    events:
+        -   name: "Arduino User Group"
+            location: "/dev/lol, Hofgasse 19"
+            date: 2026-11-26
+            link: https://www.meetup.com/de-DE/stahlstadt-js/events/299725322/
 -   id: granit-treff
     name: "Granit Treff"
     events:
@@ -135,6 +142,10 @@
             location: TBA
             date: 2026-09-17
             link: https://www.meetup.com/microsoft-fabric-user-group-austria/events/315512698/
+        -   name: "Microsoft Fabric & Power BI Stammtisch #2 | Linz"
+            location: Klosterhof
+            date: 2026-11-23
+            link: https://www.meetup.com/microsoft-fabric-user-group-austria/events/317451871/
 -   id: powershell-ug
     name: "PowerShell Usergroup"
     events:
@@ -258,6 +269,10 @@
         -   name: "Code Retreat Linz"
             location: Wissensturm
             date: 2026-02-28
+            link: https://coderetreat-linz.github.io/website/
+        -   name: "Code Retreat Linz"
+            location: Wissensturm
+            date: 2027-02-27
             link: https://coderetreat-linz.github.io/website/
 -   id: dotnet-stammtisch
     name: ".NET Stammtisch Linz"
@@ -680,6 +695,10 @@
             location: "VALUG-Klubraum, Alter Schl8hof Wels"
             date: 2026-03-12
             link: https://valug.at/events/2026-03-12/
+        -   name: "VALUG-Treffen"
+            location: "VALUG-Klubraum, Alter Schl8hof Wels"
+            date: 2026-12-11
+            link: https://valug.at/events/2026-12-11/
 -   id: fhlug
     name: "FH Hagenberg Linux User Group"
     events:
@@ -746,6 +765,10 @@
             location: Wissensturm
             date: 2026-09-16
             link: https://www.meetup.com/women-in-ai-upper-austria/events/316062764/
+        -   name: "Women in AI Upper Austria X-MAS Meetup"
+            location: "Volksgarten Linz"
+            date: 2026-12-16
+            link: https://www.meetup.com/women-in-ai-upper-austria/events/317267098/
 -   id: ki-punsch-und-bowle
     name: "KI Punsch & Bowle"
     events:
