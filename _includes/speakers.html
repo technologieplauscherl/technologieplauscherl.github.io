@@ -35,6 +35,7 @@ there are multiple speakers for a given talk.
                         {% endif -%}
                         alt="{{speaker.name}}"
                         class="talk__speaker-img{% if speaker_count > 2 %} talks-table__speaker-img--small{% endif -%}"
+                        style="{% if talk.cancelled %} filter: grayscale(100%); {% endif %}"
                         onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
                       <span class="talk__speaker-name" itemprop="name">{{speaker.name}}</span>
                     </li>
@@ -49,6 +50,7 @@ there are multiple speakers for a given talk.
                       {% endif -%}
                       alt="{{talk.speaker.name}}"
                       class="talk__speaker-img"
+                      style="{% if talk.cancelled %} filter: grayscale(100%); {% endif %}"
                       onerror="if (!this.src.endsWith('_no_image.png')) this.src = '/img/speaker_no_image.jpg'">
                     <span class="talk__speaker-name" itemprop="name">{{talk.speaker.name}}</span>
                   </li>
@@ -64,7 +66,13 @@ there are multiple speakers for a given talk.
           <td class="talks-table__cell talks-table__cell--title" itemprop="name" style="order: {{ forloop.index }}1;">
             <div class="talks-table__cell-inner">
               <div class="talk__title-row">
-                <h3 class="talk__title">{{ talk.talk | default: talk.title }}</h3>
+                <h3 class="talk__title">
+                  {% if talk.cancelled %}
+                    <span style="text-decoration: line-through;">{{ talk.talk | default: talk.title }}</span><br>(cancelled)
+                  {% else %}
+                    {{ talk.talk | default: talk.title }}
+                  {% endif %}
+                </h3>
                 {% if talk.abstract and talk.abstract != empty -%}
                   <details class="talk__abstract-details">
                     <summary class="talk__abstract-summary" aria-label="Abstract for {{ talk.talk | default: talk.title }}">
