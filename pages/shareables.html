@@ -43,7 +43,7 @@ sitemap: false
 		<div class="deck-slide__body share-help">
 			<span class="deck-kicker">How to</span>
 			<h1 class="share__title">Social media <mark>shareables</mark></h1>
-			<p class="share-help__lead">Scroll to a slide and take a screenshot. Every slide fits 1:1, 4:5 and 9:16.</p>
+			<p class="share-help__lead">Scroll to a slide and take a screenshot. Every slide fits 1:1, 4:5 and 9:16. The last slide exports the YouTube thumbnail (3840×2160) as PNG.</p>
 			<dl class="share-help__keys">
 				<div><dt><kbd>H</kbd></dt><dd>Hide / show the navigation dots for clean screenshots</dd></div>
 				<div><dt><kbd>D</kbd></dt><dd>Switch light / dark theme (or click the dot in the banner)</dd></div>
@@ -149,6 +149,41 @@ sitemap: false
 		{{ event_info }}
 	</section>
 	{% endfor -%}
+
+	<!-- ───────────── YouTube thumbnail (3840×2160, exported as PNG) ───────────── -->
+	<section class="deck-slide share-slide share-slide--thumb" id="youtube" aria-label="YouTube-Thumbnail">
+		{{ decor }}
+		{{ brand_bar }}
+
+		<div class="deck-slide__body yt">
+			<div class="yt__stage">
+				<div class="yt__frame">
+					<div class="yt-thumb" role="img" aria-label="YouTube-Thumbnail Technologieplauscherl Episode {{ current_event.name }}">
+						<div class="deck-slide__decor yt-thumb__decor" aria-hidden="true">
+							<span class="deck-shape deck-shape--blob"></span>
+							<span class="deck-shape deck-shape--ring"></span>
+							<span class="deck-shape deck-shape--dots"></span>
+							<span class="deck-shape deck-shape--bolt deck-shape--bolt-b"></span>
+						</div>
+						<div class="yt-thumb__logo">
+							<img src="/img/svgs/tp-logo.svg" alt="" class="logo-dark" />
+							<img src="/img/svgs/tp-logo-bw.svg" alt="" class="logo-light" />
+						</div>
+						<div class="yt-thumb__text">
+							<p class="yt-thumb__title">Technologie-<br/><mark>plauscherl</mark></p>
+							<p class="yt-thumb__episode">Episode <span class="yt-thumb__number">{{ current_event.name }}</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<form class="yt__controls">
+				<label for="yt-episode">Episode</label>
+				<input id="yt-episode" type="number" min="1" step="1" value="{{ current_event.name }}" required />
+				<button type="submit">Export PNG</button>
+			</form>
+		</div>
+	</section>
 
 	<nav class="deck__dots" aria-label="Folien"></nav>
 </main>
@@ -728,6 +763,210 @@ body.dark-mode .share-lineup__avatars img {
 	}
 }
 
+/* ---------- YouTube thumbnail ----------
+   .yt-thumb is laid out at its real export size (3840×2160 px) and only
+   scaled down for the preview, so the PNG export is pixel-exact. */
+
+.yt {
+	flex: 1 1 auto;
+	min-height: 0;
+	max-width: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: calc(3 * var(--s));
+}
+
+/* The frame is sized from the stage by JS; absolute, so it never feeds back */
+.yt__stage {
+	position: relative;
+	flex: 1 1 auto;
+	align-self: stretch;
+	min-height: calc(20 * var(--s));
+}
+
+.yt__frame {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border: calc(.4 * var(--s)) solid var(--deck-line);
+	border-radius: calc(1.4 * var(--s));
+	box-shadow: calc(1 * var(--s)) calc(1 * var(--s)) 0 0 var(--deck-brand), var(--deck-shadow);
+	box-sizing: content-box;
+}
+
+body.dark-mode .yt__frame {
+	box-shadow: calc(1 * var(--s)) calc(1 * var(--s)) 0 0 var(--deck-neon), var(--deck-shadow);
+}
+
+.yt-thumb {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3840px;
+	height: 2160px;
+	transform-origin: 0 0;
+	overflow: hidden;
+	isolation: isolate;
+	display: grid;
+	grid-template-columns: 1500px 1fr;
+	align-items: center;
+	gap: 140px;
+	padding: 0 240px 0 100px;
+	box-sizing: border-box;
+	background: var(--deck-bg);
+	color: var(--deck-ink);
+}
+
+/* Static shapes, sized in px for the fixed 3840×2160 canvas */
+.yt-thumb .deck-shape {
+	animation: none;
+}
+
+.deck--share .yt-thumb .deck-shape--blob {
+	width: 1500px;
+	left: auto;
+	right: -380px;
+	top: -560px;
+	bottom: auto;
+}
+
+.deck--share .yt-thumb .deck-shape--ring {
+	width: 980px;
+	border-width: 110px;
+	left: -300px;
+	right: auto;
+	top: auto;
+	bottom: -420px;
+}
+
+.deck--share .yt-thumb .deck-shape--dots {
+	width: 620px;
+	background-size: 68px 68px;
+	left: auto;
+	right: 170px;
+	top: auto;
+	bottom: 150px;
+}
+
+.deck--share .yt-thumb .deck-shape--bolt {
+	display: block;
+	filter: drop-shadow(14px 14px 0 var(--deck-brand));
+}
+
+.deck--share .yt-thumb .deck-shape--bolt-b {
+	width: 120px;
+	left: auto;
+	right: 1020px;
+	top: auto;
+	bottom: 260px;
+	transform: rotate(16deg);
+}
+
+.yt-thumb__logo img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	transform: rotate(-8deg);
+}
+
+.yt-thumb__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 150px;
+}
+
+.deck .yt-thumb__title {
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: 250px;
+	line-height: 1.08;
+	text-transform: uppercase;
+	color: var(--deck-ink);
+	white-space: nowrap;
+}
+
+.deck .yt-thumb__episode {
+	padding: .2em .7em;
+	border-radius: 999px;
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	box-shadow: 24px 24px 0 0 var(--deck-neon);
+	font-family: var(--font-display);
+	word-spacing: var(--display-word-spacing);
+	font-weight: 600;
+	font-size: 150px;
+	line-height: 1.15;
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+}
+
+body.dark-mode .deck .yt-thumb__episode {
+	background: var(--deck-neon);
+	color: var(--deck-on-accent);
+	box-shadow: 24px 24px 0 0 var(--deck-shape-2);
+}
+
+/* Controls below the preview (not part of the export) */
+.yt__controls {
+	position: relative;
+	z-index: 1;
+	flex: 0 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: calc(1.6 * var(--s));
+	font-family: var(--font-display);
+	font-weight: 600;
+	font-size: var(--fs-s);
+	text-transform: uppercase;
+	letter-spacing: var(--label-tracking);
+	color: var(--deck-accent);
+}
+
+.yt__controls input,
+.yt__controls button {
+	font: inherit;
+	letter-spacing: inherit;
+	padding: .35em .8em;
+	border-radius: 999px;
+	border: calc(.4 * var(--s)) solid var(--deck-line);
+}
+
+.yt__controls input {
+	width: 4.5em;
+	background: var(--deck-surface);
+	color: var(--deck-ink);
+	text-align: center;
+}
+
+.yt__controls button {
+	background: var(--deck-brand);
+	color: var(--deck-neon);
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+body.dark-mode .yt__controls button {
+	background: var(--deck-neon);
+	color: var(--deck-on-accent);
+}
+
+.yt__controls button:disabled {
+	opacity: .6;
+	cursor: progress;
+}
+
+.share-clean .yt__controls {
+	visibility: hidden;
+}
+
 /* Hidden chrome for clean screenshots (key "h") */
 .share-clean .deck__dots {
 	display: none;
@@ -778,6 +1017,8 @@ body.dark-mode .share-lineup__avatars img {
 
 		document.addEventListener("keydown", function (evt) {
 			if (evt.altKey || evt.ctrlKey || evt.metaKey) return;
+			// typing in the thumbnail's episode field must not navigate
+			if (evt.target.matches("input, textarea, select")) return;
 
 			if (evt.key === " " && evt.shiftKey) {
 				evt.preventDefault();
@@ -799,6 +1040,132 @@ body.dark-mode .share-lineup__avatars img {
 			} else if (evt.key === "h" || evt.key === "H") {
 				// hide the navigation dots for clean screenshots
 				document.body.classList.toggle("share-clean");
+			}
+		});
+
+		// ---------- YouTube thumbnail ----------
+		const THUMB_W = 3840;
+		const THUMB_H = 2160;
+		const stage = document.querySelector(".yt__stage");
+		const frame = document.querySelector(".yt__frame");
+		const thumb = document.querySelector(".yt-thumb");
+		const form = document.querySelector(".yt__controls");
+		const input = document.getElementById("yt-episode");
+		const number = thumb.querySelector(".yt-thumb__number");
+		const exportButton = form.querySelector("button");
+
+		// Scale the full-size thumbnail down to fit the preview area
+		function fitThumb() {
+			const scale = Math.min(stage.clientWidth / THUMB_W, stage.clientHeight / THUMB_H);
+			frame.style.width = THUMB_W * scale + "px";
+			frame.style.height = THUMB_H * scale + "px";
+			thumb.style.transform = "scale(" + scale + ")";
+		}
+		new ResizeObserver(fitThumb).observe(stage);
+
+		input.addEventListener("input", function () {
+			number.textContent = input.value;
+			thumb.setAttribute("aria-label", "YouTube-Thumbnail Technologieplauscherl Episode " + input.value);
+		});
+
+		// ---------- Export: SVG <foreignObject> → canvas → PNG ----------
+		// The browser renders the thumbnail itself, so the PNG looks exactly like
+		// the preview. Inside an SVG image nothing external loads and no page CSS
+		// applies, so styles, images and fonts all have to be inlined first.
+
+		// Copy every computed style onto the clone (the thumbnail has no pseudo-elements)
+		function inlineStyles(source, clone) {
+			const cs = getComputedStyle(source);
+			clone.style.cssText = Array.from(cs, prop => prop + ":" + cs.getPropertyValue(prop)).join(";");
+			for (let i = 0; i < source.children.length; i++) {
+				inlineStyles(source.children[i], clone.children[i]);
+			}
+		}
+
+		function toDataUrl(blob) {
+			return new Promise((resolve, reject) => {
+				const reader = new FileReader();
+				reader.onload = () => resolve(reader.result);
+				reader.onerror = () => reject(reader.error);
+				reader.readAsDataURL(blob);
+			});
+		}
+
+		// Visible images become data URLs; hidden ones (other theme's logo) are dropped
+		async function inlineImages(source, clone) {
+			const sources = source.querySelectorAll("img");
+			const clones = clone.querySelectorAll("img");
+			await Promise.all(Array.from(sources, async (img, i) => {
+				if (getComputedStyle(img).display === "none") {
+					clones[i].remove();
+					return;
+				}
+				const response = await fetch(img.currentSrc || img.src);
+				clones[i].src = await toDataUrl(await response.blob());
+			}));
+		}
+
+		// @font-face rules of the families the thumbnail uses (already data URIs in fonts.css)
+		function fontFaceCss(root) {
+			const families = new Set();
+			[root, ...root.querySelectorAll("*")].forEach(el => {
+				getComputedStyle(el).fontFamily.split(",").forEach(f => families.add(f.trim().replace(/["']/g, "")));
+			});
+			let css = "";
+			for (const sheet of document.styleSheets) {
+				let rules;
+				try { rules = sheet.cssRules; } catch (e) { continue; } // cross-origin sheet
+				for (const rule of rules) {
+					if (rule instanceof CSSFontFaceRule &&
+						families.has(rule.style.getPropertyValue("font-family").replace(/["']/g, "").trim())) {
+						css += rule.cssText + "\n";
+					}
+				}
+			}
+			return css;
+		}
+
+		async function renderThumb() {
+			await document.fonts.ready;
+			const clone = thumb.cloneNode(true);
+			inlineStyles(thumb, clone);
+			clone.style.transform = "none";
+			await inlineImages(thumb, clone);
+
+			const svg =
+				'<svg xmlns="http://www.w3.org/2000/svg" width="' + THUMB_W + '" height="' + THUMB_H + '">' +
+				"<style><![CDATA[" + fontFaceCss(thumb) + "]]></style>" +
+				'<foreignObject x="0" y="0" width="100%" height="100%">' +
+				new XMLSerializer().serializeToString(clone) +
+				"</foreignObject></svg>";
+
+			// A data URL, not a blob URL: Chrome taints the canvas for blob-URL SVGs
+			const img = new Image();
+			img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+			await img.decode();
+			const canvas = document.createElement("canvas");
+			canvas.width = THUMB_W;
+			canvas.height = THUMB_H;
+			canvas.getContext("2d").drawImage(img, 0, 0);
+			return new Promise((resolve, reject) => canvas.toBlob(
+				blob => blob ? resolve(blob) : reject(new Error("Canvas export failed")), "image/png"));
+		}
+
+		form.addEventListener("submit", async function (evt) {
+			evt.preventDefault();
+			exportButton.disabled = true;
+			try {
+				const url = URL.createObjectURL(await renderThumb());
+				const link = document.createElement("a");
+				link.download = "tp-cover-ep-" + input.value + ".png";
+				link.href = url;
+				link.click();
+				setTimeout(() => URL.revokeObjectURL(url), 1000);
+			} catch (err) {
+				console.error(err);
+				alert("Export failed: " + err);
+			} finally {
+				exportButton.disabled = false;
 			}
 		});
 	});
